@@ -1,0 +1,12 @@
+/001__psd/
+/002__log/
+/builds/
+/bower_components/
+/node_modules/
+/src/files/_fonts
+/src/files/_psd
+
+bxslider можно пофиксить либо через:
+           var $j = jQuery.noConflict();
+            var realSlider = $j("ul#slider2").bxSlider({
+либо через замену функции load() или как там её.

@@ -1,0 +1,43 @@
+@import "001__buttons";
+@import "010__header";
+@import "020__footer";
+@import "030__menu";
+@import "040__burger";
+// @import "060__form";
+// @import "090__modal-content";
+
+
+/* ================================================
+   pages
+   ================================================ */
+
+/* ~tmp | dev
+================================================ */
+@import "page-vendors/tmp-links"; // чтоб могли посмотреть-проклацать страницы, которые уже готовы;
+@import "page-vendors/sandbox"; // чтоб могли посмотреть-проклацать страницы, которые уже готовы;
+
+
+/* index | home
+================================================ */
+@import "page-vendors/vendor-00_main/main";
+// @import "page-vendors/vendor-00_main/modules/custom-module-1";
+// @import "page-vendors/vendor-00_main/modules/custom-module-2";
+// @import "page-vendors/vendor-00_main/modules/custom-module-N";
+
+
+// // page 01  |  vendor 1 - plastic windows
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/main";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-1";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-2";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-N";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-9";
+// // page 02  |  vendor 1 - plastic windows
+// @import "page-vendors/vendor-01_plastic-windows/page-BBB/main";
+// @import "page-vendors/vendor-01_plastic-windows/page-BBB/custom-module-1";
+// @import "page-vendors/vendor-01_plastic-windows/page-BBB/custom-module-N";
+
+
+// // page 03  |  vendor 2 - services
+// @import "page-vendors/vendor-02_services/page-BBB/custom-module-1";
+// @import "page-vendors/vendor-02_services/page-BBB/custom-module-2";
+// @import "page-vendors/vendor-02_services/page-BBB/custom-module-N";
