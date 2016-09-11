@@ -3,7 +3,10 @@
   http://bit.ly/2ca8FMg
 
 - -
-
-
+interrogation preview bg how to cut them out? .\/.
+feedbacks photo how to cut?
+offcanvas icons how to cut?
+  articles-content-02
+  partners_firm-0N
 
 ~~DESIRE:~~
