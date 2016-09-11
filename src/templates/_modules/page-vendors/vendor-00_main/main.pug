@@ -171,6 +171,8 @@ block content
                 .window__sky
                 .window__window
                 .window__rollet
+                  h1.window__rollet-title Real Plast
+                  h2.window__rollet-desc Продажа пластиковых окон в Казахстане
                 .window__tree
       // window end
 
@@ -184,7 +186,7 @@ block content
 
 
               //- title
-              h2.features-title
+              h2.features-title Лучший производитель пластиковых окон Алматы
 
 
               //- content block
@@ -195,54 +197,54 @@ block content
                 .features__item
                   .features__item__foreground
                     .features__item__icon
-                    h3.features__item__title
+                    h3.features__item__title 18 лет на рынке
                     .features__btn
-                  .features__item__more
+                  .features__item__more Больше
 
 
                 //- item
                 .features__item
                   .features__item__foreground
                     .features__item__icon
-                    h3.features__item__title
+                    h3.features__item__title Конкурентные цены
                     .features__btn
-                  .features__item__more
+                  .features__item__more Больше
 
 
                 //- item
                 .features__item
                   .features__item__foreground
                     .features__item__icon
-                    h3.features__item__title
+                    h3.features__item__title аккуратный монтаж
                     .features__btn
-                  .features__item__more
+                  .features__item__more Больше
 
 
                 //- item
                 .features__item
                   .features__item__foreground
                     .features__item__icon
-                    h3.features__item__title
+                    h3.features__item__title 10 лет гарантии на пвх и 8 лет на фурнитуру
                     .features__btn
-                  .features__item__more
+                  .features__item__more Больше
 
 
                 //- item
                 .features__item
                   .features__item__foreground
                     .features__item__icon
-                    h3.features__item__title
+                    h3.features__item__title 3 дня изготовление
                     .features__btn
-                  .features__item__more
+                  .features__item__more Больше
 
 
                 //- item
                 .features__item
                   .features__item__foreground
                     .features__item__icon
-                    h3.features__item__title
+                    h3.features__item__title Возможность купить в рассрочку
                     .features__btn
-                  .features__item__more
+                  .features__item__more Больше
 
 
       // features end
@@ -261,7 +263,29 @@ block content
                 .slider-sales__item
                   .slider-sales__item__content
                   .slider-sales__item__stock
-
+                    .stock__content
+                      .stock__title Акция
+                      .stock__desc Скидки на окна и двери от 35% до 50%
+                      fotm.stock__form
+                        input.stock__name(placeholder="Ваше имя" type="text")
+                        input.stock__phone(placeholder="Ваш номер телефона" type="text")
+                        button.stock__btn(type="submit") Получить скидку
+                      .stock__more Просмотреть все акции
+                    .stock__timer
+                      .stock__timer-title Времени осталось
+                      .stock__timer-essence
+                        .stock__timer-item
+                          .stock__timer-num 25
+                          .stock__timer-def дней
+                        .stock__timer-item
+                          .stock__timer-num 16
+                          .stock__timer-def часов
+                        .stock__timer-item
+                          .stock__timer-num 35
+                          .stock__timer-def минут
+                        .stock__timer-item
+                          .stock__timer-num 15
+                          .stock__timer-def секунд
 
                 //- controls
                 .slider-sales__controls
@@ -272,13 +296,13 @@ block content
 
       // constructor
       section.constructor
-        .shell   //- .wrap
+        .shell
           .container
             .range
 
 
               //- title
-              h2.constructor-title
+              h2.constructor-title скомпонуйте своё будущее окно
 
 
               //- content
@@ -286,17 +310,143 @@ block content
 
                 //- tabs
                 .constructor__tabs
-                  .constructor__tabs__item
-                  .constructor__tabs__item
-                  .constructor__tabs__item
+                  .constructor__tabs__item Настройка комплектации
+                    .constructor__tabs__item-num 1
+                  .constructor__tabs__item Выбор типа окна
+                    .constructor__tabs__item-num 2
+                  .constructor__tabs__item Отправка на просчёт
+                    .constructor__tabs__item-arrow
 
                 //- info
                 .constructor__info
+                  .constructor__info-left
+                  .constructor__info-right
+                    .constructor__info-img
+                    .constructor__info-title
+                    .constructor__info-text
+                      p
+                    .constructor__info-colors
+                      .info-colors__title Доступные цвета
+                      .info-colors__checker
+                        .info-colors__checker__item
+                        .info-colors__checker__item
+                        .info-colors__checker__item
+                        .info-colors__checker__item
+                      .info-colors__description
+                        .info-colors__description__stable Выбрано:
+                        .info-colors__description__name Темный дуб
+
+
 
                 //- config
                 .constructor__config
                   .constructor__config__tabs
-                  .constructor__config__content
+                    .config__item-container
+                      //- 1
+                      .config__item
+                        .config__item-title Профиль
+                        .config__item-img
+                      //- 2
+                      .config__item(class="active")
+                        .config__item-title Стеклопакет
+                        .config__item-img
+                      //- 3
+                      .config__item
+                        .config__item-title доп. Стеклопакет
+                        .config__item-img
+                      //- 4
+                      .config__item
+                        .config__item-title Фурнитура
+                        .config__item-img
+                      //- 5
+                      .config__item
+                        .config__item-title доп. Фурнитура
+                        .config__item-img
+                      //- 6
+                      .config__item
+                        .config__item-title Откосы
+                        .config__item-img
+                      //- 7
+                      .config__item
+                        .config__item-title Подоконник
+                        .config__item-img
+                      //- 8
+                      .config__item
+                        .config__item-title Москитная сетка
+                        .config__item-img
+                      //- 9
+                      .config__item
+                        .config__item-title Рассечка
+                        .config__item-img
+                      //- 10
+                      .config__item
+                        .config__item-title Аксессуары
+                        .config__item-img
+                    a.config__btn-ahead Далее
+
+                  .constructor__config__tab-content
+                    //- 1
+                    .tab-content__item
+                      .item-content
+                        .item-content-left
+                          .col
+                            .item-content-left__img
+                          .col
+                            .item-content-left__title Однокамерный
+                            p.item-content-left__text Ширина стеклопакета:
+                              label 24 мм
+                                input(type="checkbox")
+                              label 32 мм
+                                input(type="checkbox")
+                        .item-content-right
+                          .col
+                            .item-content-left__img
+                          .col
+                            .item-content-left__title Однокамерный
+                            p.item-content-left__text Ширина стеклопакета:
+                              label 32 мм
+                                input(type="checkbox")
+                              label 36 мм
+                                input(type="checkbox")
+                      a.item-content-btn Выбрать
+                        span Стеклопакет
+
+                    //- 2
+                    .tab-content__item
+
+
+                    //- 3
+                    .tab-content__item
+
+
+                    //- 4
+                    .tab-content__item
+
+
+                    //- 5
+                    .tab-content__item
+
+
+                    //- 6
+                    .tab-content__item
+
+
+                    //- 7
+                    .tab-content__item
+
+
+                    //- 8
+                    .tab-content__item
+
+
+                    //- 9
+                    .tab-content__item
+
+
+                    //- 10
+                    .tab-content__item
+
+
       // constructor end
 
 
@@ -310,20 +460,45 @@ block content
 
 
                 //-title
-                h2.interrogation-title
+                h2.interrogation-title Нас интересует ваше мнение
                 hr.divider
 
 
                 //- content
                 .interrogation-unit
-                  .interrogation-unit-title
+                  .interrogation-unit-title Какого цвета окна вы хотите?
                   .interrogation-unit-content
                     form.interrogation-unit-form
-                      input
-                      input
-                      input
-                      button
+                      label Светлый дуб
+                        input(type="checkbox")
+                      label Орегон
+                        input(type="checkbox")
+                      label Махагон
+                        input(type="checkbox")
+                      label Дуб
+                        input(type="checkbox")
+                      button.interrogation-btn-vote Проголосовать
+
+                    //- preview
                     .interrogation-unit-preview
+                      //- item
+                      .unit-preview__item
+                        .unit-preview__item__img
+                        .unit-preview__item__name Свелтый дуб
+                      //- item
+                      .unit-preview__item
+                        .unit-preview__item__img
+                        .unit-preview__item__name Орегон
+                      //- item
+                      .unit-preview__item
+                        .unit-preview__item__img
+                        .unit-preview__item__name Махагон
+                      //- item
+                      .unit-preview__item
+                        .unit-preview__item__img
+                        .unit-preview__item__name Дуб
+
+
 
       // interrogation end
 
@@ -338,18 +513,22 @@ block content
 
 
                 .counter-achievement
+                  .counter-achievement__title Наши достижения
 
 
                 .counter-numbers
+                  //- item
                   .counter-numbers__item
-                    .counter-numbers__item__num
-                    .counter-numbers__item__title
+                    .counter-numbers__item__num 1427
+                    .counter-numbers__item__title Человек стали нашими клиентами
+                  //- item
                   .counter-numbers__item
-                    .counter-numbers__item__num
-                    .counter-numbers__item__title
+                    .counter-numbers__item__num 83%
+                    .counter-numbers__item__title Клиентов готовы нас рекомендовать
+                  //- item
                   .counter-numbers__item
-                    .counter-numbers__item__num
-                    .counter-numbers__item__title
+                    .counter-numbers__item__num 107 427
+                    .counter-numbers__item__title Клиентов за 11 лет работы
 
       // counter end
 
@@ -364,8 +543,39 @@ block content
 
 
                 //- title
-                h2.feedbacks-title
+                h2.feedbacks-title Что о нас говорят
                 .divider
+                  .slider-stage
+                    .slider
+                      //- item
+                      .slider-item
+                        .slider-item__content
+                          p Спасибо сотрудникам компании, которые не только грамотно провели все работы по установке пластиковых окон в комнату, но и дали дельные советы в процессе работы как ухаживать за окнами.Сотрудничеством очень доволен ...
+                        .slider-item-author
+                          .slider-item-author__photo
+                          .slider-item-author__name Михаил Виссарионов
+                      //- item
+                      .slider-item
+                        .slider-item__content
+                          blockquote
+                            p Потребность в замене окон на балконе возникла, когда я переехал в новую квартиру. В данную компанию обратилась в первый раз. Для меня очень важно, как со мной общаются, и какой уровень сервиса мне предлагают. Менеджер очень доходчиво и профессионально рассказал об окнах, подобрал оптимальную конфигурацию для моей квартиры. Конфигурация остекления балкона: ПРОФИЛЬ: REHAU ECOSOL-DESIGN 70, СТЕКЛОПАКЕТ: Двухкамерный энергосберегающий Clima Screen Termo, AXOR . Все было сделано в срок: доставка — вовремя, монтаж — вовремя. Отдельное спасибо монтажникам.
+                            date Пётр, апрель 2016
+                          .expand
+                            a.show-all посмотреть все отзывы
+                        .slider-item-author
+                          .slider-item-author__photo
+                          .slider-item-author__name Пётр Шишкин
+
+                      //- item
+                      .slider-item
+                        .slider-item__content
+                          video
+                        .slider-item-author
+                          .slider-item-author__photo
+                          .slider-item-author__name Валентина Опаленскова
+                    .slider-controls
+                      .slider-controls__arrow.left
+                      .slider-controls__arrow.right
 
 
                 //- content
@@ -401,7 +611,7 @@ block content
               //- anchor to map
               .gallery__expand
                 .gallery__expand-item.divider
-                .gallery__expand-item.gallery__expand__btn
+                .gallery__expand-item.gallery__expand__btn Смотреть объекты на карте
                 .gallery__expand-item.divider
       // gallery end
 
@@ -415,8 +625,8 @@ block content
               .consultation-essence
 
 
-                h2.consultation-title
-                a.consultation-btn
+                h2.consultation-title Заказать бесплатную консультацию
+                a.consultation-btn Заказать
 
       // consultation end
 
@@ -435,7 +645,7 @@ block content
               //- expand
               .video__expand
                 .video__expand-item.divider
-                .video__expand-item.video__expand__btn
+                .video__expand-item.video__expand__btn Смотреть все видео
                 .video__expand-item.divider
       // video end
 
@@ -450,7 +660,7 @@ block content
 
 
                 //- title
-                h2.articles-main-title
+                h2.articles-main-title Полезные статьи
                 .divider
 
                 //- itemS:
@@ -460,27 +670,37 @@ block content
                   .articles__item
                     .articles__item-left
                       .articles__item-thumb
+
                     .articles__item-right
-                      .articles__item-right__title
+                      .articles__item-right__title Оконные системы из нанотрубок
                       .articles__item-right__content
+                        p Компания Real Plast предлагает услуги по установке современных пластиковых окон, качественных и надежных. Оконные ПВХ-системы защитят ваше жилье от морозов, сквозняков, чрезмерной влажности, пыли и уличного шума.
+                        p Наша компания специализируется на изготовлении и монтаже пластиковых конструкций для жилой и коммерческой недвижимо...
+
                       .articles__item-right__footer
-                        .articles__item-right__date
-                        a.articles__item-right__read-more
+                        date.articles__item-right__date 18, августа 1918
+                        a.articles__item-right__read-more Читать статью
 
                   //- item
                   .articles__item
                     .articles__item-left
                       .articles__item-thumb
+
                     .articles__item-right
-                      .articles__item-right__title
+                      .articles__item-right__title Упрощённая технология для каждого
                       .articles__item-right__content
+                        p Компания Real Plast предлагает услуги по установке современных пластиковых окон, качественных и надежных. Оконные ПВХ-системы защитят ваше жилье от морозов, сквозняков, чрезмерной влажности, пыли и уличного шума.
+                        p Наша компания специализируется на изготовлении и монтаже пластиковых конструкций для жилой и коммерческой недвижимо...
+
                       .articles__item-right__footer
-                        .articles__item-right__date
-                        a.articles__item-right__read-more
+
+                        .articles__item-right__footer
+                          date.articles__item-right__date 18, августа 1918
+                          a.articles__item-right__read-more Читать статью
 
 
                 .articles__expand
-                  .articles__expand__btn
+                  .articles__expand__btn Посмотреть все статьи
       // articles end
 
 
@@ -494,7 +714,7 @@ block content
 
 
                 //- title
-                h2.partners-main-title
+                h2.partners-main-title Наши партнёры
 
 
                 //- logo
@@ -504,20 +724,47 @@ block content
                 //- content
                 .partners-content
                   .partners-content-left
-                    .partners__title
+                    .partners__title Электро-генератор GENERAC
                     .partners__desc
+                      p Невозможно забыть то время, когда при отключении электричества люди сидели при свечах и керосиновых лампах. Приходилось менять планы и привычный распорядок. Поэтому технический прогресс никогда не стоит на месте и, в подобных случаях, уже нормой стало наличие резервного генератора, обеспечивающего жизнедеятельность различного технического оборудования и наличие необходимого комфорта.
                     .partners__footer
-                      .partners__footer__btn
+                      .partners__footer__btn Перейти на сайт
                       .partners__footer__decor
                   .partners-content-right
 
 
                 //- companies
                 .partners-firms
+                  //- firm 01
                   .partners-firms__item
                     .partners-firms__item__thumb
-                    .partners-firms__item__title
-                    .partners-firms__item__desc
+                    .partners-firms__item__title SIEGNIA
+                    .partners-firms__item__desc: p Короткий текст про партнёра, что он производит.
+                  //- firm 02
+                  .partners-firms__item
+                    .partners-firms__item__thumb
+                    .partners-firms__item__title ROTO
+                    .partners-firms__item__desc: p Короткий текст про партнёра, что он производит.
+                  //- firm 03
+                  .partners-firms__item
+                    .partners-firms__item__thumb
+                    .partners-firms__item__title REHAU
+                    .partners-firms__item__desc: p Короткий текст про партнёра, что он производит.
+                  //- firm 04
+                  .partners-firms__item
+                    .partners-firms__item__thumb
+                    .partners-firms__item__title GALVIN
+                    .partners-firms__item__desc: p Короткий текст про партнёра, что он производит.
+                  //- firm 05
+                  .partners-firms__item
+                    .partners-firms__item__thumb
+                    .partners-firms__item__title ARTEC
+                    .partners-firms__item__desc: p Короткий текст про партнёра, что он производит.
+                  //- firm 06
+                  .partners-firms__item
+                    .partners-firms__item__thumb
+                    .partners-firms__item__title ENWIN
+                    .partners-firms__item__desc: p Короткий текст про партнёра, что он производит.
 
       // partners end
 
@@ -542,44 +789,63 @@ block content
             .row
               .col-1
                 .footer-box
-                  h5 title
+                  h4 Окна
                   ul.list-unstyled
-                    li: a
-                    li: a
-                    li: a
+                    li: a Оконные системы
+                    li: a Стеклопакет
+                    li: a Фурнитура
+                    li: a Аксессуары
+                    li: a Энергосбережение
+                    li: a Советы по выбору
+                    li: a Доп опции
               .col-2
                 .footer-box
-                  h5 title
+                  h4 Остекление
                   ul.list-unstyled
-                    li: a
-                    li: a
-                    li: a
+                    li: a Цех
+                    li: a Коттедж
+                    li: a Квартира
+                    li: a Балкон
+                    li: a Офис
                 .footer-box
-                  h5 title
+                  h4 Продукция
                   ul.list-unstyled
-                    li: a
-                    li: a
-                    li: a
+                    li: a Двери
+                    li: a Витражи
+                    li: a Перегородки
+                    li: a Входные группы
+                    li: a Нестандартные конструкции
               .col-3
                 .footer-box
-                  h5 title
+                  h4 Услуги
                   ul.list-unstyled
-                    li: a
-                    li: a
-                    li: a
+                    li: a Консультация
+                    li: a Замер
+                    li: a Доставка
+                    li: a Монтаж
+                    li: a Гарантия
                 .footer-box
-                  h5 title
+                  h4 Цены
                   ul.list-unstyled
-                    li: a
-                    li: a
-                    li: a
+                    li: a Типовые окна
+                    li: a Калькулятор
+                    li: a Акции
+                    li: a Рассрочка под 0%
               .col-4
                 .footer-box
-                  h5 title
+                  h4 О компании
                   ul.list-unstyled
-                    li: a
-                    li: a
-                    li: a
+                    li: a Наши преимущества
+                    li: a Отдел продаж
+                    li: a Отдел производства
+                    li: a Монтажный отдел
+                    li: a Отдел доставки
+                    li: a Наши сотрудники
+                    li: a Наши сертификаты
+                    li: a Наши партнёры
+                    li: a Наши обьекты
+                    li: a Отзывы
+                    li: a Контакты
 
               //- right content
               .col-5.footer-contact-infos
@@ -612,8 +878,9 @@ block content
 
             //- footer-bottom-row
             .footer-bottom-row
-              .footer__copy
-              .footer__manufactured
+              .footer__copy &copy; Real Plast
+              .footer__manufactured Сделано в
+                img
 
 
 
