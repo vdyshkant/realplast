@@ -1,0 +1,129 @@
+.page-index .partners {
+  // bg 1
+}
+
+
+.page-index .partners {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 100px 0;
+  }
+
+  & .partners-wrapper {
+    //
+  }
+
+  & .partners-essence {
+    //
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .partners {
+  & .partners-main-title{
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-index .partners {
+  & .partners-logo{
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+// CONTENT
+.page-index .partners {
+  & .partners-content{
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-index .partners {
+  & .partners__title{
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .partners {
+  & .partners__desc{
+    margin-bottom: 35px;
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+// COMPANIES
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .partners {
+  & .partners-firms__item{
+    width: 190px;
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}

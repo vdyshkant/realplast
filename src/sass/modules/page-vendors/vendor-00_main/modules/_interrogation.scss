@@ -1,0 +1,124 @@
+.page-index .interrogation {
+  // bg 1
+}
+
+
+.page-index .interrogation {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // bg 2
+  }
+
+  & .container {
+    padding: 0 100px;
+  }
+
+  & .interrogation-wrapper {
+    //
+  }
+
+  & .interrogation-essence {
+    //
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+// TITLE
+.page-index .interrogation {
+  & .interrogation-title{
+            margin-bottom: 35px;
+
+    outline: 2px dashed violet;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+// UNIT
+.page-index .interrogation {
+  & .interrogation-unit{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-content{
+    margin-top: 45px;
+    padding-top: 25px;
+    margin-left: 190px;
+
+    outline: 2px dashed brown;
+    outline-offset: -2px;
+  }
+}
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-form{
+    width: 550px;
+    margin-right: 20px;
+
+    outline: 2px dashed teal;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+// PREVIEW
+.page-index .interrogation {
+  & .interrogation-unit-preview{
+    width: 360px;
+    height: 280px;
+
+    outline: 2px dashed crimson;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}

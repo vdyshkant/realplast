@@ -1,0 +1,108 @@
+.page-index .counter {
+  // bg 1
+}
+
+
+.page-index .counter {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .counter-wrapper {
+    //
+  }
+
+  & .counter-essence {
+    //
+  }
+}
+
+
+.page-index .counter {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .counter {
+  & .counter-essence{
+    position: relative;
+
+    min-height: 740px;
+
+    outline: 2px dashed orangered;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .counter {
+  & .counter-achievement{
+    position: absolute;
+
+    outline: 2px dashed lightsalmon;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .counter {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .counter {
+  & .counter-numbers{
+    position: absolute;
+
+
+    outline: 2px dashed olivedrab;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .counter {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .counter {
+  & .counter-numbers__item{
+
+    outline: 2px dashed crimson;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .counter {
+  & .CLASS{
+
+  }
+}

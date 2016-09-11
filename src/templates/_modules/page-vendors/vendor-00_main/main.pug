@@ -4,15 +4,15 @@ extends ../../../conf/002_docwrapper
 append 001_config
   - var PageTitle = 'Главная страница'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
-  - var jQuery = true
-  - var jQueryUI = true
-  - var jQueryEasing = true
-  - var bxSlider = true
-  - var animateNumber = true
-  - var animateCss = true
-  - var wowJs = true
+  //- - var jQuery = true
+  //- - var jQueryUI = true
+  //- - var jQueryEasing = true
+  //- - var bxSlider = true
+  //- - var animateNumber = true
+  //- - var animateCss = true
+  //- - var wowJs = true
   //- - var mainJsSrc = 'js/main.min.js'
-  //- - var updateBodyClass = bodyClasses.push('page-index')
+  - var updateBodyClass = bodyClasses.push('page-index')
 
   //- - var GoogleFonts = 'Poiret+One'
   //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
@@ -29,11 +29,21 @@ append stylesheets
 block content
   .wrapper
 
+
+    //
+          ========================================================
+                                  HEADER
+          ========================================================
+
     //- header
     include ../../001__header
     //- eof header
 
 
+    //
+          ========================================================
+                                  CONTENT
+          ========================================================
 
     //- main
     main.main
@@ -51,7 +61,7 @@ block content
         //- content
         .offcanvas-nav-side__content
 
-          
+
           //- menu
           ul.offcanvas-nav-side__menu
 
@@ -153,310 +163,426 @@ block content
 
 
       // window
-      .section.window
-        .wrap
-          .inner
-            .window__sky
-            .window__window
-            .window__rollet
-            .window__tree
+      .window
+        .shell
+          .container
+            .range
+              .window-wrapper
+                .window__sky
+                .window__window
+                .window__rollet
+                .window__tree
       // window end
 
 
 
       // features
-      .section.features
-        .wrap
-          .inner
+      section.features
+        .shell
+          .container
+            .range
 
 
-            //- title
-            h2.features-title
+              //- title
+              h2.features-title
 
 
-            //- content block
-            .features-content
+              //- content block
+              .features-content
 
 
-              //- item
-              .features__item
-                .features__item__foreground
-                  .features__item__icon
-                  h3.features__item__title
-                  .features__btn
-                .features__item__more
+                //- item
+                .features__item
+                  .features__item__foreground
+                    .features__item__icon
+                    h3.features__item__title
+                    .features__btn
+                  .features__item__more
 
 
-              //- item
-              .features__item
+                //- item
+                .features__item
+                  .features__item__foreground
+                    .features__item__icon
+                    h3.features__item__title
+                    .features__btn
+                  .features__item__more
 
 
-              //- item
-              .features__item
+                //- item
+                .features__item
+                  .features__item__foreground
+                    .features__item__icon
+                    h3.features__item__title
+                    .features__btn
+                  .features__item__more
+
+
+                //- item
+                .features__item
+                  .features__item__foreground
+                    .features__item__icon
+                    h3.features__item__title
+                    .features__btn
+                  .features__item__more
+
+
+                //- item
+                .features__item
+                  .features__item__foreground
+                    .features__item__icon
+                    h3.features__item__title
+                    .features__btn
+                  .features__item__more
+
+
+                //- item
+                .features__item
+                  .features__item__foreground
+                    .features__item__icon
+                    h3.features__item__title
+                    .features__btn
+                  .features__item__more
+
 
       // features end
 
 
 
       // slider-sales
-      .section.slider-sales
-        .wrap
-          .inner
-            .slider-sales-essence
+      .slider-sales
+        .shell
+          .container
+            .range
+              .slider-sales-wrapper
 
 
-              //- item
-              .slider-sales__item
-                .slider-sales__item__
-                .slider-sales__item__stock
+                //- item
+                .slider-sales__item
+                  .slider-sales__item__content
+                  .slider-sales__item__stock
 
 
-              //- controls
-              .slider-sales__controls
+                //- controls
+                .slider-sales__controls
 
       // slider-sales end
 
 
 
       // constructor
-      .section.constructor
-        .wrap
-          .inner
+      section.constructor
+        .shell   //- .wrap
+          .container
+            .range
 
 
-            //- title
-            h2.constructor-title
+              //- title
+              h2.constructor-title
 
 
-            //- content
-            .constructor-essence
+              //- content
+              .constructor-essence
 
-              //- tabs
-              .constructor__tabs
+                //- tabs
+                .constructor__tabs
+                  .constructor__tabs__item
+                  .constructor__tabs__item
+                  .constructor__tabs__item
 
-              //- info
-              .constructor__info
+                //- info
+                .constructor__info
 
-              //- config
-              .constructor__config
-                .constructor__config__tabs
-                .constructor__config__content
+                //- config
+                .constructor__config
+                  .constructor__config__tabs
+                  .constructor__config__content
       // constructor end
 
 
 
       // interrogation
-      .section.interrogation
-        .wrap
+      section.interrogation
+        .shell
           .inner
-            .interrogation-essence
+            .container
+              .interrogation-essence
 
 
-              //-title
-              h2.interrogation-title
+                //-title
+                h2.interrogation-title
+                hr.divider
 
 
-              //- content
-              .interrogation-item
-                .interrogation-content-title
-                .interrogation-content-content
-                  .interrogation-content-form
-                    input
-                    input
-                    input
-                    button
-                  .interrogation-content-preview
+                //- content
+                .interrogation-unit
+                  .interrogation-unit-title
+                  .interrogation-unit-content
+                    form.interrogation-unit-form
+                      input
+                      input
+                      input
+                      button
+                    .interrogation-unit-preview
 
       // interrogation end
 
 
 
       // counter
-      .section.counter
-        .wrap
-          .inner
-            .counter-essence
+      .counter
+        .shell
+          .container
+            .range
+              .counter-essence
 
 
-              .counter-achievement
+                .counter-achievement
 
 
-              .counter-numbers
-                .counter-numbers__item
-                  .counter-numbers__item__num
-                  .counter-numbers__item__title
+                .counter-numbers
+                  .counter-numbers__item
+                    .counter-numbers__item__num
+                    .counter-numbers__item__title
+                  .counter-numbers__item
+                    .counter-numbers__item__num
+                    .counter-numbers__item__title
+                  .counter-numbers__item
+                    .counter-numbers__item__num
+                    .counter-numbers__item__title
 
       // counter end
 
 
 
       // feedbacks
-      .section.feedbacks
-        .wrap
-          .inner
-            .feedbacks-essence
+      section.feedbacks
+        .shell
+          .container
+            .range
+              .feedbacks-essence
 
 
-              //- title
-              h2.feedbacks-title
+                //- title
+                h2.feedbacks-title
+                .divider
 
 
-              //- content
-                //- slider
-              .feedbacks-slider
+                //- content
+                  //- slider
+                .feedbacks-slider
       // feedbacks end
 
 
 
       // gallery
-      .section.gallery
-        .wrap
-          .inner
-            .gallery-essence
+      .gallery
+        .shell
+          .container
+            .range
+              .gallery-essence
 
 
-              .gallery-row
-                .gallery__item
-                .gallery__item
-                .gallery__item
-                .gallery__item
-                .gallery__item
+                .row-1
+                  .col.col-1
+                    .gallery__item
+                  .col.col-2
+                    .gallery__item
+                    .gallery__item
+                  .col.col-3
+                    .gallery__item
+                    .gallery__item
+                .row-2
+                  .col-s
+                    .gallery__item
+                    .gallery__item
+                    .gallery__item
 
-              .gallery-row
-                .gallery__item
-                .gallery__item
-                .gallery__item
-
-
-            //- anchor to map
-            .gallery__expand
-              .gallery__expand__btn
+              //- anchor to map
+              .gallery__expand
+                .gallery__expand-item.divider
+                .gallery__expand-item.gallery__expand__btn
+                .gallery__expand-item.divider
       // gallery end
 
 
 
       // consultation
-      .section.consultation
-        .wrap
-          .inner
-            .consultation-essence
+      section.consultation
+        .shell
+          .container
+            .range
+              .consultation-essence
 
 
-              h2.consultation-title
-              a.consultation-btn
+                h2.consultation-title
+                a.consultation-btn
 
       // consultation end
 
 
 
       // video
-      .section.video
-        .wrap
-          .inner
-            .video-essence
+      .video
+        .shell
+          .container
+            .range
+              .video-essence
 
 
-              .video__item
+                .video__item
 
-
+              //- expand
               .video__expand
-                .video__expand__btn
+                .video__expand-item.divider
+                .video__expand-item.video__expand__btn
+                .video__expand-item.divider
       // video end
 
 
 
       // articles
-      .section.articles
-        .wrap
-          .inner
-            .articles-essence
+      section.articles
+        .shell
+          .container
+            .range
+              .articles-essence
 
 
-              //- title
-              h2.articles-main-title
+                //- title
+                h2.articles-main-title
+                .divider
+
+                //- itemS:
+                .articles__items-shellper
+
+                  //- item
+                  .articles__item
+                    .articles__item-left
+                      .articles__item-thumb
+                    .articles__item-right
+                      .articles__item-right__title
+                      .articles__item-right__content
+                      .articles__item-right__footer
+                        .articles__item-right__date
+                        a.articles__item-right__read-more
+
+                  //- item
+                  .articles__item
+                    .articles__item-left
+                      .articles__item-thumb
+                    .articles__item-right
+                      .articles__item-right__title
+                      .articles__item-right__content
+                      .articles__item-right__footer
+                        .articles__item-right__date
+                        a.articles__item-right__read-more
 
 
-              //- itemS:
-              .articles__items-wrapper
-
-
-                .articles__item
-                  .articles__item-left
-                    .articles__item-thumb
-                  .articles__item-right
-                    .articles__item-right__title
-                    .articles__item-right__content
-                    .articles__item-right__footer
-                      .articles__item-right__date
-                      a.articles__item-right__read-more
-
-
-              .articles__expand
-                .articles__expand__btn
+                .articles__expand
+                  .articles__expand__btn
       // articles end
 
 
 
       // partners
-      .section.partners
-        .wrap
-          .inner
-            .partners-essence
+      section.partners
+        .shell
+          .container
+            .range
+              .partners-essence
 
 
-              //- title
-              h2.partners-main-title
+                //- title
+                h2.partners-main-title
 
 
-              //- logo
-              .partners-logo
+                //- logo
+                .partners-logo
 
 
-              //- content
-              .partners-content
-                .partners-content-left
-                  .partners__title
-                  .partners__desc
-                  .partners__footer
-                    .partners__footer__btn
-                    .partners__footer__decor
-                .partners-content-right
+                //- content
+                .partners-content
+                  .partners-content-left
+                    .partners__title
+                    .partners__desc
+                    .partners__footer
+                      .partners__footer__btn
+                      .partners__footer__decor
+                  .partners-content-right
 
 
-              //- companies
-              .partners-firms
-                .partners-firms__item
-                  .partners-firms__item__thumb
-                  .partners-firms__item__title
-                  .partners-firms__item__desc
+                //- companies
+                .partners-firms
+                  .partners-firms__item
+                    .partners-firms__item__thumb
+                    .partners-firms__item__title
+                    .partners-firms__item__desc
 
       // partners end
 
     //- eof main
 
 
+    //
+          ========================================================
+                                  FOOTER
+          ========================================================
 
     //- footer
 
     include ../../002__footer
     footer.footer
-      .wrap
-        .inner
+      .shell
+        .container
           .footer-essence
 
 
             //- menus
-            .footer__menu
-              ul.footer__menu__list
-                h3.footer__menu__list__title.footer__title
-                li.footer__menu__list__item
-                li.footer__menu__list__item
-                li.footer__menu__list__item
+            .row
+              .col-1
+                .footer-box
+                  h5 title
+                  ul.list-unstyled
+                    li: a
+                    li: a
+                    li: a
+              .col-2
+                .footer-box
+                  h5 title
+                  ul.list-unstyled
+                    li: a
+                    li: a
+                    li: a
+                .footer-box
+                  h5 title
+                  ul.list-unstyled
+                    li: a
+                    li: a
+                    li: a
+              .col-3
+                .footer-box
+                  h5 title
+                  ul.list-unstyled
+                    li: a
+                    li: a
+                    li: a
+                .footer-box
+                  h5 title
+                  ul.list-unstyled
+                    li: a
+                    li: a
+                    li: a
+              .col-4
+                .footer-box
+                  h5 title
+                  ul.list-unstyled
+                    li: a
+                    li: a
+                    li: a
 
-
-            //- right content
-            .footer-content
-
+              //- right content
+              .col-5.footer-contact-infos
 
                 //- callback
                 .footer__callback

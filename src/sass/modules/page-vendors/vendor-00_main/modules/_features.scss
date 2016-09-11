@@ -1,0 +1,125 @@
+.page-index .features {
+  & .wrap {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .container {
+    //
+    padding-top: 100px;
+  }
+}
+
+
+.page-index .features {
+  & .features-title{
+    margin-bottom: 120px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 236px;
+      height: 1px;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+.page-index .features {
+  & .features-content{
+
+    margin-bottom: 000;
+  }
+}
+
+
+.page-index .features {
+  & .features__item{
+    position: relative;
+    width: 475px;
+    margin-right: 170px;
+    margin-bottom: 95px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 360px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:nth-child(2n+1) {
+      clear: left;
+    }
+  }
+}
+
+
+.page-index .features {
+  & .CLASS{
+//
+  }
+}
+
+
+.page-index .features {
+  & .features__item__foreground{
+    @include clearfix;
+  }
+}
+
+
+.page-index .features {
+  & .features__item__icon{
+    width: 70px;
+    height: 75px;
+    float: left;
+  }
+}
+
+
+.page-index .features {
+  & .features__item__title{
+    margin-left: 95px;
+  }
+}
+
+
+.page-index .features {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .features {
+  & .features__btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 95px;
+    height: 50px;
+  }
+}
+
+
+.page-index .features {
+  & .CLASS{
+
+  }
+}

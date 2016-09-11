@@ -1,0 +1,132 @@
+
+/*------------------------------------*\\
+  CONTENTS
+\\*------------------------------------*/
+
+/*
+GENERAL   HTML, BODY, etc.
+SHARED    Share anything we can across blocks.
+HEADER
+MAIN
+  sub_block
+  sub_block
+FOOTER
+NOTES
+RESET
+*/
+
+
+
+
+  /* ================================================
+     Блок_комментариев_для_раздела $ MAIN
+     ================================================ */
+
+  /* == eof $ MAIN == */
+
+  /* Блок_комментариев_для_подраздела
+     ================================================ */
+
+  /*
+   * Блок_комментариев_для_группы_правил.
+   * Хорошо_подходит_для_подробных_пояснений_и_документации.
+   */
+
+  /* Обычный_комментарий */
+
+
+/* == eof $ CONTENTS == */
+
+// 01
+@import "modules/window";
+// 02
+@import "modules/features";
+// 03
+@import "modules/slider-sales";
+// 04
+@import "modules/constructor";
+// 05
+@import "modules/interrogation";
+// 06
+@import "modules/counter";
+// 07
+@import "modules/feedbacks";
+// 08
+@import "modules/consultation";
+// 09
+@import "modules/video";
+// 10
+@import "modules/articles";
+// 11
+@import "modules/partners";
+// 12
+
+.page-index {
+  & .main{
+    margin: 0 auto;
+    max-width: 1360px;
+
+    outline: 2px dashed blue;
+    outline-offset: -2px;
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}

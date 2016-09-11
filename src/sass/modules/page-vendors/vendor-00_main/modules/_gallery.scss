@@ -1,0 +1,166 @@
+.page-index .gallery {
+  // bg 1
+}
+
+
+.page-index .gallery {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  & .gallery-wrapper {
+    //
+  }
+
+  & .gallery-essence {
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1{
+    margin-right: 20px;
+  }
+}
+
+.page-index .gallery {
+  & .row-2{
+    margin-right: 20px;
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col {
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col-1{
+    width: 550px;
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col-2{
+    width: 170px;
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col-3{
+    width: 360px;
+  }
+}
+
+
+.page-index .gallery {
+  & .col-2 .gallery__item:first-child,
+  & .col-3 .gallery__item:first-child{
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .row-2 .col-s {
+
+  }
+}
+
+
+.page-index .gallery {
+  & .col-s .gallery__item {
+    width: 360px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// EXPAND
+.page-index .gallery {
+  & .gallery__expand{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .gallery__expand-item {
+    // FLEX
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}

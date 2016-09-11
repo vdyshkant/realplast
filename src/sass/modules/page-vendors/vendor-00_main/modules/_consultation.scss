@@ -1,9 +1,9 @@
-.page-index .footer {
+.page-index .consultation {
   // bg 1
 }
 
 
-.page-index .footer {
+.page-index .consultation {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -25,34 +25,56 @@
   }
 
   & .container {
+    padding-top: 95px;
+    padding-bottom: 105px;
+  }
+
+  & .consultation-wrapper {
     //
   }
 
-  & .footer-wrapper {
-    //
-  }
-
-  & .footer-essence {
+  & .consultation-essence {
     //
   }
 }
 
 
-.page-index .footer {
+.page-index .consultation {
+  & .CLASS{
+
+  }
+}
+
+// TITLE
+.page-index .consultation {
+  & .consultation-title{
+    // flex
+  }
+}
+
+// BTN
+.page-index .consultation {
+  & .consultation-btn{
+    // flex
+  }
+}
+
+
+.page-index .consultation {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.page-index .consultation {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.page-index .consultation {
   & .CLASS{
 
   }

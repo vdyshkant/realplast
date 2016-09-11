@@ -1,0 +1,86 @@
+.page-index .slider-sales {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .container {
+    //
+  }
+}
+
+
+.page-index .slider-sales {
+  & .slider-sales-wrapper{
+    position: relative;
+  }
+}
+
+
+.page-index .slider-sales {
+  & .CLASS{
+    //
+  }
+}
+
+
+.page-index .slider-sales {
+  & .slider-sales__item{
+    position: relative;
+
+    outline: 2px dashed darkolivegreen;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .slider-sales {
+  & .slider-sales__item__stock{
+    position: absolute;
+    top: 0;
+    right: 0;
+          height: 370px;
+          width: 440px;
+
+    outline: 2px dashed orangered;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .slider-sales {
+  & .CLASS{
+    //
+  }
+}
+
+
+.page-index .slider-sales {
+  & .slider-sales__controls{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    outline: 2px dashed deeppink;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .slider-sales {
+  & .CLASS{
+    //
+  }
+}

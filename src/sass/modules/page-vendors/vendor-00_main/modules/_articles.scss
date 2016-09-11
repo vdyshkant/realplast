@@ -1,0 +1,137 @@
+.page-index .articles {
+  // bg 1
+}
+
+
+.page-index .articles {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 100px 0;
+  }
+
+  & .articles-wrapper {
+    //
+  }
+
+  & .articles-essence {
+    //
+  }
+}
+
+
+.page-index .articles {
+  & .CLASS{
+
+  }
+}
+
+// TITLE
+.page-index .articles {
+  & .articles-main-title{
+    margin-bottom: 35px;
+  }
+}
+
+
+.page-index .articles {
+  & .divider{
+    margin-bottom: 60px;
+  }
+}
+
+
+.page-index .articles {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item{
+    margin-bottom: 50px;
+    padding: 40px 0;
+  }
+}
+
+
+.page-index .articles {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-left{
+
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-right{
+
+  }
+}
+
+
+.page-index .articles {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-right__title{
+    margin-bottom: 25px;
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-right__content{
+    margin-bottom: 30px;
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-right__footer{
+
+  }
+}
+
+
+.page-index .articles {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .articles {
+  & .CLASS{
+
+  }
+}

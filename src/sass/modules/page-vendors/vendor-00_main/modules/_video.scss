@@ -1,9 +1,9 @@
-.page-index .footer {
+.page-index .video {
   // bg 1
 }
 
 
-.page-index .footer {
+.page-index .video {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -25,34 +25,34 @@
   }
 
   & .container {
+    padding-bottom: 70px;
+  }
+
+  & .video-wrapper {
     //
   }
 
-  & .footer-wrapper {
-    //
-  }
-
-  & .footer-essence {
-    //
+  & .video-essence {
+    padding-bottom: 50px;
   }
 }
 
 
-.page-index .footer {
+.page-index .video {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
-  & .CLASS{
-
+.page-index .video {
+  & .video__expand-item{
+    // FLEX
   }
 }
 
 
-.page-index .footer {
+.page-index .video {
   & .CLASS{
 
   }

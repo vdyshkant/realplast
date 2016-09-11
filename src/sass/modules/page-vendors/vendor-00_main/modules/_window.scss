@@ -1,0 +1,82 @@
+
+
+
+.page-index .window {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .window-wrapper {
+    //
+    position: relative;
+  }
+}
+
+
+.page-index .window {
+  & .window__sky{
+//
+  }
+}
+
+
+.page-index .window {
+  & .window__window {
+    position: absolute;
+    width: 970px;
+    // width: 83.62068965517241%;
+    top: 20px;
+    left: 50%;
+    transform: translteX(-50%);
+
+    outline: 2px dashed yellowgreen;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .window {
+  & .window__rollet{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+          width: 430px;
+          height: 330px;
+
+    outline: 2px dashed magenta;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .window {
+  & .window__tree{
+                                              // PARALLAX
+
+    position: absolute;
+    bottom: -1px;
+    right: 25%;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+  }
+}
+
+
+.page-index .window {
+  & .CLASS{
+    //
+  }
+}
