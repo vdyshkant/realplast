@@ -61,7 +61,7 @@
 
 .page-index .articles {
   & .divider{
-    margin-bottom: 60px;
+                          // margin-bottom: 60px;
 
 
     width: 236px;
@@ -80,11 +80,19 @@
 
 
 .page-index .articles {
+  & .articles__items-wrapper{
+    margin-top: 60px;
+  }
+}
+
+
+.page-index .articles {
   & .articles__item{
     margin-bottom: 50px;
-    padding: 40px 0;
+    padding: 40px 95px 40px 20px;
     display: flex;
     flex-direction: row;
+    border: 1px solid #000;
   }
 }
 

@@ -1,5 +1,6 @@
 .page-index .feedbacks {
   // bg 1
+  background: url('../img/feedbacks_bg.jpg');
 }
 
 
@@ -48,6 +49,22 @@
 .page-index .feedbacks {
   & .feedbacks-title{
     margin-bottom: 35px;
+    @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .divider{
+    // margin-bottom: 35px;
+
+    width: 236px;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto;
   }
 }
 
@@ -58,9 +75,130 @@
   }
 }
 
+
+.page-index .feedbacks {
+  & .slider-stage{
+    margin-top: 35px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 .page-index .feedbacks {
   & .feedbacks-slider{
     margin-top: 30px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item{
+    width: 255px;
+    margin-right: 30px;
+
+    &.active {
+      width: 400px;
+
+      & .slider-item__content {
+        padding: 0;
+        border: 1px solid #000;
+      }
+
+      & .slider-item-author__name {
+        @include font(normal, 700, 18px, 17px, 'Roboto');
+      }
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item__content{
+    background: url('../img/feedbacks_item_bg.jpg');
+    margin-bottom: 20px;
+    padding: 40px 20px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & blockquote{
+    padding: 40px 20px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item__content p{
+    @include font(normal, 400, 18px, 23px, 'Roboto');
+    color: #444341;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .expand{
+    border-top: 1px solid #000;
+    padding: 20px 0 15px;
+    text-align: center;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item-author__photo{
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item-author__name{
+    @include font(normal, 400, 18px, 17px, 'Roboto');
+    color: #444341;
+    text-align: center;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
   }
 }
 
