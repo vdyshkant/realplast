@@ -52,14 +52,16 @@ RESET
 // 07
 @import "modules/feedbacks";
 // 08
-@import "modules/consultation";
+@import "modules/gallery";
 // 09
-@import "modules/video";
+@import "modules/consultation";
 // 10
-@import "modules/articles";
+@import "modules/video";
 // 11
-@import "modules/partners";
+@import "modules/articles";
 // 12
+@import "modules/partners";
+// 13
 
 .page-index {
   & .main{
