@@ -1,5 +1,7 @@
 .page-index .counter {
   // bg 1
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -7,6 +9,11 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+
+    padding: 0 20px;
+
+
+    background: url('../img/counter_bg.png');
 
     outline: 2px dashed tan;
     outline-offset: -2px;
@@ -68,6 +75,15 @@
 
 
 .page-index .counter {
+  & .counter-achievement__title{
+    @include font(normal, 700, 36px, 33px, 'Roboto Condensed');
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+
+.page-index .counter {
   & .CLASS{
 
   }
@@ -77,6 +93,10 @@
 .page-index .counter {
   & .counter-numbers{
     position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
 
 
     outline: 2px dashed olivedrab;
@@ -94,9 +114,37 @@
 
 .page-index .counter {
   & .counter-numbers__item{
+    width: 360px;
+    margin-right: 20px;
 
     outline: 2px dashed crimson;
     outline-offset: -2px;
+  }
+}
+
+
+.page-index .counter {
+  & .counter-numbers__item__num{
+    @include font(normal, 700, 110px, 81px, 'Roboto Condensed');
+    opacity: 0.35;
+    color: #fff4f4;
+    text-transform: uppercase;
+  }
+}
+
+
+.page-index .counter {
+  & .counter-numbers__item__title{
+    @include font(normal, 700, 32px, 40px, 'Roboto');
+    color: #fff;
+    text-align: center;
+  }
+}
+
+
+.page-index .counter {
+  & .CLASS{
+
   }
 }
 
