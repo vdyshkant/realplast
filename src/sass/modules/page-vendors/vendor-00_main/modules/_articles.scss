@@ -1,5 +1,6 @@
 .page-index .articles {
   // bg 1
+  background: url('../img/articles_bg.jpg');
 }
 
 
@@ -7,6 +8,8 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+
+    padding: 0 20px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;
@@ -48,6 +51,10 @@
 .page-index .articles {
   & .articles-main-title{
     margin-bottom: 35px;
+    @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 
@@ -55,6 +62,12 @@
 .page-index .articles {
   & .divider{
     margin-bottom: 60px;
+
+
+    width: 236px;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto;
   }
 }
 
@@ -70,6 +83,8 @@
   & .articles__item{
     margin-bottom: 50px;
     padding: 40px 0;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -83,10 +98,40 @@
 
 .page-index .articles {
   & .articles__item-left{
+    position: relative;
+    width: 360px;
+    margin-right: 20px;
 
+    outline: 2px dashed violet;
+    outline-offset: -2px;
   }
 }
 
+
+.page-index .articles {
+  & .articles__substrate{
+    width: 248px;
+    height: 231px;
+    box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.11);
+    border-radius: 6px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-thumb{
+    width: 340px;
+    height: 237px;
+    z-index: 2;
+    position: relative;
+  }
+}
 
 .page-index .articles {
   & .articles__item-right{
@@ -105,6 +150,8 @@
 .page-index .articles {
   & .articles__item-right__title{
     margin-bottom: 25px;
+    @include font(normal, 700, 32px, 31px, 'Roboto');
+    color: #444341;
   }
 }
 
@@ -112,13 +159,17 @@
 .page-index .articles {
   & .articles__item-right__content{
     margin-bottom: 30px;
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+    color: #444341;
   }
 }
 
 
 .page-index .articles {
   & .articles__item-right__footer{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -126,6 +177,28 @@
 .page-index .articles {
   & .CLASS{
 
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-right__date{
+    @include font(normal, 300, 14px, 14px, 'Roboto');
+    color: #444341;
+  }
+}
+
+
+.page-index .articles {
+  & .articles__item-right__read-more{
+    display: block;
+    width: 214px;
+    height: 50px;
+    border: 1px solid #444341;
+    text-align: center;
+    @include font(normal, 400, 18px, 50px, 'Roboto');
+    text-decoration: none;
+    color: #444341;
   }
 }
 
