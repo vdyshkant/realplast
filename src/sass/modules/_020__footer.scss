@@ -1,5 +1,7 @@
 .page-index .footer {
   // bg 1
+  background: #313131 url('../img/footer_bg.jpg');
+  color: #fff;
 }
 
 
@@ -25,7 +27,8 @@
   }
 
   & .container {
-    //
+    padding-top: 65px;
+    padding-bottom: 75px;
   }
 
   & .footer-wrapper {
@@ -39,6 +42,110 @@
 
 
 .page-index .footer {
+  & .footer-essence .row{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
+
+
+.page-index .footer {
+  & .footer-essence .col{
+    width: 170px;
+    margin-right: 20px;
+    justify-content: center;
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & h4{
+    @include font(normal, 700, 18px, 23px, 'Roboto')
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-index .footer {
+  & .footer-box__link{
+    @include font(normal, 300, 14px, 24px, 'Roboto');
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .list-unstyled li{
+    margin-bottom: 10px;
+  }
+}
+
+// right content
+
+.page-index .footer {
+  & .footer__callback{
+    margin-bottom: 60px;
+  }
+}
+
+
+
+.page-index .footer {
+  & .footer__callback__phone{
+    @include font(normal, 300, 25px, 37px, 'Roboto')
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+// socials
+.page-index .footer {
+  & .footer__socials{
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-index .footer {
+  & .footer__socials-wrapper{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
+
+
+.page-index .footer {
+  & .footer__socials__item{
+    justify-content: flex-start;
+    margin-right: 18px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+  }
+}
+
+
+.page-index .footer {
   & .CLASS{
 
   }
@@ -48,6 +155,48 @@
 .page-index .footer {
   & .CLASS{
 
+  }
+}
+
+
+.page-index .footer {
+  & .footer__address__item__city{
+    @include font(normal, 300, 18px, 23px, 'Roboto')
+  }
+}
+
+
+.page-index .footer {
+  & .footer__address__item__streets{
+    @include font(normal, 300, 14px, 23px, 'Roboto')
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .footer__copy{
+    @include font(normal, 300, 24px, 24px, 'Ubuntu')
+  }
+}
+
+
+.page-index .footer {
+  & .footer__manufactured{
+    @include font(normal, 300, 15px, 24px, 'Ubuntu')
   }
 }
 
