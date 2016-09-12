@@ -614,38 +614,59 @@ block content
 
 
                 //- content
+                  //- unit
                 .interrogation-unit
                   .interrogation-unit-title Какого цвета окна вы хотите?
                   .interrogation-unit-content
                     form.interrogation-unit-form
-                      label Светлый дуб
-                        input(type="checkbox")
-                      label Орегон
-                        input(type="checkbox")
-                      label Махагон
-                        input(type="checkbox")
-                      label Дуб
-                        input(type="checkbox")
-                      button.interrogation-btn-vote Проголосовать
+                      ul
+                        li
+                          label.unit-form-radio
+                            input(type="radio" name="tree")
+                            span.radio-indicator
+                            .label-text Светлый дуб
+                        li
+                          label.unit-form-radio
+                            input(type="radio" name="tree")
+                            span.radio-indicator
+                            .label-text Орегон
+                        li
+                          label.unit-form-radio
+                            input(type="radio" name="tree")
+                            span.radio-indicator
+                            .label-text Махагон
+                        li
+                          label.unit-form-radio
+                            input(type="radio" name="tree" checked)
+                            span.radio-indicator
+                            .label-text Дуб
+                      button.interrogation-btn-vote(href="javascript:void(0)") Проголосовать
 
                     //- preview
                     .interrogation-unit-preview
-                      //- item
-                      .unit-preview__item
-                        .unit-preview__item__img
-                        .unit-preview__item__name Свелтый дуб
-                      //- item
-                      .unit-preview__item
-                        .unit-preview__item__img
-                        .unit-preview__item__name Орегон
-                      //- item
-                      .unit-preview__item
-                        .unit-preview__item__img
-                        .unit-preview__item__name Махагон
-                      //- item
-                      .unit-preview__item
-                        .unit-preview__item__img
-                        .unit-preview__item__name Дуб
+                      ul
+                        //- item
+                        li.unit-preview__item
+                          .unit-preview__item__img
+                            img(src="img/interrogation-preview-01.png")
+                          .unit-preview__item__name Свелтый дуб
+                        //- item
+                        li.unit-preview__item
+                          .unit-preview__item__img
+                            img(src="img/interrogation-preview-02.png")
+                          .unit-preview__item__name Орегон
+                        //- item
+                        li.unit-preview__item
+                          .unit-preview__item__img
+                            img(src="img/interrogation-preview-03.png")
+                          .unit-preview__item__name Махагон
+                        //- item
+                        li.unit-preview__item
+                          .unit-preview__item__img
+                            img(src="img/interrogation-preview-04.png")
+                          .unit-preview__item__name Дуб
+
+
 
 
 

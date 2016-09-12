@@ -2,6 +2,7 @@
   как вообще будет происходить адаптация, за счет каких контрольных точек и какого их поведения?
   http://bit.ly/2ca8FMg
 
+!! сперва перепроверь шабы на dropbox-e
 - -
 interrogation preview bg how to cut them out? .\/.
 feedbacks photo how to cut?
