@@ -1,5 +1,6 @@
 .page-index .partners {
   // bg 1
+  background: url('../img/partners_bg.jpg');
 }
 
 
@@ -7,6 +8,8 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+
+    padding: 0 20px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;
@@ -26,6 +29,7 @@
 
   & .container {
     padding: 100px 0;
+    position: relative;
   }
 
   & .partners-wrapper {
@@ -48,6 +52,12 @@
 .page-index .partners {
   & .partners-main-title{
     margin-bottom: 50px;
+
+    /* Text style for "наши партн" */
+    color: #444341;
+    @include font(normal, 700, 36px, 33px, 'Roboto Condensed');
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 
@@ -55,6 +65,10 @@
 .page-index .partners {
   & .partners-logo{
     margin-bottom: 20px;
+    margin-left: 75px;
+    background: url('../img/partners_logo.png');
+    width: 643px;
+    height: 142px;
   }
 }
 
@@ -69,6 +83,7 @@
 .page-index .partners {
   & .partners-content{
     margin-bottom: 50px;
+    margin-left: 75px;
   }
 }
 
@@ -76,6 +91,8 @@
 .page-index .partners {
   & .partners__title{
     margin-bottom: 20px;
+    @include font(normal, 700, 36px, 34px, 'Roboto Condensed');
+    color: #444341;
   }
 }
 
@@ -83,6 +100,12 @@
 .page-index .partners {
   & .partners__desc{
     margin-bottom: 35px;
+
+    & p {
+      width: 474px;
+      @include font(normal, 400, 18px, 27px, 'Roboto');
+      color: #444341;
+    }
   }
 }
 
@@ -90,6 +113,39 @@
 .page-index .partners {
   & .CLASS{
 
+  }
+}
+
+
+.page-index .partners {
+  & .partners__footer__btn{
+    display: block;
+    width: 224px;
+    height: 50px;
+    border: 1px solid #444341;
+    color: #444341;
+    @include font(normal, 400, 18px, 50px, 'Roboto');
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+
+.page-index .partners {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .partners {
+  & .partners-content-right{
+    position: absolute;
+    top: 223px;
+    right: 97px;
+    width: 388px;
+    height: 288px;
+    background: url('../img/partners_content-r.png');
   }
 }
 
@@ -97,6 +153,14 @@
 .page-index .partners {
   & .CLASS{
 
+  }
+}
+
+
+.page-index .partners {
+  & .partners-firms{
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -111,6 +175,33 @@
 .page-index .partners {
   & .CLASS{
 
+  }
+}
+
+
+.page-index .partners {
+  & .partners-firms__item__thumb{
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .partners {
+  & .partners-firms__item__title{
+    @include font(normal, 400, 18px, 14px, 'Roboto');
+    color: #444341;
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .partners {
+  & .partners-firms__item__desc{
+
+    & p {
+      @include font(normal, 300, 14px, 27px, 'Roboto');
+      color: #444341;
+    }
   }
 }
 
