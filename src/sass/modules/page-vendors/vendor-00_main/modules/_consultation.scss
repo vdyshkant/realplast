@@ -1,5 +1,6 @@
 .page-index .consultation {
   // bg 1
+  background: url('../img/consultation_bg.jpg');
 }
 
 
@@ -34,7 +35,8 @@
   }
 
   & .consultation-essence {
-    //
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -49,6 +51,10 @@
 .page-index .consultation {
   & .consultation-title{
     // flex
+
+    @include font(normal, 700, 36px, 35px, 'Roboto');
+    color: #444341;
+    margin-right: 60px;
   }
 }
 
@@ -56,6 +62,14 @@
 .page-index .consultation {
   & .consultation-btn{
     // flex
+    background: #42a455;
+    width: 170px;
+    height: 40px;
+    box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.21);
+    @include font(normal, 400, 18px, 40px, 'Roboto');
+    color: white;
+    text-align: center;
+    text-decoration: none;
   }
 }
 
