@@ -459,21 +459,43 @@ block content
 
                 //- tabs
                 .constructor__tabs
-                  .constructor__tabs__item Настройка комплектации
-                    .constructor__tabs__item-num 1
-                  .constructor__tabs__item Выбор типа окна
-                    .constructor__tabs__item-num 2
-                  .constructor__tabs__item Отправка на просчёт
-                    .constructor__tabs__item-arrow
+                  .shell-wide
+                    //- item
+                    .constructor__tabs__item.opened
+                      a.button(href="javascript:void(0)") Настройка комплектации
+                      .lines
+                        .lines__item
+                        .lines__item
+                        .lines__item
+                      .num 1
+                    //- item
+                    .constructor__tabs__item
+                      a.button(href="javascript:void(0)") Выбор типа окна
+                      .lines
+                        .lines__item
+                        .lines__item
+                        .lines__item
+                      .num 2
+                    //- item
+                    .constructor__tabs__item
+                      a.button(href="javascript:void(0)") Отправка на просчёт
+                      .lines
+                        .lines__item
+                        .lines__item
+                        .lines__item
+                      .num-arr
 
                 //- info
                 .constructor__info
                   .constructor__info-left
+                    img(src="img/constructor-window.png")
                   .constructor__info-right
                     .constructor__info-img
-                    .constructor__info-title
+                      img(src="img/constructor_info-right-img.png")
+                    .constructor__info-title Профиль
                     .constructor__info-text
-                      p
+                      p Основной элемент в конструкции металлопластикового окна – детали из профиля ПВХ (поливинилхлорида), из которых собирается окно. От качества пластикового профиля зависят надежность и срок службы окна
+                      p его изолирующие характеристики и внешний вид. Нужно выбирать окна, изготовленные только из качественного сертифицированного профиля, который отвечает всем необходимым стандартам и ГОСТам. В то же время, нет смысла «гоняться» за каким-то конкретным «самым лучшим» профилем. Принципиальной разницы между продукцией ведущих мировых производителей нет.
                     .constructor__info-colors
                       .info-colors__title Доступные цвета
                       .info-colors__checker
@@ -482,7 +504,7 @@ block content
                         .info-colors__checker__item
                         .info-colors__checker__item
                       .info-colors__description
-                        .info-colors__description__stable Выбрано:
+                        .info-colors__description__stable Выбрано:&nbsp;
                         .info-colors__description__name Темный дуб
 
 
@@ -495,42 +517,62 @@ block content
                       .config__item
                         .config__item-title Профиль
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img01'}])
                       //- 2
                       .config__item(class="active")
                         .config__item-title Стеклопакет
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img02'}])
                       //- 3
                       .config__item
                         .config__item-title доп. Стеклопакет
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img03'}])
                       //- 4
                       .config__item
                         .config__item-title Фурнитура
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img04'}])
                       //- 5
                       .config__item
                         .config__item-title доп. Фурнитура
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img05'}])
                       //- 6
                       .config__item
                         .config__item-title Откосы
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img06'}])
                       //- 7
                       .config__item
                         .config__item-title Подоконник
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img07'}])
                       //- 8
                       .config__item
                         .config__item-title Москитная сетка
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img08'}])
                       //- 9
                       .config__item
                         .config__item-title Рассечка
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img09'}])
                       //- 10
                       .config__item
                         .config__item-title Аксессуары
                         .config__item-img
+                          .config__item-icon
+                            +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img10'}])
                     a.config__btn-ahead Далее
 
                   .constructor__config__tab-content
