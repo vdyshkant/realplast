@@ -1,10 +1,14 @@
-
+.page-index .window {
+  // bg 1
+}
 
 
 .page-index .window {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+
+    padding: 0 20px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;
@@ -18,27 +22,65 @@
     }
   }
 
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    height: 737px;
+  }
+
   & .window-wrapper {
-    //
     position: relative;
+  }
+
+  & .window-essence {
+    //
   }
 }
 
 
 .page-index .window {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .window {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .window {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .window {
   & .window__sky{
-//
+    background: url('../img/window-sky.png') no-repeat center center;
+    width: 100%;
+    height: 737px;
   }
 }
 
 
 .page-index .window {
   & .window__window {
+    background: url('../img/window.png') no-repeat center top 0px;
+    height: 737px;
+
     position: absolute;
-    width: 970px;
+    width: 100%;
     // width: 83.62068965517241%;
-    top: 20px;
-    left: 50%;
+    top: 0px;
+    // left: 50%;
     transform: translteX(-50%);
 
     outline: 2px dashed yellowgreen;
@@ -49,11 +91,15 @@
 
 .page-index .window {
   & .window__rollet{
+    background: url('../img/window-rollet.png') no-repeat;
+
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 41px;
+    right: 122px;
           width: 430px;
           height: 330px;
+
+    padding-top: 70px;
 
     outline: 2px dashed magenta;
     outline-offset: -2px;
@@ -62,12 +108,35 @@
 
 
 .page-index .window {
+  & .window__rollet-title {
+    @include font(normal, 900, 60px, 46px, 'Roboto');
+    color: #444341;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+
+.page-index .window {
+  & .window__rollet-desc {
+    @include font(normal, 300, 32px, 42px, 'Roboto');
+    color: #444341;
+    text-align: center;
+    width: 345px;
+    margin: 0 auto;
+  }
+}
+
+
+.page-index .window {
   & .window__tree{
                                               // PARALLAX
-
+    background: url('../img/window-tree.png') no-repeat;
     position: absolute;
-    bottom: -1px;
-    right: 25%;
+    width: 359px;
+    height: 600px;
+    top: 353px;
+    right: 182px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;

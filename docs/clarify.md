@@ -10,6 +10,8 @@ offcanvas icons how to cut?
   articles-content-02
   partners_firm-0N
 
+  само окно, бекграунд окна и тд.
+
 акции clarify
 
 ~~DESIRE:~~
