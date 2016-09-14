@@ -1,0 +1,110 @@
+.page-index .firms {
+  // bg 1
+  background: url('../img/partners_bg.jpg');
+}
+
+
+.page-index .firms {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding-bottom: 100px;
+    //
+  }
+
+  & .firms-wrapper {
+    //
+  }
+
+  & .firms-essence {
+    //
+  }
+}
+
+
+.page-index .firms {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .firms {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .firms {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .firms {
+  & .firms{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.page-index .firms {
+  & .firms__item{
+    width: 190px;
+  }
+}
+
+
+.page-index .firms {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .firms {
+  & .firms__item__thumb{
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .firms {
+  & .firms__item__title{
+    @include font(normal, 400, 18px, 14px, 'Roboto');
+    color: #444341;
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .firms {
+  & .firms__item__desc{
+
+    & p {
+      @include font(normal, 300, 14px, 27px, 'Roboto');
+      color: #444341;
+    }
+  }
+}
