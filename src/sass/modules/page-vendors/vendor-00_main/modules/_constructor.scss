@@ -451,7 +451,7 @@
     transition: .3s ease-out;
     width: 75px;
     height: 75px;
-    background: url(../img/config__item-img-bg.png) no-repeat;
+    // background: url(../img/config__item-img-bg.png) no-repeat;
     // box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.21);
 
 
@@ -469,6 +469,12 @@
         border-right: 15px solid transparent;
         border-top: 10px solid #0072bb;
         clear: both;
+    }
+
+    & .icon-img {
+      box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.21); 
+      width: 75px;
+      height: 75px;
     }
   }
 }
