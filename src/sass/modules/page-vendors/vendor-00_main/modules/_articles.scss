@@ -1,6 +1,7 @@
 .page-index .articles {
   // bg 1
   background: url('../img/articles_bg.jpg');
+  box-shadow: 2px 2px 7px 0px rgba(40, 4, 27, 0.22);
 }
 
 
@@ -178,6 +179,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
@@ -191,7 +193,7 @@
 
 .page-index .articles {
   & .articles__item-right__date{
-    @include font(normal, 300, 14px, 14px, 'Roboto');
+    @include font(italic, 300, 14px, 14px, 'Roboto');
     color: #444341;
   }
 }
@@ -214,5 +216,27 @@
 .page-index .articles {
   & .CLASS{
 
+  }
+}
+
+
+.page-index .articles {
+  & .articles__expand{
+
+  }
+}
+
+
+.page-index .articles {
+  & .articles__expand__btn{
+    display: block;
+    width: 290px;
+    height: 40px;
+    @include font(normal, 700, 18px, 40px, 'Roboto');
+    color: #fff;
+    text-align: center;
+    background: #42a455;
+    text-decoration: none;
+    margin: 0 auto;
   }
 }
