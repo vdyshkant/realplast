@@ -15,6 +15,7 @@ NOTES
 RESET
 */
 
+// SMOOTH DIV SCROLL
 
 
 
@@ -85,3 +86,17 @@ RESET
 
 
 /* == eof $ MAIN == */
+
+
+
+// smooth div scroll
+
+$(document).ready(function() {
+	$("#makeMeScrollable").smoothDivScroll({
+			mousewheelScrolling: "allDirections",
+			manualContinuousScrolling: true,
+			autoScrollingMode: "onStart"
+	});
+});
+
+// smooth div scroll end
