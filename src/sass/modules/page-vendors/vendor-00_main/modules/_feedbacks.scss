@@ -138,13 +138,6 @@
         }
       }
 
-      & .show-all {
-        text-align: center;
-        @include font(normal, 700, 18px, 21px, 'Roboto');
-        color: #444341;
-        letter-spacing: .5px;
-      }
-
       & .slider-item-author__name {
         @include font(normal, 700, 18px, 17px, 'Roboto');
       }
@@ -202,8 +195,26 @@
 .page-index .feedbacks {
   & .expand{
     border-top: 1px solid #000;
-    padding: 20px 0 15px;
-    text-align: center;
+
+    & .show-all {
+      display: block;
+      text-align: center;
+      @include font(normal, 700, 18px, 50px, 'Roboto');
+      color: #444341;
+      letter-spacing: .5px;
+      width: 100%;
+      height: 50px;
+      transition: .3s ease-in-out;
+      &:hover {
+        color: #fff;
+        background: #42a455;
+      }
+
+      &:active {
+        color: #fff;
+        background: #42a455;
+      }
+    }
   }
 }
 
