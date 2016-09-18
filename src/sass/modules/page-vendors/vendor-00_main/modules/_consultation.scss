@@ -9,8 +9,8 @@
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -70,6 +70,17 @@
     color: white;
     text-align: center;
     text-decoration: none;
+    transition: .3s ease-in-out;
+    box-shadow: 3px 3px 7px 0px rgba(26, 47, 60, 0.21);
+
+
+    &:hover {
+      background: #3a8147;
+    }
+
+    &:active {
+      background: #3a8147;
+    }
   }
 }
 
