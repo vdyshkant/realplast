@@ -9,8 +9,10 @@
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -27,6 +29,7 @@
 
   & .container {
     padding: 210px 0 100px;
+    height: 1020px;
   }
 
   & .feedbacks-wrapper {
@@ -78,7 +81,7 @@
 
 .page-index .feedbacks {
   & .slider-stage{
-    margin-top: 35px;
+    position: relative;
   }
 }
 
@@ -100,23 +103,58 @@
 
 .page-index .feedbacks {
   & .slider-item{
-    width: 255px;
-    margin-right: 30px;
+    // min-width: 255px;
+    width: 400px;
+    // margin-right: 30px;
+    &:nth-child(1) .slider-item__content {
+      padding: 25px 20px;
+    }
 
+    & .slider-item-author__img {
+      display: block;
+      margin: 0 auto;
+    }
+
+
+    // ACTIVE
     &.active {
       width: 400px;
 
       & .slider-item__content {
         padding: 0;
-        border: 1px solid #000;
+
+        & p {
+          text-indent: 20px;
+          @include font(normal, 400, 18px, 23px, 'Roboto');
+          color: #444341;
+          margin-bottom: 25px;
+        }
+
+        & date {
+          display: block;
+          text-align: right;
+          @include font(italic, 300, 14px, 13px, 'Roboto');
+          color: #444341;
+        }
+      }
+
+      & .show-all {
+        text-align: center;
+        @include font(normal, 700, 18px, 21px, 'Roboto');
+        color: #444341;
+        letter-spacing: .5px;
       }
 
       & .slider-item-author__name {
         @include font(normal, 700, 18px, 17px, 'Roboto');
       }
+
+
     }
   }
 }
+
+
 
 
 .page-index .feedbacks {
@@ -131,6 +169,8 @@
     background: url('../img/feedbacks_item_bg.jpg');
     margin-bottom: 20px;
     padding: 40px 20px;
+    position: relative;
+    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.41);
   }
 }
 
@@ -142,8 +182,17 @@
 }
 
 
-.page-index .feedbacks {
+.page-index .slider-item:nth-child(1){
   & .slider-item__content p{
+    @include font(italic, 300, 14px, 23px, 'Roboto');
+    color: #444341;
+
+  }
+}
+
+
+.page-index .slider-item:nth-child(2){
+  & .slider-item:nth-child(2)__content p{
     @include font(normal, 400, 18px, 23px, 'Roboto');
     color: #444341;
   }
@@ -215,3 +264,72 @@
 
   }
 }
+
+
+// CAROUSEL
+
+#carousel {
+  //  width:960px;
+  //  border:1px solid #222;
+   height:700px;
+   position:relative;
+   clear:both;
+
+  //  outline: 2px dashed limegreen;
+  //  outline-offset: -2px;
+ }
+ #carousel .slider-item {
+   visibility:hidden; /* hide images until carousel can handle them */
+   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+
+  //  outline: 2px dashed crimson;
+  //  outline-offset: -2px;
+ }
+ #carousel h2 {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+ }
+
+ .split-left {
+   width:450px;
+   float:left;
+ }
+ .split-right {
+   width:400px;
+   float:left;
+   margin-left:10px;
+ }
+
+
+
+// controls
+.page-index .feedbacks {
+  & .controls{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 100%;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .controls-prev{
+    left: 0px;
+    top: 0;
+    position: absolute;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .controls-next{
+    right: 0px;
+    top: 0;
+    position: absolute;
+  }
+}
+
+// CAROUSEL end
