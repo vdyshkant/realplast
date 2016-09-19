@@ -1,6 +1,6 @@
 .page-index .footer {
   // bg 1
-  background: #313131 url('../img/footer_bg.jpg');
+  background: url('../img/footer_bg-pattern.jpg');
   color: #fff;
 }
 
@@ -12,8 +12,8 @@
 
     padding: 0 20px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -31,6 +31,8 @@
   & .container {
     padding-top: 65px;
     padding-bottom: 75px;
+    background: url('../img/footer_bg.jpg') no-repeat 50% 0%;
+    background-size: cover;
   }
 
   & .footer-wrapper {
@@ -45,9 +47,8 @@
 
 .page-index .footer {
   & .footer-essence .row{
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
+    margin-bottom: 50px;
   }
 }
 
@@ -79,6 +80,11 @@
 .page-index .footer {
   & .footer-box__link{
     @include font(normal, 300, 14px, 24px, 'Roboto');
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -128,6 +134,13 @@
 
 
 .page-index .footer {
+  & .footer__socials{
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-index .footer {
   & .footer__socials-wrapper{
     display: -webkit-flex;
     display: -ms-flex;
@@ -143,13 +156,40 @@
     width: 45px;
     height: 45px;
     border: 1px solid #fff;
+    position: relative;
+    display: block;
+
+    & .svg-icon {
+      position: absolute;
+      fill: #fff;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 
 .page-index .footer {
-  & .CLASS{
+  & .icon-socials-fb{
+    width: 13px;
+    height: 30px;
+  }
+}
 
+
+.page-index .footer {
+  & .icon-socials-vk{
+    width: 30px;
+    height: 17px;
+  }
+}
+
+
+.page-index .footer {
+  & .icon-socials-yt{
+    width: 30px;
+    height: 21px;
   }
 }
 
@@ -171,6 +211,10 @@
 .page-index .footer {
   & .footer__address__item__streets{
     @include font(normal, 300, 14px, 23px, 'Roboto')
+
+    & li {
+      padding-left: 10px;
+    }
   }
 }
 
@@ -183,8 +227,11 @@
 
 
 .page-index .footer {
-  & .CLASS{
-
+  & .footer-bottom-row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -192,6 +239,7 @@
 .page-index .footer {
   & .footer__copy{
     @include font(normal, 300, 24px, 24px, 'Ubuntu')
+    margin-right: 45px;
   }
 }
 
@@ -199,6 +247,16 @@
 .page-index .footer {
   & .footer__manufactured{
     @include font(normal, 300, 15px, 24px, 'Ubuntu')
+
+    & span {
+      margin-right: 10px;
+    }
+
+    & .icon-manufactured {
+      fill: #fff;
+      width: 55px;
+      height: 21px;
+    }
   }
 }
 

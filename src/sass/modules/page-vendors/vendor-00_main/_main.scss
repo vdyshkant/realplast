@@ -37,6 +37,13 @@ RESET
 
 /* == eof $ CONTENTS == */
 
+
+@import "modules/offcanvas-nav-side";
+@import "modules/offcanvas-right-side";
+
+
+
+
 // 01
 @import "modules/window";
 // 02
@@ -61,6 +68,8 @@ RESET
 @import "modules/articles";
 // 12
 @import "modules/partners";
+
+@import "modules/firms";
 // 13
 
 .page-index {
