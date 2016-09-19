@@ -2,6 +2,9 @@
   // bg 1
   background: url("../img/interrogation_foreground.png") no-repeat left -360px top -90px,
               url('../img/interrogation_bg.jpg');
+  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -12,8 +15,8 @@
 
     padding: 0 20px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -59,8 +62,8 @@
     text-align: center;
 
 
-    outline: 2px dashed violet;
-    outline-offset: -2px;
+    // outline: 2px dashed violet;
+    // outline-offset: -2px;
   }
 }
 
@@ -106,8 +109,8 @@
     // margin-top: 45px;
     margin-left: 190px;
 
-    outline: 2px dashed brown;
-    outline-offset: -2px;
+    // outline: 2px dashed brown;
+    // outline-offset: -2px;
 
     display: flex;
     flex-direction: row;
@@ -234,8 +237,8 @@
     width: 550px;
     margin-right: 20px;
 
-    outline: 2px dashed teal;
-    outline-offset: -2px;
+    // outline: 2px dashed teal;
+    // outline-offset: -2px;
   }
 }
 
@@ -250,12 +253,12 @@
 .page-index .interrogation {
   & .interrogation-unit-preview{
     width: 360px;
-    height: 280px;
-    padding-top: 45px;
-    padding-left: 95px;
+    height: 286px;
+    padding-top: 6px;
+    // padding-left: 95px;
 
-    outline: 2px dashed crimson;
-    outline-offset: -2px;
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
   }
 }
 
