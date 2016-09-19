@@ -22,6 +22,10 @@ append 001_config
   //- eof smoothDivScroll
 
   - var waterwheelCarousel = true
+  //- counter:
+  - var animateNumber = true
+  - var animateCss = true
+  - var wowJs = true
 
 
 
@@ -745,7 +749,7 @@ block content
         .shell
           .container
             .range
-              .counter-essence
+              .counter-essence#counter
 
 
                 .counter-achievement
@@ -755,15 +759,15 @@ block content
                 .counter-numbers
                   //- item
                   .counter-numbers__item
-                    .counter-numbers__item__num 1427
+                    .counter-numbers__item__num.counter-item 0
                     .counter-numbers__item__title Человек стали нашими клиентами
                   //- item
                   .counter-numbers__item
-                    .counter-numbers__item__num 83%
+                    .counter-numbers__item__num.counter-middle-item 0
                     .counter-numbers__item__title Клиентов готовы нас рекомендовать
                   //- item
                   .counter-numbers__item
-                    .counter-numbers__item__num 107 427
+                    .counter-numbers__item__num.counter-item 0
                     .counter-numbers__item__title Клиентов за 11 лет работы
 
       // counter end

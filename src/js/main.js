@@ -17,7 +17,7 @@ RESET
 
 // SMOOTH DIV SCROLL
 // CAROUSEL
-
+// COUNTER
 
 
 /* ================================================
@@ -837,7 +837,7 @@ $(document).ready(function () {
 
   $('#prev').bind('click', function () {
     carousel.prev();
-    return false
+    return false;
   });
 
   $('#next').bind('click', function () {
@@ -854,3 +854,52 @@ $(document).ready(function () {
 });
 
 // CAROUSEL end
+
+
+
+// rising COUNTER (3 blocks)
+(function($) {
+    $(window).scroll(function() {
+        $('#counter').each(function() {
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 650) {
+                animateCounter();
+                animateCounterMiddle();
+            }
+        });
+    });
+
+    function animateCounter() {
+        if ($('#counter').length > 0) {
+            var numbers = [1427, 107427],
+                duration = [1.5, 3.5],
+                numberp = $('#counter .counter-item'),
+                comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+
+            numberp.each(function(i) {
+                $(this).animateNumber({
+                    number: numbers[i],
+                    numberStep: comma_separator_number_step
+                }, duration[i] * 1000);
+            });
+        }
+    }
+    function animateCounterMiddle() {
+        if ($('#counter').length > 0) {
+            var numbers = [83],
+                duration = [4.5],
+                numberp = $('#counter .counter-middle-item'),
+                comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+            var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
+
+            numberp.each(function(i) {
+                $(this).animateNumber({
+                    number: numbers[i],
+                    numberStep: percent_number_step
+                }, duration[i] * 1000);
+            });
+        }
+    }
+})(jQuery);
+// rising COUNTER (3 blocks) end
