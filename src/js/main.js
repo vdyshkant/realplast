@@ -30,11 +30,11 @@ RESET
 
   /* отрабатывать только для определенной страницы
     ================================================ */
-  (function($) {
-   if($('body').is('.page-home')){
-     var a = "initial_template";
-   }
-  })(jQuery);
+  // (function($) {
+  //  if($('body').is('.page-home')){
+  //    var a = "initial_template";
+  //  }
+  // })(jQuery);
   /* eof ^^^ */
 
 
@@ -43,9 +43,9 @@ RESET
 
   /* отрабатывать только для определенной страницы
     ================================================ */
-  (function() {
-    var a = "initial_template";
-  })();
+  // (function() {
+  //   var a = "initial_template";
+  // })();
   /* eof ^^^ */
 
 
@@ -55,9 +55,9 @@ RESET
     https://learn.jquery.com/using-jquery-core/document-ready/
     https://www.sitepoint.com/types-document-ready/
     ================================================ */
-  $( document ).ready(function() {
-    var a = "initial_template";
-  });
+  // $( document ).ready(function() {
+  //   var a = "initial_template";
+  // });
   /* eof ^^^ */
 
 
