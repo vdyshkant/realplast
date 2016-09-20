@@ -25,6 +25,7 @@
 .page-index .slider-sales {
   & .slider-sales-wrapper{
     position: relative;
+    display: block;
   }
 }
 
@@ -38,11 +39,12 @@
 
 .page-index .slider-sales {
   & .slider-sales__item{
+    display: block;
     position: relative;
     height: 630px;
 
-    outline: 2px dashed darkolivegreen;
-    outline-offset: -2px;
+    // outline: 2px dashed darkolivegreen;
+    // outline-offset: -2px;
 
     &:nth-child(1) {
       background: url('../img/slider-sales_bg.png') no-repeat;
@@ -60,8 +62,8 @@
     right: 0;
 
 
-    outline: 2px dashed orangered;
-    outline-offset: -2px;
+    // outline: 2px dashed orangered;
+    // outline-offset: -2px;
   }
 }
 
@@ -70,13 +72,13 @@
   & .slider-sales__item__stock .stock__content {
     background: url('../img/slider-sales_stock_bg.png') no-repeat;
     background-position: 0 -40px;
-    height: 380px;
+    height: 430px;
     width: 370px;
 
     padding: 35px 40px 20px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
   }
 }
 
@@ -84,11 +86,14 @@
 .page-index .slider-sales {
   & .slider-sales__item__stock .stock__timer {
     background: url('../img/slider-sales_stock_bg-timer.png') no-repeat;
-    height: 200px;
+    background-position: 0 -40px;
+    height: 160px;
     width: 100%;
 
-    outline: 2px dashed violet;
-    outline-offset: -2px;
+    padding-top: 55px;
+
+    // outline: 2px dashed violet;
+    // outline-offset: -2px;
   }
 }
 
@@ -98,6 +103,7 @@
     @include font(normal, 700, 32px, 29px, 'Roboto');
     color: #fff4f4;
     text-align: center;
+    margin-bottom: 15px;
 
     & span {
       position: relative;
@@ -118,6 +124,9 @@
 
 .page-index .stock__content {
   & .stock__desc{
+    width: 210px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     @include font(normal, 700, 18px, 27px, 'Roboto');
     color: #fff4f4;
     text-align: center;
@@ -130,17 +139,21 @@
   & input{
     margin-bottom: 30px;
     padding: 20px;
-    @include font(normal, 300, 14px, 10px, 'Roboot');
+    @include font(normal, 300, 14px, 10px, 'Roboto');
     color: #8e8e8e;
 
-
+    width: 280px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #fff;
   }
 }
 
 
 .page-index .stock__content {
   & .stock__btn {
-    width: 100%;
+    width: 280px;
     height: 50px;
     @include font(normal, 400, 18px, 50px, 'Roboto');
     color: #f9f9f9;
@@ -148,6 +161,8 @@
     text-align: center;
     text-decoration: none;
     background: #42a455;
+    box-shadow: 3px 3px 7px 0px rgba(26, 47, 60, 0.21);
+    margin-bottom: 20px;
 
 
   }
@@ -169,18 +184,19 @@
     @include font(normal, 700, 18px, 17px, 'Roboto');
     color: #444341;
     text-align: center;
+    margin-bottom: 5px;
   }
 }
-
-
-
-.page-index .stock__timer {
-  & .stock__timer-item{
-  color: #444341;
-  text-align: center;
-
-  }
-}
+//
+//
+//
+// .page-index .stock__timer {
+//   & .stock__timer-item{
+//   color: #444341;
+//   text-align: center;
+//
+//   }
+// }
 
 
 .page-index .stock__timer {
@@ -232,8 +248,146 @@
 }
 
 
+
+
+
+// slider
+
+
 .page-index .slider-sales {
-  & .CLASS{
-    //
+  & .bx-pager {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
+
+
+.page-index .slider-sales {
+  & .bx-pager-item {
+    transition: 300ms ease-in-out;
+  }
+}
+
+
+.page-index .slider-sales {
+  & .bx-pager-link {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #fff;
+    border: 2px solid #42a455;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+    margin-right: 10px;
+
+    &.active {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #42a455;
+        border-radius: 50%;
+        transition: 300ms ease-in-out;
+      }
+    }
+  }
+}
+
+
+// slider end
+
+
+// countdown
+
+/**
+ *	This element is created inside your target element
+ *	It is used so that your own element will not need to be altered
+ **/
+
+#DateCountdown {
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
+  // height: 50px;
+  margin: 0 auto;
+
+
+  width: 290px;
+  height: 75px;
+  padding: 0px;
+  box-sizing: border-box;
+  // background-color: #E0E8EF;
+}
+
+.time_circles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ *	This is all the elements used to house all text used
+ * in time circles
+ **/
+.time_circles > div {
+    position: absolute;
+    text-align: center;
+}
+
+/**
+ *	Titles (Days, Hours, etc)
+ **/
+.time_circles > div > h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Century Gothic', Arial;
+    line-height: 1;
+    // @include font(normal, 700,
+
+    // customs
+    font-family: Roboto;
+    // font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #444341;
+}
+
+/**
+ *	Time numbers, ie: 12
+ **/
+.time_circles > div > span {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Century Gothic', Arial;
+    line-height: 1;
+    font-weight: bold;
+
+    // customs
+    font-family: Roboto;
+    // font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #444341;
+    margin-bottom: 2px;
+}
+
+
+
+
+
+
+
+// countdown end
