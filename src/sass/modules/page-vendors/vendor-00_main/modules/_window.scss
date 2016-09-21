@@ -10,8 +10,8 @@
 
     padding: 0 20px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -64,7 +64,8 @@
 
 .page-index .window {
   & .window__sky{
-    background: url('../img/window-sky.png') no-repeat center center;
+    // background: url('../img/window-sky.png') no-repeat center center;
+    background: #fff;
     width: 100%;
     height: 737px;
   }
@@ -73,7 +74,7 @@
 
 .page-index .window {
   & .window__window {
-    background: url('../img/window.png') no-repeat center top 0px;
+    background: url('../img/window.png') no-repeat left -357px top 0px;
     height: 737px;
 
     position: absolute;
@@ -83,8 +84,8 @@
     // left: 50%;
     transform: translteX(-50%);
 
-    outline: 2px dashed yellowgreen;
-    outline-offset: -2px;
+    // outline: 2px dashed yellowgreen;
+    // outline-offset: -2px;
   }
 }
 
@@ -95,14 +96,14 @@
 
     position: absolute;
     top: 41px;
-    right: 122px;
+    right: 85px;
           width: 430px;
           height: 330px;
 
     padding-top: 70px;
 
-    outline: 2px dashed magenta;
-    outline-offset: -2px;
+    // outline: 2px dashed magenta;
+    // outline-offset: -2px;
   }
 }
 
@@ -131,15 +132,42 @@
 .page-index .window {
   & .window__tree{
                                               // PARALLAX
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 737px;
+
+    // outline: 1px solid red;
+    // outline-offset: -1px;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 115px;
+    //   top: 75px;
+    //   width: 4px;
+    //   height: 4px;
+    //   background: crimson;
+    // }
+  }
+}
+
+
+.page-index .window {
+  & #tree{
+                                              // PARALLAX
     background: url('../img/window-tree.png') no-repeat;
     position: absolute;
     width: 359px;
     height: 600px;
-    top: 353px;
-    right: 182px;
+    top: 370px;
+    right: 135px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    z-index: 2;
   }
 }
 
@@ -149,3 +177,47 @@
     //
   }
 }
+
+
+// RAINY
+
+
+
+.page-index .window {
+  & .window__rainy{
+    // position: relative;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+  }
+}
+
+
+.page-index .window {
+  & video, canvas {
+  	width: 100%;
+  	vertical-align: top;
+  }
+}
+
+
+.page-index .window {
+  & canvas {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  }
+}
+
+
+.page-index .window {
+  & .CLASS{
+
+  }
+}
+
+
+
+// RAINY END

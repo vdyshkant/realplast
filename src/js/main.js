@@ -21,7 +21,7 @@ RESET
 // SLIDER
 // COUNTDOWN
 // FEATURES-EXPAND
-
+// PARALLAX for tree
 
 /* ================================================
    templates
@@ -37,7 +37,7 @@ RESET
   //  if($('body').is('.page-home')){
   //    var a = "initial_template";
   //  }
-  // })(jQuery);
+  // })(jQuery); // eof autoFunction
   /* eof ^^^ */
 
 
@@ -48,7 +48,7 @@ RESET
     ================================================ */
   // (function() {
   //   var a = "initial_template";
-  // })();
+  // })(); // eof autoFunction
   /* eof ^^^ */
 
 
@@ -60,7 +60,7 @@ RESET
     ================================================ */
   // $( document ).ready(function() {
   //   var a = "initial_template";
-  // });
+  // }); // eof .ready
   /* eof ^^^ */
 
 
@@ -309,3 +309,63 @@ function expandFeaturesItem(identifier){
 // по значению переменной этого id обращаемся к необходимому нам блоку и добавляем ему класс .active
 // выключение по тому же принципу либо через toggle
 // описать при каких услових закрывать менюшку
+
+
+
+// parallax
+
+
+
+$(document).ready(function() {
+
+	(function() {
+		 var isIE = navigator.userAgent.indexOf("MSIE ") > 0 || navigator.userAgent.indexOf("Trident") > 0 || navigator.userAgent.indexOf("Edge") > 0,
+				 wScroll = $(window).scrollTop();
+
+		 // parallax effect function
+		 function parallax(prlxBg, prlxContainer, factor) {
+				 if (isIE) {
+						 $(prlxBg).css({
+								 'transform': 'translateY(0px)'
+						 });
+						 return;
+				 }
+				 if ((wScroll + $(window).height()) >= $(prlxBg).offset().top) {
+						 console.log("true!");
+						 $(prlxBg).css({
+								 'transform': 'translateY(' + (($(prlxContainer).offset().top - wScroll) / $(window).height() * 100) * factor + '%)'
+						 });
+				 }
+		 }
+
+		 $(window).scroll(function() {
+				 wScroll = $(this).scrollTop();
+
+				 if ($('.parallax-index').length > 0) {
+						 parallax('.window__tree__essence', '.parallax-index', 0.6);
+				 }
+		 });
+	})();
+
+
+}); // eof .ready
+
+
+// parallax END
+
+
+
+// rainy
+
+// var ctx = document.getElementById('title').getContext("2d");
+//
+// // Draw black rectangle
+// ctx.fillStyle = "white";
+// ctx.fillRect(0, 0, 846, 480);
+// ctx.font = 'italic 900 270px "Exo 2"';
+//
+// // Punch out the text!
+// ctx.globalCompositeOperation = 'destination-out';
+// ctx.fillText("Rainy", 40, 380);
+
+// rainy END
