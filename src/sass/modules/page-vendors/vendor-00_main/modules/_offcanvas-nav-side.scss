@@ -1,3 +1,270 @@
-.offcanvas-nav-side {
+
+.page-index .offcanvas-nav-side {
+  // bg 1
+}
+
+
+.page-index .offcanvas-nav-side {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .offcanvas-nav-side-wrapper {
+    //
+  }
+
+  & .offcanvas-nav-side-essence {
+    //
+  }
+}
+
+
+.page-index .offcanvas-nav-side {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .offcanvas-nav-side {
+    // display: none;
+    width: 100px;
+    background: #eaeae6;
+    box-shadow: 3px 0px 5px 0px rgba(23, 26, 27, 0.11);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99000px;
+    z-index: 11;
+}
+
+
+.page-index .offcanvas-nav-side__menu__item {
+  & .logo {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background: url('../img/offcanvas-nav_logo.png') no-repeat;
+    width: 69px;
+    height: 65px;
+  }
+}
+
+
+.page-index .offcanvas-nav-side__menu__item {
+  position: relative;
+  height: 105px;
+  width: 100px;
+}
+
+
+.page-index .offcanvas-nav-side__menu__item .link {
+  display: block;
+  position: relative;
+  height: 105px;
+  width: 100px;
+  border-bottom: 1px dashed #636361;
+  text-decoration: none;
+}
+
+
+.page-index .offcanvas-nav-side__menu__item {
+  &.item-windows .link > .link__text {
+    display: block;
+
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444341;
+    @include font(normal, 400, 15px, 12px, 'Roboto Condensed')
+  }
+  & .icon-item-windows{
+    width: 48px;
+    height: 39px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+}
+
+
+.page-index .offcanvas-nav-side__menu__item {
+  &.item-glazing .link > .link__text {
+    display: block;
+
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444341;
+    @include font(normal, 400, 15px, 12px, 'Roboto Condensed')
+  }
+  & .icon-item-glazing{
+    width: 48px;
+    height: 39px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+}
+
+
+.page-index .offcanvas-nav-side__menu__item {
+  &.item-production .link > .link__text {
+    display: block;
+
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444341;
+    @include font(normal, 400, 15px, 12px, 'Roboto Condensed')
+  }
+  & .icon-item-production{
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+}
+
+
+.page-index .offcanvas-nav-side__menu__item {
+  &.item-prices .link > .link__text {
+    display: block;
+
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444341;
+    @include font(normal, 400, 15px, 12px, 'Roboto Condensed')
+  }
+  & .icon-item-prices{
+    width: 48px;
+    height: 44px;
+    position: absolute;
+    top: 16px;
+    left: 26px;
+  }
+}
+
+
+.page-index .offcanvas-nav-side__menu__item.item-btm {
+  width: auto;
+  height: auto;
+  & .link{
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+  }
+  & .link__text {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444341;
+    @include font(normal, 400, 15px, 24px, 'Roboto Condensed')
+  }
+}
+
+
+.page-index .offcanvas-nav-side {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .offcanvas-nav-side__sub-menus {
   display: none;
+}
+
+
+// menu-items
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+// menu-items END
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .offcanvas-nav-side {
+  & .CLASS{
+
+  }
 }

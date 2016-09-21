@@ -1,0 +1,18 @@
+<svg version="1.1" id="svg-item-prices" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 23.3 21.2" enable-background="new 0 0 23.3 21.2" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0" width="23.3" height="21.2"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#1F587D" d="M11.2,1.9c0.4-0.1,0.9-0.1,1.3-0.1c4.5,0,8.1,3.6,8.1,8.1c0,1.6-0.5,3-1.2,4.3
+		c0.2-0.8,0.3-1.6,0.3-2.5C19.7,6.7,16,2.6,11.2,1.9 M22.4,9.9c0,0.9-0.1,1.7-0.3,2.5c0.8-1.2,1.2-2.7,1.2-4.3
+		c0-4.5-3.6-8.1-8.1-8.1c-0.4,0-0.9,0-1.3,0.1C18.7,0.8,22.4,4.9,22.4,9.9 M9,4.5c4.2,0,7.7,3.5,7.7,7.7s-3.5,7.7-7.7,7.7
+		s-7.7-3.5-7.7-7.7S4.8,4.5,9,4.5 M9,3.2c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S14,3.2,9,3.2"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#1F587D" points="12.9,11.8 10.2,11.8 10.2,16.6 8.3,16.6 8.3,11.8 5.6,11.8 5.6,10.2 
+		12.9,10.2 	"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#1F587D" points="12.9,9.4 10.2,9.4 8.3,9.4 5.6,9.4 5.6,7.8 12.9,7.8 	"/>
+</g>
+</svg>

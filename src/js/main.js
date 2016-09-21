@@ -331,7 +331,7 @@ $(document).ready(function() {
 						 return;
 				 }
 				 if ((wScroll + $(window).height()) >= $(prlxBg).offset().top) {
-						 console.log("true!");
+						//  console.log("true!");
 						 $(prlxBg).css({
 								 'transform': 'translateY(' + (($(prlxContainer).offset().top - wScroll) / $(window).height() * 100) * factor + '%)'
 						 });
@@ -342,7 +342,7 @@ $(document).ready(function() {
 				 wScroll = $(this).scrollTop();
 
 				 if ($('.parallax-index').length > 0) {
-						 parallax('.window__tree__essence', '.parallax-index', 0.6);
+						 parallax('.window__tree__essence', '.parallax-index', 0.2);
 				 }
 		 });
 	})();

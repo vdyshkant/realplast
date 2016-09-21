@@ -83,10 +83,17 @@ block content
           //- menu
           ul.offcanvas-nav-side__menu
 
-
             //- menu-item
             li.offcanvas-nav-side__menu__item
-              a Окна
+              .logo
+
+
+
+            //- menu-item
+            li.offcanvas-nav-side__menu__item.item-windows
+              a.link(href="#")
+                +svg([{'class': 'icon-item-windows svg-icon', 'pathid': 'svg-item-windows', 'filename':'offcanvas-nav_item-01'}])
+                .link__text Окна
 
                 //- sub-menus
                 ul.offcanvas-nav-side__sub-menus
@@ -132,8 +139,10 @@ block content
 
 
             //- menu-item
-            li.offcanvas-nav-side__menu__item
-              a Остекление
+            li.offcanvas-nav-side__menu__item.item-glazing
+              a.link(href="#")
+                +svg([{'class': 'icon-item-glazing svg-icon', 'pathid': 'svg-item-glazing', 'filename':'offcanvas-nav_item-02'}])
+                .link__text Остекление
 
                 //- sub-menus
                 ul.offcanvas-nav-side__sub-menus
@@ -179,8 +188,10 @@ block content
 
 
             //- menu-item
-            li.offcanvas-nav-side__menu__item
-              a Продукция
+            li.offcanvas-nav-side__menu__item.item-production
+              a.link(href="#")
+                +svg([{'class': 'icon-item-production svg-icon', 'pathid': 'svg-item-production', 'filename':'offcanvas-nav_item-03'}])
+                .link__text Продукция
 
                 //- sub-menus
                 ul.offcanvas-nav-side__sub-menus
@@ -226,8 +237,10 @@ block content
 
 
             //- menu-item
-            li.offcanvas-nav-side__menu__item
-              a Цены
+              a.link(href="#")li
+                .offcanvas-nav-side__menu__item.item-prices
+                +svg([{'class': 'icon-item-prices svg-icon', 'pathid': 'svg-item-prices', 'filename':'offcanvas-nav_item-04'}])
+                .link__text Цены
 
                 //- sub-menus
                 ul.offcanvas-nav-side__sub-menus
@@ -273,14 +286,17 @@ block content
 
 
 
-            li.offcanvas-nav-side__menu__item
-              a Услуги
+            li.offcanvas-nav-side__menu__item.item-btm
+              a.link(href="#")
+                .link__text Услуги
 
-            li.offcanvas-nav-side__menu__item
-              a О компании
+            li.offcanvas-nav-side__menu__item.item-btm
+              a.link(href="#")
+                .link__text О компании
 
-            li.offcanvas-nav-side__menu__item
-              a Полезная Информация
+            li.offcanvas-nav-side__menu__item.item-btm
+              a.link(href="#")
+                .link__text Полезная Информация
               //- . . . . . . . as above
 
       // offcanvas nav side end
