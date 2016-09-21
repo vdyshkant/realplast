@@ -10,10 +10,10 @@
     margin: 0 auto;
     max-width: 1160px;
 
-    padding: 0 20px;
+    // padding: 0 20px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -29,7 +29,7 @@
   }
 
   & .container {
-    padding-top: 100px;
+    padding: 100px 0;
   }
 
   & .PROTO-wrapper {
@@ -71,7 +71,6 @@
 }
 
 
-
 .page-index .features {
   & .features-content{
     display: flex;
@@ -85,15 +84,127 @@
 
 
 .page-index .features {
+  & .features__item__row{
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+
+.page-index .features {
+  & .row__items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  	flex-wrap: wrap;
+    align-items: flex-start;
+
+    margin-bottom: 000;
+
+
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+
+  }
+}
+
+
+.page-index .features {
+  & .row__extra{
+    // clear: both;
+    // display: flex;
+    // justify-content: space-between;
+  	// flex-wrap: wrap;
+    // align-items: flex-start;
+    //
+    // margin-bottom: 000;
+
+    // outline: 2px dashed black;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-index .features {
+  & .extra__item{
+    // clear: both;
+    // display: flex;
+    // justify-content: space-between;
+  	// flex-wrap: wrap;
+    // align-items: flex-start;
+    //
+    // margin-bottom: 000;
+    display: none;
+    background: url('../img/features-item-extra_bg.jpg');
+    margin: 0 auto;
+    width: 1140px;
+    // height: 0;
+    background-color: #578233;
+                                                    // transition: 1s ease-in-out;
+
+    @include font(notmal, 400, 18px, 18px, 'Roboto');
+    color: white;
+
+    padding: 50px;
+    padding-left: 15px;
+
+  }
+}
+
+// & .features__item__more {
+//   position: absolute;
+//   left: -10px;
+//   bottom: -208px;
+//
+// }
+
+
+
+
+.page-index .features {
+  & .features__item-container{
+    background-image: none;
+    margin-left: 10px;
+    width: 495px;
+
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+
+    padding-bottom: 10px;
+
+    // outline: 2px solid gold;
+    // outline-offset: -2px;
+
+    &:last-child {
+      margin-right: 10px;
+      margin-left: 0;
+    }
+
+
+    & .icon-features{
+      fill: #1F587D;
+    }
+
+  }
+}
+
+
+.page-index .features {
   & .features__item{
     position: relative;
     width: 475px;
     height: 225px;
-    margin-bottom: 30px;
     padding-top: 60px;
 
-    outline: 2px dashed cornflowerblue;
-    outline-offset: -2px;
+    margin: 0 10px;
+    // margin-left: 10px;
+
+    // outline: 2px dashed cornflowerblue;
+    // outline-offset: -2px;
 
     &::before {
       position: absolute;
@@ -104,64 +215,90 @@
       left: 0;
     }
 
-    &:nth-child(2n+1) {
-      clear: left;
-    }
+    // &:nth-child(2n+1) {
+    //   clear: left;
+    // }
   }
-}
 
+  // & .features__item-container:nth-of-type(2) {
+  //   & .features__item {
+  //     margin-left: 10px;
+  //     margin-right: 10px;
+  //   }
+  // }
+}
 
 
 // 1
 .page-index .features {
-  & .features__item:nth-of-type(1) .icon-features{
-    width: 70px;
-    height: 75px;
+  & .features__item-container:nth-of-type(1) {
+
+    & .icon-features{
+      width: 70px;
+      height: 75px;
+    }
+
+
   }
 }
 
 
 // 2
 .page-index .features {
-  & .features__item:nth-of-type(2) .icon-features{
-    width: 70px;
-    height: 75px;
+  & .features__item-container:nth-of-type(2) {
+
+    & .icon-features{
+      width: 70px;
+      height: 75px;
+    }
   }
 }
 
 
 // 3
 .page-index .features {
-  & .features__item:nth-of-type(3) .icon-features{
-    width: 75px;
-    height: 72px;
+  & .features__item-container:nth-of-type(3) {
+
+    & .icon-features{
+      width: 75px;
+      height: 72px;
+    }
   }
 }
 
 
 // 4
 .page-index .features {
-  & .features__item:nth-of-type(4) .icon-features{
-    width: 59px;
-    height: 75px;
+  & .features__item-container:nth-of-type(4) {
+
+    & .icon-features{
+      width: 59px;
+      height: 75px;
+    }
   }
 }
 
 
 // 5
 .page-index .features {
-  & .features__item:nth-of-type(5) .icon-features{
-    width: 76px;
-    height: 52px;
+  & .features__item-container:nth-of-type(5) {
+
+    & .icon-features{
+      width: 76px;
+      height: 52px;
+    }
   }
 }
 
 
 // 6
 .page-index .features {
-  & .features__item:nth-of-type(6) .icon-features{
-    width: 76px;
-    height: 73px;
+  & .features__item-container:nth-of-type(6) {
+
+    & .icon-features{
+      width: 76px;
+      height: 73px;
+    }
   }
 }
 
@@ -175,6 +312,18 @@
     height: 165px;
     opacity: 0.2;
     background-color: #444341;
+  }
+}
+
+
+.page-index .features {
+  & .divider--item{
+    background-color: rgba(68, 67, 65, 0.2);
+    width: 360px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -230,8 +379,100 @@
     color: #444341;
     border: 1px solid #444341;
     text-align: center;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
   }
 }
+
+
+
+.page-index .features {
+  & .features__item-container.active{
+    background-image: url('../img/features-item-extra_bg.jpg');
+      -webkit-transition: background-image 0.4s ease-in-out;
+      transition: background-image 0.4s ease-in-out;
+
+
+    & .features__btn {
+      background: #fff;
+      border: 1px solid transparent;
+
+    }
+    & .features__item__title {
+      color: #fff;
+    }
+    & .icon-features {
+      fill: #fff;
+    }
+    & .divider--item {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    & .extra__item {}
+
+    }
+}
+
+
+
+.page-index .features {
+  & .extra__item {
+                                      // transition: 1s ease-in-out;
+    // height: 208px;
+    // display: block;
+  }
+}
+
+
+.page-index .features {
+  & .CLASS{
+
+  }
+}
+
+
+// Smoothy bg styles
+
+
+.page-index .features {
+  & .js-feature-item {
+    position: relative;
+  }
+}
+
+
+.page-index .features {
+  & .features-smoothy {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 235px;
+    // z-index: -1;
+
+    & img:nth-child(1) {
+      // transition: all .4s ease;
+      display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 235px;
+    }
+
+    & img:nth-child(2) {
+      // transition: all .4s ease;
+      display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 225px;
+    }
+  }
+}
+
+// Smoothy bg styles end
 
 
 .page-index .features {

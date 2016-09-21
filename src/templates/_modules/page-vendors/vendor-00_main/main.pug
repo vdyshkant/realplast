@@ -360,67 +360,124 @@ block content
               .features-content
 
 
-                //- item
-                .features__item
-                  .features__item__foreground
-                    .features__item__icon
-                      +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon01'}])
-                    h3.features__item__title 18 лет на рынке
-                    .features__btn Больше
-                  .features__item__more
+              .features__item__row
+                .row__items
+                  //- item 01
+                  .features__item-container.js-feature-item(data-more-container="1")
+                    .features-smoothy(data-more-smoothy="1")
+                      img(src="img/features-smoothy-01.jpg")
+                      img(src="img/features-smoothy-02.png")
+                    .features__item
+                      .features__item__foreground
+                        .features__item__icon
+                          +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon01'}])
+                        h3.features__item__title 18 лет на рынке
+                        .divider--item
+                        a.features__btn.js-more(href="#" data-more-num="1") Больше
+                      //- .features__item__more
 
-                hr.vdivider
+                  hr.vdivider
 
-                //- item
-                .features__item
-                  .features__item__foreground
-                    .features__item__icon
-                      +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon02'}])
-                    h3.features__item__title Конкурентные цены
-                    .features__btn Больше
-                  .features__item__more
+                  //- item 02
+                  .features__item-container.js-feature-item(data-more-container="2")
+                    .features-smoothy(data-more-smoothy="2")
+                      img(src="img/features-smoothy-01.jpg")
+                      img(src="img/features-smoothy-02.png")
+                    .features__item
+                      .features__item__foreground
+                        .features__item__icon
+                          +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon02'}])
+                        h3.features__item__title Конкурентные цены
+                        .divider--item
+                        a.features__btn.js-more(href="#" data-more-num="2") Больше
+                      //- .features__item__more
 
-
-                //- item
-                .features__item
-                  .features__item__foreground
-                    .features__item__icon
-                      +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon03'}])
-                    h3.features__item__title аккуратный монтаж
-                    .features__btn Больше
-                  .features__item__more
-
-                hr.vdivider
-
-                //- item
-                .features__item
-                  .features__item__foreground
-                    .features__item__icon
-                      +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon04'}])
-                    h3.features__item__title 10 лет гарантии на пвх и 8 лет на фурнитуру
-                    .features__btn Больше
-                  .features__item__more
+                //- 001
+                .row__extra
+                  .extra__item.js-extra(href="#" data-more-option="1")
+                    p 11 Все большее число зданий в Алматы и других городах Казахстана украшают не традиционные деревянные, а пластиковые окна. И дело не столько в их внешней эстетике (хотя и она, несомненно, сыграла важную роль!), сколько в выдающихся эксплуатационных характеристиках и удобстве использования. Так, конструкции из дерева приходится регулярно подкрашивать, так как влага разрушает лак и краску. Стеклопакеты же вовсе не требуют сложного ухода! Им достаточно периодически устраивать влажную уборку, чтобы они сохранили презентабельный вид на 20-30 лет.
+                  .extra__item.js-extra(href="#" data-more-option="2")
+                    p 22 Все большее число зданий в Алматы и других городах Казахстана украшают не традиционные деревянные, а пластиковые окна. И дело не столько в их внешней эстетике (хотя и она, несомненно, сыграла важную роль!), сколько в выдающихся эксплуатационных характеристиках и удобстве использования. Так, конструкции из дерева приходится регулярно подкрашивать, так как влага разрушает лак и краску. Стеклопакеты же вовсе не требуют сложного ухода! Им достаточно периодически устраивать влажную уборку, чтобы они сохранили презентабельный вид на 20-30 лет.
 
 
-                //- item
-                .features__item
-                  .features__item__foreground
-                    .features__item__icon
-                      +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon05'}])
-                    h3.features__item__title 3 дня изготовление
-                    .features__btn Больше
-                  .features__item__more
+              .features__item__row
+                .row__items
+                  //- item 03
+                  .features__item-container.js-feature-item(data-more-container="3")
+                    .features-smoothy(data-more-smoothy="3")
+                      img(src="img/features-smoothy-01.jpg")
+                      img(src="img/features-smoothy-02.png")
+                    .features__item
+                      .features__item__foreground
+                        .features__item__icon
+                          +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon03'}])
+                        h3.features__item__title аккуратный монтаж
+                        .divider--item
+                        a.features__btn.js-more(href="#" data-more-num="3") Больше
+                      //- .features__item__more
 
-                hr.vdivider
+                  hr.vdivider
 
-                //- item
-                .features__item
-                  .features__item__foreground
-                    .features__item__icon
-                      +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon06'}])
-                    h3.features__item__title Возможность купить в рассрочку
-                    .features__btn Больше
-                  .features__item__more
+                  //- item 04
+                  .features__item-container.js-feature-item(data-more-container="4")
+                    .features-smoothy(data-more-smoothy="4")
+                      img(src="img/features-smoothy-01.jpg")
+                      img(src="img/features-smoothy-02.png")
+                    .features__item
+                      .features__item__foreground
+                        .features__item__icon
+                          +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon04'}])
+                        h3.features__item__title 10 лет гарантии на пвх и 8 лет на фурнитуру
+                        .divider--item
+                        a.features__btn.js-more(href="#" data-more-num="4") Больше
+                      //- .features__item__more
+
+                //- 002
+                .row__extra
+                  .extra__item.js-extra(href="#" data-more-option="3")
+                    p 33 Все большее число зданий в Алматы и других городах Казахстана украшают не традиционные деревянные, а пластиковые окна. И дело не столько в их внешней эстетике (хотя и она, несомненно, сыграла важную роль!), сколько в выдающихся эксплуатационных характеристиках и удобстве использования. Так, конструкции из дерева приходится регулярно подкрашивать, так как влага разрушает лак и краску. Стеклопакеты же вовсе не требуют сложного ухода! Им достаточно периодически устраивать влажную уборку, чтобы они сохранили презентабельный вид на 20-30 лет.
+                  .extra__item.js-extra(href="#" data-more-option="4")
+                    p 44 Все большее число зданий в Алматы и других городах Казахстана украшают не традиционные деревянные, а пластиковые окна. И дело не столько в их внешней эстетике (хотя и она, несомненно, сыграла важную роль!), сколько в выдающихся эксплуатационных характеристиках и удобстве использования. Так, конструкции из дерева приходится регулярно подкрашивать, так как влага разрушает лак и краску. Стеклопакеты же вовсе не требуют сложного ухода! Им достаточно периодически устраивать влажную уборку, чтобы они сохранили презентабельный вид на 20-30 лет.
+
+
+              .features__item__row
+                .row__items
+                  //- item
+                  .features__item-container.js-feature-item(data-more-container="5")
+                    .features-smoothy(data-more-smoothy="5")
+                      img(src="img/features-smoothy-01.jpg")
+                      img(src="img/features-smoothy-02.png")
+                    .features__item
+                      .features__item__foreground
+                        .features__item__icon
+                          +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon05'}])
+                        h3.features__item__title 3 дня изготовление
+                        .divider--item
+                        a.features__btn.js-more(href="#" data-more-num="5") Больше
+                      //- .features__item__more
+
+                  hr.vdivider
+
+                  //- item
+                  .features__item-container.js-feature-item(data-more-container="6")
+                    .features-smoothy(data-more-smoothy="6")
+                      img(src="img/features-smoothy-01.jpg")
+                      img(src="img/features-smoothy-02.png")
+                    .features__item
+                      .features__item__foreground
+                        .features__item__icon
+                          +svg([{'class': 'icon-features svg-icon', 'pathid': 'svg-features-item', 'filename':'features-item-icon06'}])
+                        h3.features__item__title Возможность купить в рассрочку
+                        .divider--item
+                        a.features__btn.js-more(href="#" data-more-num="6") Больше
+                      .features__item__more
+
+                //- 003
+                .row__extra
+                  .extra__item.js-extra(href="#" data-more-option="5")
+                    p 55 Все большее число зданий в Алматы и других городах Казахстана украшают не традиционные деревянные, а пластиковые окна. И дело не столько в их внешней эстетике (хотя и она, несомненно, сыграла важную роль!), сколько в выдающихся эксплуатационных характеристиках и удобстве использования. Так, конструкции из дерева приходится регулярно подкрашивать, так как влага разрушает лак и краску. Стеклопакеты же вовсе не требуют сложного ухода! Им достаточно периодически устраивать влажную уборку, чтобы они сохранили презентабельный вид на 20-30 лет.
+                  .extra__item.js-extra(href="#" data-more-option="6")
+                    p 66 Все большее число зданий в Алматы и других городах Казахстана украшают не традиционные деревянные, а пластиковые окна. И дело не столько в их внешней эстетике (хотя и она, несомненно, сыграла важную роль!), сколько в выдающихся эксплуатационных характеристиках и удобстве использования. Так, конструкции из дерева приходится регулярно подкрашивать, так как влага разрушает лак и краску. Стеклопакеты же вовсе не требуют сложного ухода! Им достаточно периодически устраивать влажную уборку, чтобы они сохранили презентабельный вид на 20-30 лет.
 
 
       // features end

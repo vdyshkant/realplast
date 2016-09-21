@@ -20,6 +20,7 @@ RESET
 // COUNTER
 // SLIDER
 // COUNTDOWN
+// FEATURES-EXPAND
 
 
 /* ================================================
@@ -232,7 +233,7 @@ $("#DateCountdown").TimeCircles();
 		 var time = $("#time").val();
 		 var datetime = date + ' ' + time + ':00';
 		 $("#DateCountdown").data('date', datetime).TimeCircles().start();
- }
+ };
  $("#date").change(updateTime).keyup(updateTime);
  $("#time").change(updateTime).keyup(updateTime);
 
@@ -253,3 +254,58 @@ $("#DateCountdown").TimeCircles();
  });
 
 // countdown end
+
+
+// features-expand
+if ($(".page-index .features .js-more").length) {
+		// $(".js-more[data-moreNum='2']").click(function() {
+		// 	$(this).parent('.js-feature-item').toggleClass('active');
+		// });
+
+		expandFeaturesItem(1);
+		expandFeaturesItem(2);
+		expandFeaturesItem(3);
+		expandFeaturesItem(4);
+		expandFeaturesItem(5);
+		expandFeaturesItem(6);
+
+
+
+
+}
+
+
+function expandFeaturesItem(identifier){
+	$('.js-more[data-more-num=' + identifier + ']').click(function(e) {
+		e.preventDefault();
+		// $(this).css( "color", "red" );
+		$('.js-feature-item[data-more-container="' + identifier + '"]').toggleClass('active');
+		$('.js-extra[data-more-option="' + identifier + '"]').slideToggle(300);
+
+
+		$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(1)').fadeToggle(300);
+		$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(2)').fadeToggle(300);
+	});
+}
+// features-expand end
+
+//
+//
+//
+// data-id:"+$(identifier).data('id')+"
+//
+//
+// function expandFeaturesItem(identifier){
+// 	$(".js-more[data-moreNum='+" identifier "+']").click(function() {
+// 		$(this).parent('.js-feature-item[data-moreContainer="' + identifier + '"]').toggleClass('active');
+// 	});
+// }
+//
+// // Псевдокод:
+//
+// парсим кнопку, которую жмет пользователь, вместе с дата-идентификатором
+//
+// исходя и з того, с каким дата-идентификатором нажата кнопка,
+// по значению переменной этого id обращаемся к необходимому нам блоку и добавляем ему класс .active
+// выключение по тому же принципу либо через toggle
+// описать при каких услових закрывать менюшку
