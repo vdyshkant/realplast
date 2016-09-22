@@ -1,6 +1,7 @@
 /* === Layout grid === */
 
 .wrapper {
+  position: relative;
   overflow: hidden;
   min-height: 100%; // чтоб дочерним можно было выставить height 100%
 

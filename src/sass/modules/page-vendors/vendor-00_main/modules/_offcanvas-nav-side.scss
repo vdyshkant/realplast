@@ -1,7 +1,7 @@
 .page-index .mask__offcanvas-nav-side {
   position: absolute;
   width: 200px;
-  height: 90000px;
+  height: 100%;
   top: 0;
   left: -200px;
   background: hsla(75, 58%, 52%, 0.66);
@@ -14,19 +14,7 @@
 
 
   & .shell {
-    // margin: 0 auto;
-    // max-width: 1160px;
-    //
-    // outline: 2px dashed tan;
-    // outline-offset: -2px;
-    //
-    // @media #{$mobile} {
-    //   min-width: 320px;
-    //   // а для внутряков обязательно заранее пропиши:
-    //   // & .wrap {
-    //   //   min-width: initial;
-    //   // }
-    // }
+
   }
 
   & .inner {
@@ -133,7 +121,7 @@
   & .offcanvas-nav-side__content{
     position: relative;
     width: 100%;
-    height: 90000px;
+    height: 100%;
   }
 }
 

@@ -1,5 +1,21 @@
 .page-index .constructor {
   background: #cdd3d4;
+  display: none;
+
+
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 1160px;
+    left: 100px;
+    height: 100%;
+    background: url(../img/under.jpg) no-repeat top right;
+    background-size: auto 100%;
+    z-index: 5000;
+  }
 }
 
 
@@ -472,7 +488,7 @@
     }
 
     & .icon-img {
-      box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.21); 
+      box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.21);
       width: 75px;
       height: 75px;
     }
