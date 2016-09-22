@@ -384,6 +384,18 @@
     text-decoration: none;
     background: transparent;
     cursor: pointer;
+    transition: .3s ease-out;
+
+    &:hover {
+      background: #42a455;
+      border: 1px solid transparent;
+      color: #fff4f4;
+    }
+    &:active {
+      background: #42a455;
+      border: 1px solid transparent;
+      color: #fff4f4;
+    }
   }
 }
 
@@ -399,6 +411,10 @@
     & .features__btn {
       background: #fff;
       border: 1px solid transparent;
+
+      &:hover {
+        color: #444341;
+      }
 
     }
     & .features__item__title {
