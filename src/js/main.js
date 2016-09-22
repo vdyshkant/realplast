@@ -94,12 +94,17 @@ RESET
 
 // smooth div scroll
 
+
 $(document).ready(function() {
-	$("#makeMeScrollable").smoothDivScroll({
-			mousewheelScrolling: "allDirections",
-			manualContinuousScrolling: true,
-			autoScrollingMode: "onStart"
-	});
+
+	 if($('body').is('.page-index')){
+		 $("#makeMeScrollable").smoothDivScroll({
+				 mousewheelScrolling: "allDirections",
+				 manualContinuousScrolling: true,
+				 autoScrollingMode: "onStart"
+		 });
+	 }
+
 });
 
 // smooth div scroll end
@@ -110,43 +115,46 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-  var carousel = $("#carousel").waterwheelCarousel({
-    // flankingItems: 3,
-    // smallFeatureWidth: 1,
-    // smallFeatureOffset: 150,
-    // startingFeature: 3
-    // movingToCenter: function ($item) {
-    //   $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-    // },
-    // movedToCenter: function ($item) {
-    //   $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-    // },
-    // movingFromCenter: function ($item) {
-    //   $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-    // },
-    // movedFromCenter: function ($item) {
-    //   $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-    // },
-    // clickedCenter: function ($item) {
-    //   $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-    // }
-  });
 
-  $('#prev').bind('click', function () {
-    carousel.prev();
-    return false;
-  });
+	if($('body').is('.page-index')){
+		var carousel = $("#carousel").waterwheelCarousel({
+	    // flankingItems: 3,
+	    // smallFeatureWidth: 1,
+	    // smallFeatureOffset: 150,
+	    // startingFeature: 3
+	    // movingToCenter: function ($item) {
+	    //   $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+	    // },
+	    // movedToCenter: function ($item) {
+	    //   $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+	    // },
+	    // movingFromCenter: function ($item) {
+	    //   $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+	    // },
+	    // movedFromCenter: function ($item) {
+	    //   $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+	    // },
+	    // clickedCenter: function ($item) {
+	    //   $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+	    // }
+	  });
 
-  $('#next').bind('click', function () {
-    carousel.next();
-    return false;
-  });
+	  $('#prev').bind('click', function () {
+	    carousel.prev();
+	    return false;
+	  });
 
-  // $('#reload').bind('click', function () {
-  //   newOptions = eval("(" + $('#newoptions').val() + ")");
-  //   carousel.reload(newOptions);
-  //   return false;
-  // });
+	  $('#next').bind('click', function () {
+	    carousel.next();
+	    return false;
+	  });
+
+	  // $('#reload').bind('click', function () {
+	  //   newOptions = eval("(" + $('#newoptions').val() + ")");
+	  //   carousel.reload(newOptions);
+	  //   return false;
+	  // });
+	}
 
 });
 
@@ -204,89 +212,113 @@ $(document).ready(function () {
 
 // slider
 
-$("ul#slider1").bxSlider({
-    speed: 300,
-    pager: true,
-    nextText: '',
-    prevText: '',
-    infiniteLoop: false,
-    hideControlOnEnd: true,
-    controls: false
-    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
-    //    changeRealThumb(realThumbSlider,newIndex);
-    //
-    //  }
+$( document ).ready(function() {
 
-});
+	if($('body').is('.page-index')){
+		$("ul#slider1").bxSlider({
+		    speed: 300,
+		    pager: true,
+		    nextText: '',
+		    prevText: '',
+		    infiniteLoop: false,
+		    hideControlOnEnd: true,
+		    controls: false
+		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+		    //    changeRealThumb(realThumbSlider,newIndex);
+		    //
+		    //  }
+
+		});
+	}
+
+}); // eof .ready
 
 // slider end
 
 
 // countdown
 
-$("#DateCountdown").TimeCircles();
- $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } }});
- $("#PageOpenTimer").TimeCircles();
+$( document ).ready(function() {
 
- var updateTime = function(){
-		 var date = $("#date").val();
-		 var time = $("#time").val();
-		 var datetime = date + ' ' + time + ':00';
-		 $("#DateCountdown").data('date', datetime).TimeCircles().start();
- };
- $("#date").change(updateTime).keyup(updateTime);
- $("#time").change(updateTime).keyup(updateTime);
+	if($('body').is('.page-index')){
 
- // Start and stop are methods applied on the public TimeCircles instance
- $(".startTimer").click(function() {
-		 $("#CountDownTimer").TimeCircles().start();
- });
- $(".stopTimer").click(function() {
-		 $("#CountDownTimer").TimeCircles().stop();
- });
 
- // Fade in and fade out are examples of how chaining can be done with TimeCircles
- $(".fadeIn").click(function() {
-		 $("#PageOpenTimer").fadeIn();
- });
- $(".fadeOut").click(function() {
-		 $("#PageOpenTimer").fadeOut();
- });
+		$("#DateCountdown").TimeCircles();
+		 $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } }});
+		 $("#PageOpenTimer").TimeCircles();
+
+		 var updateTime = function(){
+				 var date = $("#date").val();
+				 var time = $("#time").val();
+				 var datetime = date + ' ' + time + ':00';
+				 $("#DateCountdown").data('date', datetime).TimeCircles().start();
+		 };
+		 $("#date").change(updateTime).keyup(updateTime);
+		 $("#time").change(updateTime).keyup(updateTime);
+
+		 // Start and stop are methods applied on the public TimeCircles instance
+		 $(".startTimer").click(function() {
+				 $("#CountDownTimer").TimeCircles().start();
+		 });
+		 $(".stopTimer").click(function() {
+				 $("#CountDownTimer").TimeCircles().stop();
+		 });
+
+		 // Fade in and fade out are examples of how chaining can be done with TimeCircles
+		 $(".fadeIn").click(function() {
+				 $("#PageOpenTimer").fadeIn();
+		 });
+		 $(".fadeOut").click(function() {
+				 $("#PageOpenTimer").fadeOut();
+		 });
+
+
+	}
+
+}); // eof .ready
+
+
 
 // countdown end
 
 
 // features-expand
-if ($(".page-index .features .js-more").length) {
-		// $(".js-more[data-moreNum='2']").click(function() {
-		// 	$(this).parent('.js-feature-item').toggleClass('active');
-		// });
 
-		expandFeaturesItem(1);
-		expandFeaturesItem(2);
-		expandFeaturesItem(3);
-		expandFeaturesItem(4);
-		expandFeaturesItem(5);
-		expandFeaturesItem(6);
+$( document ).ready(function() {
 
+	if($('body').is('.page-index')){
 
+		if ($(".page-index .features .js-more").length) {
+				// $(".js-more[data-moreNum='2']").click(function() {
+				// 	$(this).parent('.js-feature-item').toggleClass('active');
+				// });
 
-
-}
-
-
-function expandFeaturesItem(identifier){
-	$('.js-more[data-more-num=' + identifier + ']').click(function(e) {
-		e.preventDefault();
-		// $(this).css( "color", "red" );
-		$('.js-feature-item[data-more-container="' + identifier + '"]').toggleClass('active');
-		$('.js-extra[data-more-option="' + identifier + '"]').slideToggle(300);
+				expandFeaturesItem(1);
+				expandFeaturesItem(2);
+				expandFeaturesItem(3);
+				expandFeaturesItem(4);
+				expandFeaturesItem(5);
+				expandFeaturesItem(6);
+		}
 
 
-		$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(1)').fadeToggle(300);
-		$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(2)').fadeToggle(300);
-	});
-}
+		function expandFeaturesItem(identifier){
+			$('.js-more[data-more-num=' + identifier + ']').click(function(e) {
+				e.preventDefault();
+				// $(this).css( "color", "red" );
+				$('.js-feature-item[data-more-container="' + identifier + '"]').toggleClass('active');
+				$('.js-extra[data-more-option="' + identifier + '"]').slideToggle(300);
+
+
+				$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(1)').fadeToggle(300);
+				$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(2)').fadeToggle(300);
+			});
+		}
+
+	}
+
+}); // eof .ready
+
 // features-expand end
 
 //
@@ -487,18 +519,22 @@ $( document ).ready(function() {
 // smooth gallery
 
 $(document).ready(function() {
-	$("#gallery-smooth").smoothDivScroll({
-			// mousewheelScrolling: "allDirections",
-			// manualContinuousScrolling: false,
-			autoScrollingMode: "onStart",
-			hotSpotScrolling: false,
-			touchScrolling: true,
-			manualContinuousScrolling: true,
-			// hotSpotScrollingStep: 3,
-			// hotSpotScrollingInterval: 2,
-			// autoScrollingStep: 1, SPPED
-			mousewheelScrolling: false
-	});
+
+	if($('body').is('.page-index')){
+		$("#gallery-smooth").smoothDivScroll({
+				// mousewheelScrolling: "allDirections",
+				// manualContinuousScrolling: false,
+				autoScrollingMode: "onStart",
+				hotSpotScrolling: false,
+				touchScrolling: true,
+				manualContinuousScrolling: true,
+				// hotSpotScrollingStep: 3,
+				// hotSpotScrollingInterval: 2,
+				// autoScrollingStep: 1, SPPED
+				mousewheelScrolling: false
+		});
+	}
+
 });
 
 // smooth gallery END

@@ -1,4 +1,4 @@
-.page-index .footer {
+.footer {
   // bg 1
   background: url('../img/footer_bg-pattern.jpg');
   // background: #fff;
@@ -6,7 +6,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -47,7 +47,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .footer-essence .row{
     display: flex;
     margin-bottom: 50px;
@@ -55,7 +55,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .footer-essence .col{
     width: 170px;
     margin-right: 20px;
@@ -64,14 +64,14 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.footer {
   & h4{
     @include font(normal, 700, 18px, 23px, 'Roboto')
     margin-bottom: 10px;
@@ -79,7 +79,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .footer-box__link{
     @include font(normal, 300, 14px, 24px, 'Roboto');
     color: #fff;
@@ -91,14 +91,14 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .list-unstyled li{
     margin-bottom: 10px;
   }
@@ -106,7 +106,7 @@
 
 // right content
 
-.page-index .footer {
+.footer {
   & .footer__callback{
     margin-bottom: 60px;
   }
@@ -114,35 +114,35 @@
 
 
 
-.page-index .footer {
+.footer {
   & .footer__callback__phone{
     @include font(normal, 300, 25px, 37px, 'Roboto')
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
 // socials
-.page-index .footer {
+.footer {
   & .footer__socials{
     margin-bottom: 50px;
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__socials{
     margin-bottom: 50px;
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__socials-wrapper{
     display: -webkit-flex;
     display: -ms-flex;
@@ -151,7 +151,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__socials__item{
     justify-content: flex-start;
     margin-right: 18px;
@@ -172,7 +172,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .icon-socials-fb{
     width: 13px;
     height: 30px;
@@ -180,7 +180,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .icon-socials-vk{
     width: 30px;
     height: 17px;
@@ -188,7 +188,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .icon-socials-yt{
     width: 30px;
     height: 21px;
@@ -196,21 +196,21 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__address__item__city{
     @include font(normal, 300, 18px, 23px, 'Roboto')
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__address__item__streets{
     @include font(normal, 300, 14px, 23px, 'Roboto')
 
@@ -221,14 +221,14 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .footer-bottom-row{
     display: flex;
     flex-direction: row;
@@ -238,7 +238,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__copy{
     @include font(normal, 300, 24px, 24px, 'Ubuntu')
     margin-right: 45px;
@@ -246,7 +246,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .footer__manufactured{
     @include font(normal, 300, 15px, 24px, 'Ubuntu')
 
@@ -263,7 +263,7 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
