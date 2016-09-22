@@ -9,13 +9,13 @@
 //   z-index: 100;
 // }
 
-.overlay__offcanvas-right-side {
+.overlay__offcanvas {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background: hsla(116, 19%, 16%, 0.78);
+  // background: hsla(116, 19%, 16%, 0.78);
   z-index: 10;
   display: none;
 
@@ -128,6 +128,20 @@
         background: #42a455;
         white-space: nowrap;
         box-shadow: 2.6px 3.1px 7px rgba(26, 47, 60, 0.21);
+        border: none;
+        outline: none;
+
+        transition: .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background: #3a8147;
+        }
+
+        &:active {
+          background: #3a8147;
+        }
+
       }
     }
 

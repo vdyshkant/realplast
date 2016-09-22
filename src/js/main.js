@@ -430,7 +430,7 @@ $( document ).ready(function() {
 
 			// making main offcanvas-nav block to sllide right for %180%px
 			$('.js-nav').addClass('opened');
-			$('.overlay__offcanvas-nav-side').addClass('visible');
+			$('.overlay__offcanvas').addClass('visible');
 
 			// hiding all submenus at the left
 			$('.offcanvas-nav-side__sub-menus').fadeOut(10);
@@ -452,10 +452,11 @@ $( document ).ready(function() {
 	}
 
 
-	$('.overlay__offcanvas-nav-side').click(function(e) {
+	$('.overlay__offcanvas').click(function(e) {
 		e.preventDefault();
 		$('.js-nav').removeClass('opened');
-		$('.overlay__offcanvas-nav-side').removeClass('visible');
+		$('.js-right-side').removeClass('opened');
+		$('.overlay__offcanvas').removeClass('visible');
 
 
 		for (var i = 0; i < 99; i++) {
@@ -469,26 +470,12 @@ $( document ).ready(function() {
 	function invokeCallback() {
 		$('#callback').click(function(){
 			$('.js-right-side').addClass('opened');
-			$('.overlay__offcanvas-right-side').addClass('visible');
+			$('.overlay__offcanvas').addClass('visible');
 
 		});
 	};
 
 
-	$('.overlay__offcanvas-right-side').click(function(e) {
-		e.preventDefault();
-		$('.js-nav').removeClass('opened');
-		$('.js-right-side').removeClass('opened');
-
-		$('.overlay__offcanvas-right-side').removeClass('visible');
-	});
-
-
-	$('.overlay__offcanvas-nav-side').click(function(e) {
-		e.preventDefault();
-		$('.js-right-side').removeClass('opened');
-		$('.overlay__offcanvas-right-side').removeClass('visible');
-	});
 
 
 
