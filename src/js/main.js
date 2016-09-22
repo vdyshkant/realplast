@@ -482,3 +482,16 @@ $( document ).ready(function() {
 }); // eof .ready
 
 // offcanvas-nav END
+
+
+// smooth gallery
+
+$(document).ready(function() {
+	$("#gallery-smooth").smoothDivScroll({
+			mousewheelScrolling: "allDirections",
+			manualContinuousScrolling: false,
+			autoScrollingMode: "onStart"
+	});
+});
+
+// smooth gallery END
