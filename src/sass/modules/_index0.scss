@@ -24,15 +24,24 @@
 // @import "page-vendors/vendor-00_main/modules/custom-module-2";
 // @import "page-vendors/vendor-00_main/modules/custom-module-N";
 
-// // page 02  |  vendor 1 - plastic windows
+// page 02  |  vendor 1 - plastic windows
   // window systems
 @import "page-vendors/vendor-01_plastic-windows/_page_02__index";
 // @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-1";
 // @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-2";
 // @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-N";
 // @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-9";
-// // page 03  |  vendor 1 - plastic windows
-// @import "page-vendors/vendor-01_plastic-windows/page-BBB/main";
+// page 03  |  vendor 1 - plastic windows
+  // fitments
+@import "page-vendors/vendor-01_plastic-windows/_page_03__index/";
+  // cottages
+@import "page-vendors/vendor-01_plastic-windows/_page_04__index/";
+  // glass-unit
+@import "page-vendors/vendor-01_plastic-windows/_page_05__index/";
+  // accessories
+@import "page-vendors/vendor-01_plastic-windows/_page_06__index/";
+  // services
+@import "page-vendors/vendor-01_plastic-windows/_page_07__index/";
 // @import "page-vendors/vendor-01_plastic-windows/page-BBB/custom-module-1";
 // @import "page-vendors/vendor-01_plastic-windows/page-BBB/custom-module-N";
 
