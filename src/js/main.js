@@ -369,3 +369,102 @@ $(document).ready(function() {
 // ctx.fillText("Rainy", 40, 380);
 
 // rainy END
+
+
+// offcanvas-nav
+
+$( document ).ready(function() {
+
+	hideMainOverlay();
+
+	function hideMainOverlay() {
+		$('#okna').click(function() {
+				$('.js-nav').toggleClass('opened');
+				// $('.modal-overlay').fadeOut(300);
+
+
+				// 01: смена стилей для конкретно кнопки #okna
+				$('.offcanvas-nav-side__sub-menus').fadeOut(10);
+				$('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="1"]').fadeIn(10);
+				$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="1"]').toggleClass('opened');
+
+				// 02: в левом блоке сайдбара отобразить окно, которое конкретно соответствует нажатому пункту меню, а все остальные суб-меню обязательно скрываем
+
+				// 03: панель выезжает
+				// +
+
+				// 04: при нажатии вне панели панель закрывается.
+				// при нажатии на крестик - панель закрывается
+
+		});
+	}
+
+	closeByCross();
+
+	function closeByCross() {
+		$('.js-nav-close').click(function(e) {
+			e.preventDefault();
+			$('.js-nav').toggleClass('opened');
+
+			// $('.offcanvas-nav-side__menu__item').toggleClass('opened');
+
+			for (var i = 0; i < 99; i++) {
+				$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+			}
+
+
+		});
+	}
+
+
+
+
+	openThisSubmenu(1);
+	openThisSubmenu(5);
+// !!
+	function openThisSubmenu(identifier){
+
+
+		$('.offcanvas-nav-side__menu__item[data-offcanvas-menu=' + identifier + '] .link').click(function(e) {
+			e.preventDefault();
+
+			// making main offcanvas-nav block to sllide right for %180%px
+			$('.js-nav').addClass('opened');
+			$('.overlay__offcanvas-nav-side').addClass('visible');
+
+			// hiding all submenus at the left
+			$('.offcanvas-nav-side__sub-menus').fadeOut(10);
+
+			// making visible the necessary subMenu
+			$('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="' + identifier + '"]').fadeIn(10);
+
+			// disabling styles for the all pressed buttons
+			for (var i = 0; i < 99; i++) {
+				$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+			}
+
+			// changing styles for the pressed button
+			$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + identifier + '"]').toggleClass('opened');
+
+
+
+		});
+	}
+
+
+$('.overlay__offcanvas-nav-side').click(function(e) {
+	e.preventDefault();
+	$('.js-nav').removeClass('opened');
+	$('.overlay__offcanvas-nav-side').removeClass('visible');
+
+
+	for (var i = 0; i < 99; i++) {
+		$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+	}
+
+
+});
+
+}); // eof .ready
+
+// offcanvas-nav END
