@@ -1,4 +1,4 @@
-.page-index .mask__offcanvas-nav-side {
+.mask__offcanvas-nav-side {
   position: absolute;
   width: 200px;
   height: 100%;
@@ -10,7 +10,7 @@
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
 
 
   & .shell {
@@ -44,7 +44,7 @@
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   &.opened{
     & .offcanvas-nav-side-wrapper {
       left: 0px;
@@ -53,14 +53,8 @@
 }
 
 
-.page-index .offcanvas-nav-side {
-  & .CLASS{
 
-  }
-}
-
-
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .offcanvas-nav-side__close {
     display: block;
     float: left;
@@ -106,7 +100,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__top-row {
+.offcanvas-nav-side__top-row {
   height: 105px;
 
   @include clearfix;
@@ -117,7 +111,7 @@
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .offcanvas-nav-side__content{
     position: relative;
     width: 100%;
@@ -126,7 +120,7 @@
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .offcanvas-nav-side__menu{
     position: absolute;
     top: 0;
@@ -136,7 +130,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__logo {
+.offcanvas-nav-side__logo {
   position: relative;
   width: 100px;
   height: 105px;
@@ -152,7 +146,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__menu__item {
+.offcanvas-nav-side__menu__item {
   position: relative;
   height: 105px;
   width: 100px;
@@ -161,7 +155,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__menu__item .link {
+.offcanvas-nav-side__menu__item .link {
   display: block;
   position: relative;
   height: 105px;
@@ -170,7 +164,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__menu__item {
+.offcanvas-nav-side__menu__item {
 
   &.item-windows {
 
@@ -227,7 +221,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__menu__item {
+.offcanvas-nav-side__menu__item {
 
   &.item-glazing {
 
@@ -259,7 +253,7 @@
 }
 
 // item-production ICON && TEXT
-.page-index .offcanvas-nav-side__menu__item {
+.offcanvas-nav-side__menu__item {
 
   &.item-production {
 
@@ -290,7 +284,7 @@
 }
 
 // item-prices ICON && TEXT
-.page-index .offcanvas-nav-side__menu__item {
+.offcanvas-nav-side__menu__item {
   &.item-prices .link > .link__text {
     display: block;
 
@@ -314,7 +308,7 @@
 }
 
 // item-BTM ICON && TEXT
-.page-index .offcanvas-nav-side__menu__item.item-btm {
+.offcanvas-nav-side__menu__item.item-btm {
   width: auto;
   height: auto;
   & .link{
@@ -332,7 +326,7 @@
   }
 }
 
-.page-index .offcanvas-nav-side__menu__item.item-about {
+.offcanvas-nav-side__menu__item.item-about {
 
   // outline: 2px dashed tan;
   // outline-offset: 2px;
@@ -361,7 +355,7 @@
 }
 
 
-.page-index .offcanvas-nav-side__menu__item.item-btm {
+.offcanvas-nav-side__menu__item.item-btm {
   &.item-useful{
 
     // border-top: 1px dashed #636361;
@@ -371,7 +365,7 @@
 
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
@@ -384,28 +378,28 @@
 // menu-items
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
@@ -413,7 +407,7 @@
 
 // menu-items END
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
@@ -421,7 +415,7 @@
 
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .CLASS{
 
   }
@@ -431,7 +425,7 @@
 
 // sub-menu
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .offcanvas-nav-side__sub-menus{
     position: absolute;
     top: 0;
@@ -462,12 +456,12 @@
 }
 
 
-.page-index .offcanvas-nav-side__sub-list__title {
+.offcanvas-nav-side__sub-list__title {
   margin-bottom: 25px;
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .offcanvas-nav-side__sub-list__title__link{
     display: block;
     text-align: center;
@@ -506,7 +500,7 @@
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .offcanvas-nav-side__sub-list__link{
     display: block;
     @include font(normal, 300, 14px, 14px, 'Roboto');
@@ -524,7 +518,7 @@
 }
 
 
-.page-index .offcanvas-nav-side {
+.offcanvas-nav-side {
   & .CLASS{
 
   }

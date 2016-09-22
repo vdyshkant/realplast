@@ -1,0 +1,51 @@
+// interrogation
+section.interrogation
+  .shell
+    .inner
+      .container
+        .interrogation-essence
+
+
+          //-title
+          h2.interrogation-title Нас интересует ваше мнение
+          hr.divider
+
+
+          //- content
+            //- unit
+          .interrogation-unit
+            .interrogation-unit-title Какого цвета окна вы хотите?
+            .interrogation-unit-content
+              form.interrogation-unit-form
+                ul
+                  li
+                    label.unit-form-radio
+                      input(type="radio" name="tree")
+                      span.radio-indicator
+                      .label-text Светлый дуб
+                  li
+                    label.unit-form-radio
+                      input(type="radio" name="tree")
+                      span.radio-indicator
+                      .label-text Орегон
+                  li
+                    label.unit-form-radio
+                      input(type="radio" name="tree")
+                      span.radio-indicator
+                      .label-text Махагон
+                  li
+                    label.unit-form-radio
+                      input(type="radio" name="tree" checked)
+                      span.radio-indicator
+                      .label-text Дуб
+                button.interrogation-btn-vote(href="javascript:void(0)") Проголосовать
+
+              //- preview
+              .interrogation-unit-preview
+                img(src="img/interrogation_img-01.png" width="360" height="280")
+
+
+
+
+
+// interrogation end

@@ -1,0 +1,51 @@
+// offcanvas right side
+//- .mask__offcanvas-right-side
+.overlay__offcanvas
+.offcanvas-right-side.js-right-side
+  .shell
+    .container
+      .range
+        .offcanvas-right-side-wrapper
+          //- foreground
+          .offcanvas-right-side__foreground
+            ul.offcanvas-right-side__list
+
+
+
+              //- CALLBACK
+              li.offcanvas-right-side__item.offcanvas-right-side__item__callback#callback
+                //- .icon-callback
+                +svg([{'class': 'icon-callback svg-icon', 'pathid': 'svg-callback', 'filename':'offcanvas-right_callback'}])
+                .offcanvas-right-side__callback.title +77054009101
+                //- form
+                form.offcanvas-right-side__form
+                  input(placeholder="Ваше имя")
+                  input(placeholder="Ваш номер телефона")
+                  button(type="submit") Перезвоните мне
+
+
+              //- SEARCH
+              li.offcanvas-right-side__item.offcanvas-right-side__item__search
+                +svg([{'class': 'icon-search svg-icon', 'pathid': 'svg-search', 'filename':'offcanvas-right_search'}])
+                .offcanvas-right-side__search.title Поиск
+
+
+          .offcanvas-right-side__top-row
+
+
+            //- flags
+            .offcanvas-right-side__flags
+              .offcanvas-right-side__flags__item
+              .offcanvas-right-side__flags__item
+              .offcanvas-right-side__flags__item
+              //-
+              //-
+              //- //- logo
+              //- .offcanvas-right-side__logo
+              //-   .offcanvas-right-side__logo-thumb
+              //-   .offcanvas-right-side__logo-desc
+              //-
+              //-
+
+
+// offcanvas right side end

@@ -1,4 +1,4 @@
-// .page-index .mask__offcanvas-right-side {
+// .mask__offcanvas-right-side {
 //   position: absolute;
 //   width: 350px;
 //   height: 90000px;
@@ -24,7 +24,7 @@
   }
 }
 
-.page-index .offcanvas-right-side {
+.offcanvas-right-side {
   position: absolute;
   top: 0;
   right: 0;
@@ -43,7 +43,7 @@
 //   padding-top: 155px;
 }
 
-.page-index .offcanvas-right-side {
+.offcanvas-right-side {
 
 
   & .shell {
@@ -77,7 +77,7 @@
   }
 }
 
-.page-index .offcanvas-right-side.js-right-side {
+.offcanvas-right-side.js-right-side {
   &.opened {
     transition: .3s linear;
     width: 300px;
@@ -205,14 +205,14 @@
 
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .offcanvas-right-side__item__callback {
+.offcanvas-right-side__item__callback {
   cursor: pointer;
   position: relative;
   &:hover {
@@ -238,7 +238,7 @@
 }
 
 
-.page-index .offcanvas-right-side__item__search {
+.offcanvas-right-side__item__search {
   cursor: pointer;
   position: relative;
   &:hover {
@@ -264,7 +264,7 @@
 }
 
 
-.page-index .offcanvas-right-side__item {
+.offcanvas-right-side__item {
   display: block;
   position: relative;
 
@@ -283,7 +283,7 @@
 }
 
 
-.page-index .offcanvas-right-side {
+.offcanvas-right-side {
   & .icon-callback{
     width: 75px;
     height: 74px;
@@ -300,7 +300,7 @@
 // @font-face { font-family: 'Roboto-Black'; src: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJzdmctY2FsbGJhY2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODUuMiA4NSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgODUuMiA4NSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGRlZnM+PHJlY3QgaWQ9IlNWR0lEXzFfIiB3aWR0aD0iODUuMiIgaGVpZ2h0PSI4NSIvPjwvZGVmcz48Y2xpcFBhdGggaWQ9IlNWR0lEXzJfIj48dXNlIHhsaW5rOmhyZWY9IiNTVkdJRF8xXyIgIG92ZXJmbG93PSJ2aXNpYmxlIi8+PC9jbGlwUGF0aD48cGF0aCBjbGlwLXBhdGg9InVybCgjU1ZHSURfMl8pIiBmaWxsPSIjMUY1ODdEIiBkPSJNNzIuNSwyNi4yYzQuMiw3LjQtMC4xLDIyLjEtMTQuNSwzMy45Yy05LjcsOC0xOC4zLDEyLTI1LjUsMTJjLTQuMiwwLTcuOS0xLjQtMTEuMy00LjJjLTMuMy0yLjctNS01LjMtNC45LTcuNGMwLjEtMS42LDEuMy0zLjIsMy42LTQuN2wwLjYtMC40YzIuNS0xLjYsNC45LTMuMSw3LjEtMy4xYzEuMiwwLDMuMSwwLjQsNS4zLDMuNmMxLjYsMi4zLDMuNSw0LjQsNi41LDQuNGMzLjEsMCw3LjEtMi4zLDEzLjItNy43YzQuMS0zLjYsOC44LTguNCw4LjQtMTMuM2MtMC4yLTIuNi0xLjgtNC45LTQuOC02LjljLTEuMS0wLjctMS42LTEuNS0xLjgtMi42Yy0wLjMtMi4xLDEuMi01LjEsNC4yLTguNmMyLjQtMi44LDQuMS00LDUuNS00QzY2LjUsMTcuNCw2OS4yLDIwLjMsNzIuNSwyNi4yIE0yOS4zLDM4LjZjOC42LDAsMTUuNi01LjYsMTUuNi0xMi42YzAtMS40LTAuMy0yLjgtMC44LTQuMWMtMC4xLTAuMS0wLjEtMC4zLDAtMC42YzAuMy0wLjgsMi43LTIsNC40LTIuOGMtMi43LTAuMy03LjUtMS04LjMtMS42Yy0yLjktMi4yLTYuNy0zLjUtMTAuOC0zLjVjLTguNiwwLTE1LjYsNS42LTE1LjYsMTIuNlMyMC44LDM4LjYsMjkuMywzOC42IE00Mi42LDBDMTkuMSwwLDAsMTksMCw0Mi41UzE5LjEsODUsNDIuNiw4NXM0Mi42LTE5LDQyLjYtNDIuNUM4NS4yLDE5LjEsNjYuMSwwLDQyLjYsMCBNMjkuMywxMi42YzQuMiwwLDguMiwxLjMsMTEuMywzLjdjMC42LDAuNCw1LjMsMS4yLDkuNSwxLjZsMS43LDAuMmwtMS42LDAuN2MtMi40LDEtNS4xLDIuNC01LjQsMi45YzAuNiwxLjQsMC45LDIuOSwwLjksNC40YzAsNy40LTcuNCwxMy41LTE2LjQsMTMuNXMtMTYuNC02LTE2LjQtMTMuNVMyMC4zLDEyLjYsMjkuMywxMi42IE01OS43LDYyLjJjLTEwLjMsOC40LTE5LjQsMTIuNi0yNy4yLDEyLjZjLTQuOCwwLTkuMS0xLjYtMTMtNC44Yy00LjEtMy4zLTYtNi42LTUuOC05LjZjMC4yLTIuNiwxLjgtNC44LDQuOS02LjhsMC42LTAuNGMyLjctMS43LDUuNS0zLjUsOC41LTMuNWMyLjgsMCw1LjMsMS42LDcuNSw0LjdjMS42LDIuNCwyLjgsMy4yLDQuMywzLjJjMi40LDAsNi0yLjIsMTEuNC03YzMuNC0zLDcuOC03LjQsNy41LTExLjFjLTAuMS0xLjgtMS4zLTMuNC0zLjYtNC44Yy0xLjctMS4xLTIuNy0yLjYtMy00LjRjLTAuNC0yLjksMS4yLTYuNSw0LjgtMTAuN2MyLjItMi41LDQuNi00LjksNy42LTQuOWMzLjQsMCw2LjUsMywxMC42LDEwLjJjMi40LDQuMywyLjQsMTAuNSwwLDE3QzczLjEsNDcsNjguOSw1NC42LDU5LjcsNjIuMiIvPjwvZz48dGV4dCB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAxIDIzLjA2NjQgMzQuMzgzMykiIGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSInUm9ib3RvLUJsYWNrJyIgZm9udC1zaXplPSIyNCI+PzwvdGV4dD48L3N2Zz4="); }
 
 
-.page-index .offcanvas-right-side {
+.offcanvas-right-side {
   & .icon-search{
     width: 48px;
     height: 48px;
@@ -311,20 +311,20 @@
 }
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .offcanvas-right-side__form {
+.offcanvas-right-side__form {
   display: none;
 }
