@@ -473,7 +473,7 @@ $( document ).ready(function() {
 			$('.overlay__offcanvas').addClass('visible');
 
 		});
-	};
+	}
 
 
 
@@ -488,9 +488,13 @@ $( document ).ready(function() {
 
 $(document).ready(function() {
 	$("#gallery-smooth").smoothDivScroll({
-			mousewheelScrolling: "allDirections",
-			manualContinuousScrolling: false,
+			// mousewheelScrolling: "allDirections",
+			// manualContinuousScrolling: false,
 			autoScrollingMode: "onStart"
+			hotSpotScrolling: false,
+			touchScrolling: true,
+			manualContinuousScrolling: true,
+			mousewheelScrolling: false
 	});
 });
 
