@@ -2,37 +2,40 @@
 
 
 
-// @import "page_02__windowSystems/000_proto.scss";
-// @import "page_02__windowSystems/001_breadcrumbs.scss";
-// @import "page_02__windowSystems/002_welcome.scss";
-// @import "page_02__windowSystems/003_choose-system.scss";
-// @import "page_02__windowSystems/004_about.scss";
-// @import "page_02__windowSystems/005_our-process.scss";
-// @import "page_02__windowSystems/006_contact-us.scss";
-// @import "page_02__windowSystems/007_pre-footer.scss";
+@import "page_03__fitments/001_breadcrumbs";
+@import "page_03__fitments/002_welcome";
+@import "page_03__fitments/003_functions";
+@import "page_03__fitments/004_gallery_1";
+@import "page_03__fitments/005_opening";
+@import "page_03__fitments/006_manufacturers";
+@import "page_03__fitments/007_gallery_2";
+@import "page_03__fitments/008_rules";
+@import "page_03__fitments/009_process";
+@import "page_03__fitments/010_contact";
+@import "page_03__fitments/011_prefooter";
 
 
 // very global styles:
 
-.page-index {
-  & .main{
-    // margin: 0 auto;
-    // max-width: 1360px;
-    position: relative;
-
-    // outline: 2px dashed blue;
-    // outline-offset: -2px;
-  }
-}
-
-.page-index {
-  & .CLASS{
-
-  }
-}
-
-.page-index {
-  & .CLASS{
-
-  }
-}
+// .page-index {
+//   & .main{
+//     // margin: 0 auto;
+//     // max-width: 1360px;
+//     position: relative;
+//
+//     // outline: 2px dashed blue;
+//     // outline-offset: -2px;
+//   }
+// }
+//
+// .page-index {
+//   & .CLASS{
+//
+//   }
+// }
+//
+// .page-index {
+//   & .CLASS{
+//
+//   }
+// }
