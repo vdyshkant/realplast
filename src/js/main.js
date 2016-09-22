@@ -490,10 +490,13 @@ $(document).ready(function() {
 	$("#gallery-smooth").smoothDivScroll({
 			// mousewheelScrolling: "allDirections",
 			// manualContinuousScrolling: false,
-			autoScrollingMode: "onStart"
+			autoScrollingMode: "onStart",
 			hotSpotScrolling: false,
 			touchScrolling: true,
 			manualContinuousScrolling: true,
+			// hotSpotScrollingStep: 3,
+			// hotSpotScrollingInterval: 2,
+			// autoScrollingStep: 1, SPPED
 			mousewheelScrolling: false
 	});
 });
