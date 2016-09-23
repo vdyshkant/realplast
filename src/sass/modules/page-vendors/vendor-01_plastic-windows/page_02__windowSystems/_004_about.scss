@@ -1,15 +1,17 @@
-.page-window-systems .PROTO {
-  // bg 1
+.page-window-systems .about {
+  background: url('../img/bg_white-wwindows.jpg');
 }
 
 
-.page-window-systems .PROTO {
+.page-window-systems .about {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -25,7 +27,7 @@
   }
 
   & .container {
-    //
+    padding: 100px 0;
   }
 
   & .PROTO-wrapper {
@@ -35,6 +37,63 @@
   & .PROTO-essence {
     //
   }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .about-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+  text-align: center;
+  color: #444341;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+
+.page-window-systems .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-window-systems .about-content__text {
+  width: 736px;
+  margin: 0 auto;
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+
+  color: #444341;
+  margin-bottom: 27px;
+
 }
 
 
