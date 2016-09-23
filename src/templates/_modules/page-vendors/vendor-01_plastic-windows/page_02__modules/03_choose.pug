@@ -14,7 +14,7 @@ section.choose
             ul.choose-menu__list
 
               //- item
-              li.choose-menu__item
+              li.choose-menu__item(class='closed')
                 a.choose-menu__link
                   .choose-menu__link__img
                   .choose-menu__link__text ENWIN
@@ -24,25 +24,25 @@ section.choose
                   //-     a.choose-menu__sublink
 
               //- item
-              li.choose-menu__item
+              li.choose-menu__item(class='opened')
                 a.choose-menu__link
                   .choose-menu__link__img
                   .choose-menu__link__text ARTEC
-                  //- sub menu
-                  ul.choose-menu__sublist
-                    li.choose-menu__subitem
-                      a.choose-menu__sublink
-                    li.choose-menu__subitem
-                      a.choose-menu__sublink
+                //- sub menu
+                ul.choose-menu__sublist
+                  li.choose-menu__subitem
+                    a.choose-menu__sublink Система Evolution (3&nbsp;камеры&nbsp;/&nbsp;60мм)
+                  li.choose-menu__subitem.active
+                    a.choose-menu__sublink Система Effectiv (5&nbsp;камер&nbsp;/&nbsp;70мм)
 
               //- item
-              li.choose-menu__item
+              li.choose-menu__item(class='closed')
                 a.choose-menu__link
                   .choose-menu__link__img
                   .choose-menu__link__text REHAU
 
               //- item
-              li.choose-menu__item
+              li.choose-menu__item(class='closed')
                 a.choose-menu__link
                   .choose-menu__link__img
                   .choose-menu__link__text GALWIN
