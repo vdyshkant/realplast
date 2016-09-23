@@ -538,3 +538,27 @@ $(document).ready(function() {
 });
 
 // smooth gallery END
+
+
+// fitments smooth gallery
+
+$(document).ready(function() {
+
+	if($('body').is('.page-fitments')){
+		$("#gallery-smooth").smoothDivScroll({
+				// mousewheelScrolling: "allDirections",
+				// manualContinuousScrolling: false,
+				autoScrollingMode: "onStart",
+				hotSpotScrolling: false,
+				touchScrolling: true,
+				manualContinuousScrolling: true,
+				// hotSpotScrollingStep: 3,
+				// hotSpotScrollingInterval: 2,
+				// autoScrollingStep: 1, SPPED
+				mousewheelScrolling: false
+		});
+	}
+
+});
+
+// fitments smooth gallery END
