@@ -10,28 +10,42 @@ section.choose
           //- LEFT menu
           //- ---------------------------------------------
           .choose-menu
-            h2.choose-menu__title
+            h2.choose-menu__title Выберите систему:
             ul.choose-menu__list
 
               //- item
               li.choose-menu__item
                 a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text ENWIN
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+              //- item
+              li.choose-menu__item
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text ARTEC
                   //- sub menu
                   ul.choose-menu__sublist
+                    li.choose-menu__subitem
+                      a.choose-menu__sublink
                     li.choose-menu__subitem
                       a.choose-menu__sublink
 
               //- item
               li.choose-menu__item
                 a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text REHAU
 
               //- item
               li.choose-menu__item
                 a.choose-menu__link
-
-              //- item
-              li.choose-menu__item
-                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text GALWIN
 
 
 
@@ -41,55 +55,88 @@ section.choose
             .chose-content__wrapper
 
               .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text Artec Effective
+
 
               //- === scheme ===================================
               .choose-content__scheme
                 //- logo
                 .choose-scheme__logo
                   .choose-scheme__logo-img
-                  .choose-scheme__logo-title
+                  .choose-scheme__logo-title Создано в Германии
 
                 //- details
                 .choose-scheme__details
                   .choose-details__left-list
-                  .choose-details__center-figure
-                  .choose-details__right-list
+                    ul
+                      li.choose-scheme__details__list-item Ширина профиля 70 мм
+                      li.choose-scheme__details__list-item Возможность применения  скрытой и открытой систем отвода конденсата ПРЕСТИЖ
+                      li.choose-scheme__details__list-item Высота наплава – 25мм
 
+                  .choose-details__center-figure
+
+                  .choose-details__right-list
+                    ul
+                      li.choose-scheme__details__list-item Армирование профиля – 1,5мм
+                      li.choose-scheme__details__list-item Область применения от&nbsp;+75&nbsp;С&nbsp;до&nbsp;-55&nbsp;С
+                      li.choose-scheme__details__list-item Возможность установки стеклопакета шириной до 42мм
+                      li.choose-scheme__details__list-item Воздушных камер – 5
+
+
+                //- advantages
                 .choose-advantages
                   //- item 01
                   .choose-advantages__item
                     .choose-adv__item-img
-                    .choose-adv__item-title
+                    .choose-adv__item-title Гарантия 10 лет
                   //- item 02
                   .choose-advantages__item
                     .choose-adv__item-img
-                    .choose-adv__item-title
+                    .choose-adv__item-title Долговечность
                   //- item 03
                   .choose-advantages__item
                     .choose-adv__item-img
-                    .choose-adv__item-title
+                    .choose-adv__item-title Теплоизоляция
                   //- item 04
                   .choose-advantages__item
                     .choose-adv__item-img
-                    .choose-adv__item-title
+                    .choose-adv__item-title Звукоизоляция
                   //- item 05
                   .choose-advantages__item
                     .choose-adv__item-img
-                    .choose-adv__item-title
+                    .choose-adv__item-title ЭКО
 
               //- === params ===================================
-              .choose-params
-                .choose-params__left
-                .choose-params__right
+              .choose__params
+                .choose__params__left.choose__params__column
+                  .choose__params__title Характеристики системы
+                  ul.choose__params-list
+                    //- list ITEM
+                    li.choose__params-item
+                      .choose__params-text Теплоизоляция
+                      .choose__params-bars
+                    //- list ITEM
+                    li.choose__params-item
+                      .choose__params-text Шумоизоляция
+                      .choose__params-bars
+                    //- list ITEM
+                    li.choose__params-item
+                      .choose__params-text Долговечность
+                      .choose__params-bars
+
+                .choose__params__right.choose__params__column
+                  .choose__params__title Цвета системы
+                  .choose__params__colors
 
 
               //- === btn ===================================
-              a.choose-btn-calc
+              a.choose-btn-calc Рассчитать систему
 
 
               //- === description ===================================
               .choose-desc
                 p.choose-desc__text
+                  | ARtec EFFECTIV новый высокотехнологичный профиль, предназначенный удовлетворить требования даже самых северных регионов. За счет оптимального расположения и размера воздушных камер, достигнут высочайший уровень термо- и звукоизоляции. Толщина лицевых стенок профиля составляет 3 мм (класс А), что позволяет окнам выдерживать сильные температурные перепады и быть долговечными!
 
               //- === awards ===================================
               .choose-awards
@@ -101,14 +148,18 @@ section.choose
 
               //- === about ===================================
               .choose-about
-                .choose-about__img
-                .choose-about__text
-                .choose-about__text
+                img.choose-about__img(src="img/002_choose-about__img.jpg")
+                p.choose-about__text
+                  | Немецкая компания ARtec - одна из старейших фирм на рынке ПВХ Казахстана и стран СНГ.<br>
+                  | С 1995 года продукция ARtec востребована среди производителей оконных систем, что позволяет уверенно смотреть в будущее.<br>
+                  | В любое время года окна из профилей ARtec радуют миллионы покупателей от крайнего севера до субтропического юга.
+                p.choose-about__text
+                  | Компания ARtec уверенно гарантирует своим партнёрам разнообразнейший ассортимент комплектующих для производства окон, дверей, фасадных конструкций европейского качества. На всю продукцию, надлежащую сертификации, имеются сертификаты Германии, России и Украины. Фирма ARtec уверенно идет вперед, постоянно расширяя сеть своих представительств, являясь сегодня одним из самых передовых поставщиков оконных технологий во многих странах.
 
               //- === btn-calc-btm ===================================
               .choose-calc-btm
-                .divider
-                a.choose-btn--bottom
+                .choose-calc-btm__divider
+                a.choose-btn--bottom Рассчитать систему
 
 
 // choose end
