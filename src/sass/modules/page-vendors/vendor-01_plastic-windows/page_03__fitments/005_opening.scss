@@ -54,6 +54,10 @@
   color: #444341;
 
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -80,6 +84,10 @@
 .page-fitments .opening-content__row {
   @include clearfix;
   margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 

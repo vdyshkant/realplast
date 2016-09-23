@@ -1,12 +1,14 @@
-.page-index .PROTO {
+.page-fitments .manufacturers {
   // bg 1
 }
 
 
-.page-index .PROTO {
+.page-fitments .manufacturers {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+
+    padding: 0 20px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;
@@ -25,34 +27,136 @@
   }
 
   & .container {
+    padding: 20px 0 130px;
+  }
+
+  & .manufacturers-wrapper {
     //
   }
 
-  & .PROTO-wrapper {
-    //
-  }
-
-  & .PROTO-essence {
+  & .manufacturers-essence {
     //
   }
 }
 
 
-.page-index .PROTO {
+.page-fitments .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-fitments .manufacturers-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed')
+  text-transform: uppercase;
+  text-align: center;
+  color: #444341;
+
+  margin-bottom: 22px;
+}
+
+
+.page-fitments .manufacturers-divider {
+  display: block;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+
+.page-fitments .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+// manufacturers CONTENT
+.page-fitments .manufacturers-content__row {
+  @include clearfix;
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.page-fitments .manufacturers-content__col {
+
+}
+
+
+.page-fitments .manufacturers-content__col.col-left {
+  float: left;
+  width: 740px;
+  margin-right: 20px;
+}
+
+
+.page-fitments .manufacturers-content__col.col-right {
+  float: right;
+  width: 360px;
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+// title
+.page-fitments .manufacturers-content__col__title {
+  @include font(normal, 700, 32px, 24px, 'Roboto');
+  color: #444341;
+  margin-bottom: 25px;
+}
+
+
+.page-fitments .manufacturers-content__col__text {
+  @include font(normal, 400, 18px, 27px, 'Roboto')
+  color: #444341;
+  margin-bottom: 27px;
+}
+
+
+
+
+.page-fitments .PROTO {
   & .CLASS{
 
   }
