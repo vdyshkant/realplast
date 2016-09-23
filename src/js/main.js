@@ -585,3 +585,22 @@ $(document).ready(function() {
 });
 
 // fitments smooth gallery END
+
+
+
+// tabs for page-windsystem::choose module
+
+(function() {
+		$('.js-tabs li[data-id]').click(function() {
+				if ($(this).hasClass('active')) {
+						return;
+				}
+
+				$('#' + $(this).attr('data-id')).fadeIn(0).siblings().fadeOut(0);
+				$(this).siblings().removeClass('active');
+				$(this).addClass('active');
+		});
+})();
+
+
+// tabs for page-windsystem::choose module END

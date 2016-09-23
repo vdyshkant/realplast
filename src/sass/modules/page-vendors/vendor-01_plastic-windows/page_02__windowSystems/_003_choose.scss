@@ -254,6 +254,11 @@
 .page-window-systems .choose-content {
   // width: 850px;
   // min-width: 850px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 }
 
 
