@@ -306,6 +306,12 @@ $( document ).ready(function() {
 			$('.js-more[data-more-num=' + identifier + ']').click(function(e) {
 				e.preventDefault();
 				// $(this).css( "color", "red" );
+				$('.js-feature-item').removeClass('active');
+				$('.js-extra').slideUp(300);
+								$('.features-smoothy img:nth-child(1)').fadeOut(300);
+								$('.features-smoothy img:nth-child(2)').fadeIn(300);
+
+
 				$('.js-feature-item[data-more-container="' + identifier + '"]').toggleClass('active');
 				$('.js-extra[data-more-option="' + identifier + '"]').slideToggle(300);
 
