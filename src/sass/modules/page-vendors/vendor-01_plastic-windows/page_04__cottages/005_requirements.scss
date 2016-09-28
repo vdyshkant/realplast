@@ -1,15 +1,17 @@
-.page-index .PROTO {
-  // bg 1
+.page-cottages .about {
+  background: url('../img/bg_white-wwindows.jpg');
 }
 
 
-.page-index .PROTO {
+.page-cottages .about {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -25,7 +27,7 @@
   }
 
   & .container {
-    //
+    padding: 100px 0;
   }
 
   & .PROTO-wrapper {
@@ -38,21 +40,149 @@
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .about-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+  text-align: center;
+  color: #444341;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+
+.page-cottages .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 60px;
+
+
+}
+
+
+.page-cottages .about-content {
+  display: flex;
+}
+
+
+.page-cottages .about-content__item {
+  position: relative;
+  width: 265px;
+  margin-right: 20px;
+
+  // outline: 2px dashed crimson;
+  // outline-offset: -2px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.page-cottages .about-content__item__substrate {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+
+  margin-bottom: 40px;
+
+  & .svg-substrate{
+    width: 150px;
+    height: 150px;
+    -webkit-filter: drop-shadow(2.5px 3.2px 7px rgba(26, 47, 60, 0.11));
+    filter: drop-shadow(2.5px 3.2px 7px rgba(26, 47, 60, 0.11));
+  }
+}
+
+
+.page-cottages .about-content__item__thumb {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+.page-cottages .about-content__item {
+  &:nth-child(2) {
+    & .about-content__item__thumb {
+      top: 4px;
+    }
+  }
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .about-content__item__title {
+  @include font(normal, 700, 18px, 27px, 'Roboto');
+  text-align: center;
+  text-transform: uppercase;
+  color: #444341;
+
+
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
   & .CLASS{
 
   }
