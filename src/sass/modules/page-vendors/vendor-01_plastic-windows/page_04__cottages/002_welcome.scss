@@ -1,15 +1,18 @@
-.page-index .PROTO {
-  // bg 1
+.page-cottages .welcome {
+  background: url('../img/bg_welcome.png');
+  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
 }
 
 
-.page-index .PROTO {
+.page-cottages .welcome {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    padding: 0 5px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -25,11 +28,12 @@
   }
 
   & .container {
-    //
+
   }
 
-  & .PROTO-wrapper {
-    //
+  & .welcome-wrapper {
+    position: relative;
+      min-height: 600px;
   }
 
   & .PROTO-essence {
@@ -38,21 +42,76 @@
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-cottages .welcome-thumb {
+  width: 590px;
+  height: 510px;
+  background: url('../img/004_welcome-img.jpg') no-repeat left 0 top 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+
+.page-cottages .welcome-thumb__img {
+
+}
+
+
+.page-cottages .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-cottages .welcome-content {
+  background: url('../img/bg_white.jpg');
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  width: 560px;
+  min-height: 510px;
+
+  padding: 35px 20px 30px 20px;
+}
+
+
+.page-cottages .welcome-title {
+  @include font(normal, 700, 32px, 25px, 'Roboto');
+  text-align: center;
+  color: #444341;
+  margin-bottom: 30px;
+}
+
+
+.page-cottages .welcome-text__item {
+  @include font(normal, 400, 18px, 23px, 'Roboto');
+  color: #444341;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
   & .CLASS{
 
   }
