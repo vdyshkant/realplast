@@ -1,15 +1,18 @@
-.page-index .PROTO {
-  // bg 1
+.page-cottages .installation {
+    background: url('../img/004_installation_bg.jpg');
+    background-size: cover;
 }
 
 
-.page-index .PROTO {
+.page-cottages .installation {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -25,7 +28,7 @@
   }
 
   & .container {
-    //
+    padding: 160px 0;
   }
 
   & .PROTO-wrapper {
@@ -38,21 +41,77 @@
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .installation-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+
+.page-cottages .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-cottages .installation-content__text {
+  width: 740px;
+  margin: 0 auto;
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+
+  color: #fff;
+
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .PROTO {
   & .CLASS{
 
   }
