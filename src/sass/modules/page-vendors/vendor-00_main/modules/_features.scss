@@ -1,6 +1,8 @@
 .page-index .features {
   background: url('../img/features-bg.png');
 
+
+  box-shadow: 3px 0px 7px 1px rgba(68, 67, 65, 0.21);
   position: relative;
   z-index: 3;
 }
@@ -340,6 +342,8 @@
 .page-index .features {
   & .features__item__foreground{
     @include clearfix;
+    height: 100%;
+    position: relative;
   }
 }
 
@@ -349,16 +353,38 @@
     width: 70px;
     height: 75px;
     float: left;
+
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+
   }
 }
 
 
 .page-index .features {
   & .features__item__title{
-    margin-left: 95px;
+    height: 75px;
+    width: 330px;
+
+    position: absolute;
+    left: 95px;
+    bottom: 60px;
+  }
+}
+
+
+.page-index .features {
+  & .features__item__title__text{
     @include font(normal, 300, 25px, 37px, 'Roboto');
     color: #444341;
     text-transform: uppercase;
+
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 }
 
