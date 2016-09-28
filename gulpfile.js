@@ -40,7 +40,8 @@ gulp.task('pug', function() {
     // 'src/templates/**/*.pug'   // ignore all files
     'src/templates/index.pug',
     'src/templates/windsystem.pug',
-    'src/templates/fitments.pug'
+    'src/templates/fitments.pug',
+    'src/templates/cottages.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
         .on('error', errorLog)
