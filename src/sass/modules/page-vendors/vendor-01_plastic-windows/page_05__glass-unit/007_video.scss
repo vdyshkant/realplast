@@ -26,6 +26,7 @@
   }
 
   & .container {
+    padding-top: 16px;
     padding-bottom: 70px;
   }
 
@@ -80,6 +81,8 @@
 .page-glass-unit .video {
   & .video__expand-item.divider{
 
+    height: 50px;
+    background: transparent;
     width: 50%;
     border-bottom: 1px solid #fff;
     &:first-child {
