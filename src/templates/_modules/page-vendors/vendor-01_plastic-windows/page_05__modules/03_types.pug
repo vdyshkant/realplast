@@ -1,0 +1,276 @@
+// types
+section.types
+  .shell
+    .container
+      .range
+        .types-essence
+
+
+
+          //- LEFT menu
+          //- ---------------------------------------------
+          .types-menu
+            h2.types-menu__title Выберите систему:
+            ul.types-menu__list.js-tabs#menu_tabs
+
+              //- item
+              li.types-menu__item(data-id="prod-first" class='closed')
+                a.types-menu__link
+                  .types-menu__link__img
+                  .types-menu__link__text ENWIN
+                  //- sub menu
+                  //- ul.types-menu__sublist
+                  //-   li.types-menu__subitem
+                  //-     a.types-menu__sublink
+
+              //- item
+              li.types-menu__item(class='opened')
+                a.types-menu__link
+                  .types-menu__link__img
+                  .types-menu__link__text ARTEC
+                //- sub menu
+                ul.types-menu__sublist
+                  li.types-menu__subitem(data-id="prod-second")
+                    a.types-menu__sublink Система Evolution (3&nbsp;камеры&nbsp;/&nbsp;60мм)
+                  li.types-menu__subitem.active(data-id="prod-third")
+                    a.types-menu__sublink Система Effectiv (5&nbsp;камер&nbsp;/&nbsp;70мм)
+
+              //- item
+              li.types-menu__item(data-id="prod-fourth" class='closed')
+                a.types-menu__link
+                  .types-menu__link__img
+                  .types-menu__link__text REHAU
+
+              //- item
+              li.types-menu__item(data-id="prod-fifth" class='closed')
+                a.types-menu__link
+                  .types-menu__link__img
+                  .types-menu__link__text GALWIN
+
+
+
+          //- RIGHT content
+          //- ---------------------------------------------
+          .types-content.active#prod-second
+            .chose-content__wrapper
+
+              .types-content__ribbon(absolute)
+                .types-content__ribbon__text Artec Effective
+
+
+              //- === scheme ===================================
+              .types-content__scheme
+                //- logo
+                .types-scheme__logo
+                  .types-scheme__logo-img
+                  .types-scheme__logo-title Создано в Германии
+
+                //- details
+                .types-scheme__details
+                  .types-details__left-list
+                    ul
+                      li.types-scheme__details__list-item Ширина профиля 70 мм
+                      li.types-scheme__details__list-item Возможность применения  скрытой и открытой систем отвода конденсата ПРЕСТИЖ
+                      li.types-scheme__details__list-item Высота наплава – 25мм
+
+                  .types-details__center-figure
+
+                  .types-details__right-list
+                    ul
+                      li.types-scheme__details__list-item Армирование профиля – 1,5мм
+                      li.types-scheme__details__list-item Область применения от&nbsp;+75&nbsp;С&nbsp;до&nbsp;-55&nbsp;С
+                      li.types-scheme__details__list-item Возможность установки стеклопакета шириной до 42мм
+                      li.types-scheme__details__list-item Воздушных камер – 5
+
+
+                //- advantages
+                .types-advantages
+                  //- item 01
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title Гарантия 10 лет
+                  //- item 02
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title Долговечность
+                  //- item 03
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title Теплоизоляция
+                  //- item 04
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title Звукоизоляция
+                  //- item 05
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title ЭКО
+
+              //- === params ===================================
+              .types__params
+                .types__params__left.types__params__column
+                  .types__params__title Характеристики системы
+                  ul.types__params-list
+                    //- list ITEM
+                    li.types__params-item
+                      .types__params-text Теплоизоляция
+                      .types__params-bars
+                    //- list ITEM
+                    li.types__params-item
+                      .types__params-text Шумоизоляция
+                      .types__params-bars
+                    //- list ITEM
+                    li.types__params-item
+                      .types__params-text Долговечность
+                      .types__params-bars
+
+                .types__params__right.types__params__column
+                  .types__params__title Цвета системы
+                  .types__params__colors
+
+
+              //- === btn ===================================
+              a.types-btn-calc Рассчитать систему
+
+
+              //- === description ===================================
+              .types-desc
+                p.types-desc__text
+                  | ARtec EFFECTIV новый высокотехнологичный профиль, предназначенный удовлетворить требования даже самых северных регионов. За счет оптимального расположения и размера воздушных камер, достигнут высочайший уровень термо- и звукоизоляции. Толщина лицевых стенок профиля составляет 3 мм (класс А), что позволяет окнам выдерживать сильные температурные перепады и быть долговечными!
+
+              //- === awards ===================================
+              .types-awards
+                .types-awards__item
+                .types-awards__item
+                .types-awards__item
+                .types-awards__item
+                .types-awards__item
+
+              //- === about ===================================
+              .types-about
+                img.types-about__img(src="img/002_types-about__img.jpg")
+                p.types-about__text
+                  | Немецкая компания ARtec - одна из старейших фирм на рынке ПВХ Казахстана и стран СНГ.<br>
+                  | С 1995 года продукция ARtec востребована среди производителей оконных систем, что позволяет уверенно смотреть в будущее.<br>
+                  | В любое время года окна из профилей ARtec радуют миллионы покупателей от крайнего севера до субтропического юга.
+                p.types-about__text
+                  | Компания ARtec уверенно гарантирует своим партнёрам разнообразнейший ассортимент комплектующих для производства окон, дверей, фасадных конструкций европейского качества. На всю продукцию, надлежащую сертификации, имеются сертификаты Германии, России и Украины. Фирма ARtec уверенно идет вперед, постоянно расширяя сеть своих представительств, являясь сегодня одним из самых передовых поставщиков оконных технологий во многих странах.
+
+              //- === btn-calc-btm ===================================
+              .types-calc-btm
+                .types-calc-btm__divider
+                a.types-btn--bottom Рассчитать систему
+          //- RIGHT content
+          //- ---------------------------------------------
+          .types-content#prod-third
+            .chose-content__wrapper
+
+              .types-content__ribbon(absolute)
+                .types-content__ribbon__text Artec223 Effective
+
+
+              //- === scheme ===================================
+              .types-content__scheme
+                //- logo
+                .types-scheme__logo
+                  .types-scheme__logo-img
+                  .types-scheme__logo-title Создано12 в Германии
+
+                //- details
+                .types-scheme__details
+                  .types-details__left-list
+                    ul
+                      li.types-scheme__details__list-item ZZШирина профиля 70 мм
+                      li.types-scheme__details__list-item ZZВозможность применения  скрытой и открытой систем отвода конденсата ПРЕСТИЖ
+                      li.types-scheme__details__list-item ZZВысота наплава – 25мм
+
+                  .types-details__center-figure
+
+                  .types-details__right-list
+                    ul
+                      li.types-scheme__details__list-item ZZАрмирование профиля – 1,5мм
+                      li.types-scheme__details__list-item ZZОбласть применения от&nbsp;+75&nbsp;С&nbsp;до&nbsp;-55&nbsp;С
+                      li.types-scheme__details__list-item ZZВозможность установки стеклопакета шириной до 42мм
+                      li.types-scheme__details__list-item ZZВоздушных камер – 5
+
+
+                //- advantages
+                .types-advantages
+                  //- item 01
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title ZZГарантия 10 лет
+                  //- item 02
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title ZZДолговечность
+                  //- item 03
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title ZZТеплоизоляция
+                  //- item 04
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title ZZЗвукоизоляция
+                  //- item 05
+                  .types-advantages__item
+                    .types-adv__item-img
+                    .types-adv__item-title ЭКО
+
+              //- === params ===================================
+              .types__params
+                .types__params__left.types__params__column
+                  .types__params__title Характеристики системы
+                  ul.types__params-list
+                    //- list ITEM
+                    li.types__params-item
+                      .types__params-text Теплоизоляция
+                      .types__params-bars
+                    //- list ITEM
+                    li.types__params-item
+                      .types__params-text Шумоизоляция
+                      .types__params-bars
+                    //- list ITEM
+                    li.types__params-item
+                      .types__params-text Долговечность
+                      .types__params-bars
+
+                .types__params__right.types__params__column
+                  .types__params__title Цвета системы
+                  .types__params__colors
+
+
+              //- === btn ===================================
+              a.types-btn-calc Рассчитать систему
+
+
+              //- === description ===================================
+              .types-desc
+                p.types-desc__text
+                  | ARtec EFFECTIV новый высокотехнологичный профиль, предназначенный удовлетворить требования даже самых северных регионов. За счет оптимального расположения и размера воздушных камер, достигнут высочайший уровень термо- и звукоизоляции. Толщина лицевых стенок профиля составляет 3 мм (класс А), что позволяет окнам выдерживать сильные температурные перепады и быть долговечными!
+
+              //- === awards ===================================
+              .types-awards
+                .types-awards__item
+                .types-awards__item
+                .types-awards__item
+                .types-awards__item
+                .types-awards__item
+
+              //- === about ===================================
+              .types-about
+                img.types-about__img(src="img/002_types-about__img.jpg")
+                p.types-about__text
+                  | Немецкая компания ARtec - одна из старейших фирм на рынке ПВХ Казахстана и стран СНГ.<br>
+                  | С 1995 года продукция ARtec востребована среди производителей оконных систем, что позволяет уверенно смотреть в будущее.<br>
+                  | В любое время года окна из профилей ARtec радуют миллионы покупателей от крайнего севера до субтропического юга.
+                p.types-about__text
+                  | Компания ARtec уверенно гарантирует своим партнёрам разнообразнейший ассортимент комплектующих для производства окон, дверей, фасадных конструкций европейского качества. На всю продукцию, надлежащую сертификации, имеются сертификаты Германии, России и Украины. Фирма ARtec уверенно идет вперед, постоянно расширяя сеть своих представительств, являясь сегодня одним из самых передовых поставщиков оконных технологий во многих странах.
+
+              //- === btn-calc-btm ===================================
+              .types-calc-btm
+                .types-calc-btm__divider
+                a.types-btn--bottom Рассчитать систему
+
+
+// types end
