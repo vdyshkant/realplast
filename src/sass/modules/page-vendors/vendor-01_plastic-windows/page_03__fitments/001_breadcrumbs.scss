@@ -64,6 +64,17 @@
 
 .page-fitments .breadcrumbs-essence {
   display: flex;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(68, 67, 65, 0.2);
+  }
 }
 
 
