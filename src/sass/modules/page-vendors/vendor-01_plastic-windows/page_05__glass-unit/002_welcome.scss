@@ -1,6 +1,8 @@
 .page-glass-unit .welcome {
   background: url('../img/bg_welcome.png');
   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+  position: relative;
+  z-index: 1;
 }
 
 
