@@ -1,0 +1,146 @@
+.page-glass-unit .welcome {
+  background: url('../img/bg_welcome.png');
+  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+}
+
+
+.page-glass-unit .welcome {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    // padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+
+  }
+
+  & .welcome-wrapper {
+
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+& .welcome-row {
+  position: relative;
+  min-height: 600px;
+}
+
+
+.page-glass-unit .welcome-row-top .welcome-thumb {
+  width: 590px;
+  height: 510px;
+  background: #fff url('../img/005_welcome-img.png') no-repeat 50% 50%;
+  background-size: auto 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-glass-unit .welcome-row-bottom .welcome-thumb {
+  width: 570px;
+  height: 510px;
+  background: #fff url('../img/005_welcome-img.png') no-repeat 50% 50%;
+  background-size: auto 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+
+.page-glass-unit .welcome-thumb__img {
+
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .welcome-row-top .welcome-content {
+  background: url('../img/bg_white.jpg');
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  width: 570px;
+  min-height: 510px;
+
+  padding: 30px 35px 50px 20px;
+}
+
+
+.page-glass-unit .welcome-row-bottom .welcome-content {
+  background: url('../img/bg_white.jpg');
+  // position: absolute;
+  // bottom: 0;
+  // right: 0px;
+  width: 590px;
+  min-height: 510px;
+
+  padding: 30px 35px 50px 20px;
+}
+
+
+.page-glass-unit .welcome-title {
+  @include font(normal, 700, 32px, 25px, 'Roboto');
+  text-align: center;
+  color: #444341;
+  margin-bottom: 30px;
+}
+
+
+.page-glass-unit .welcome-text__item {
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+  color: #444341;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
