@@ -1,4 +1,7 @@
 // types
+
+.types__top-row
+
 section.types
   .shell
     .container
@@ -10,14 +13,14 @@ section.types
           //- LEFT menu
           //- ---------------------------------------------
           .types-menu
-            h2.types-menu__title Выберите систему:
+            h2.types-menu__title Виды стеклопакетов:
             ul.types-menu__list.js-tabs#menu_tabs
 
               //- item
               li.types-menu__item(data-id="prod-first" class='closed')
                 a.types-menu__link
                   .types-menu__link__img
-                  .types-menu__link__text ENWIN
+                  .types-menu__link__text Стандартный
                   //- sub menu
                   //- ul.types-menu__sublist
                   //-   li.types-menu__subitem
@@ -27,25 +30,31 @@ section.types
               li.types-menu__item(class='opened')
                 a.types-menu__link
                   .types-menu__link__img
-                  .types-menu__link__text ARTEC
-                //- sub menu
-                ul.types-menu__sublist
-                  li.types-menu__subitem(data-id="prod-second")
-                    a.types-menu__sublink Система Evolution (3&nbsp;камеры&nbsp;/&nbsp;60мм)
-                  li.types-menu__subitem.active(data-id="prod-third")
-                    a.types-menu__sublink Система Effectiv (5&nbsp;камер&nbsp;/&nbsp;70мм)
+                  .types-menu__link__text Энерго-сберегающий
 
               //- item
               li.types-menu__item(data-id="prod-fourth" class='closed')
                 a.types-menu__link
                   .types-menu__link__img
-                  .types-menu__link__text REHAU
+                  .types-menu__link__text Мульти-функциональный
 
               //- item
               li.types-menu__item(data-id="prod-fifth" class='closed')
                 a.types-menu__link
                   .types-menu__link__img
-                  .types-menu__link__text GALWIN
+                  .types-menu__link__text Шумозащитный
+
+              //- item
+              li.types-menu__item(data-id="prod-fifth" class='closed')
+                a.types-menu__link
+                  .types-menu__link__img
+                  .types-menu__link__text Противоударный
+
+              //- item
+              li.types-menu__item(data-id="prod-fifth" class='closed')
+                a.types-menu__link
+                  .types-menu__link__img
+                  .types-menu__link__text Тонированный
 
 
 
@@ -55,222 +64,48 @@ section.types
             .chose-content__wrapper
 
               .types-content__ribbon(absolute)
-                .types-content__ribbon__text Artec Effective
+                .types-content__ribbon__text Энергосберегающий стеклопакет
 
 
               //- === scheme ===================================
-              .types-content__scheme
+              //- .types-content__scheme
                 //- logo
-                .types-scheme__logo
-                  .types-scheme__logo-img
-                  .types-scheme__logo-title Создано в Германии
-
-                //- details
-                .types-scheme__details
-                  .types-details__left-list
-                    ul
-                      li.types-scheme__details__list-item Ширина профиля 70 мм
-                      li.types-scheme__details__list-item Возможность применения  скрытой и открытой систем отвода конденсата ПРЕСТИЖ
-                      li.types-scheme__details__list-item Высота наплава – 25мм
-
-                  .types-details__center-figure
-
-                  .types-details__right-list
-                    ul
-                      li.types-scheme__details__list-item Армирование профиля – 1,5мм
-                      li.types-scheme__details__list-item Область применения от&nbsp;+75&nbsp;С&nbsp;до&nbsp;-55&nbsp;С
-                      li.types-scheme__details__list-item Возможность установки стеклопакета шириной до 42мм
-                      li.types-scheme__details__list-item Воздушных камер – 5
+                //- .types-scheme__logo
+                //-   .types-scheme__logo-img
+                //-   .types-scheme__logo-title Создано в Германии
 
 
-                //- advantages
-                .types-advantages
-                  //- item 01
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title Гарантия 10 лет
-                  //- item 02
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title Долговечность
-                  //- item 03
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title Теплоизоляция
-                  //- item 04
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title Звукоизоляция
-                  //- item 05
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title ЭКО
-
-              //- === params ===================================
-              .types__params
-                .types__params__left.types__params__column
-                  .types__params__title Характеристики системы
-                  ul.types__params-list
-                    //- list ITEM
-                    li.types__params-item
-                      .types__params-text Теплоизоляция
-                      .types__params-bars
-                    //- list ITEM
-                    li.types__params-item
-                      .types__params-text Шумоизоляция
-                      .types__params-bars
-                    //- list ITEM
-                    li.types__params-item
-                      .types__params-text Долговечность
-                      .types__params-bars
-
-                .types__params__right.types__params__column
-                  .types__params__title Цвета системы
-                  .types__params__colors
-
-
-              //- === btn ===================================
-              a.types-btn-calc Рассчитать систему
-
-
-              //- === description ===================================
-              .types-desc
-                p.types-desc__text
-                  | ARtec EFFECTIV новый высокотехнологичный профиль, предназначенный удовлетворить требования даже самых северных регионов. За счет оптимального расположения и размера воздушных камер, достигнут высочайший уровень термо- и звукоизоляции. Толщина лицевых стенок профиля составляет 3 мм (класс А), что позволяет окнам выдерживать сильные температурные перепады и быть долговечными!
-
-              //- === awards ===================================
-              .types-awards
-                .types-awards__item
-                .types-awards__item
-                .types-awards__item
-                .types-awards__item
-                .types-awards__item
 
               //- === about ===================================
               .types-about
-                img.types-about__img(src="img/002_types-about__img.jpg")
+
+                .types-content__substrate
+                  +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_substrate', 'filename':'005_types-substrate'}])
+                    svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
+                //- img.types-about__img(src="img/005_types-about__img.jpg")
                 p.types-about__text
-                  | Немецкая компания ARtec - одна из старейших фирм на рынке ПВХ Казахстана и стран СНГ.<br>
-                  | С 1995 года продукция ARtec востребована среди производителей оконных систем, что позволяет уверенно смотреть в будущее.<br>
-                  | В любое время года окна из профилей ARtec радуют миллионы покупателей от крайнего севера до субтропического юга.
+                  | Работает по принципу теплового зеркала.
+                  | Оптимален для климата средней полосы.
+                  | Однокамерный. Формула стеклопакета: 32 (4-24-4). Два стекла толщиной по 4 мм, дистанционная рамка 24 мм.
+                  | Однокамерные стеклопакеты чаще всего применяют для остекления балконов и лоджий, неотапливаемых помещений, а также, в целях экономии, на окна и балконные блоки (окно + балконная дверь), которые выходят на уже застеклённую лоджию или балкон.
                 p.types-about__text
-                  | Компания ARtec уверенно гарантирует своим партнёрам разнообразнейший ассортимент комплектующих для производства окон, дверей, фасадных конструкций европейского качества. На всю продукцию, надлежащую сертификации, имеются сертификаты Германии, России и Украины. Фирма ARtec уверенно идет вперед, постоянно расширяя сеть своих представительств, являясь сегодня одним из самых передовых поставщиков оконных технологий во многих странах.
+                  | Двухкамерный. Формула: 40 (4-14-4-14-4). Три стекла по 4 мм, разделенные рамками 14 мм.
+                  | Двойной стеклопакет является самым распространенным вариантом остекления. Он соответствует всем требованиям ГОСТа по теплопроводности, шумоизоляции и светопропусканию.
+                p.types-about__text
+                  | Двухкамерный. Формула: 40 (4-14-4-14-4). Три стекла по 4 мм, разделенные рамками 14 мм.
+                  | Двойной стеклопакет является самым распространенным вариантом остекления. Он соответствует всем требованиям ГОСТа по теплопроводности, шумоизоляции и светопропусканию.
+                  | 0,44 м² С/Вт
+                  | Требования по ГОСТ 24866-99 к сопротивлению теплопередаче для энергосберегающих стеклопакетов:
+                  | 0,53 м² С/Вт
+                  | Двухкамерный мультифункциональный стеклопакет от Строй Мастер:
+                  | При желании возможно изготовление и установка трехамерного стеклопакета (четыре стекла, три внутренних камеры), но такой стеклопакет будет довольно тяжел, а фурнитура окна будет нести излишние нагрузки. Частое открывание тяжелых створок может привести в результате к их провисанию.
+                  | При этом стеклопакеты с энергосберегающим стеклом или, тем более, с комбинацией энергосберегающего и мультифункционального стекол при том же весе, что у стандартного двухкамерного стеклопакета, гораздо эффективнее сберегают тепло и мы рекомендуем для установки именно их.
+
 
               //- === btn-calc-btm ===================================
               .types-calc-btm
                 .types-calc-btm__divider
-                a.types-btn--bottom Рассчитать систему
-          //- RIGHT content
-          //- ---------------------------------------------
-          .types-content#prod-third
-            .chose-content__wrapper
-
-              .types-content__ribbon(absolute)
-                .types-content__ribbon__text Artec223 Effective
-
-
-              //- === scheme ===================================
-              .types-content__scheme
-                //- logo
-                .types-scheme__logo
-                  .types-scheme__logo-img
-                  .types-scheme__logo-title Создано12 в Германии
-
-                //- details
-                .types-scheme__details
-                  .types-details__left-list
-                    ul
-                      li.types-scheme__details__list-item ZZШирина профиля 70 мм
-                      li.types-scheme__details__list-item ZZВозможность применения  скрытой и открытой систем отвода конденсата ПРЕСТИЖ
-                      li.types-scheme__details__list-item ZZВысота наплава – 25мм
-
-                  .types-details__center-figure
-
-                  .types-details__right-list
-                    ul
-                      li.types-scheme__details__list-item ZZАрмирование профиля – 1,5мм
-                      li.types-scheme__details__list-item ZZОбласть применения от&nbsp;+75&nbsp;С&nbsp;до&nbsp;-55&nbsp;С
-                      li.types-scheme__details__list-item ZZВозможность установки стеклопакета шириной до 42мм
-                      li.types-scheme__details__list-item ZZВоздушных камер – 5
-
-
-                //- advantages
-                .types-advantages
-                  //- item 01
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title ZZГарантия 10 лет
-                  //- item 02
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title ZZДолговечность
-                  //- item 03
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title ZZТеплоизоляция
-                  //- item 04
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title ZZЗвукоизоляция
-                  //- item 05
-                  .types-advantages__item
-                    .types-adv__item-img
-                    .types-adv__item-title ЭКО
-
-              //- === params ===================================
-              .types__params
-                .types__params__left.types__params__column
-                  .types__params__title Характеристики системы
-                  ul.types__params-list
-                    //- list ITEM
-                    li.types__params-item
-                      .types__params-text Теплоизоляция
-                      .types__params-bars
-                    //- list ITEM
-                    li.types__params-item
-                      .types__params-text Шумоизоляция
-                      .types__params-bars
-                    //- list ITEM
-                    li.types__params-item
-                      .types__params-text Долговечность
-                      .types__params-bars
-
-                .types__params__right.types__params__column
-                  .types__params__title Цвета системы
-                  .types__params__colors
-
-
-              //- === btn ===================================
-              a.types-btn-calc Рассчитать систему
-
-
-              //- === description ===================================
-              .types-desc
-                p.types-desc__text
-                  | ARtec EFFECTIV новый высокотехнологичный профиль, предназначенный удовлетворить требования даже самых северных регионов. За счет оптимального расположения и размера воздушных камер, достигнут высочайший уровень термо- и звукоизоляции. Толщина лицевых стенок профиля составляет 3 мм (класс А), что позволяет окнам выдерживать сильные температурные перепады и быть долговечными!
-
-              //- === awards ===================================
-              .types-awards
-                .types-awards__item
-                .types-awards__item
-                .types-awards__item
-                .types-awards__item
-                .types-awards__item
-
-              //- === about ===================================
-              .types-about
-                img.types-about__img(src="img/002_types-about__img.jpg")
-                p.types-about__text
-                  | Немецкая компания ARtec - одна из старейших фирм на рынке ПВХ Казахстана и стран СНГ.<br>
-                  | С 1995 года продукция ARtec востребована среди производителей оконных систем, что позволяет уверенно смотреть в будущее.<br>
-                  | В любое время года окна из профилей ARtec радуют миллионы покупателей от крайнего севера до субтропического юга.
-                p.types-about__text
-                  | Компания ARtec уверенно гарантирует своим партнёрам разнообразнейший ассортимент комплектующих для производства окон, дверей, фасадных конструкций европейского качества. На всю продукцию, надлежащую сертификации, имеются сертификаты Германии, России и Украины. Фирма ARtec уверенно идет вперед, постоянно расширяя сеть своих представительств, являясь сегодня одним из самых передовых поставщиков оконных технологий во многих странах.
-
-              //- === btn-calc-btm ===================================
-              .types-calc-btm
-                .types-calc-btm__divider
-                a.types-btn--bottom Рассчитать систему
+                a.types-btn--bottom Рассчитать окно
 
 
 // types end
