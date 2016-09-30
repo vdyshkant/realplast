@@ -301,26 +301,25 @@ $( document ).ready(function() {
 				expandFeaturesItem(6);
 		}
 
+	}
 
-		function expandFeaturesItem(identifier){
-			$('.js-more[data-more-num=' + identifier + ']').click(function(e) {
-				e.preventDefault();
-				// $(this).css( "color", "red" );
-				$('.js-feature-item').removeClass('active');
-				$('.js-extra').slideUp(300);
-								$('.features-smoothy img:nth-child(1)').fadeOut(300);
-								$('.features-smoothy img:nth-child(2)').fadeIn(300);
-
-
-				$('.js-feature-item[data-more-container="' + identifier + '"]').toggleClass('active');
-				$('.js-extra[data-more-option="' + identifier + '"]').slideToggle(300);
+	function expandFeaturesItem(identifier){
+		$('.js-more[data-more-num=' + identifier + ']').click(function(e) {
+			e.preventDefault();
+			// $(this).css( "color", "red" );
+			$('.js-feature-item').removeClass('active');
+			$('.js-extra').slideUp(300);
+							$('.features-smoothy img:nth-child(1)').fadeOut(300);
+							$('.features-smoothy img:nth-child(2)').fadeIn(300);
 
 
-				$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(1)').fadeToggle(300);
-				$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(2)').fadeToggle(300);
-			});
-		}
+			$('.js-feature-item[data-more-container="' + identifier + '"]').toggleClass('active');
+			$('.js-extra[data-more-option="' + identifier + '"]').slideToggle(300);
 
+
+			$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(1)').fadeToggle(300);
+			$('.features-smoothy[data-more-smoothy="' + identifier + '"] img:nth-child(2)').fadeToggle(300);
+		});
 	}
 
 }); // eof .ready
@@ -611,8 +610,36 @@ $(document).ready(function() {
 
 // tabs for page-windsystem::choose module
 
-(function() {
+// (function() {
+// 		$('.js-tabs li[data-id]').click(function() {
+// 				if ($(this).hasClass('active')) {
+// 						return;
+// 				}
+//
+// 				$('#' + $(this).attr('data-id')).fadeIn(0).siblings().fadeOut(0);
+// 				$(this).siblings().removeClass('active');
+// 				$(this).addClass('active');
+// 		});
+// })();
+
+
+// tabs for page-windsystem::choose module END
+
+
+
+// tabs for page-glass-unit::type module
+
+
+
+
+
+$(document).ready(function() {
+
+	if($('body').is('.page-glass-unit')){
+
+
 		$('.js-tabs li[data-id]').click(function() {
+				console.log($(this));
 				if ($(this).hasClass('active')) {
 						return;
 				}
@@ -621,7 +648,10 @@ $(document).ready(function() {
 				$(this).siblings().removeClass('active');
 				$(this).addClass('active');
 		});
-})();
+
+	}
+
+});
 
 
-// tabs for page-windsystem::choose module END
+// tabs for page-glass-unit::type module END
