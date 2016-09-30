@@ -495,6 +495,13 @@ $( document ).ready(function() {
 		$('.js-right-side').removeClass('opened');
 		$('.overlay__offcanvas').removeClass('visible');
 
+		var origin = 'Поиск';
+		$('.offcanvas-right-side__search.title').fadeOut(300).text(origin).fadeIn(300);
+
+
+		$('#callback').css('display', 'block');
+		$('#search').css('display', 'block');
+
 
 		for (var i = 0; i < 99; i++) {
 			$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
@@ -506,8 +513,37 @@ $( document ).ready(function() {
 
 	function invokeCallback() {
 		$('#callback').click(function(){
+			$('#search').fadeOut(100);
+			$('#search').css('display', 'none');
 			$('.js-right-side').addClass('opened');
 			$('.overlay__offcanvas').addClass('visible');
+
+
+		});
+	}
+
+
+	invokeSearch();
+
+	function invokeSearch() {
+		$('#search').click(function(){
+			$('#callback').css('display', 'none');
+			
+			var string = 'Введите интересующий Вас запрос';
+			if (!$('.js-right-side').is('.opened')) {
+				$('.offcanvas-right-side__search.title').fadeOut(300).text(string).fadeIn(300);
+			} else {
+				return false;
+			}
+
+			$('.js-right-side').addClass('opened');
+			$('.overlay__offcanvas').addClass('visible');
+
+			$('[name="sfield"]').focus();
+
+
+
+
 
 		});
 	}

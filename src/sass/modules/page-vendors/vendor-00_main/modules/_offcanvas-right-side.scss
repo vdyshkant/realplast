@@ -103,7 +103,8 @@
       color: #444341;
     }
 
-    & .offcanvas-right-side__item__callback {
+    & .offcanvas-right-side__item__callback,
+    & .offcanvas-right-side__item__search {
 
       &:hover {
         &::before,
@@ -127,6 +128,9 @@
         @include font(normal, 300, 14px, 50px, 'Roboto');
         color: #8e8e8e;
         margin-bottom: 30px;
+
+        outline: none;
+        border: none;
       }
 
       & button {
@@ -157,10 +161,6 @@
 
     // form END
 
-    // disable search
-    & .offcanvas-right-side__item__search {
-      display: none;
-    }
 
     // offcanvas-right-side__flags
 
@@ -216,7 +216,12 @@
 }
 
 
+// SEARCH
+.offcanvas-right-side.js-right-side {
+  &.opened {
 
+  }
+}
 
 
 .PROTO {

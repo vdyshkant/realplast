@@ -25,9 +25,13 @@
 
 
               //- SEARCH
-              li.offcanvas-right-side__item.offcanvas-right-side__item__search
+              li.offcanvas-right-side__item.offcanvas-right-side__item__search#search
                 +svg([{'class': 'icon-search svg-icon', 'pathid': 'svg-search', 'filename':'offcanvas-right_search'}])
                 .offcanvas-right-side__search.title Поиск
+                //- form
+                form.offcanvas-right-side__form
+                  input(name='sfield')
+                  button(type="submit") Найти
 
 
           .offcanvas-right-side__top-row
