@@ -160,6 +160,11 @@
     border: 1px solid #fff;
     position: relative;
     display: block;
+    transition: .3s ease-out;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     & .svg-icon {
       position: absolute;
@@ -167,6 +172,34 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(1){
+      &:hover{
+        background-color: #3b5998;
+      }
+
+      &:active{
+        background-color: transparent;
+      }
+    }
+    &:nth-child(2){
+      &:hover{
+        background-color: #597da3;
+      }
+
+      &:active{
+        background-color: transparent;
+      }
+    }
+    &:nth-child(3){
+      &:hover{
+        background-color: #e52c28;
+      }
+
+      &:active{
+        background-color: transparent;
+      }
     }
   }
 }
