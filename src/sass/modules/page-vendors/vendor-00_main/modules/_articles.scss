@@ -69,6 +69,8 @@
     height: 1px;
     background-color: #333;
     margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
   }
 }
 
@@ -76,13 +78,6 @@
 .page-index .articles {
   & .CLASS{
 
-  }
-}
-
-
-.page-index .articles {
-  & .articles__items-wrapper{
-    margin-top: 60px;
   }
 }
 
