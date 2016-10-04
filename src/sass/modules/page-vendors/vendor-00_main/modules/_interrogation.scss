@@ -1,6 +1,7 @@
 .page-index .interrogation {
   // bg 1
-  background: url('../img/interrogation_bg.jpg');
+  background: url("../img/interrogation_foreground.png") no-repeat left -85px top -90px,
+              url('../img/interrogation_bg.jpg');
   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
   position: relative;
   z-index: 2;
@@ -11,7 +12,7 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
-    background: url("../img/interrogation_foreground.png") no-repeat left -460px top -90px;
+    // background:
 
     padding: 0 20px;
 
