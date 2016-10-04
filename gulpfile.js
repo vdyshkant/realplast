@@ -18,7 +18,10 @@ var gulp         = require('gulp'),
 
     connect      = require('gulp-connect'),
     jshint       = require('gulp-jshint'),
-    gulpif       = require('gulp-if');
+    gulpif       = require('gulp-if'),
+    gutil        = require('gulp-util'), // added 2016-10-04
+    copy         = require('gulp-copy'), // added 2016-10-04
+    replace      = require('gulp-replace'); // added 2016-10-04
 
 var env = process.env.NODE_ENV || 'development'; // if we do not specify explicitly a value, then it defaults to the development
 var outputDir = 'builds/development';
@@ -106,6 +109,14 @@ gulp.task('sass', function() {
 
 
 
+gulp.task('copyJsLibs', function() {
+  return gulp.src([
+    'src/js/libs/**/*'
+  ])
+    .pipe(gulp.dest(outputDir + '/js'))
+    .on('end', function(){ gutil.log('--== DONE ==--'); });
+});
+
 // just disabled
 // gulp.task('copyFonts', function() {
 //   return gulp.src('src/fonts/**/*.{ttf,woff,woff2,eot,svg}')
@@ -115,17 +126,17 @@ gulp.task('sass', function() {
 
 
 
-// gulp.task('removeImages', function() {
-//     return gulp.src(outputDir + '/img/**/*.*')
-//       .pipe(clean( {read: false} ));
-// });
-//
-//
-// gulp.task('copyImages', ['removeImages'], function() {
-//   return gulp.src('src/img/**/*.{png,svg,jpg,ico}')
-//     .pipe(gulp.dest(outputDir + '/img'));
-// });
-// first willremove old imgs, then copy new ones: https://github.com/gulpjs/gulp/issues/67
+gulp.task('removeImages', function() {
+    return gulp.src(outputDir + '/img99/**/*.*')
+      .pipe(clean( {read: false} ));
+});
+
+
+gulp.task('copyImages', ['removeImages'], function() {
+  return gulp.src('src/img/**/*.{png,svg,jpg,ico}')
+    .pipe(gulp.dest(outputDir + '/img99'));
+});
+// first will remove old imgs, then copy new ones: https://github.com/gulpjs/gulp/issues/67
 
 
 // just disabled
@@ -140,6 +151,7 @@ gulp.task('watch', function() {
     gulp.watch('src/templates/**/*.pug', ['pug']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/sass/**/*.scss', ['sass']);
+        // gulp.watch('src/js/**/*.js', ['copy']);
     // gulp.watch('src/img/**/*.{png,svg,jpg,ico}', ['copyImages']);
     gulp.watch('bower.json', ['libs']);
 });
@@ -157,5 +169,16 @@ gulp.task('connect', function() {
 
 
 
-gulp.task('default', ['connect', 'js', 'pug', 'sass', 'watch']);
+gulp.task('default', ['connect', 'js', 'pug', 'sass', 'copyJsLibs', 'watch']);
 // we can run the task we just created by typing 'gulp pug' into our terminal
+
+
+
+
+
+
+
+
+
+// for rebuild:
+// https://github.com/jonkemp/gulp-boilerplate/blob/master/gulpfile.js
