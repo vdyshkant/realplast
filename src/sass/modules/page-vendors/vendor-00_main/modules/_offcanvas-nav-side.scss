@@ -1,29 +1,29 @@
-.mask__offcanvas-nav-side {
-  position: absolute;
-  width: 200px;
-  height: 100%;
-  top: 0;
-  left: -200px;
-  background: hsla(75, 58%, 52%, 0.66);
-  background: hsla(320, 58%, 52%, 0.36);
-  z-index: 10000;
-}
+// .mask__offcanvas-nav-side {
+//   position: absolute;
+//   width: 200px;
+//   height: 100%;
+//   top: 0;
+//   left: -200px;
+//   background: hsla(75, 58%, 52%, 0.66);
+//   background: hsla(320, 58%, 52%, 0.36);
+//   z-index: 10000;
+// }
 
 
 .offcanvas-nav-side {
 
 
-  & .shell {
+  // & .shell {
+  //
+  // }
+  //
+  // & .inner {
+  //   // wide bg [2] for example
+  // }
 
-  }
-
-  & .inner {
-    // wide bg [2] for example
-  }
-
-  & .container {
-    //
-  }
+  // & .container {
+  //   //
+  // }
 
   & .offcanvas-nav-side-wrapper {
     width: 280px;
@@ -33,7 +33,7 @@
     top: 0;
     left: -180px;
     height: 99000px;
-    z-index: 110;
+    z-index: 201;
 
     transition: .3s ease-out;
   }
