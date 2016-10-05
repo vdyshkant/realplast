@@ -79,7 +79,7 @@
 // manufacturers CONTENT
 .page-fitments .manufacturers-content__row {
   @include clearfix;
-  margin-bottom: 45px;
+  margin-bottom: 75px;
 
   &:last-child {
     margin-bottom: 0;
@@ -152,6 +152,10 @@
   @include font(normal, 400, 18px, 27px, 'Roboto')
   color: #444341;
   margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 
