@@ -153,7 +153,7 @@ gulp.task('watch', function() {
     gulp.watch('src/sass/**/*.scss', ['sass']);
         // gulp.watch('src/js/**/*.js', ['copy']);
     // gulp.watch('src/img/**/*.{png,svg,jpg,ico}', ['copyImages']);
-    gulp.watch('bower.json', ['libs']);
+    // gulp.watch('bower.json', ['libs']);
 });
 
 
