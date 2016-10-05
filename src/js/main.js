@@ -466,7 +466,7 @@ $( document ).ready(function() {
 			e.preventDefault();
 
 			// making main offcanvas-nav block to sllide right for %180%px
-			$('.js-nav').addClass('opened');
+			$('.js-nav').toggleClass('opened');
 			$('.overlay__offcanvas').addClass('visible');
 
 			// hiding all submenus at the left
@@ -528,7 +528,7 @@ $( document ).ready(function() {
 	function invokeSearch() {
 		$('#search').click(function(){
 			$('#callback').css('display', 'none');
-			
+
 			var string = 'Введите интересующий Вас запрос';
 			if (!$('.js-right-side').is('.opened')) {
 				$('.offcanvas-right-side__search.title').fadeOut(300).text(string).fadeIn(300);
