@@ -259,6 +259,7 @@ $( document ).ready(function() {
 
 
 		$("#DateCountdown").TimeCircles();
+		$("#DateCountdown1").TimeCircles();
 		 $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } }});
 		 $("#PageOpenTimer").TimeCircles();
 

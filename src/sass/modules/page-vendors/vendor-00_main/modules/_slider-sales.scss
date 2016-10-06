@@ -52,15 +52,17 @@
     // outline: 2px dashed darkolivegreen;
     // outline-offset: -2px;
 
-    &:nth-child(1) {
-      background: url('../img/slider-sales_bg.png') no-repeat;
-      background-size: cover;
-    }
+
     &:nth-child(2),
     &:nth-child(3),
     &:nth-child(4),
-    &:nth-child(5) {
+    &:nth-child(5),
+    &:nth-child(6) {
       background: rgba(255, 166, 0, 0.36);
+    }
+    &:nth-child(2) {
+      background: url('../img/slider-sales_bg.png') no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -324,7 +326,7 @@
  *	It is used so that your own element will not need to be altered
  **/
 
-.page-index #DateCountdown {
+.page-index #DateCountdown, .page-index #DateCountdown1 {
   // position: absolute;
   // left: 0;
   // bottom: 0;
