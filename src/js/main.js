@@ -450,7 +450,10 @@ $( document ).ready(function() {
 	function closeByCross() {
 		$('.js-nav-close').click(function(e) {
 			e.preventDefault();
-			$('.js-nav').toggleClass('opened');
+			// $('.js-nav').toggleClass('opened');
+			$('.js-nav').removeClass('opened');
+			$('.js-right-side').removeClass('opened');
+			$('.overlay__offcanvas').removeClass('visible');
 
 			// $('.offcanvas-nav-side__menu__item').toggleClass('opened');
 
@@ -474,25 +477,34 @@ $( document ).ready(function() {
 		$('.offcanvas-nav-side__menu__item[data-offcanvas-menu=' + identifier + '] .link').click(function(e) {
 			e.preventDefault();
 
-			// making main offcanvas-nav block to sllide right for %180%px
-			$('.js-nav').toggleClass('opened');
-			$('.overlay__offcanvas').addClass('visible');
+			if ($('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + identifier + '"]').is('.opened')) {
+				$('.js-nav').removeClass('opened');
+				$('.js-right-side').removeClass('opened');
+				$('.overlay__offcanvas').removeClass('visible');
 
-			// hiding all submenus at the left
-			$('.offcanvas-nav-side__sub-menus').fadeOut(10);
+				// disabling styles for the all pressed buttons
+				for (var i = 0; i < 99; i++) {
+					$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+				}
+			} else {
+				// making main offcanvas-nav block to sllide right for %180%px
+				$('.js-nav').addClass('opened');
+				$('.overlay__offcanvas').addClass('visible');
 
-			// making visible the necessary subMenu
-			$('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="' + identifier + '"]').fadeIn(10);
+				// hiding all submenus at the left
+				$('.offcanvas-nav-side__sub-menus').fadeOut(10);
 
-			// disabling styles for the all pressed buttons
-			for (var i = 0; i < 99; i++) {
-				$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+				// making visible the necessary subMenu
+				$('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="' + identifier + '"]').fadeIn(10);
+
+				// disabling styles for the all pressed buttons
+				for (var i = 0; i < 99; i++) {
+					$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+				}
+
+				// changing styles for the pressed button
+				$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + identifier + '"]').toggleClass('opened');
 			}
-
-			// changing styles for the pressed button
-			$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + identifier + '"]').toggleClass('opened');
-
-
 
 		});
 	}
