@@ -156,6 +156,9 @@ $(document).ready(function () {
 	  // });
 	}
 
+
+
+
 });
 
 // CAROUSEL end
@@ -497,8 +500,8 @@ $( document ).ready(function() {
 				$('.overlay__offcanvas').removeClass('visible');
 
 				// disabling styles for the all pressed buttons
-				for (var i = 0; i < 99; i++) {
-					$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+				for (var j = 0; j < 99; j++) {
+					$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + j + '"]').removeClass('opened');
 				}
 			} else {
 
