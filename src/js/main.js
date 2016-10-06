@@ -220,9 +220,8 @@ $( document ).ready(function() {
 		    pager: true,
 		    nextText: '',
 		    prevText: '',
-		    infiniteLoop: false,
-		    hideControlOnEnd: true,
-		    controls: false
+				prevSelector: ('.slider-sales-controls__left'),
+				nextSelector: ('.slider-sales-controls__right'),
 		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
 		    //    changeRealThumb(realThumbSlider,newIndex);
 		    //
@@ -230,6 +229,19 @@ $( document ).ready(function() {
 
 		});
 	}
+
+
+	$('.slider-sales .range').mouseenter(function() {
+		$('.slider-sales-controls').fadeIn(300);
+
+			// console.info('.nextend-arrow).fade IN;');
+
+	}).mouseleave(function() {
+			$('.slider-sales-controls').fadeOut(300);
+
+			// console.info('.nextend-arrow).fade OUT;');
+
+	});
 
 }); // eof .ready
 

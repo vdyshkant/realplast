@@ -23,6 +23,7 @@
 
   & .container {
     height: 630px;
+    position: relative;
   }
 }
 
@@ -323,7 +324,7 @@
  *	It is used so that your own element will not need to be altered
  **/
 
-#DateCountdown {
+.page-index #DateCountdown {
   // position: absolute;
   // left: 0;
   // bottom: 0;
@@ -338,7 +339,7 @@
   // background-color: #E0E8EF;
 }
 
-.time_circles {
+.page-index .time_circles {
     position: relative;
     width: 100%;
     height: 100%;
@@ -348,7 +349,7 @@
  *	This is all the elements used to house all text used
  * in time circles
  **/
-.time_circles > div {
+.page-index .time_circles > div {
     position: absolute;
     text-align: center;
 }
@@ -356,7 +357,7 @@
 /**
  *	Titles (Days, Hours, etc)
  **/
-.time_circles > div > h4 {
+.page-index .time_circles > div > h4 {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -376,7 +377,7 @@
 /**
  *	Time numbers, ie: 12
  **/
-.time_circles > div > span {
+.page-index .time_circles > div > span {
     margin: 0;
     padding: 0;
     display: block;
@@ -397,6 +398,83 @@
 
 
 
+
+
+// slider controls
+
+.page-index .slider-sales-controls {
+  // position: absolute;
+  // top: 50%;
+}
+
+
+.page-index .slider-sales-controls__left,
+.page-index .slider-sales-controls__right {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 46px;
+  background: #0084c4;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 3px) rotate(-45deg);
+    height: 3px;
+    width: 15px;
+    background: #fff;
+  }
+
+  &::after {
+    transform: translate(-50%, -6px) rotate(45deg);
+  }
+}
+
+
+.page-index .slider-sales-controls__left {
+  border-radius: 0 4px 4px 0;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 3px) rotate(45deg);
+    height: 3px;
+    width: 15px;
+    background: #fff;
+    z-index: 50;
+  }
+
+  &::after {
+    transform: translate(-50%, -6px) rotate(-45deg);
+  }
+}
+
+
+.page-index .slider-sales-controls__right {
+  border-radius: 4px 0 0 4px;
+  right: 0;
+}
+
+.page-index .slider-sales-controls .bx-next,
+.page-index .slider-sales-controls .bx-prev {
+    position: absolute;
+    z-index: 52;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 50px;
+    height: 100%;
+    height: 46px;
+}
+
+// slider controls END
 
 
 
