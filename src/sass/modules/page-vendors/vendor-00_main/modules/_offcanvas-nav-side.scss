@@ -63,37 +63,80 @@
     height: 105px;
 
     & .burger {
+      width: 60px;
+      height: 30px;
+      display: block;
       position: absolute;
-      width: 32px;
-      height: 32px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      // outline: 1px solid orange;
 
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        height: 38px;
+        width: 5px;
+        background-color: #1f587d;
+        position: relative;
+        transition: 300ms ease-in-out transform;
+        transition-delay: 350ms;
+      }
+
+      &:before {
+        transform: rotate(-45deg);
+        left: 16px;
+        top: -4px;
+      }
+
+      &:after {
+        transform: rotate(45deg);
+        left: 35px;
+        top: -4px;
+      }
+
+      &.open {
+        &:before {
+          transform: translateX(12px) rotate(-45deg);
+        }
+        &:after {
+          transform: translateX(-12px) rotate(45deg);
+        }
+      }
     }
 
-    & .block {
-      background: #1f587d;
-      width: 38px;
-      height: 5px;
-      position: absolute;
-    }
-
-    & .block-1 {
-      top: 11px;
-      left: 1px;
-      transform: translate(-4px, 2px) rotate(-45deg);
-    }
-    & .block-2 {
-      display: none;
-    }
-    & .block-3 {
-      top: 11px;
-      left: 1px;
-      transform: translate(-4px, 2px) rotate(45deg);
-    }
-
+          // ELDER BURGER VERSION:
+    // & .burger {
+    //   position: absolute;
+    //   width: 32px;
+    //   height: 32px;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   // outline: 1px solid orange;
+    //
+    // }
+    //
+    // & .block {
+    //   background: #1f587d;
+    //   width: 38px;
+    //   height: 5px;
+    //   position: absolute;
+    // }
+    //
+    // & .block-1 {
+    //   top: 11px;
+    //   left: 1px;
+    //   transform: translate(-4px, 2px) rotate(-45deg);
+    // }
+    // & .block-2 {
+    //   display: none;
+    // }
+    // & .block-3 {
+    //   top: 11px;
+    //   left: 1px;
+    //   transform: translate(-4px, 2px) rotate(45deg);
+    // }
+          // ELDER BURGER VERSION END
 
 
   }

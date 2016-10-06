@@ -450,7 +450,7 @@ $( document ).ready(function() {
 	function closeByCross() {
 		$('.js-nav-close').click(function(e) {
 			e.preventDefault();
-			// $('.js-nav').toggleClass('opened');
+			$('.burger').removeClass('open');
 			$('.js-nav').removeClass('opened');
 			$('.js-right-side').removeClass('opened');
 			$('.overlay__offcanvas').removeClass('visible');
@@ -478,6 +478,8 @@ $( document ).ready(function() {
 			e.preventDefault();
 
 			if ($('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + identifier + '"]').is('.opened')) {
+
+				$('.burger').removeClass('open');
 				$('.js-nav').removeClass('opened');
 				$('.js-right-side').removeClass('opened');
 				$('.overlay__offcanvas').removeClass('visible');
@@ -487,6 +489,8 @@ $( document ).ready(function() {
 					$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
 				}
 			} else {
+
+				$('.burger').addClass('open');
 				// making main offcanvas-nav block to sllide right for %180%px
 				$('.js-nav').addClass('opened');
 				$('.overlay__offcanvas').addClass('visible');
@@ -512,6 +516,8 @@ $( document ).ready(function() {
 
 	$('.overlay__offcanvas').click(function(e) {
 		e.preventDefault();
+
+		$('.burger').removeClass('open');
 		$('.js-nav').removeClass('opened');
 		$('.js-right-side').removeClass('opened');
 		$('.overlay__offcanvas').removeClass('visible');
@@ -740,3 +746,11 @@ $(document).ready(function() {
 
 
 // tabs for page-glass-unit::type module END
+
+
+
+
+// burger-arrow
+
+
+// burger-arrow END
