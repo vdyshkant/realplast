@@ -1,0 +1,118 @@
+.page-window-systems .welcome {
+  background: url('../img/bg_welcome.png');
+  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+
+  position: relative;
+  z-index: 1;
+}
+
+
+.page-window-systems .welcome {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+    background-color: red;
+
+    padding: 0 5px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+
+  }
+
+  & .welcome-wrapper {
+    position: relative;
+      min-height: 600px;
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .welcome-thumb {
+  width: 590px;
+  height: 510px;
+  background: #fff url('../img/002_welcome-img.jpg') no-repeat left 45px top -50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+
+.page-window-systems .welcome-thumb__img {
+
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .welcome-content {
+  background: url('../img/bg_white.jpg');
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  width: 560px;
+  // if mih -- pls do not use padding-bottom parameter
+  min-height: 510px;
+  padding: 30px 20px 0 20px;
+}
+
+
+.page-window-systems .welcome-title {
+  @include font(normal, 700, 32px, 25px, 'Roboto');
+  text-align: center;
+  color: #444341;
+  margin-bottom: 30px;
+}
+
+
+.page-window-systems .welcome-text__item {
+  @include font(normal, 400, 18px, 23px, 'Roboto');
+  color: #444341;
+  margin-bottom: 23px;
+}
+
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
