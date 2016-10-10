@@ -41,7 +41,8 @@ section.feedbacks
               //- item
               .slider-item
                 .slider-item__content
-                  p Спасибо сотрудникам компании, которые не только грамотно провели все работы по установке пластиковых окон в комнату, но и дали дельные советы в процессе работы как ухаживать за окнами.Сотрудничеством очень доволен ...
+                  .slider-item__inner
+                    p Спасибо сотрудникам компании, которые не только грамотно провели все работы по установке пластиковых окон в комнату, но и дали дельные советы в процессе работы как ухаживать за окнами.Сотрудничеством очень доволен ...
                   .expand
                     a.show-all посмотреть все отзывы
                 .slider-item-author
@@ -53,7 +54,7 @@ section.feedbacks
               //- item
               .slider-item(class='active')
                 .slider-item__content
-                  blockquote
+                  blockquote.slider-item__inner
                     p Потребность в замене окон на балконе возникла, когда я переехал в новую квартиру. В данную компанию обратилась в первый раз. Для меня очень важно, как со мной общаются, и какой уровень сервиса мне предлагают. Менеджер очень доходчиво и профессионально рассказал об окнах, подобрал оптимальную конфигурацию для моей квартиры. Конфигурация остекления балкона: ПРОФИЛЬ: REHAU ECOSOL-DESIGN 70, СТЕКЛОПАКЕТ
                     date Пётр, апрель 2016
                   .expand
@@ -67,9 +68,10 @@ section.feedbacks
               //- item
               .slider-item
                 .slider-item__content
-                  //- video
-                  //- img(src="https://placehold.it/215x160/7f746e/fff?text=youtube")
-                  iframe(width='360', height='245', src='https://www.youtube.com/embed/GeeDUDhMZOs', frameborder='0', allowfullscreen='')
+                  .slider-item__inner
+                    //- video
+                    //- img(src="https://placehold.it/215x160/7f746e/fff?text=youtube")
+                    iframe(width='360', height='245', src='https://www.youtube.com/embed/GeeDUDhMZOs', frameborder='0', allowfullscreen='')
                   .expand
                     a.show-all посмотреть все отзывы
                 .slider-item-author
