@@ -608,15 +608,42 @@ $(document).ready(function() {
 		$("#gallery-smooth").smoothDivScroll({
 				// mousewheelScrolling: "allDirections",
 				// manualContinuousScrolling: false,
-				autoScrollingMode: "onStart",
-				hotSpotScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: true,
+
+				// autoScrollingMode: "onStart",
+					// autoScrollingMode: "always",
+					// hotSpotScrolling: false,
+					// touchScrolling: true,
+					// manualContinuousScrolling: true,
 				// hotSpotScrollingStep: 3,
 				// hotSpotScrollingInterval: 2,
 				// autoScrollingStep: 1, SPPED
-				mousewheelScrolling: false
+					// mousewheelScrolling: false
+
+				mousewheelScrolling: true,
+				manualContinuousScrolling: true,
+				visibleHotSpotBackgrounds: "always",
+				autoScrollingMode: "always"
 		});
+
+
+		// This is just to make the scroller pause...
+			// Mouse over
+			$("#gallery-smooth").bind("mouseover", function(){
+			    $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+			});
+
+			// Mouse out
+			$("#gallery-smooth").bind("mouseout", function(){
+			    $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+			});
+
+					// smaller ver for future dev:
+							// $("#gallery-smooth").bind("mouseover", function() {
+							// 		$(this).smoothDivScroll("stopAutoScroll");
+							// 		}).bind("mouseout", function() {
+							// 		$(this).smoothDivScroll("startAutoScroll");
+							// });
+					// eof smaller ver for future dev
 	}
 
 	if($('body').is('.page-cottages')){
@@ -637,6 +664,25 @@ $(document).ready(function() {
 });
 
 // smooth gallery END
+
+
+// fancybox for smooth gallery
+
+if($('body').is('.page-index')){
+
+	$("a.gallery__full").fancybox({
+
+		// Prevent fancybox from causing page to to jump to the top
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+
+}
+
+// fancybox for smooth gallery END
 
 
 // fitments smooth gallery
