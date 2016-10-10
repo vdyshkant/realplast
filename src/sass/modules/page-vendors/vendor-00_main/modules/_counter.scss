@@ -1,7 +1,38 @@
 .page-index .counter {
   // bg 1
   position: relative;
-  z-index: 1;
+
+}
+
+.page-index .counter_line {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+}
+
+.page-index .counter_line.counter_line--main {
+  position: absolute;
+  height: 880px;
+  width: calc(100% - 200px);
+  margin: 0 100px;
+  background: url('../img/counter_bg-main.jpg') no-repeat;
+  background-size: 100%;
+}
+.page-index .counter_line.counter_line--front {
+  top: 350px;
+  background:  url('../img/counter_line-blue-front.svg') no-repeat;
+  background-size: 100%;
+}
+.page-index .counter_line.counter_line--back {
+  top: 295px;
+  background:  url('../img/counter_line-blue-back.svg') no-repeat;
+  background-size: 100%;
+}
+.page-index .counter_line.counter_line--black {
+  top: 334px;
+  background:  url('../img/counter_line-black.svg') no-repeat;
+  background-size: 100% 550px;
+  height: 550px;
 }
 
 
@@ -13,8 +44,8 @@
     padding: 0 20px;
 
 
-    background: url('../img/counter_bg.png') no-repeat;
-    background-position: 0 -40px;
+    // background: url('../img/counter_bg.png') no-repeat;
+    // background-position: 0 -40px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
