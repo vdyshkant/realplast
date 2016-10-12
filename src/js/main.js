@@ -816,3 +816,33 @@ $(document).ready(function() {
 
 
 // burger-arrow END
+
+
+
+// page-window-systems COLORS slider
+
+$( document ).ready(function() {
+
+	if($('body').is('.page-window-systems')){
+		$("ul#choose-colors").bxSlider({
+		    speed: 300,
+		    nextText: '',
+		    prevText: '',
+				slideWidth: 40,
+				minSlides: 4,
+				maxSlides: 4,
+				moveSlides: 1,
+				slideMargin: 20,
+				pager: false,
+				prevSelector: ('.choose__colors-controls__left'),
+				nextSelector: ('.choose__colors-controls__right')
+		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+		    //    changeRealThumb(realThumbSlider,newIndex);
+		    //
+		    //  }
+		});
+	}
+
+}); // eof .ready
+
+// page-window-systems COLORS slider END
