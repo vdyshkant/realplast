@@ -64,6 +64,9 @@
 
 .page-index .video {
   & .video__expand{
+    min-height: 50px;
+    transition: .3s ease-out;
+
     display: flex;
     flex-direction: row;
   }
@@ -105,6 +108,28 @@
     border: 1px solid #ffffff;
     text-align: center;
     text-decoration: none;
+
+
+
+    cursor: pointer;
+    transition: .3s ease-out;
+
+
+    position: relative;
+    margin-top: -1px;
+
+    &:hover {
+      background: #fff;
+      color: #444341;
+      // background: #3a8147;
+
+    }
+
+    &:active {
+      background: #fff;
+      color: #444341;
+      margin-top: 0px;
+    }
   }
 }
 
