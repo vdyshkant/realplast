@@ -222,6 +222,20 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
+    cursor: pointer;
+    transition: .3s ease-out;
+
+    &:hover {
+      background: #42a455;
+      border: 1px solid transparent;
+      color: #fff4f4;
+    }
+    &:active {
+      background: #42a455;
+      border: 1px solid transparent;
+      color: #fff4f4;
+    }
   }
 }
 
