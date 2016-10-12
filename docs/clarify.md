@@ -3,3 +3,7 @@ https://docs.google.com/document/d/1tI6hu0x9NwSlvtdGnoDI0lmAnZh7iypOAUVikMgAH5s/
 
 
 - по поводу пикчей в формате basae64: нужно уточнить существование 'наложения' цвета на svg (поверх изображения, например);
+
+
+Правки от заказчика:
+https://docs.google.com/document/d/1IAPHIMvPTeyebN7PVj1MmIenAxtcGwcMg8k5Vsys4pw/edit
