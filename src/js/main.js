@@ -833,7 +833,7 @@ $( document ).ready(function() {
 		    nextText: '',
 		    prevText: '',
 				slideWidth: 40,
-				minSlides: 4,
+				minSlides: 1,
 				maxSlides: 4,
 				moveSlides: 1,
 				slideMargin: 20,
@@ -850,3 +850,22 @@ $( document ).ready(function() {
 }); // eof .ready
 
 // page-window-systems COLORS slider END
+
+
+//  page-window-systems fancybox for awards
+
+if($('body').is('.page-window-systems')){
+
+	$("a.gallery__full").fancybox({
+
+		// Prevent fancybox from causing page to to jump to the top
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+
+}
+
+//  page-window-systems fancybox for awards END
