@@ -166,6 +166,15 @@
 
 
 .page-index .stock__content {
+  & .stock__btn__wrapper {
+    min-height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .stock__content {
   & .stock__btn {
     width: 280px;
     height: 50px;
@@ -176,7 +185,30 @@
     text-decoration: none;
     background: #42a455;
     box-shadow: 3px 3px 7px 0px rgba(26, 47, 60, 0.21);
-    margin-bottom: 20px;
+
+
+
+
+    cursor: pointer;
+    transition: .3s ease-out;
+
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    &:hover {
+      background: #3a8147;
+      // color: #444341;
+
+    }
+
+    &:active {
+      background: #3a8147;
+      // color: #444341;
+      top: 0;
+    }
+
+
 
 
   }
@@ -185,10 +217,15 @@
 
 .page-index .stock__content {
   & .stock__more {
+    display: block;
     @include font(italic, 300, 14px, 14px, 'Roboto');
     color: #f9f9f9;
     text-decoration: underline;
     text-align: center;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
