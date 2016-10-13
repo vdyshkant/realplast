@@ -150,6 +150,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
   }
 }
 
@@ -192,6 +193,8 @@
     margin-bottom: 25px;
     @include font(normal, 700, 32px, 31px, 'Roboto');
     color: #444341;
+    display: block;
+    text-decoration: none;
   }
 }
 
@@ -201,6 +204,8 @@
     margin-bottom: 30px;
     @include font(normal, 400, 18px, 27px, 'Roboto');
     color: #444341;
+    display: block;
+    text-decoration: none;
   }
 }
 
