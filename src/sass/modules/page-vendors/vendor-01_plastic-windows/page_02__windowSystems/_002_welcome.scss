@@ -1,5 +1,5 @@
 .page-window-systems .welcome {
-  background: url('../img/bg_welcome.png');
+  background: #fff;
   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
 
   position: relative;
@@ -11,8 +11,10 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+    // max-width: 1150px;
+    background: url('../img/bg_welcome.png');
 
-    padding: 0 5px;
+    // padding: 0 5px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
@@ -53,7 +55,7 @@
 
 
 .page-window-systems .welcome-thumb {
-  width: 590px;
+  width: 595px;
   height: 510px;
   background: #fff url('../img/002_welcome-img.jpg') no-repeat left 45px top -50px;
   position: absolute;
@@ -80,7 +82,7 @@
   position: absolute;
   bottom: 0;
   right: 0px;
-  width: 560px;
+  width: 565px;
   // if mih -- pls do not use padding-bottom parameter
   min-height: 510px;
   padding: 30px 20px 0 20px;
