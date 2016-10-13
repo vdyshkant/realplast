@@ -7,3 +7,22 @@ https://docs.google.com/document/d/1tI6hu0x9NwSlvtdGnoDI0lmAnZh7iypOAUVikMgAH5s/
 
 Правки от заказчика:
 https://docs.google.com/document/d/1IAPHIMvPTeyebN7PVj1MmIenAxtcGwcMg8k5Vsys4pw/edit
+
+
+
+Главная:
+- слайдер-акции - на кнопку ховер повесить http://joxi.net/p271PYpi7Kovr7
+- Видео за окном: почему-то начинается  с черного фона, потом небо медленно приходит из расфокуса. Цикл заканчивается, опять черный фон.
+
+- партнеры: убрать стрелки, крутить перманентно, управление скроллом убрать
+
+21. http://joxi.ru/BA0OoYqSbMJ82y
+http://joxi.ru/Rmz5ZyjSnY0xrO
+динаміка
+
+22. http://joxi.ru/p271PYpi7Kovr7 - динаміку
+
+
+http://localhost:8809/windsystem.html
+  блок welcome -- сделать по бокам белый бек, в районе range оставить бек с окошками
+  2 страница Цвета системы пофиксить иконку дерева
