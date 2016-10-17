@@ -127,6 +127,10 @@
 // left
 .page-fitments .functions-content-column-left {
   padding-right: 5px;
+  & .func__item__title,
+  & .func__item__text {
+    text-align: right;
+  }
 }
 
 

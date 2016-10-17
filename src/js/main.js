@@ -678,18 +678,20 @@ $(document).ready(function() {
 			$("#gallery-smooth").bind("mouseout", function(){
 			    $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
 			});
-	}
 
-	// fancy box for this gallery
-	$("a.gallery__full").fancybox({
-		// Prevent fancybox from causing page to to jump to the top
-		helpers: {
-			overlay: {
-				locked: false
+
+		// fancy box for this gallery
+		$("#gallery-smooth a.gallery__full").fancybox({
+			// Prevent fancybox from causing page to to jump to the top
+			helpers: {
+				overlay: {
+					locked: false
+				}
 			}
-		}
-	});
-	// fancy box for this gallery END
+		});
+		// fancy box for this gallery END
+
+	}
 
 });
 
@@ -702,17 +704,34 @@ $(document).ready(function() {
 
 	if($('body').is('.page-fitments')){
 		$("#gallery-smooth").smoothDivScroll({
-				// mousewheelScrolling: "allDirections",
-				// manualContinuousScrolling: false,
-				autoScrollingMode: "onStart",
-				hotSpotScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: true,
-				// hotSpotScrollingStep: 3,
-				// hotSpotScrollingInterval: 2,
-				// autoScrollingStep: 1, SPPED
-				mousewheelScrolling: false
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "always"
 		});
+
+
+		// This is just to make the scroller pause...
+			// Mouse over
+			$("#gallery-smooth").bind("mouseover", function(){
+					$("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+			});
+
+			// Mouse out
+			$("#gallery-smooth").bind("mouseout", function(){
+					$("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+			});
+
+		// fancy box for this gallery
+		$("#gallery-smooth a.gallery__full").fancybox({
+			// Prevent fancybox from causing page to to jump to the top
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+		// fancy box for this gallery END
 	}
 
 });
@@ -725,17 +744,34 @@ $(document).ready(function() {
 
 	if($('body').is('.page-fitments')){
 		$("#gallery-handle-smooth").smoothDivScroll({
-				// mousewheelScrolling: "allDirections",
-				// manualContinuousScrolling: false,
-				autoScrollingMode: "onStart",
-				hotSpotScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: true,
-				// hotSpotScrollingStep: 3,
-				// hotSpotScrollingInterval: 2,
-				// autoScrollingStep: 1, SPPED
-				mousewheelScrolling: false
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "always"
 		});
+
+
+	// This is just to make the scroller pause...
+		// Mouse over
+		$("#gallery-handle-smooth").bind("mouseover", function(){
+				$("#gallery-handle-smooth").smoothDivScroll("stopAutoScrolling");
+		});
+
+		// Mouse out
+		$("#gallery-handle-smooth").bind("mouseout", function(){
+				$("#gallery-handle-smooth").smoothDivScroll("startAutoScrolling");
+		});
+
+		// fancy box for this gallery
+		$("#gallery-handle-smooth a.gallery__full").fancybox({
+			// Prevent fancybox from causing page to to jump to the top
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+		// fancy box for this gallery END
 	}
 
 });
