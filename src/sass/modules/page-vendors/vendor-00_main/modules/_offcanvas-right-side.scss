@@ -148,6 +148,8 @@
         transition: .3s ease-in-out;
         cursor: pointer;
         user-select: none;
+        position: relative;
+        top: 0;
 
         &:hover {
           background: #3a8147;
@@ -155,6 +157,7 @@
 
         &:active {
           background: #3a8147;
+          top: 1px;
         }
 
       }
