@@ -7,7 +7,8 @@ https://docs.google.com/document/d/1tI6hu0x9NwSlvtdGnoDI0lmAnZh7iypOAUVikMgAH5s/
 
 Правки от заказчика:
 https://docs.google.com/document/d/1IAPHIMvPTeyebN7PVj1MmIenAxtcGwcMg8k5Vsys4pw/edit
-
+то же самое, но его не видит заказчик:
+https://docs.google.com/document/d/19oEJk4TeVcYxYphaucI2aft2fZetLHvSftSCBolDhCw/edit
 
 
 Главная:
