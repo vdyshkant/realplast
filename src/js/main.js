@@ -829,10 +829,6 @@ $(document).ready(function() {
 
 // tabs for page-glass-unit::type module
 
-
-
-
-
 $(document).ready(function() {
 
 	if($('body').is('.page-glass-unit')){
@@ -853,16 +849,7 @@ $(document).ready(function() {
 
 });
 
-
 // tabs for page-glass-unit::type module END
-
-
-
-
-// burger-arrow
-
-
-// burger-arrow END
 
 
 
