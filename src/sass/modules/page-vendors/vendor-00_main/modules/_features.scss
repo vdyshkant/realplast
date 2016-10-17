@@ -419,6 +419,7 @@
     background: transparent;
     cursor: pointer;
     transition: .3s ease-out;
+    user-select: none;
 
     &:hover {
       background: #42a455;

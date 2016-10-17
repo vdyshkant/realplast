@@ -147,6 +147,7 @@
 
         transition: .3s ease-in-out;
         cursor: pointer;
+        user-select: none;
 
         &:hover {
           background: #3a8147;
