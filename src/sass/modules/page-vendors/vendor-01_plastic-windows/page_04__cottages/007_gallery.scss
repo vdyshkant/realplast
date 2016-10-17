@@ -131,7 +131,7 @@
   & .gallery__expand{
     min-height: 50px;
     transition: .3s ease-out;
-    
+
     display: flex;
     flex-direction: row;
   }
@@ -187,10 +187,11 @@
 
     cursor: pointer;
     transition: .3s ease-out;
+    user-select: none;
 
 
     position: relative;
-    margin-top: -1px;
+    top: 0;
 
     &:hover {
       background: #fff;
@@ -202,7 +203,7 @@
     &:active {
       background: #fff;
       color: #444341;
-      margin-top: 0px;
+      top: 1px;
     }
   }
 }

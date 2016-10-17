@@ -889,6 +889,9 @@ $color3: #f45249;
 
   cursor: pointer;
   transition: .3s ease-out;
+  user-select: none;
+  position: relative;
+  top: 0;
 
   &:hover {
     background: #42a455;
@@ -899,6 +902,7 @@ $color3: #f45249;
     background: #42a455;
     border: 1px solid transparent;
     color: #fff4f4;
+    top: 1px;
   }
 }
 

@@ -113,7 +113,8 @@
 
 
     position: relative;
-    margin-top: -1px;
+    top: 0;
+    user-select: none;
 
     &:hover {
       background: #fff;
@@ -125,7 +126,7 @@
     &:active {
       background: #fff;
       color: #444341;
-      margin-top: 0px;
+      top: 1px;
     }
   }
 }
