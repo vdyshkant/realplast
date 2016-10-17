@@ -648,34 +648,40 @@ $(document).ready(function() {
 							// 		$(this).smoothDivScroll("startAutoScroll");
 							// });
 					// eof smaller ver for future dev
+
+		$("a.gallery__full").fancybox({
+
+			// Prevent fancybox from causing page to to jump to the top
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
 	}
 
 	if($('body').is('.page-cottages')){
 		$("#gallery-smooth").smoothDivScroll({
-				// mousewheelScrolling: "allDirections",
-				// manualContinuousScrolling: false,
-				autoScrollingMode: "onStart",
-				hotSpotScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: true,
-				// hotSpotScrollingStep: 3,
-				// hotSpotScrollingInterval: 2,
-				// autoScrollingStep: 1, SPPED
-				mousewheelScrolling: false
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "always"
 		});
+
+		// This is just to make the scroller pause...
+			// Mouse over
+			$("#gallery-smooth").bind("mouseover", function(){
+			    $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+			});
+
+			// Mouse out
+			$("#gallery-smooth").bind("mouseout", function(){
+			    $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+			});
 	}
 
-});
-
-// smooth gallery END
-
-
-// fancybox for smooth gallery
-
-if($('body').is('.page-index')){
-
+	// fancy box for this gallery
 	$("a.gallery__full").fancybox({
-
 		// Prevent fancybox from causing page to to jump to the top
 		helpers: {
 			overlay: {
@@ -683,10 +689,11 @@ if($('body').is('.page-index')){
 			}
 		}
 	});
+	// fancy box for this gallery END
 
-}
+});
 
-// fancybox for smooth gallery END
+// smooth gallery END
 
 
 // fitments smooth gallery
