@@ -150,6 +150,8 @@
 
     cursor: pointer;
     transition: .3s ease-out;
+    position: relative;
+    top: 0;
 
     &:hover {
       background: #42a455;
@@ -160,6 +162,7 @@
       background: #42a455;
       border: 1px solid transparent;
       color: #fff4f4;
+      top: 1px;
     }
   }
 }

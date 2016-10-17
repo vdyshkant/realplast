@@ -212,6 +212,7 @@
 
 .page-index .articles {
   & .articles__item-right__footer{
+    min-height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -263,6 +264,9 @@
 
     cursor: pointer;
     transition: .3s ease-out;
+    position: relative;
+    top: 0;
+
 
     &:hover {
       background: #42a455;
@@ -273,6 +277,7 @@
       background: #42a455;
       border: 1px solid transparent;
       color: #fff4f4;
+      top: 1px;
     }
   }
 }
@@ -287,7 +292,7 @@
 
 .page-index .articles {
   & .articles__expand{
-
+    min-height: 40px;
   }
 }
 
@@ -306,12 +311,16 @@
     transition: .3s ease-in-out;
     box-shadow: 3px 3px 7px 0px rgba(26, 47, 60, 0.21);
 
+    position: relative;
+    top: 0;
+
     &:hover {
       background: #3a8147;
     }
 
     &:active {
       background: #3a8147;
+      top: 1px;
     }
   }
 }
