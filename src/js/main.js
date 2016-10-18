@@ -787,18 +787,65 @@ $(document).ready(function() {
 	if($('body').is('.page-window-systems')){
 
 
-		$('.js-tabs li[data-id]').click(function() {
-				console.log($(this));
+		$('li[data-pos]').click(function(e) {
+			e.stopPropagation();
+
+			// if ($(this).parents('.choose-menu__item').is('.active')) {
+			if ($(this).is('.active')) {
+				// removing classes before assigning active for recently clicked
+				$('.choose-menu__item').siblings().removeClass('active');
+				$('.choose-menu__subitem').siblings().removeClass('active');
+				$('.choose-menu__sublist').not($(this)).slideUp(200);
+
+
+			} else {
+				// removing classes before assigning active for recently clicked
+				$('.choose-menu__item').siblings().removeClass('active');
+				$('.choose-menu__subitem').siblings().removeClass('active');
+
+				$(this).addClass('active');
+				$(this).find('.choose-menu__subitem:first').addClass("active").trigger( "click" );
+				$(this).parents('.choose-menu__item').addClass('active');
+
+				$('.choose-menu__sublist').not($(this)).slideUp(200);
+
+
+				$('.choose-menu__sublist', this).slideDown(300, function() {
+					// $('.choose-menu__sublist').not($('.choose-menu__sublist', this)).slideUp(300);
+					// $('.choose-menu__sublist').not($(this)).slideUp(200);
+				});
+
+				// changing tabs' content
+				$('#' + $(this).attr('data-pos')).fadeIn(0).siblings().fadeOut(0);
+				$(this).siblings().removeClass('active');
+
+			}
+
+
+
+
+
+		});
+
+
+		$('.js-tabs li[data-id]').click(function(e) {
+				//
+				e.stopPropagation();
+				// console.log($(this));
 				if ($(this).hasClass('active')) {
 						return;
 				}
 
+				// changing tabs' content
 				$('#' + $(this).attr('data-id')).fadeIn(0).siblings().fadeOut(0);
 				$(this).siblings().removeClass('active');
 
+				// removing classes before assigning active for recently clicked
 				$('.choose-menu__item').siblings().removeClass('active');
 				$('.choose-menu__subitem').siblings().removeClass('active');
+				$('.choose-menu__subitem:first').removeClass('active');
 
+				// assigning class 'active' for clicked item
 				$(this).addClass('active');
 
 				$(this).parents('.choose-menu__item').addClass('active');

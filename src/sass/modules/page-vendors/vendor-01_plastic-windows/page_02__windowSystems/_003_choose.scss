@@ -245,6 +245,10 @@
   }
 }
 
+.page-window-systems .choose-menu__sublist {
+  display: none;
+}
+
 
 .page-window-systems .choose-menu__link .choose-menu__link__text {
   @include font(normal, 400, 18px, 14px, 'Roboto');
@@ -257,7 +261,7 @@
   display: block;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 85px;
   transform: translateY(-50%);
   // @include font(normal, 300, 14px, 19px, 'Roboto');
   @include font(normal, 300, 14px, 19px, 'Roboto');
@@ -268,16 +272,19 @@
 
 .page-window-systems .choose-menu__subitem {
   position: relative;
-  min-height: 40px;
-  margin-left: 85px;
-  margin-bottom: 20px;
+  min-height: 60px;
+  // margin-left: 85px;
+  // padding-bottom: 20px;
+  display: block;
+  box-sizing: content-box;
 
   &::before {
     position: absolute;
     content: "";
     top: 50%;
     transform: translateY(-50%);
-    left: -20px;
+    // left: -20px;
+    left: 65px;
     width: 10px;
     height: 10px;
     background: #fff;
