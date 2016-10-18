@@ -1,5 +1,5 @@
 .page-glass-unit .welcome {
-  background: url('../img/bg_welcome.png');
+  background: #fff;
   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
   position: relative;
   z-index: 1;
@@ -8,6 +8,7 @@
 
 .page-glass-unit .welcome {
   & .shell {
+  background: url('../img/bg_welcome.png');
     margin: 0 auto;
     max-width: 1160px;
 

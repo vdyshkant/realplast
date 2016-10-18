@@ -1,15 +1,16 @@
 .page-cottages .welcome {
-  background: url('../img/bg_welcome.png');
+  background: #fff;
   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
 }
 
 
 .page-cottages .welcome {
   & .shell {
+    background: url('../img/bg_welcome.png');
     margin: 0 auto;
     max-width: 1160px;
 
-    padding: 0 5px;
+    // padding: 0 5px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
@@ -50,9 +51,10 @@
 
 
 .page-cottages .welcome-thumb {
-  width: 590px;
+  width: 595px;
   height: 510px;
   background: url('../img/004_welcome-img.jpg') no-repeat left 0 top 0;
+  background-size: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,7 +79,7 @@
   position: absolute;
   bottom: 0;
   right: 0px;
-  width: 560px;
+  width: 565px;
   min-height: 510px;
 
   padding: 35px 20px 30px 20px;
