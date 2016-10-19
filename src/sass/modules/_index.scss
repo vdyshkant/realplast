@@ -1,0 +1,45 @@
+@import "global-modules/index0";
+
+/* ================================================
+   pages
+   ================================================ */
+
+/* ~tmp | dev
+================================================ */
+@import "page-vendors/tmp-links"; // чтоб могли посмотреть-проклацать страницы, которые уже готовы;
+@import "page-vendors/sandbox"; // чтоб могли посмотреть-проклацать страницы, которые уже готовы;
+
+
+/* index | home | page 01
+================================================ */
+@import "page-vendors/page_01__main/index";
+// @import "page-vendors/vendor-00_main/modules/custom-module-1";
+// @import "page-vendors/vendor-00_main/modules/custom-module-2";
+// @import "page-vendors/vendor-00_main/modules/custom-module-N";
+
+// page 02  |  vendor 1 - plastic windows
+  // window systems
+@import "page-vendors/page_02__window-systems/p02--index";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-1";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-2";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-N";
+// @import "page-vendors/vendor-01_plastic-windows/page-AAA/custom-module-9";
+// page 03  |  vendor 1 - plastic windows
+  // fitments
+@import "page-vendors/page_03__fitments/p03--index";
+  // cottages
+@import "page-vendors/page_04__cottages/p04--index";
+  // glass-unit
+@import "page-vendors/page_05__glass-unit/p05--index";
+  // accessories
+@import "page-vendors/page_06__accessories/p06--index";
+  // services
+@import "page-vendors/page_07__services/p07--index";
+// @import "page-vendors/vendor-01_plastic-windows/page-BBB/custom-module-1";
+// @import "page-vendors/vendor-01_plastic-windows/page-BBB/custom-module-N";
+
+
+// // page 04  |  vendor 2 - services
+// @import "page-vendors/vendor-02_services/page-BBB/custom-module-1";
+// @import "page-vendors/vendor-02_services/page-BBB/custom-module-2";
+// @import "page-vendors/vendor-02_services/page-BBB/custom-module-N";

@@ -41,12 +41,12 @@ gulp.task('pug', function() {
     // '!src/templates/partials/*.pug', // ignore this file
     // '!src/templates/conf/*.pug', // ignore this file
     // 'src/templates/**/*.pug'   // ignore all files
-    'src/templates/index.pug',
-    'src/templates/windsystem.pug',
-    'src/templates/fitments.pug',
-    'src/templates/cottages.pug',
-    'src/templates/glassunit.pug',
-    'src/templates/accessories.pug'
+    'src/templates/pages/index.pug',
+    'src/templates/pages/windsystems.pug',
+    'src/templates/pages/fitments.pug',
+    'src/templates/pages/cottages.pug',
+    'src/templates/pages/glassunit.pug',
+    'src/templates/pages/accessories.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
         .on('error', errorLog)
