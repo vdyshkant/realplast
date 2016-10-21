@@ -198,6 +198,18 @@
 
     & .icon-features{
       fill: #1F587D;
+      & .icon-element--main {
+        transition: .3s ease-out;
+      }
+      & .icon-element {
+        transition: .3s ease-out;
+      }
+      &:hover {
+        & .icon-element {
+          transition: .3s ease-out;
+          fill: #FFD034;
+        }
+      }
     }
 
   }
