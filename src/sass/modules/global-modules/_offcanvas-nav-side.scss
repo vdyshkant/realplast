@@ -12,6 +12,9 @@
 
 .offcanvas-nav-side {
 
+  @media #{$tablet} {
+    display: none;
+  }
 
   // & .shell {
   //
