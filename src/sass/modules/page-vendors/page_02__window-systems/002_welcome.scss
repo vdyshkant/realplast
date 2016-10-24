@@ -11,6 +11,9 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+    @media #{$wide} {
+      min-width: 1160px;
+    }
     // max-width: 1150px;
     background: url('../img/bg_welcome.png');
 
@@ -38,7 +41,11 @@
 
   & .welcome-wrapper {
     position: relative;
-      min-height: 600px;
+    // min-height: 600px;
+    @include clearfix;
+    @media #{$mobile} {
+      padding-bottom: 50px;
+    }
   }
 
   & .PROTO-essence {
@@ -58,10 +65,22 @@
   width: 595px;
   height: 510px;
   background: #fff url('../img/002_welcome-img.jpg') no-repeat left 45px top -50px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  float: left;
+  margin-bottom: 90px;
+  @media #{$tablet} {
+    width: 393px;
+    width: 51.171875%;
+    height: 336px;
+    background: #fff url('../img/002_welcome-img__tablet.jpg') no-repeat right -80px top -30px;
+  }
+  @media #{$mobile} {
+    float: none;
+    margin-bottom: 0;
 
+    height: 202px;
+    width: 100%;
+    background: #fff url('../img/002_welcome-img__mobile.jpg') no-repeat right -15px top 0px;
+  }
 }
 
 
@@ -79,13 +98,28 @@
 
 .page-window-systems .welcome-content {
   background: url('../img/bg_white.jpg');
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  width: 565px;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0px;
+  // width: 565px;
+  width: 48.706896551724135%;
+  float: right;
+  margin-top: 90px;
   // if mih -- pls do not use padding-bottom parameter
   min-height: 510px;
   padding: 30px 20px 0 20px;
+  @media #{$tablet} {
+    // width: 375px;
+    width: 48.828125%;
+    margin-top: 60px;
+  }
+  @media #{$mobile} {
+    width: 100%;
+    margin-top: 0;
+    float: none;
+    // padding-bottom: 20px;
+    padding: 30px 10px 20px 20px;
+  }
 }
 
 
@@ -94,6 +128,11 @@
   text-align: center;
   color: #444341;
   margin-bottom: 30px;
+
+  @media #{$mobile} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -101,6 +140,9 @@
   @include font(normal, 400, 18px, 23px, 'Roboto');
   color: #444341;
   margin-bottom: 23px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 
