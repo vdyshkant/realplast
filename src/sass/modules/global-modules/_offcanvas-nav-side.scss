@@ -12,7 +12,7 @@
 
 .offcanvas-nav-side {
 
-  @media #{$tablet} {
+  @media #{$mobile-tablet} {
     display: none;
   }
 

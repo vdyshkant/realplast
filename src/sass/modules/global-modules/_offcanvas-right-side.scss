@@ -41,6 +41,9 @@
 //   z-index: 11;
 //
 //   padding-top: 155px;
+  @media #{$mobile-tablet} {
+    display: none;
+  }
 }
 
 .offcanvas-right-side {
