@@ -489,7 +489,7 @@ $( document ).ready(function() {
 
 
 	openThisSubmenu(1);
-	openThisSubmenu(5);
+	openThisSubmenu(6);
 // !!
 	function openThisSubmenu(identifier){
 
