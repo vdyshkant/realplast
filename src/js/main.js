@@ -946,3 +946,50 @@ if($('body').is('.page-window-systems')){
 }
 
 //  page-window-systems fancybox for awards END
+
+
+
+
+// main modal
+
+if($('body').is('.page-index')){
+
+	showMainModal();
+
+	function showMainModal() {
+			$('.request-callback').click(function() {
+					$('.modal-content').fadeIn(300);
+					$('.modal-index-overlay').fadeIn(300);
+			});
+	}
+
+
+	closeMainModal();
+
+	function closeMainModal() {
+			$('.modal-content-close').click(function() {
+					$('.modal-content').fadeOut(300);
+					$('.modal-index-overlay').fadeOut(300);
+			});
+	}
+
+	hideMainOverlay();
+
+	function hideMainOverlay() {
+			$('.modal-index-overlay').click(function() {
+					$('.modal-content').fadeOut(300);
+					$('.modal-index-overlay').fadeOut(300);
+			});
+	}
+
+	$('html body').on('keyup', function(e) {
+		if (e.keyCode === 27) {
+				$('.modal-content').fadeOut(300);
+				$('.modal-index-overlay').fadeOut(300);
+		}
+});
+
+}
+
+
+// main modal eof
