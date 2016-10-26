@@ -993,3 +993,14 @@ if($('body').is('.page-index')){
 
 
 // main modal eof
+
+
+
+// external js: masonry.pkgd.js
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 160
+});
+
+// external js: masonry.pkgd.js EOF
