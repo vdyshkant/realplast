@@ -60,7 +60,7 @@
 
 & .welcome-row {
   position: relative;
-  min-height: 600px;
+  // min-height: 600px;
 
   @include clearfix;
   @media #{$mobile} {
@@ -106,6 +106,10 @@
   // right: 0;
 
   float: right;
+  @media #{$wide} {
+    margin-top: 90px;
+  }
+  
   @media #{$tablet} {
     width: 393px;
     width: 50.130208333333336%;
@@ -148,7 +152,7 @@
 
   padding: 30px 35px 50px 20px;
 
-  width: 49.86979166666667%;
+  // width: 49.86979166666667%;
   float: right;
   margin-top: 90px;
 
@@ -178,19 +182,16 @@
 
   padding: 30px 35px 50px 20px;
 
-  width: 48.706896551724135%;
+  // width: 48.706896551724135%;
   float: left;
-  margin-top: 90px;
 
   @media #{$tablet} {
     // width: 375px;
     width: 49.86979166666667%;
-    margin-top: 0;
     padding: 30px 35px 35px 20px;
   }
   @media #{$mobile} {
     width: 100%;
-    margin-top: 0;
     float: none;
     // padding-bottom: 20px;
     padding: 30px 10px 20px 20px;
