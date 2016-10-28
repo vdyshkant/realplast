@@ -9,10 +9,18 @@
     margin: 0 auto;
     max-width: 1160px;
 
+    @media #{$wide} {
+      min-width: 1160px;
+    }
+
     // padding: 0 5px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
+
+    @media #{$tablet} {
+      max-width: 768px;
+    }
 
     @media #{$mobile} {
       min-width: 320px;
@@ -33,7 +41,11 @@
 
   & .welcome-wrapper {
     position: relative;
-      min-height: 600px;
+      // min-height: 600px;
+    @include clearfix;
+    @media #{$mobile} {
+      padding-bottom: 50px;
+    }
   }
 
   & .PROTO-essence {
@@ -54,9 +66,27 @@
   height: 510px;
   background: url('../img/004_welcome-img.jpg') no-repeat left 0 top 0;
   background-size: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  float: left;
+  @media #{$tablet} {
+    width: 393px;
+    width: 51.171875%;
+    height: 336px;
+    background: #fff url('../img/004_welcome-img_tablet.jpg') no-repeat left 0px top 0px;
+  }
+  @media #{$mobile} {
+    float: none;
+    margin-bottom: 0;
+
+    height: 202px;
+
+    width: 320px;
+    margin: 0 auto;
+    background: #fff url('../img/004_welcome-img_mobile.jpg') no-repeat left -10px top 0px;
+  }
 
 }
 
@@ -75,13 +105,31 @@
 
 .page-cottages .welcome-content {
   background: url('../img/bg_white.jpg');
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  width: 565px;
-  min-height: 510px;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0px;
+
+  // min-height: 510px;
 
   padding: 35px 20px 30px 20px;
+
+  // width: 565px;
+  width: 48.706896551724135%;
+  float: right;
+  margin-top: 90px;
+
+  @media #{$tablet} {
+    // width: 375px;
+    width: 48.828125%;
+    margin-top: 60px;
+  }
+  @media #{$mobile} {
+    width: 100%;
+    margin-top: 0;
+    float: none;
+    // padding-bottom: 20px;
+    padding: 30px 10px 20px 20px;
+  }
 }
 
 

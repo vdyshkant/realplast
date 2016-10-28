@@ -16,7 +16,6 @@
     }
 
     @media #{$mobile} {
-      max-width: 320px;
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
