@@ -17,6 +17,11 @@
     // outline-offset: -2px;
     background: url('../img/bg_welcome.png');
 
+    @media #{$tablet} {
+      max-width: 768px;
+    }
+
+
     @media #{$mobile} {
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
@@ -35,7 +40,6 @@
   }
 
   & .welcome-wrapper {
-    position: relative;
       // min-height: 600px;
       @include clearfix;
       @media #{$mobile} {
@@ -77,6 +81,8 @@
 
     height: 202px;
     width: 100%;
+    width: 320px;
+    margin: 0 auto;
     background: #fff url('../img/003_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
   }
 
@@ -101,7 +107,7 @@
   // bottom: 0;
   // right: 0px;
   // width: 565px;
-  min-height: 510px;
+  // min-height: 510px;
 
   padding: 30px 20px 50px 20px;
 
@@ -113,6 +119,7 @@
     // width: 375px;
     width: 48.828125%;
     margin-top: 60px;
+    padding: 30px 20px 35px 20px;
   }
   @media #{$mobile} {
     width: 100%;
@@ -129,6 +136,9 @@
   text-align: center;
   color: #444341;
   margin-bottom: 30px;
+  @media #{$mobile-tablet} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+  }
 }
 
 
@@ -136,6 +146,10 @@
   @include font(normal, 400, 18px, 23px, 'Roboto');
   color: #444341;
   margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 

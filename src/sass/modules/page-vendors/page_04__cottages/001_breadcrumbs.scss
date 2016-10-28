@@ -1,5 +1,8 @@
 .page-cottages .breadcrumbs {
   // bg 1
+  @media #{$mobile-tablet} {
+    margin-top: 60px;
+  }
 }
 
 
@@ -32,7 +35,7 @@
   }
 
   & .container {
-    padding: 20px 0 60px;
+    padding: 20px 0 70px;
   }
 
   & .breadcrumbs-wrapper {
@@ -106,9 +109,13 @@
 
 
 .page-cottages .breadcrumbs__link {
-  @include font(normal, 400, 18px, 14px, 'Roboto');
+  display: block;
+  @include font(normal, 400, 18px, 18px, 'Roboto');
   color: #444341;
   text-decoration: none;
+  @media #{$mobile} {
+    @include font(normal, 400, 18px, 16px, 'Roboto');
+  }
 }
 
 

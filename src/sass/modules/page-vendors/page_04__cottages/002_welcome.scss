@@ -40,7 +40,6 @@
   }
 
   & .welcome-wrapper {
-    position: relative;
       // min-height: 600px;
     @include clearfix;
     @media #{$mobile} {
@@ -138,6 +137,9 @@
   text-align: center;
   color: #444341;
   margin-bottom: 30px;
+  @media #{$mobile-tablet} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+  }
 }
 
 
