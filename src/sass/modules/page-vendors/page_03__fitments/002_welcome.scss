@@ -1,5 +1,9 @@
 .page-fitments .welcome {
-  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+
+
+  // @media #{$mobile-tablet} {
+  //   box-shadow: none;
+  // }
 }
 
 
@@ -7,6 +11,8 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+
+    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
     @media #{$wide} {
       min-width: 1160px;
     }
@@ -61,29 +67,23 @@
 
 
 .page-fitments .welcome-thumb {
-  width: 595px;
   height: 510px;
-  background: #fff url('../img/003_welcome-img.jpg') no-repeat left 45px top -50px;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-
   float: left;
+
+  @media #{$wide} {
+    width: 595px;
+  }
+
   @media #{$tablet} {
     width: 393px;
     width: 51.171875%;
     height: 336px;
-    background: #fff url('../img/003_welcome-img_tablet.jpg') no-repeat right 20px top 0px;
   }
+
   @media #{$mobile} {
     float: none;
-    margin-bottom: 0;
-
     height: 202px;
-    width: 100%;
-    width: 320px;
-    margin: 0 auto;
-    background: #fff url('../img/003_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
+    background: url('../img/bg_white.jpg');
   }
 
 }
@@ -91,6 +91,19 @@
 
 .page-fitments .welcome-thumb__img {
 
+  background: #fff url('../img/003_welcome-img.jpg') no-repeat left 45px top -50px;
+  height: 100%;
+
+  @media #{$tablet} {
+
+    background: #fff url('../img/003_welcome-img_tablet.jpg') no-repeat right 20px top 0px;
+  }
+
+  @media #{$mobile} {
+    background: #fff url('../img/003_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 
