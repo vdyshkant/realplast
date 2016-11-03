@@ -38,7 +38,9 @@
   }
 
   & .gallery-essence {
-    margin-bottom: 50px;
+    @media #{$wide} {
+      margin-bottom: 50px;
+    }
   }
 
 }
