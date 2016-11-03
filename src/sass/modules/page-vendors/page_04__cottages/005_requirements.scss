@@ -12,8 +12,18 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      padding: 0 114px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -27,6 +37,16 @@
 
   & .container {
     padding: 100px 0;
+
+    @media #{$tablet} {
+      padding-top: 50px;
+      padding-bottom: 75px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
   }
 
   & .PROTO-wrapper {
@@ -66,6 +86,16 @@
   color: #444341;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    margin-bottom: 10px;
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -81,24 +111,67 @@
   background-color: #333;
   margin-bottom: 40px;
 
+  @media #{$tablet} {
+    margin-bottom: 45px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 45px;
+  }
+
 
 }
 
 
 .page-cottages .requirements-content {
-  display: flex;
+  @include clearfix;
 }
 
 
 .page-cottages .requirements-content__item {
+
+  float: left;
   position: relative;
   width: 265px;
   margin-right: 20px;
 
   // outline: 2px dashed crimson;
   // outline-offset: -2px;
-  &:last-child {
-    margin-right: 0;
+  @media #{$wide} {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  @media #{$tablet} {
+
+    width: 261px;
+    margin-right: 18px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    // &:nth-child(2n+1) {
+      // clear: both;
+    // }
+  }
+
+  @media #{$mobile} {
+    margin: 0 auto;
+    float: none;
+
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
