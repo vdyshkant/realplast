@@ -11,8 +11,18 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      padding: 0 22px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -26,6 +36,14 @@
 
   & .container {
     padding: 90px 0 100px;
+
+    @media #{$tablet} {
+      padding-bottom: 70px;
+    }
+
+    @media #{$mobile} {
+      padding-bottom: 60px;
+    }
   }
 
   & .rules-wrapper {
@@ -52,6 +70,11 @@
     color: #444341;
 
     margin-bottom: 25px;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 20px, 'Roboto Condensed')
+
+    }
 }
 
 
@@ -64,6 +87,7 @@
   outline: none;
   border: none;
 
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -81,6 +105,10 @@
 
   @include font(normal, 400, 18px, 27px, 'Roboto');
   color: #444341;
+
+  @media #{$mobile-tablet} {
+    width: auto;
+  }
 
 }
 
