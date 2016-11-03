@@ -10,6 +10,8 @@
     margin: 0 auto;
     max-width: 1160px;
 
+    padding: 0 10px;
+
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
@@ -28,6 +30,14 @@
 
   & .container {
     padding: 100px 0 55px;
+
+    @media #{$tablet} {
+      padding: 75px 0 65px;
+    }
+
+    @media #{$mobile} {
+      padding: 70px 0 35px;
+    }
   }
 
   & .PROTO-wrapper {
@@ -47,6 +57,16 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 21px, 'Roboto Condensed');
+    margin-bottom: 25px;
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -55,6 +75,20 @@
   text-align: center;
   color: #444341;
   margin-bottom: 35px;
+
+  @media #{$tablet} {
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+    width: 576px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -67,9 +101,11 @@
 
 .page-cottages .contact__form {
   margin: 0 auto;
-  width: 920px;
 
-  display: flex;
+  @media #{$wide} {
+    display: flex;
+    width: 920px;
+  }
 
   & > * {
     display: block;
@@ -78,6 +114,7 @@
 
 
 .page-cottages .contact__form__field {
+  display: block;
   background: #f3f3f3;
   height: 50px;
   margin-right: 20px;
@@ -88,23 +125,45 @@
 
   border: none;
   outline: none;
+
+  @media #{$tablet} {
+    max-width: 540px;
+    min-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
 .page-cottages .contact__form__field--name {
-  width: 260px;
+  @media #{$wide} {
+    width: 260px;
+  }
 }
 
 
 .page-cottages .contact__form__field--tel {
-  width: 360px;
+  @media #{$wide} {
+    width: 360px;
+  }
 }
 
 
 .page-cottages .contact__form__btn {
   @include font(normal, 400, 18px, 50px, 'Roboto');
   color: #f9f9f9;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   text-align: center;
   width: 260px;
   background: #42a455;
@@ -115,6 +174,14 @@
   position: relative;
   top: 0;
   user-select: none;
+
+  @media #{$tablet} {
+    margin: 0 auto;
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+  }
 
   &:hover {
     background: #3a8147;
