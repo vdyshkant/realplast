@@ -35,7 +35,11 @@
   }
 
   & .container {
-    padding: 90px 0 100px;
+    padding: 85px 0 100px;
+
+    @media #{$wide} {
+      padding-top: 90px;
+    }
 
     @media #{$tablet} {
       padding-bottom: 70px;
@@ -69,11 +73,14 @@
     text-align: center;
     color: #444341;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     @media #{$tablet} {
-      @include font(normal, 700, 22px, 20px, 'Roboto Condensed')
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed')
+    }
 
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed')
     }
 }
 
