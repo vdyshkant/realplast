@@ -20,6 +20,9 @@
 
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+      padding: 0 9px;
+
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -36,6 +39,10 @@
 
     @media #{$tablet} {
       padding: 60px 0 50px;
+    }
+
+    @media #{$mobile} {
+      padding: 70px 0 50px;
     }
   }
 
@@ -66,7 +73,10 @@
 
   @media #{$tablet} {
     @include font(normal, 700, 22px, 17px, 'Roboto Condensed')
+  }
 
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 17px, 'Roboto Condensed')
   }
 
   &:last-child {
@@ -87,7 +97,7 @@
 
   margin-bottom: 50px;
 
-  @media #{$tablet} {
+  @media #{$mobile-tablet} {
     margin-bottom: 30px;
   }
 }
@@ -103,6 +113,10 @@
 .page-fitments .opening-content__row {
   @include clearfix;
   margin-bottom: 45px;
+
+  @media #{$mobile} {
+    margin-bottom: 55px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -124,6 +138,13 @@
     width: 260px;
     margin-right: 15px;
   }
+
+  @media #{$mobile} {
+    width: 270px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 25px;
+  }
 }
 
 
@@ -137,6 +158,12 @@
     padding-right: 5px;
     float: none;
     width: auto;
+  }
+
+  @media #{$mobile} {
+    width: auto;
+    float: none;
+    padding-right: 0;
   }
 }
 
@@ -165,6 +192,12 @@
     width: auto;
     margin-bottom: 5px;
   }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+    width: auto;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -175,7 +208,7 @@
   & span {
     @include font(normal, 700, 18px, 27px, 'Roboto');
 
-    @media #{$tablet} {
+    @media #{$mobile-tablet} {
       @include font(normal, 400, 18px, 27px, 'Roboto');
     }
   }

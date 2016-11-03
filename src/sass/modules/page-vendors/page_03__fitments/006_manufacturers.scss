@@ -13,8 +13,17 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 9px;
+
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -30,6 +39,10 @@
     padding: 20px 0 95px;
 
     @media #{$tablet} {
+      padding-bottom: 65px;
+    }
+
+    @media #{$mobile} {
       padding-bottom: 65px;
     }
   }
@@ -62,6 +75,10 @@
   @media #{$tablet} {
     @include font(normal, 700, 22px, 20px, 'Roboto Condensed')
   }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 33px, 'Roboto Condensed')
+  }
 }
 
 
@@ -75,7 +92,7 @@
   outline: none;
   margin-bottom: 50px;
 
-  @media #{$tablet} {
+  @media #{$mobile-tablet} {
     margin-bottom: 30px;
   }
 }
@@ -93,8 +110,24 @@
   @include clearfix;
   margin-bottom: 75px;
 
+  @media #{$mobile} {
+    margin-bottom: 65px;
+  }
+
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:first-child {
+    & .col-right {
+      margin-bottom: 15px;
+    }
+  }
+
+  &:last-child {
+    & .col-right {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -117,6 +150,13 @@
     margin-right: 0;
     @include clearfix;
   }
+
+  @media #{$mobile} {
+    width: auto;
+    float: none;
+    padding-left: 0;
+    margin-right: 0;
+  }
 }
 
 
@@ -125,7 +165,13 @@
   width: 360px;
 
   @media #{$tablet} {
-    width: 260px;
+    width: 265px;
+  }
+
+  @media #{$mobile} {
+    float: none;
+    margin: 0 auto;
+    width: 270px;
   }
 }
 
@@ -171,6 +217,11 @@
   margin-bottom: 25px;
 
   @media #{$tablet} {
+    @include font(normal, 700, 21px, 16px, 'Roboto Condensed');
+    margin-bottom: 20px;
+  }
+
+  @media #{$mobile} {
     @include font(normal, 700, 21px, 16px, 'Roboto Condensed');
     margin-bottom: 20px;
   }
