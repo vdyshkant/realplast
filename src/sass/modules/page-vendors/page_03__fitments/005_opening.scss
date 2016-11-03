@@ -13,6 +13,11 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      max-width: 768px;
+      min-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
@@ -28,6 +33,10 @@
 
   & .container {
     padding: 100px 0;
+
+    @media #{$tablet} {
+      padding: 60px 0 50px;
+    }
   }
 
   & .opening-wrapper {
@@ -55,6 +64,11 @@
 
   margin-bottom: 30px;
 
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 17px, 'Roboto Condensed')
+
+  }
+
   &:last-child {
     margin-bottom: 0px;
   }
@@ -62,6 +76,7 @@
 
 
 .page-fitments .opening-divider {
+  margin: 0 auto;
   display: block;
   width: 236px;
   height: 1px;
@@ -71,6 +86,10 @@
   border: none;
 
   margin-bottom: 50px;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -100,6 +119,11 @@
   float: left;
   width: 360px;
   margin-right: 20px;
+
+  @media #{$tablet} {
+    width: 260px;
+    margin-right: 15px;
+  }
 }
 
 
@@ -107,12 +131,19 @@
   float: right;
   width: 740px;
   padding-right: 95px;
+
+  @media #{$tablet} {
+    width: 447px;
+    padding-right: 5px;
+    float: none;
+    width: auto;
+  }
 }
 
 
 .page-fitments .opening-content__img {
-  width: 373px;
-  height: 346px;
+  // width: 373px;
+  // height: 346px;
 }
 
 
@@ -128,6 +159,12 @@
   width: 500px;
   color: #444341;
   margin-bottom: 30px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+    width: auto;
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -137,6 +174,10 @@
 
   & span {
     @include font(normal, 700, 18px, 27px, 'Roboto');
+
+    @media #{$tablet} {
+      @include font(normal, 400, 18px, 27px, 'Roboto');
+    }
   }
 
 }

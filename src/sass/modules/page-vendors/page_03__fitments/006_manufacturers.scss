@@ -28,6 +28,10 @@
 
   & .container {
     padding: 20px 0 95px;
+
+    @media #{$tablet} {
+      padding-bottom: 65px;
+    }
   }
 
   & .manufacturers-wrapper {
@@ -54,6 +58,10 @@
   color: #444341;
 
   margin-bottom: 22px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 20px, 'Roboto Condensed')
+  }
 }
 
 
@@ -66,6 +74,10 @@
   border: none;
   outline: none;
   margin-bottom: 50px;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -97,12 +109,24 @@
   width: 740px;
   margin-right: 20px;
   padding-left: 95px;
+
+  @media #{$tablet} {
+    width: auto;
+    float: none;
+    padding-left: 0;
+    margin-right: 0;
+    @include clearfix;
+  }
 }
 
 
 .page-fitments .manufacturers-content__col.col-right {
   float: right;
   width: 360px;
+
+  @media #{$tablet} {
+    width: 260px;
+  }
 }
 
 
@@ -145,6 +169,11 @@
   @include font(normal, 700, 32px, 24px, 'Roboto');
   color: #444341;
   margin-bottom: 25px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 21px, 16px, 'Roboto Condensed');
+    margin-bottom: 20px;
+  }
 }
 
 
