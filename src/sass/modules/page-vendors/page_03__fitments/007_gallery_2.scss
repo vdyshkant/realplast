@@ -75,7 +75,7 @@
 .page-fitments .gallery-handle {
   & .row-1 .col {
     margin-bottom: 20px;
-    
+
     @media #{$mobile} {
       margin-bottom: 0;
     }
@@ -153,9 +153,12 @@
 
 
 .page-fitments .gallery-handle {
-  & .col-2 .gallery-handle__item:first-child,
-  & .col-3 .gallery-handle__item:first-child{
+  & .col-2 .gallery-handle__item:first-child {
     margin-bottom: 15px;
+  }
+
+  & .col-3 .gallery-handle__item:first-child{
+    margin-bottom: 20px;
   }
 }
 
