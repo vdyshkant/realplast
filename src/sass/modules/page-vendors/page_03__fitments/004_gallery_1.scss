@@ -82,6 +82,10 @@
 .page-fitments .gallery {
   & .row-1 .col {
     margin-bottom: 20px;
+    
+    @media #{$mobile} {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -150,21 +154,6 @@
         }
       }
     }
-
-    // @media #{$mobile} {
-    //   width: 740px;
-    //   @include clearfix;
-    //
-    //   & .gallery__item {
-    //     float: left;
-    //     margin-right: 20px;
-    //
-    //     &:last-child {
-    //       margin-right: 0;
-    //     }
-    //   }
-    //
-    // }
   }
 }
 
