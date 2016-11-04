@@ -13,8 +13,17 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -28,6 +37,14 @@
 
   & .container {
     padding: 90px 0 100px;
+
+    @media #{$tablet} {
+      padding: 90px 0 100px;
+    }
+
+    @media #{$mobile} {
+      padding: 90px 0 50px;
+    }
   }
 
   & .differences-wrapper {
@@ -54,6 +71,16 @@
     color: #fff;
 
     margin-bottom: 25px;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 54px, 'Roboto Condensed'); // 36/2 = 18
+      margin-bottom: 10px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+      margin-bottom: 10px;
+    }
 }
 
 
@@ -66,7 +93,7 @@
   outline: none;
   border: none;
 
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
 }
 
 
@@ -83,8 +110,12 @@
   color: #fff;
 
 
-  width: 740px;
+  max-width: 740px;
   margin: 0 auto;
+
+  @media #{$mobile} {
+    @include font(normal, 400, 15px, 21px, 'Roboto');
+  }
 }
 
 
@@ -102,16 +133,36 @@
 
 // TABLE
 .page-glass-unit .differences-table {
-  border-left: 1px solid white;
+  @media #{$tablet-wide} {
+    border-left: 1px solid white;
+  }
 }
 
 
 .page-glass-unit .differences-table__row {
   display: flex;
 
+  @media #{$mobile} {
+    display: block;
+    @include clearfix;
+
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+
+    &:last-child {
+      margin-bottom: 0;
+      // border-bottom: none;
+    }
+  }
+
   &:last-child {
-    & .differences-table__cell {
+    & > .differences-table__cell {
       border-bottom: 1px solid white;
+
+      @media #{$mobile} {
+        border-bottom: none;
+      }
     }
   }
 }
@@ -135,8 +186,11 @@
 
   position: relative;
 
-  &:first-child {
-    width: 360px;
+  @media #{$mobile} {
+    float: left;
+    width: 25%;
+    min-height: 50px;
+    padding: 14px 20px;
   }
 
   &:not(:first-child) {
@@ -149,6 +203,27 @@
   }
 }
 
+
+.page-glass-unit .differences-table__row > .differences-table__cell {
+  &:first-child {
+    width: 360px;
+
+    @media #{$mobile} {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+
+.page-glass-unit .differences-table__mobile-row {
+  display: none;
+  @include clearfix;
+
+  @media #{$mobile} {
+    display: block;
+  }
+}
 
 
 .page-glass-unit .PROTO {
