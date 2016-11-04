@@ -16,6 +16,15 @@ section.advantages
               .advantages-content__row
 
 
+                //- RIGHT
+                .advantages-content__column.advantages-content__column-right
+                  .advantages-content__substrate
+                    +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_substrate', 'filename':'005_advantages_substrate'}])
+                    svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
+                  .advantages-content__thumb
+                    img(src="img/005_advantages_img.png")
+
+
                 //- LEFT
                 .advantages-content__column.advantages-content__column-left
                   ul.advantages-content-list
@@ -33,13 +42,7 @@ section.advantages
                       | Функциональный слой, имеющий в своем составе частички серебра, отвечает за отражение солнечного излучения.
 
 
-                //- RIGHT
-                .advantages-content__column.advantages-content__column-right
-                  .advantages-content__substrate
-                    +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_substrate', 'filename':'005_advantages_substrate'}])
-                    svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
-                  .advantages-content__thumb
-                    img(src="img/005_advantages_img.png")
+
 
 
 // advantages end
