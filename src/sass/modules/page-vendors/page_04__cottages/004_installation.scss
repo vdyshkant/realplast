@@ -14,8 +14,16 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -29,6 +37,14 @@
 
   & .container {
     padding: 160px 0;
+
+    @media #{$tablet} {
+      padding: 140px 0 160px;
+    }
+
+    @media #{$mobile} {
+      padding: 50px 0 60px;
+    }
   }
 
   & .PROTO-wrapper {
@@ -68,6 +84,11 @@
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media #{$mobile-tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -83,7 +104,9 @@
   background-color: #fff;
   margin-bottom: 22px;
 
-
+  @media #{$mobile-tablet} {
+    display: none;
+  }
 }
 
 
@@ -93,6 +116,10 @@
   @include font(normal, 400, 18px, 27px, 'Roboto');
 
   color: #fff;
+
+  @media #{$mobile-tablet} {
+    width: auto;
+  }
 
 }
 
