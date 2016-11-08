@@ -1,5 +1,5 @@
 .page-glass-unit .structure {
-  background: #fff;
+  // background: #fff;
 }
 
 
@@ -75,6 +75,19 @@
 .page-glass-unit .structure-content__img {
   display: block;
   margin: 0 auto;
+
+  height: 754px;
+  width: 1160px;
+
+  @media #{$tablet} {
+    height: 499px;
+    width: 768px;
+  }
+
+  @media #{$mobile} {
+    height: 444px;
+    width: 320px;
+  }
 }
 
 
