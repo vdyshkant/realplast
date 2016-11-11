@@ -71,7 +71,7 @@ RESET
      Блок_комментариев_для_раздела $ MAIN
      ================================================ */
 
-  /* == eof $ MAIN == */
+  /* === eof $ MAIN == */
 
   /* Блок_комментариев_для_подраздела
      ================================================ */
@@ -702,42 +702,53 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-	if($('body').is('.page-fitments')){
-
-    // if (window.matchMedia("(min-width: 768px)").matches) {
-
-  		$("#gallery-smooth").smoothDivScroll({
-  			mousewheelScrolling: true,
-  			manualContinuousScrolling: true,
-  			visibleHotSpotBackgrounds: "always",
-  			autoScrollingMode: "always"
-  		});
+  if($('body').is('.page-fitments')){
+		$("#gallery-smooth").smoothDivScroll({
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "always"
+		});
 
 
-  		// This is just to make the scroller pause...
-  			// Mouse over
-  			$("#gallery-smooth").bind("mouseover", function(){
-  					$("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
-  			});
+	// This is just to make the scroller pause...
+		// Mouse over
+		$("#gallery-smooth").bind("mouseover", function(){
+				$("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+		});
 
-  			// Mouse out
-  			$("#gallery-smooth").bind("mouseout", function(){
-  					$("#gallery-smooth").smoothDivScroll("startAutoScrolling");
-  			});
+		// Mouse out
+    if($('.fancybox-opened').length === 0) {
+      $("#gallery-smooth").bind("mouseout", function(){
+          $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+      });
+    }
 
-  		// fancy box for this gallery
-  		$("#gallery-smooth a.gallery__full").fancybox({
-  			// Prevent fancybox from causing page to to jump to the top
-  			helpers: {
-  				overlay: {
-  					locked: false
-  				}
-  			}
-  		});
-  		// fancy box for this gallery END
+    $('.page-fitments').on('mouseover', '.fancybox-opened, .fancybox-overlay', function(){
+          $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+    });
 
-    // }
 
+		// fancy box for this gallery
+		$("#gallery-smooth a.gallery__full").fancybox({
+      // Prevent fancybox from causing page to to jump to the top
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+		});
+		$("#gallery-smooth a.gallery__full").fancybox({
+      // continue smoothDivScroll scrolling after closing opened fancybox popup
+      afterClose: function() {
+        $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+      }
+
+		});
+
+
+
+		// fancy box for this gallery END
 	}
 
 });
@@ -764,19 +775,36 @@ $(document).ready(function() {
 		});
 
 		// Mouse out
-		$("#gallery-handle-smooth").bind("mouseout", function(){
-				$("#gallery-handle-smooth").smoothDivScroll("startAutoScrolling");
-		});
+    if($('.fancybox-opened').length === 0) {
+      $("#gallery-handle-smooth").bind("mouseout", function(){
+          $("#gallery-handle-smooth").smoothDivScroll("startAutoScrolling");
+      });
+    }
+
+    $('.page-fitments').on('mouseover', '.fancybox-opened, .fancybox-overlay', function(){
+          $("#gallery-handle-smooth").smoothDivScroll("stopAutoScrolling");
+    });
+
 
 		// fancy box for this gallery
 		$("#gallery-handle-smooth a.gallery__full").fancybox({
-			// Prevent fancybox from causing page to to jump to the top
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			}
+      // Prevent fancybox from causing page to to jump to the top
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
 		});
+		$("#gallery-handle-smooth a.gallery__full").fancybox({
+      // continue smoothDivScroll scrolling after closing opened fancybox popup
+      afterClose: function() {
+        $("#gallery-handle-smooth").smoothDivScroll("startAutoScrolling");
+      }
+
+		});
+
+
+
 		// fancy box for this gallery END
 	}
 
@@ -826,11 +854,6 @@ $(document).ready(function() {
 				$(this).siblings().removeClass('active');
 
 			}
-
-
-
-
-
 		});
 
 
@@ -962,39 +985,39 @@ if($('body').is('.page-index')){
 
 	showMainModal();
 
-	function showMainModal() {
-			$('.request-callback').click(function() {
-					$('.modal-content').fadeIn(300);
-					$('.modal-index-overlay').fadeIn(300);
-			});
-	}
-
-
 	closeMainModal();
-
-	function closeMainModal() {
-			$('.modal-content-close').click(function() {
-					$('.modal-content').fadeOut(300);
-					$('.modal-index-overlay').fadeOut(300);
-			});
-	}
 
 	hideMainOverlay();
 
-	function hideMainOverlay() {
-			$('.modal-index-overlay').click(function() {
-					$('.modal-content').fadeOut(300);
-					$('.modal-index-overlay').fadeOut(300);
-			});
-	}
 
 	$('html body').on('keyup', function(e) {
 		if (e.keyCode === 27) {
 				$('.modal-content').fadeOut(300);
 				$('.modal-index-overlay').fadeOut(300);
 		}
-});
+  });
 
+}
+
+function showMainModal() {
+    $('.request-callback').click(function() {
+        $('.modal-content').fadeIn(300);
+        $('.modal-index-overlay').fadeIn(300);
+    });
+}
+
+function closeMainModal() {
+    $('.modal-content-close').click(function() {
+        $('.modal-content').fadeOut(300);
+        $('.modal-index-overlay').fadeOut(300);
+    });
+}
+
+function hideMainOverlay() {
+    $('.modal-index-overlay').click(function() {
+        $('.modal-content').fadeOut(300);
+        $('.modal-index-overlay').fadeOut(300);
+    });
 }
 
 
@@ -1021,44 +1044,46 @@ if($('body').is('.page-fitments')){
 	      var a = document.querySelector('#aside1'), b = null, P = 150;
 	      window.addEventListener('scroll', Ascroll, false);
 	      document.body.addEventListener('scroll', Ascroll, false);
-	      function Ascroll() {
-	        if (b == null) {
-	          var Sa = getComputedStyle(a, ''), s = '';
-	          for (var i = 0; i < Sa.length; i++) {
-	            if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-	              s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
-	            }
-	          }
-	          b = document.createElement('div');
-	          b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-	          a.insertBefore(b, a.firstChild);
-	          var l = a.childNodes.length;
-	          for (var i = 1; i < l; i++) {
-	            b.appendChild(a.childNodes[1]);
-	          }
-	          a.style.height = b.getBoundingClientRect().height + 'px';
-	          a.style.padding = '0';
-	          a.style.border = '0';
-	        }
-	        var Ra = a.getBoundingClientRect(),
-	            R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('#article1').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
-	        if ((Ra.top - P) <= 0) {
-	          if ((Ra.top - P) <= R) {
-	            b.className = 'stop';
-	            b.style.top = - R +'px';
-	          } else {
-	            b.className = 'sticky';
-	            b.style.top = P + 'px';
-	          }
-	        } else {
-	          b.className = '';
-	          b.style.top = '';
-	        }
-	        window.addEventListener('resize', function() {
-	          a.children[0].style.width = getComputedStyle(a, '').width
-	        }, false);
-	      }
+
 	    }
+
+      function Ascroll() {
+        if (b === null) {
+          var Sa = getComputedStyle(a, ''), s = '';
+          for (var i = 0; i < Sa.length; i++) {
+            if (Sa[i].indexOf('overflow') === 0 || Sa[i].indexOf('padding') === 0 || Sa[i].indexOf('border') === 0 || Sa[i].indexOf('outline') === 0 || Sa[i].indexOf('box-shadow') === 0 || Sa[i].indexOf('background') === 0) {
+              s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; ';
+            }
+          }
+          b = document.createElement('div');
+          b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+          a.insertBefore(b, a.firstChild);
+          var l = a.childNodes.length;
+          for (var j = 1; j < l; j++) {
+            b.appendChild(a.childNodes[1]);
+          }
+          a.style.height = b.getBoundingClientRect().height + 'px';
+          a.style.padding = '0';
+          a.style.border = '0';
+        }
+        var Ra = a.getBoundingClientRect(),
+            R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('#article1').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
+        if ((Ra.top - P) <= 0) {
+          if ((Ra.top - P) <= R) {
+            b.className = 'stop';
+            b.style.top = - R +'px';
+          } else {
+            b.className = 'sticky';
+            b.style.top = P + 'px';
+          }
+        } else {
+          b.className = '';
+          b.style.top = '';
+        }
+        window.addEventListener('resize', function() {
+          a.children[0].style.width = getComputedStyle(a, '').width;
+        }, false);
+      }
 	})();
 
 }
@@ -1073,44 +1098,45 @@ if($('body').is('.page-cottages')){
 	      var a = document.querySelector('#aside1'), b = null, P = 150;
 	      window.addEventListener('scroll', Ascroll, false);
 	      document.body.addEventListener('scroll', Ascroll, false);
-	      function Ascroll() {
-	        if (b == null) {
-	          var Sa = getComputedStyle(a, ''), s = '';
-	          for (var i = 0; i < Sa.length; i++) {
-	            if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-	              s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
-	            }
-	          }
-	          b = document.createElement('div');
-	          b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-	          a.insertBefore(b, a.firstChild);
-	          var l = a.childNodes.length;
-	          for (var i = 1; i < l; i++) {
-	            b.appendChild(a.childNodes[1]);
-	          }
-	          a.style.height = b.getBoundingClientRect().height + 'px';
-	          a.style.padding = '0';
-	          a.style.border = '0';
-	        }
-	        var Ra = a.getBoundingClientRect(),
-	            R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('#article1').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
-	        if ((Ra.top - P) <= 0) {
-	          if ((Ra.top - P) <= R) {
-	            b.className = 'stop';
-	            b.style.top = - R +'px';
-	          } else {
-	            b.className = 'sticky';
-	            b.style.top = P + 'px';
-	          }
-	        } else {
-	          b.className = '';
-	          b.style.top = '';
-	        }
-	        window.addEventListener('resize', function() {
-	          a.children[0].style.width = getComputedStyle(a, '').width
-	        }, false);
-	      }
 	    }
+
+      function Ascroll() {
+        if (b === null) {
+          var Sa = getComputedStyle(a, ''), s = '';
+          for (var i = 0; i < Sa.length; i++) {
+            if (Sa[i].indexOf('overflow') === 0 || Sa[i].indexOf('padding') === 0 || Sa[i].indexOf('border') === 0 || Sa[i].indexOf('outline') === 0 || Sa[i].indexOf('box-shadow') === 0 || Sa[i].indexOf('background') === 0) {
+              s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; ';
+            }
+          }
+          b = document.createElement('div');
+          b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+          a.insertBefore(b, a.firstChild);
+          var l = a.childNodes.length;
+          for (var j = 1; j < l; j++) {
+            b.appendChild(a.childNodes[1]);
+          }
+          a.style.height = b.getBoundingClientRect().height + 'px';
+          a.style.padding = '0';
+          a.style.border = '0';
+        }
+        var Ra = a.getBoundingClientRect(),
+            R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('#article1').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
+        if ((Ra.top - P) <= 0) {
+          if ((Ra.top - P) <= R) {
+            b.className = 'stop';
+            b.style.top = - R +'px';
+          } else {
+            b.className = 'sticky';
+            b.style.top = P + 'px';
+          }
+        } else {
+          b.className = '';
+          b.style.top = '';
+        }
+        window.addEventListener('resize', function() {
+          a.children[0].style.width = getComputedStyle(a, '').width;
+        }, false);
+      }
 	})();
 
 }
