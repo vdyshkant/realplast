@@ -8,9 +8,7 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
-
-    // outline: 2px dashed tan;
-    // outline-offset: -2px;
+    min-width: 1160px;
 
     @media #{$tablet} {
       min-width: 768px;
@@ -29,6 +27,10 @@
       //   min-width: initial;
       // }
     }
+
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
   }
 
   & .inner {
