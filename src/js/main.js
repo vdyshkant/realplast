@@ -608,59 +608,68 @@ $( document ).ready(function() {
 
 $(document).ready(function() {
 
-	if($('body').is('.page-index')){
+  if($('body').is('.page-index')){
 		$("#gallery-smooth").smoothDivScroll({
-				// mousewheelScrolling: "allDirections",
-				// manualContinuousScrolling: false,
+      // mousewheelScrolling: "allDirections",
+      // manualContinuousScrolling: false,
 
-				// autoScrollingMode: "onStart",
-					// autoScrollingMode: "always",
-					// hotSpotScrolling: false,
-					// touchScrolling: true,
-					// manualContinuousScrolling: true,
-				// hotSpotScrollingStep: 3,
-				// hotSpotScrollingInterval: 2,
-				// autoScrollingStep: 1, SPPED
-					// mousewheelScrolling: false
-
-				mousewheelScrolling: true,
-				manualContinuousScrolling: true,
-				visibleHotSpotBackgrounds: "always",
-				autoScrollingMode: "always"
+      // autoScrollingMode: "onStart",
+        // autoScrollingMode: "always",
+        // hotSpotScrolling: false,
+        // touchScrolling: true,
+        // manualContinuousScrolling: true,
+      // hotSpotScrollingStep: 3,
+      // hotSpotScrollingInterval: 2,
+      // autoScrollingStep: 1, SPPED
+        // mousewheelScrolling: false
+			mousewheelScrolling: true,
+			manualContinuousScrolling: true,
+			visibleHotSpotBackgrounds: "always",
+			autoScrollingMode: "always"
 		});
 
 
-		// This is just to make the scroller pause...
-			// Mouse over
-			$("#gallery-smooth").bind("mouseover", function(){
-			    $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
-			});
-
-			// Mouse out
-			$("#gallery-smooth").bind("mouseout", function(){
-			    $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
-			});
-
-					// smaller ver for future dev:
-							// $("#gallery-smooth").bind("mouseover", function() {
-							// 		$(this).smoothDivScroll("stopAutoScroll");
-							// 		}).bind("mouseout", function() {
-							// 		$(this).smoothDivScroll("startAutoScroll");
-							// });
-					// eof smaller ver for future dev
-
-		$("a.gallery__full").fancybox({
-
-			// Prevent fancybox from causing page to to jump to the top
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			}
+	// This is just to make the scroller pause...
+		// Mouse over
+		$("#gallery-smooth").bind("mouseover", function(){
+				$("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
 		});
+
+		// Mouse out
+    if($('.fancybox-opened').length === 0) {
+      $("#gallery-smooth").bind("mouseout", function(){
+          $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+      });
+    }
+
+    $('.page-index').on('mouseover', '.fancybox-opened, .fancybox-overlay', function(){
+          $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+    });
+
+
+		// fancy box for this gallery
+		$("#gallery-smooth a.gallery__full").fancybox({
+      // Prevent fancybox from causing page to to jump to the top
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+		});
+		$("#gallery-smooth a.gallery__full").fancybox({
+      // continue smoothDivScroll scrolling after closing opened fancybox popup
+      afterClose: function() {
+        $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+      }
+
+		});
+
+
+
+		// fancy box for this gallery END
 	}
 
-	if($('body').is('.page-cottages')){
+  if($('body').is('.page-cottages')){
 		$("#gallery-smooth").smoothDivScroll({
 			mousewheelScrolling: true,
 			manualContinuousScrolling: true,
@@ -668,29 +677,45 @@ $(document).ready(function() {
 			autoScrollingMode: "always"
 		});
 
-		// This is just to make the scroller pause...
-			// Mouse over
-			$("#gallery-smooth").bind("mouseover", function(){
-			    $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
-			});
 
-			// Mouse out
-			$("#gallery-smooth").bind("mouseout", function(){
-			    $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
-			});
+	// This is just to make the scroller pause...
+		// Mouse over
+		$("#gallery-smooth").bind("mouseover", function(){
+				$("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+		});
+
+		// Mouse out
+    if($('.fancybox-opened').length === 0) {
+      $("#gallery-smooth").bind("mouseout", function(){
+          $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+      });
+    }
+
+    $('.page-cottages').on('mouseover', '.fancybox-opened, .fancybox-overlay', function(){
+          $("#gallery-smooth").smoothDivScroll("stopAutoScrolling");
+    });
 
 
 		// fancy box for this gallery
 		$("#gallery-smooth a.gallery__full").fancybox({
-			// Prevent fancybox from causing page to to jump to the top
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			}
+      // Prevent fancybox from causing page to to jump to the top
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
 		});
-		// fancy box for this gallery END
+		$("#gallery-smooth a.gallery__full").fancybox({
+      // continue smoothDivScroll scrolling after closing opened fancybox popup
+      afterClose: function() {
+        $("#gallery-smooth").smoothDivScroll("startAutoScrolling");
+      }
 
+		});
+
+
+
+		// fancy box for this gallery END
 	}
 
 });
