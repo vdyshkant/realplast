@@ -13,7 +13,12 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      padding: 0;
+    }
+
     @media #{$mobile} {
+      padding: 0;
       // min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
