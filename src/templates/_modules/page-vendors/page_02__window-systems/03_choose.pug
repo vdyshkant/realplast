@@ -10,7 +10,7 @@ section.choose
 
           //- LEFT menu
           //- ---------------------------------------------
-          .choose-menu
+          .choose-menu.desktop-menu
             h2.choose-menu__title Выберите систему:
             ul.choose-menu__list.js-tabs#menu_tabs
 
@@ -86,107 +86,11 @@ section.choose
                   li.choose-menu__subitem(data-id="prod-deceuninck")
                     a.choose-menu__sublink Enwin Deceuninck Favorit Space (6 камер / 76мм)
 
+          // eof desktop-menu
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-          //- LEFT menu
-          //- ---------------------------------------------
-          .choose-menu
-            h2.choose-menu__title Выберите систему:
-            ul.choose-menu__list.js-tabs#menu_tabs
-
-              //- item
-              li.choose-menu__item(data-pos="prod-evolution")
-                a.choose-menu__link
-                  .choose-menu__link__img
-                  .choose-menu__link__text ARTEC
-                //- sub menu
-                ul.choose-menu__sublist
-                  li.choose-menu__subitem(data-id="prod-evolution")
-                    a.choose-menu__sublink Evolution (3 камеры / 60мм)
-                    .choose-content__wrapper#prod-evolution
-
-                      .choose-content__ribbon(absolute)
-                        .choose-content__ribbon__text tab 'evolution'
-                      include 03-1_right-cont-inner.pug
-                  li.choose-menu__subitem(data-id="prod-effectiv")
-                    a.choose-menu__sublink Effectiv  (5 камер / 70мм)
-                    .choose-content__wrapper#prod-evolution
-
-                      .choose-content__ribbon(absolute)
-                        .choose-content__ribbon__text tab 'evolution'
-                      include 03-1_right-cont-inner.pug
-
-
-              //- item
-              li.choose-menu__item(data-pos="prod-bliz")
-                a.choose-menu__link
-                  .choose-menu__link__img
-                  .choose-menu__link__text REHAU
-                //- sub menu
-                ul.choose-menu__sublist
-                  li.choose-menu__subitem(data-id="prod-bliz")
-                    a.choose-menu__sublink Bliz (3 камеры / 60мм)
-                  li.choose-menu__subitem(data-id="prod-delight")
-                    a.choose-menu__sublink Delight-Design (5 камер / 70мм)
-                  li.choose-menu__subitem(data-id="prod-euro3")
-                    a.choose-menu__sublink Euro-Design (3 камеры / 60мм)
-                  li.choose-menu__subitem(data-id="prod-euro5")
-                    a.choose-menu__sublink Euro-Design (5камер / 70мм)
-                  li.choose-menu__subitem(data-id="prod-sib")
-                    a.choose-menu__sublink Sib Design (3 камеры / 70мм)
-                  li.choose-menu__subitem(data-id="prod-brilliant")
-                    a.choose-menu__sublink Brilliant (5 камер / 70мм)
-                  li.choose-menu__subitem(data-id="prod-geneo")
-                    a.choose-menu__sublink Geneo(6 камер / 86мм)
-                  li.choose-menu__subitem(data-id="prod-intelio")
-                    a.choose-menu__sublink Intelio (6 камер / 86мм)
-
-
-
-
-
-                //- sub menu
-                //- ul.choose-menu__sublist
-                //-   li.choose-menu__subitem(data-id="prod-second")
-                //-     a.choose-menu__sublink Система Evolution (3&nbsp;камеры&nbsp;/&nbsp;60мм)
-                //-   li.choose-menu__subitem.active(data-id="prod-third")
-                //-     a.choose-menu__sublink Система Effectiv (5&nbsp;камер&nbsp;/&nbsp;70мм)
-
-
-              //- item
-              li.choose-menu__item(data-pos="prod-galwin")
-                a.choose-menu__link
-                  .choose-menu__link__img
-                  .choose-menu__link__text GALWIN
-                  //- sub menu
-                  //- ul.choose-menu__sublist
-                  //-   li.choose-menu__subitem
-                  //-     a.choose-menu__sublink
-
-
-              //- item
-              li.choose-menu__item(data-pos="prod-quadro")
-                a.choose-menu__link
-                  .choose-menu__link__img
-                  .choose-menu__link__text ENWIN
-                //- sub menu
-                ul.choose-menu__sublist
-                  li.choose-menu__subitem(data-id="prod-quadro")
-                    a.choose-menu__sublink Quadro  (4 камеры / 60мм)
-                  li.choose-menu__subitem(data-id="prod-deceuninck")
-                    a.choose-menu__sublink Enwin Deceuninck Favorit Space (6 камер / 76мм)
 
 
 
@@ -211,17 +115,185 @@ section.choose
 
           //- RIGHT content
           //- ---------------------------------------------
-          .choose-content
-            .choose-content__wrapper#prod-evolution
+          .choose-content.tablet-related-content
 
-              .choose-content__ribbon(absolute)
-                .choose-content__ribbon__text tab 'evolution'
-              include 03-1_right-cont-inner.pug
+            //- transform-title
+            .choose-transform__menu-title-wrapper
+              h2.choose-transform__menu-title Выберите систему:
+            //- transform-title END
+
+
+            //- transform-item
+            .choose-menu__item.transform.man-item-1(data-pos="prod-evolution")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform ARTEC
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                //- EXPAND ITEM:
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-evolution")
+                  //- необходимо инкапсулировать ссылку, т.к. элементы должны быть все в потоке.
+                  a.t-link
+                    .choose-menu__sublink.transform Evolution (3 камеры / 60мм)
+
+                .js-item-content.choose-content__wrapper.transform#prod-evolution
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'evolution'
+                  include 03-1_right-cont-inner.pug
+                  //- ////EXPAND ITEM eof
+
+
+                //- EXPAND ITEM:
+                //- parent:::
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-effectiv")
+                  //- onclick title:::
+                  a.t-link
+                    .choose-menu__sublink.transform Effectiv  (5 камер / 70мм)
+                  //- slide content:::
+                  //- transform-item EOF
+
+                .js-item-content.choose-content__wrapper.transform#prod-effectiv
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'effectiv'
+                  include 03-1_right-cont-inner.pug
+                      //- include 03-1_right-cont-inner.pug
+
+
+                  //- ////EXPAND ITEM eof
+
+            //- transform #222
+            //- item
+            .choose-menu__item.transform.man-item-2(data-pos="prod-bliz")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform REHAU
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-bliz")
+                  a.t-link
+                    .choose-menu__sublink.transform Bliz (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-bliz
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'bliz'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-delight")
+                  a.t-link
+                    .choose-menu__sublink.transform Delight-Design (5 камер / 70мм)
+                .js-item-content.choose-content__wrapper.transform#prod-delight
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'delight'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-euro3")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-euro3
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'euro3'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-euro5")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-euro5
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'euro5'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-sib")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-sib
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'sib'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-brilliant")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-brilliant
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'brilliant'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-geneo")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-geneo
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'geneo'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-intelio")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-intelio
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'intelio'
+                  include 03-1_right-cont-inner.pug
+
+            //- item
+            .choose-menu__item.transform.man-item-3(data-pos="prod-bliz")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform GALWIN
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-galwin")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-galwin
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'galwin'
+                  include 03-1_right-cont-inner.pug
+
+            //- item
+            .choose-menu__item.transform.man-item-4(data-pos="prod-bliz")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform ENWIN
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-quadro")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-quadro
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'quadro'
+                  include 03-1_right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="prod-deceuninck")
+                  a.t-link
+                    .choose-menu__sublink.transform Euro-Design (3 камеры / 60мм)
+                .js-item-content.choose-content__wrapper.transform#prod-deceuninck
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'deceuninck'
+                  include 03-1_right-cont-inner.pug
+
+
+
+
+
+
+
+
+
+
+
 
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-effectiv
+            .choose-content__wrapper.jsWideOnly#prod-effectiv
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'effectiv'
               include 03-1_right-cont-inner.pug
@@ -229,7 +301,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-bliz
+            .choose-content__wrapper.jsWideOnly#prod-bliz
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'bliz'
               include 03-1_right-cont-inner.pug
@@ -237,7 +309,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-delight
+            .choose-content__wrapper.jsWideOnly#prod-delight
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'delight'
               include 03-1_right-cont-inner.pug
@@ -245,7 +317,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-euro3
+            .choose-content__wrapper.jsWideOnly#prod-euro3
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'euro3'
               include 03-1_right-cont-inner.pug
@@ -253,7 +325,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-euro5
+            .choose-content__wrapper.jsWideOnly#prod-euro5
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'euro5'
               include 03-1_right-cont-inner.pug
@@ -261,7 +333,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-sib
+            .choose-content__wrapper.jsWideOnly#prod-sib
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'sib'
               include 03-1_right-cont-inner.pug
@@ -269,7 +341,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-brilliant
+            .choose-content__wrapper.jsWideOnly#prod-brilliant
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'brilliant'
               include 03-1_right-cont-inner.pug
@@ -277,7 +349,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-geneo
+            .choose-content__wrapper.jsWideOnly#prod-geneo
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'geneo'
               include 03-1_right-cont-inner.pug
@@ -285,7 +357,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-intelio
+            .choose-content__wrapper.jsWideOnly#prod-intelio
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'intelio'
               include 03-1_right-cont-inner.pug
@@ -293,7 +365,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-galwin
+            .choose-content__wrapper.jsWideOnly#prod-galwin
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'galwin'
               include 03-1_right-cont-inner.pug
@@ -301,7 +373,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-quadro
+            .choose-content__wrapper.jsWideOnly#prod-quadro
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'quadro'
               include 03-1_right-cont-inner.pug
@@ -309,7 +381,7 @@ section.choose
 
             //- RIGHT content
             //- ---------------------------------------------
-            .choose-content__wrapper#prod-deceuninck
+            .choose-content__wrapper.jsWideOnly.active#prod-deceuninck
               .choose-content__ribbon(absolute)
                 .choose-content__ribbon__text tab 'deceuninck'
               include 03-1_right-cont-inner.pug
@@ -320,13 +392,13 @@ section.choose
 
 
 
-            //- ORIGIN
-            .choose-content__wrapper.active#prod-third
-
-              .choose-content__ribbon(absolute)
-                .choose-content__ribbon__text Artec Effective
-
-              include 03-1_right-cont-inner
+            //- //- ORIGIN
+            //- .choose-content__wrapper.active#prod-third
+            //-
+            //-   .choose-content__ribbon(absolute)
+            //-     .choose-content__ribbon__text Artec Effective
+            //-
+            //-   include 03-1_right-cont-inner
 
 
 
