@@ -1,12 +1,54 @@
-h1 i.html page -- CONTENTS:
-ol
-  li
-    a(href="http://static.ucttest.in.ua/realplast") index
-  li
-    a(href="http://static.ucttest.in.ua/realplast/windsystems.html") windsystems
-  li
-    a(href="http://static.ucttest.in.ua/realplast/fitments.html") fitments
-  li
-    a(href="http://static.ucttest.in.ua/realplast/cottages.html") cottages
-  li
-    a(href="http://static.ucttest.in.ua/realplast/glassunit.html") glassunit
+extends ../conf/002_docwrapper
+
+
+append 001_config
+  - var PageTitle = 'Contents'
+
+
+  - var updateBodyClass = bodyClasses.push('page-contents')
+
+append stylesheets
+  //- link( href='css/extrastyles.css', rel='stylesheet' )
+
+
+  //- eof HEAD appends
+  //- –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+block content
+  .wrapper
+    //
+          ========================================================
+                                  CONTENT
+          ========================================================
+
+
+
+    .dev_contents
+      .dev_contents__testServer
+        h1 i.html page -- test server CONTENTS:
+        ol
+          li
+            a(href=testServer + "") {testServer} / index
+          li
+            a(href=testServer + "windsystems.html") {testServer} / windsystems
+          li
+            a(href=testServer + "fitments.html") {testServer} / fitments
+          li
+            a(href=testServer + "cottages.html") {testServer} / cottages
+          li
+            a(href=testServer + "glassunit.html") {testServer} / glassunit
+
+      .dev_contents__localhost
+        h1 /for developers only/ -- localhost CONTENTS:
+        ol
+          li
+            a(href=localhost + "") { lh8809 } / index
+          li
+            a(href=localhost + "windsystems.html") { lh8809 } / windsystems
+          li
+            a(href=localhost + "fitments.html") { lh8809 } / fitments
+          li
+            a(href=localhost + "cottages.html") { lh8809 } / cottages
+          li
+            a(href=localhost + "glassunit.html") { lh8809 } / glassunit

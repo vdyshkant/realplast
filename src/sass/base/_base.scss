@@ -97,3 +97,49 @@ img {
     margin: 0;
     padding: 0;
 }
+
+
+.dev_contents {
+  padding: 40px;
+}
+
+
+.dev_contents__testServer {
+  margin-bottom: 100px;
+
+  & h1,
+  & a {
+    color: #2E3837;
+  }
+  & a {
+    &:hover {
+      color: hsla(174, 10%, 38%, 1);
+      border-bottom: 1px solid hsla(174, 10%, 38%, 1);
+    }
+  }
+}
+
+.dev_contents__localhost {
+  & h1,
+  & a {
+    color: #819F7F;
+  }
+  & a {
+    &:hover {
+      color: hsla(116, 14%, 32%, 1);
+      border-bottom: 1px solid hsla(116, 14%, 32%, 1);
+    }
+  }
+}
+
+.dev_contents__testServer,
+.dev_contents__localhost {
+  & a {
+      text-decoration: none;
+      transition: 1s ease-out;
+      border-bottom: 1px solid transparent;
+
+      display: inline-block;
+      margin-bottom: 4px;
+  }
+}
