@@ -6,7 +6,8 @@
 
 
 .page-glass-unit .types {
-  background: url('../img/bg_tan.jpg');
+  // background: url('../img/bg_tan.jpg');
+  background-color: #eaeae6;
   // margin-bottom: 12px;
 }
 
@@ -15,12 +16,23 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+    min-width: 1160px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      // padding: 0 20px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      // padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -42,7 +54,12 @@
 
   & .types-essence {
     display: flex;
-    background: url('../img/bg_tan.jpg');
+    // background: url(../img/bg_tan.jpg);
+    background-color: #eaeae6;
+
+    @media #{$mobile-tablet} {
+      display: block;
+    }
   }
 }
 
@@ -63,11 +80,15 @@
 }
 
 
+
 .page-glass-unit .types-menu__title {
   width: 180px;
   @include font(normal, 700, 32px, 32px, 'Roboto');
   color: white;
   margin-bottom: 35px;
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+  }
 }
 
 
@@ -121,8 +142,9 @@
       height: 0;
       border-style: solid;
       border-width: 30px 20px 30px 0;
-      border-color: #1976d2 transparent #1976d2 transparent;
-      background: url('../img/bg_tan.jpg');
+      border-color: transparent #eaeae6 transparent #eaeae6;
+      // background: url('../img/bg_tan.jpg');
+      background: none;
 
       transition: 300ms ease-out;
     }
@@ -533,7 +555,8 @@
 .page-glass-unit .types__params__title {
   @include font(normal, 400, 18px, 17px, 'Roboto');
   color: #444341;
-  background: url(../img/bg_tan.jpg);
+  // background: url(../img/bg_tan.jpg);
+  background-color: #eaeae6;
   padding: 0 10px;
   display: inline-block;
   position: absolute;
@@ -859,8 +882,236 @@
 }
 
 
-.page-glass-unit .PROTO {
+
+
+
+// tablet related css:
+
+.page-glass-unit .types--wide-related {
+  @media #{$mobile-tablet} {
+    display: none;
+  }
+}
+
+.page-glass-unit .wide-related-content {
+  @media #{$mobile-tablet} {
+    display: none;
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  @media #{$wide} {
+    display: none;
+  }
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media #{$mobile} {
+    padding-top: 20px;
+  }
+
+}
+
+
+.page-glass-unit .types--tablet-related {
+  &.types-menu {
+    padding-bottom: 0;
+  }
+
+  & .chose-content__wrapper{
+    background-color: #eaeae6;
+    padding-top: 140px;
+    cursor: auto;
+
+    @media #{$mobile} {
+      padding: 150px 10px 20px;
+    }
+
+    /* аппаратные теги */
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-menu__title{
+    padding: 0 20px;
+    width: auto;
+
+    @media #{$mobile} {
+      padding: 0 10px;
+    }
+  }
+  & .types-menu__list{
+    padding: 0;
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-menu__link{
+    padding-left: 35px;
+
+    @media #{$mobile} {
+      padding-left: 15px;
+    }
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-menu__link{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    transition: .3s ease-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      bottom: 0px;
+      right: 20px;
+      height: 1px;
+      background: #fff;
+
+      @media #{$mobile} {
+        left: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-content__ribbon{
+    top: 40px;
+    @media #{$mobile} {
+      min-height: 50px;
+      height: auto;
+      width: 310px;
+      padding: 15px;
+      min-width: auto;
+      // padding: 15px;
+    }
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-about{
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-calc-btm{
+    padding-left: 0;
+  }
+  & .types-calc-btm__divider{
+    width: 480px;
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+  & .types-btn--bottom{
+    width: 235px;
+    min-width: 235px;
+    @media #{$mobile} {
+      width: 100%;
+    }
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-content__substrate{
+    width: 299px;
+    min-width: 299px;
+  }
+  & .svg-substrate{
+    width: 299px;
+    min-width: 299px;
+  }
   & .CLASS{
 
   }
 }
+
+
+.page-glass-unit .types--tablet-related {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-content__ribbon__text{
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+    }
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-menu__item{
+    margin-bottom: 0px;
+
+    @media #{$mobile-tablet} {
+      &:last-child {
+        & .types-menu__link {
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.page-glass-unit .types--tablet-related {
+  & .types-menu__item{
+    // ACTIVE
+    &.active {
+
+      & .types-menu__link{
+        position: relative;
+        padding-bottom: 40px;
+
+        &::before {
+          content: none;
+        }
+
+        &::after {
+          // background: red;
+          right: auto;
+          left: 30px;
+          bottom: 0;
+          border-width: 0 30px 20px 30px;
+          border-color: #eaeae6 transparent #eaeae6 transparent;
+        }
+      }
+
+
+    }
+  }
+}
+
+// eof tablet related css
