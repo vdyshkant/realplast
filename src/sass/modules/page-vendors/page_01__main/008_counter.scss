@@ -23,7 +23,7 @@
 
 .page-index .counter_line.counter_line--main {
   position: absolute;
-  height: 880px;
+  // height: 880px;
   width: calc(100% - 200px);
   margin: 0 100px;
   background: url('../img/counter_bg-main.jpg') no-repeat;
@@ -164,7 +164,7 @@
     min-height: 880px;
 
     @media #{$tablet} {
-      min-height: 772px;
+      min-height: 600px;
     }
 
     @media #{$mobile} {
