@@ -1,7 +1,9 @@
 .page-index .feedbacks {
   // bg 1
   background: url('../img/feedbacks_bg.jpg');
-  margin-top: -195px;
+  @media #{$wide} {
+    margin-top: -195px;
+  }
 }
 
 
@@ -15,8 +17,15 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      max-width: 768px;
+      min-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -30,7 +39,16 @@
 
   & .container {
     padding: 210px 0 100px;
-    height: 1020px;
+    min-height: 1020px;
+
+    @media #{$tablet} {
+      min-height: 810px;
+      // padding: 50px 0 85px;
+      padding: 50px 0 5px;
+    }
+    @media #{$mobile} {
+      padding: 65px 0 70px;
+    }
   }
 
   & .feedbacks-wrapper {
@@ -57,6 +75,14 @@
     color: #444341;
     text-transform: uppercase;
     text-align: center;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+    }
   }
 }
 
@@ -110,9 +136,25 @@
 
 
 .page-index .feedbacks {
+  & .slider-item__iframe{
+    width: 360px;
+    // height: 245px;
+
+    @media #{$mobile} {
+      width: 260px;
+    }
+  }
+}
+
+
+.page-index .feedbacks {
   & .slider-item{
     // min-width: 255px;
     width: 400px;
+
+    @media #{$mobile} {
+      // width: 300px;
+    }
     // margin-right: 30px;
 
     & .slider-item-author__img {
@@ -202,6 +244,10 @@
     display: none;
     border-top: 1px solid #000;
 
+    @media #{$mobile-tablet} {
+      display: block;
+    }
+
     & .show-all {
       display: block;
       text-align: center;
@@ -226,6 +272,11 @@
 
 
 .page-index .feedbacks .slider-item.carousel-center {
+
+  @media #{$mobile} {
+    // max-width: 260px;
+  }
+
   & .expand{
     display: block;
   }
@@ -288,9 +339,19 @@
 #carousel {
   //  width:960px;
   //  border:1px solid #222;
-   height:700px;
+   min-height: 700px;
    position:relative;
    clear:both;
+// mih и h обязательно должны бить прописаны, чтоб слайды как нужно ложились на площадке
+   @media #{$tablet} {
+     min-height: 700px;
+     height: 700px;
+   }
+
+   @media #{$mobile} {
+     min-height: 700px;
+    height: 700px;
+   }
 
   //  outline: 2px dashed limegreen;
   //  outline-offset: -2px;
@@ -298,6 +359,10 @@
  #carousel .slider-item {
    visibility:hidden; /* hide images until carousel can handle them */
    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+
+   @media #{$mobile-tablet} {
+    //  margin: 0 auto;
+   }
 
   //  outline: 2px dashed crimson;
   //  outline-offset: -2px;
@@ -328,6 +393,17 @@
     transform: translateY(-50%);
     height: 60px;
     width: 100%;
+
+    @media #{$mobile} {
+      // position: relative;
+      // top: -140px;
+      // z-index: 100;
+      //
+      // & img {
+      //   width: 16px;
+      //   height: 25px;
+      // }
+    }
   }
 }
 
@@ -337,6 +413,7 @@
     left: 0px;
     top: 0;
     position: absolute;
+
   }
 }
 
@@ -346,6 +423,7 @@
     right: 0px;
     top: 0;
     position: absolute;
+
   }
 }
 

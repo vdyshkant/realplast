@@ -118,52 +118,112 @@ $(document).ready(function() {
 // CAROUSEL
 
 
-$(document).ready(function () {
-
+// wide ver
+$(document).ready(function() {
 	if($('body').is('.page-index')){
-		var carousel = $("#carousel").waterwheelCarousel({
-	    // flankingItems: 3,
-	    // smallFeatureWidth: 1,
-	    // smallFeatureOffset: 150,
-	    // startingFeature: 3
-	    // movingToCenter: function ($item) {
-	    //   $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-	    // },
-	    // movedToCenter: function ($item) {
-	    //   $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-	    // },
-	    // movingFromCenter: function ($item) {
-	    //   $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-	    // },
-	    // movedFromCenter: function ($item) {
-	    //   $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-	    // },
-	    // clickedCenter: function ($item) {
-	    //   $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-	    // }
-	  });
+	  if ((window.matchMedia("(min-width: 1360px)").matches)) {
 
-	  $('#prev').bind('click', function () {
-	    carousel.prev();
-	    return false;
-	  });
+      var carousel = $("#carousel").waterwheelCarousel({
+  	    // flankingItems: 3,
+  	    // smallFeatureWidth: 1,
+  	    // smallFeatureOffset: 150,
+  	    // startingFeature: 3
+  	    // movingToCenter: function ($item) {
+  	    //   $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+  	    // },
+  	    // movedToCenter: function ($item) {
+  	    //   $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+  	    // },
+  	    // movingFromCenter: function ($item) {
+  	    //   $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+  	    // },
+  	    // movedFromCenter: function ($item) {
+  	    //   $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+  	    // },
+  	    // clickedCenter: function ($item) {
+  	    //   $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+  	    // }
+  	  });
 
-	  $('#next').bind('click', function () {
-	    carousel.next();
-	    return false;
-	  });
+  	  $('#prev').bind('click', function () {
+  	    carousel.prev();
+  	    return false;
+  	  });
 
-	  // $('#reload').bind('click', function () {
-	  //   newOptions = eval("(" + $('#newoptions').val() + ")");
-	  //   carousel.reload(newOptions);
-	  //   return false;
-	  // });
-	}
+  	  $('#next').bind('click', function () {
+  	    carousel.next();
+  	    return false;
+  	  });
 
+  	  // $('#reload').bind('click', function () {
+  	  //   newOptions = eval("(" + $('#newoptions').val() + ")");
+  	  //   carousel.reload(newOptions);
+  	  //   return false;
+  	  // });
 
+    } // eof matchMedia
+  }		// eof ('body').is
+}); // eof document READY
 
+// tablet ver
+$(document).ready(function() {
+	if($('body').is('.page-index')){
+	  if ((window.matchMedia("(max-width: 1359px)").matches)) {
 
-});
+      var carousel = $("#carousel").waterwheelCarousel({
+  	    flankingItems: 0,
+        // horizon: 10,
+        // horizonOffset: -50,
+        // horizonOffsetMultiplier: .7
+  	    // smallFeatureWidth: 1,
+  	    // smallFeatureOffset: 150,
+  	    // startingFeature: 3
+
+  	  });
+
+  	  $('#prev').bind('click', function () {
+  	    carousel.prev();
+  	    return false;
+  	  });
+
+  	  $('#next').bind('click', function () {
+  	    carousel.next();
+  	    return false;
+  	  });
+
+    } // eof matchMedia
+  }		// eof ('body').is
+}); // eof document READY
+
+// mobile ver:
+$(document).ready(function() {
+	if($('body').is('.page-index')){
+	  if ((window.matchMedia("(max-width: 767px)").matches)) {
+
+      $('.slider-item').css('max-width', '300px');
+
+      var carousel = $("#carousel").waterwheelCarousel({
+  	    flankingItems: 0,
+  	    // smallFeatureWidth: 1,
+  	    // smallFeatureOffset: 150,
+  	    // startingFeature: 3
+
+  	  });
+
+  	  $('#prev').bind('click', function () {
+  	    carousel.prev();
+  	    return false;
+  	  });
+
+  	  $('#next').bind('click', function () {
+  	    carousel.next();
+  	    return false;
+  	  });
+
+    } // eof matchMedia
+  }		// eof ('body').is
+}); // eof document READY
+
 
 // CAROUSEL end
 
