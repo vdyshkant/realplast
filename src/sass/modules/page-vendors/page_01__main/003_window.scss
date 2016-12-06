@@ -7,14 +7,23 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+    min-width: 1160px;
 
-    padding: 0 20px;
+    @media #{$wide} {
+      padding: 0 20px;
+    }
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -28,6 +37,14 @@
 
   & .container {
     height: 737px;
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
   }
 
   & .window-wrapper {
@@ -68,6 +85,14 @@
     background: #fff;
     width: 100%;
     height: 737px;
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
   }
 }
 
@@ -83,6 +108,22 @@
     top: 0px;
     // left: 50%;
     transform: translteX(-50%);
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
+
+    @media #{$tablet} {
+      background: url('../img/window--tablet.png') no-repeat left -37px top -30px;
+    }
+
+    @media #{$mobile} {
+      background: url('../img/window--mobile.png') no-repeat left -123px top -12px;
+    }
 
     // outline: 2px dashed yellowgreen;
     // outline-offset: -2px;
@@ -102,6 +143,27 @@
 
     padding-top: 70px;
 
+    @media #{$tablet} {
+      background: url('../img/window-rollet--tablet.png') no-repeat;
+      width: 304px;
+      height: 224px;
+      top: 32px;
+      right: 45px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media #{$mobile} {
+      background: url('../img/window-rollet--mobile.png') no-repeat;
+      width: 193px;
+      height: 143px;
+      top: 27px;
+      right: 70px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 43px;
+    }
+
     // outline: 2px dashed magenta;
     // outline-offset: -2px;
   }
@@ -114,6 +176,16 @@
     color: #444341;
     text-align: center;
     margin-bottom: 25px;
+
+    @media #{$tablet} {
+      @include font(normal, 900, 43px, 34px, 'Roboto');
+      margin-bottom: 15px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 900, 27px, 22px, 'Roboto');
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -123,8 +195,20 @@
     @include font(normal, 300, 32px, 42px, 'Roboto');
     color: #444341;
     text-align: center;
-    width: 345px;
+
     margin: 0 auto;
+
+    width: 345px;
+
+    @media #{$tablet} {
+      @include font(normal, 300, 23px, 25px, 'Roboto');
+      width: 100%;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 300, 14px, 18px, 'Roboto');
+      width: 100%;
+    }
   }
 }
 
@@ -137,6 +221,14 @@
     left: 0;
     width: 100%;
     height: 737px;
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
 
     // outline: 1px solid red;
     // outline-offset: -1px;
@@ -168,6 +260,20 @@
     // outline-offset: -2px;
 
     z-index: 2;
+
+    @media #{$tablet} {
+      background: url('../img/window-tree--tablet.png') no-repeat;
+      width: 264px;
+      top: 310px;
+      right: 74px;
+    }
+
+    @media #{$mobile} {
+      background: url('../img/window-tree--mobile.png') no-repeat;
+      width: 165px;
+      top: 200px;
+      right: 90px;
+    }
   }
 }
 
@@ -189,6 +295,15 @@
     position: absolute;
     top: 65px;
     left: 0px;
+
+    @media #{$tablet} {
+      top: 35px;
+    }
+
+    @media #{$mobile} {
+      top: 145px;
+      width: 100%;
+    }
   }
 }
 
@@ -197,6 +312,18 @@
   & video, canvas {
   	width: 100%;
   	vertical-align: top;
+
+    @media #{$tablet} {
+      width: 840px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    @media #{$mobile} {
+      width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 
