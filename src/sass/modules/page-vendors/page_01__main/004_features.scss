@@ -13,14 +13,23 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+    min-width: 1160px;
 
-    // padding: 0 20px;
+    @media #{$wide} {
+      // padding: 0 20px;
+    }
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -34,6 +43,10 @@
 
   & .container {
     padding: 100px 0;
+
+    @media #{$mobile} {
+      padding: 70px 0;
+    }
   }
 
   & .PROTO-wrapper {
@@ -54,6 +67,19 @@
     text-transform: uppercase;
     text-align: center;
 
+    @media #{$mobile-tablet} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+      margin-bottom: 20px;
+    }
+
+    @media #{$tablet} {
+
+    }
+
+    @media #{$mobile} {
+
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -72,6 +98,13 @@
     height: 1px;
     background-color: #333;
     margin: 0 auto;
+    border: none;
+    outline: none;
+    display: block;
+
+    @media #{$mobile} {
+      margin-bottom: 20px;
+    }
 }
 
 
@@ -82,7 +115,7 @@
   	flex-wrap: wrap;
     align-items: flex-start;
 
-    margin-bottom: 000;
+    margin-bottom: 0;
   }
 }
 
@@ -112,6 +145,10 @@
 
     // outline: 2px dashed crimson;
     // outline-offset: -2px;
+
+    @media #{$mobile} {
+      display: block;
+    }
 
   }
 }
@@ -156,6 +193,16 @@
     padding: 50px;
     padding-left: 15px;
 
+    @media #{$tablet} {
+      width: 748px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 400, 14px, 18px, 'Roboto');
+      width: 320px;
+      padding: 10px;
+    }
+
   }
 }
 
@@ -181,17 +228,34 @@
 
     padding-bottom: 10px;
 
+    @media #{$tablet} {
+      width: 373px;
+    }
+
+    @media #{$mobile} {
+      width: 320px;
+      // margin-bottom: 15px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+
     // outline: 2px solid gold;
     // outline-offset: -2px;
 
     &:last-child {
-      margin-right: 10px;
-      margin-left: 0;
+
+      @media #{$tablet-wide} {
+        margin-right: 10px;
+        margin-left: 0;
+      }
 
       @include clearfix;
 
       & .features__item {
-        float: right;
+        @media #{$tablet-wide} {
+          float: right;
+        }
       }
     }
 
@@ -224,6 +288,21 @@
     padding-top: 60px;
 
     margin: 0 10px;
+
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      width: 354px;
+    }
+
+    @media #{$mobile} {
+      width: auto;
+      height: 180px;
+      padding-top: 0;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+    }
     // margin-left: 10px;
 
     // outline: 2px dashed cornflowerblue;
@@ -336,6 +415,10 @@
     opacity: 0.2;
     border: none;
     background-color: #444341;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 }
 
@@ -348,6 +431,15 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    @media #{$tablet} {
+      width: 240px;
+    }
+
+    @media #{$mobile} {
+      width: 172px;
+      margin-left: 10px;
+    }
   }
 }
 
@@ -390,6 +482,14 @@
     position: absolute;
     left: 95px;
     bottom: 60px;
+
+    @media #{$tablet} {
+      width: 255px;
+    }
+
+    @media #{$mobile} {
+      width: 180px;
+    }
   }
 }
 
@@ -405,6 +505,16 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+
+    @media #{$tablet} {
+      @include font(normal, 300, 20px, 37px, 'Roboto');
+      top: 44%;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 300, 18px, 27px, 'Roboto'); // h14
+
+    }
   }
 }
 
@@ -514,6 +624,13 @@
     height: 235px;
     // z-index: -1;
 
+    // outline: 2px solid gold;
+    // outline-offset: -2px;
+
+    @media #{$mobile} {
+      height: 155px;
+    }
+
     & img:nth-child(1) {
       // transition: all .4s ease;
       display: none;
@@ -522,6 +639,10 @@
         top: 0;
         width: 100%;
         height: 235px;
+
+        @media #{$mobile} {
+          height: 180px;
+        }
     }
 
     & img:nth-child(2) {
@@ -532,6 +653,10 @@
         top: 0;
         width: 100%;
         height: 225px;
+
+        @media #{$mobile} {
+          height: 180px;
+        }
     }
   }
 }
