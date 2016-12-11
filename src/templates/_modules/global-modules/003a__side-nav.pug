@@ -145,6 +145,11 @@
         li.offcanvas-nav-side__menu__item.item-btm.item-useful(data-offcanvas-menu="8")
           a.link(href="#")
             .link__text Полезная Информация
+
+        li.offcanvas-nav-side__menu__item.item-btm.item-search(data-offcanvas-menu="9")
+          a.link(href="#")
+            +svg([{'class': 'icon-nav-search svg-icon', 'pathid': 'svg-search', 'filename':'offcanvas-right_search'}])
+            .link__text Поиск
           //- . . . . . . . as above
 
       //- sub-menus
@@ -169,7 +174,7 @@
 
 
       //- sub-menus
-      ul.offcanvas-nav-side__sub-menus.subm__about(data-offcanvas-subm="6")
+      ul.offcanvas-nav-side__sub-menus.subm__about(data-offcanvas-subm="7")
 
 
         //- separate sub list
@@ -216,6 +221,19 @@
           ul.offcanvas-nav-side__sub-list
             li.offcanvas-nav-side__sub-list__item
               a.offcanvas-nav-side__sub-list__link(href="#") Обратная связь
+
+
+      //- sub-menus
+      ul.offcanvas-nav-side__sub-menus.subm__burger_search(data-offcanvas-subm="9")
+        li.offcanvas-nav-side__search#burger-search
+          +svg([{'class': 'icon-burger-search svg-icon', 'pathid': 'svg-search', 'filename':'offcanvas-right_search'}])
+          .offcanvas-nav-side__search.title Введите интересующий вас запрос
+          //- form
+          form.offcanvas-nav-side__form
+            input.offcanvas-nav-side__form-input(name="burger-sfield")
+            button.offcanvas-nav-side__form-btn(type="button" onclick="return: false;") Найти
+
+
 
 
 

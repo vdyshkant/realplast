@@ -41,7 +41,21 @@
 //   z-index: 11;
 //
 //   padding-top: 155px;
-  @media #{$mobile-tablet} {
+
+  @media #{$tablet} {
+    display: none;
+    top: 0px;
+    left: 0;
+    bottom: auto;
+
+    height: 432px;
+
+    outline: 2px dashed crimson;
+    outline-offset: -2px;
+    transition: none;
+  }
+
+  @media #{$mobile} {
     display: none;
   }
 }
@@ -73,6 +87,11 @@
 
     // outline: 2px dashed black;
     // outline-offset: -2px;
+
+    @media #{$tablet} {
+      transition: none;
+      position: relative;
+    }
   }
 
   & .PROTO-essence {
@@ -81,20 +100,41 @@
 }
 
 .offcanvas-right-side.js-right-side {
+  &.wide-opened {
+    transition: .3s linear;
+    width: 400px;
+  }
+
   &.opened {
     transition: .3s linear;
     width: 300px;
+
+    @media #{$tablet} {
+      width: 100%;
+      transition: none;
+    }
 
     & .offcanvas-right-side__foreground {
       height: 2000px;
 
       background: url('../img/offcanvas-right_watermark.png') no-repeat top 420px left 0;
+
+      @media #{$tablet} {
+        height: 432px;
+        background: url('../img/offcanvas-burger_watermark.png') no-repeat;
+        background-position: 0 115px;
+      }
     }
 
     & .offcanvas-right-side-wrapper {
 
       width: 300px;
       top: 60px;
+
+      @media #{$tablet} {
+        top: 0;
+        width: 100%;
+      }
     }
 
     & .icon-callback {
@@ -104,6 +144,15 @@
     & .offcanvas-right-side__callback {
       @include font(normal, 400, 18px, 14px, 'Roboto');
       color: #444341;
+
+      &.title--tablet {
+
+        @media #{$tablet} {
+            padding: 0 20px;
+            @include font(normal, 400, 18px, 20px, 'Roboto');
+            text-align: center;
+        }
+      }
     }
 
     & .offcanvas-right-side__item__callback,
@@ -123,6 +172,10 @@
       display: block;
       padding: 0 10px;
       padding-top: 50px;
+
+      @media #{$tablet} {
+        padding-top: 30px;
+      }
 
       & input {
         width: 100%;
@@ -225,8 +278,12 @@
 
 // SEARCH
 .offcanvas-right-side.js-right-side {
-  &.opened {
-
+  & .offcanvas-right-side__callback {
+    &.title--tablet {
+      @media #{$wide} {
+        display: none;
+      }
+    }
   }
 }
 
@@ -241,32 +298,9 @@
 .offcanvas-right-side__item__callback {
   cursor: pointer;
   position: relative;
-  &:hover {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      top: 0;
-      left: 0;
-      background: url('../img/offcanvas-stroke.png');
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      bottom: 0;
-      left: 0;
-      background: url('../img/offcanvas-stroke.png');
-    }
+  @media #{$tablet} {
+    cursor: default;
   }
-}
-
-
-.offcanvas-right-side__item__search {
-  cursor: pointer;
-  position: relative;
   &:hover {
     &::before {
       content: "";
@@ -305,8 +339,44 @@
     color: #444341;
     text-transform: uppercase;
     text-align: center;
+
+    @media #{$tablet} {
+      display: none;
+    }
   }
 }
+
+
+.offcanvas-right-side__item__search {
+  cursor: pointer;
+  position: relative;
+  @media #{$tablet} {
+    display: none;
+  }
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background: url('../img/offcanvas-stroke.png');
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background: url('../img/offcanvas-stroke.png');
+    }
+  }
+}
+
+
+
 
 
 .offcanvas-right-side {
@@ -320,6 +390,11 @@
     -webkit-filter: drop-shadow(3px 0px 5px rgba(26, 47, 60, 0.11));
     opacity: 1;
     transition: .3s linear;
+
+    @media #{$tablet} {
+      display: none;
+      transition: none;
+    }
   }
 }
 
@@ -343,12 +418,16 @@
   }
 }
 
-
-.PROTO {
-  & .CLASS{
-
+@media #{$tablet} {
+  .offcanvas-right-side {
+    & .offcanvas-right-side__list{
+      width: 354px;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
   }
 }
+
 
 
 .offcanvas-right-side__form {

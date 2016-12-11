@@ -14,10 +14,11 @@
           //- .icon-callback
           +svg([{'class': 'icon-callback svg-icon', 'pathid': 'svg-callback', 'filename':'offcanvas-right_callback'}])
           .offcanvas-right-side__callback.title +77054009101
+          .offcanvas-right-side__callback.title--tablet Введите ваш номер и мы перезвоним в&nbsp;ближайшее время
           //- form
           form.offcanvas-right-side__form
-            input(placeholder="Ваше имя")
-            input(placeholder="Ваш номер телефона")
+            input(name="user_name",placeholder="Ваше имя")
+            input(name="tel_number",placeholder="Ваш номер телефона")
             button(type="button" onclick="return: false;") Перезвоните мне
 
 

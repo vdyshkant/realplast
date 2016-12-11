@@ -379,6 +379,7 @@ $( document ).ready(function() {
 				expandFeaturesItem(4);
 				expandFeaturesItem(5);
 				expandFeaturesItem(6);
+				expandFeaturesItem(7);
 		}
 
 	}
@@ -511,8 +512,8 @@ $( document ).ready(function() {
 
 				// 01: смена стилей для конкретно кнопки #okna
 				$('.offcanvas-nav-side__sub-menus').fadeOut(10);
-				$('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="1"]').fadeIn(10);
-				$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="1"]').toggleClass('opened');
+				// $('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="1"]').fadeIn(10);
+				// $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="1"]').toggleClass('opened');
 
 				// 02: в левом блоке сайдбара отобразить окно, которое конкретно соответствует нажатому пункту меню, а все остальные суб-меню обязательно скрываем
 
@@ -525,7 +526,9 @@ $( document ).ready(function() {
 		});
 	}
 
-	closeByCross();
+  if ((window.matchMedia("(min-width: 1160px)").matches)) {
+    closeByCross();
+  }
 
 	function closeByCross() {
 		$('.js-nav-close').click(function(e) {
@@ -549,7 +552,8 @@ $( document ).ready(function() {
 
 
 	openThisSubmenu(1);
-	openThisSubmenu(6);
+	openThisSubmenu(7);
+	openThisSubmenu(9);
 // !!
 	function openThisSubmenu(identifier){
 
@@ -557,12 +561,27 @@ $( document ).ready(function() {
 		$('.offcanvas-nav-side__menu__item[data-offcanvas-menu=' + identifier + '] .link').click(function(e) {
 			e.preventDefault();
 
+      // console.log(jQuery.type( identifier ));
+
 			if ($('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + identifier + '"]').is('.opened')) {
 
 				$('.burger').removeClass('open');
 				$('.js-nav').removeClass('opened');
 				$('.js-right-side').removeClass('opened');
 				$('.overlay__offcanvas').removeClass('visible');
+        $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
+
+        if ((window.matchMedia("(max-width: 1159px)").matches)) {
+          $('#nav-icon').removeClass('open');
+
+          // Когда менюшка вся свернулась, необходимо убрать навешанные классы и события, чтоб при последующем вызове у нас:
+              // hiding all submenus at the left
+              $('.offcanvas-nav-side__sub-menus').fadeOut(10);
+              // // disabling styles for the all pressed buttons
+              // for (var i = 0; i < 99; i++) {
+              //   $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+              // }
+        }
 
 				// disabling styles for the all pressed buttons
 				for (var j = 0; j < 99; j++) {
@@ -581,6 +600,16 @@ $( document ).ready(function() {
 				// making visible the necessary subMenu
 				$('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="' + identifier + '"]').fadeIn(10);
 
+
+        if (identifier === 9) {
+          $('.offcanvas-nav-side-wrapper').addClass('wide-opened');
+          $('.subm__burger_search').addClass('expanded');
+        } else {
+          $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
+          $('.subm__burger_search').removeClass('expanded');
+        }
+
+
 				// disabling styles for the all pressed buttons
 				for (var i = 0; i < 99; i++) {
 					$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
@@ -593,30 +622,33 @@ $( document ).ready(function() {
 		});
 	}
 
+  if ((window.matchMedia("(min-width: 1160px)").matches)) {
+    $('.overlay__offcanvas').click(function(e) {
+      e.preventDefault();
 
-	$('.overlay__offcanvas').click(function(e) {
-		e.preventDefault();
+      $('.burger').removeClass('open');
+      $('.js-nav').removeClass('opened');
+      $('.js-right-side').removeClass('opened');
+      $('.overlay__offcanvas').removeClass('visible');
 
-		$('.burger').removeClass('open');
-		$('.js-nav').removeClass('opened');
-		$('.js-right-side').removeClass('opened');
-		$('.overlay__offcanvas').removeClass('visible');
-
-		var origin = 'Поиск';
-		$('.offcanvas-right-side__search.title').fadeOut(300).text(origin).fadeIn(300);
-
-
-		$('#callback').css('display', 'block');
-		$('#search').css('display', 'block');
+      var origin = 'Поиск';
+      $('.offcanvas-right-side__search.title').fadeOut(300).text(origin).fadeIn(300);
 
 
-		for (var i = 0; i < 99; i++) {
-			$('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
-		}
-	});
+      $('#callback').css('display', 'block');
+      $('#search').css('display', 'block');
 
 
-	invokeCallback();
+      for (var i = 0; i < 99; i++) {
+        $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+      }
+    });
+  }
+
+
+  if ((window.matchMedia("(min-width: 1160px)").matches)) {
+    invokeCallback();
+  }
 
 	function invokeCallback() {
 		$('#callback').click(function(){
@@ -1425,3 +1457,109 @@ $(document).ready(function() {
     } // eof matchMedia
   } // eof body.is
 }); // eof ready
+
+
+
+
+
+// burger
+$(document).ready(function() {
+	if($('body').is('.page-index')){
+    if ((window.matchMedia("(max-width: 1159px)").matches)) {
+
+      	$('#nav-icon').click(function(){
+      		$(this).addClass('open');
+          // $('[name="burger-sfield"]').focus();
+          // ISSUE::http://stackoverflow.com/a/26754609
+          // ISSUE::http://stackoverflow.com/questions/9596419/what-are-some-reasons-for-jquery-focus-not-working
+
+          setTimeout(function(){
+              $('[name="burger-sfield"]').focus();
+          });
+      	});
+
+        // slideDown callback block
+        $('#burger-callback').click(function(){
+          $('#burger-callback .svg-icon').toggleClass('opened');
+          $('.js-right-side').addClass('opened').slideToggle(300);
+          $('.overlay__offcanvas').addClass('visible');
+        });
+
+
+        $('.overlay__offcanvas').click(function(){
+          // $('.burger').removeClass('open');
+          // $('.js-nav').removeClass('opened');
+          $('#burger-callback .svg-icon').removeClass('opened');
+          $('.js-right-side').slideUp(300);
+          $('.overlay__offcanvas').removeClass('visible');
+        });
+
+
+
+        // Нажатие на бургер кнопку на таблете:
+        $('#nav-icon').click(function(){
+
+          // если открыта callback менюха - плавно её поднимаем:
+          $('.js-right-side').slideUp(300);
+
+          // выезд менюхи
+          $('.offcanvas-nav-side').addClass('opened');
+          $('.offcanvas-nav-side-wrapper').addClass('wide-opened');
+              $('.subm__burger_search').addClass('expanded');
+
+          // при выезде меню, активируем первый пункт меню:
+          $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="9"]').addClass('opened');
+            // и выводим содержимое первого пункта меню в контентной части меню:
+            $('.offcanvas-nav-side__sub-menus[data-offcanvas-subm="9"]').fadeIn(10);
+
+        }); // eof #burger-btn').click
+
+        /*
+        - необходим overlay и его отработка
+          - по клику на его поле
+            - сворачиваем менюшку в сторону
+            - меняем бургер на исходник
+
+        */
+
+        // закрытие меню по клику на блок:
+        $('.js-nav-close').click(function(e) {
+          e.preventDefault();
+
+          // анимируем бургер на закрытый
+          $('#nav-icon').removeClass('open');
+
+          // сворачиваем всю менюшку влеаво:
+          $('.offcanvas-nav-side').removeClass('opened');
+          $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
+          $('.subm__burger_search').removeClass('expanded');
+
+          // Когда менюшка вся свернулась, необходимо убрать навешанные классы и события, чтоб при последующем вызове у нас:
+              // hiding all submenus at the left
+              $('.offcanvas-nav-side__sub-menus').fadeOut(10);
+              // disabling styles for the all pressed buttons
+              for (var i = 0; i < 99; i++) {
+                $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+              }
+
+
+        });
+
+/*
+
+1. При нажатии на кнопку необходимо активировать первый пункт меню, при условиях:
+  - если всё меню до клика было закрыто
+2. После активации первого пункта меню, нужно "выехать" всему меню;
+
+*/
+
+
+        // burger-callback
+
+
+        // eof slideDown callback block
+
+    } // eof matchMedia
+  } // eof body.is
+}); // eof ready
+// eof burger
