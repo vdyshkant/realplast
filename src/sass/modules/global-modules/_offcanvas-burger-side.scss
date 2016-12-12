@@ -13,7 +13,7 @@
   left: 0;
   width: 100%;
   height: 60px;
-  padding-right: 20px;
+
 
   transition: .3s linear;
   // height: 100%;
@@ -27,9 +27,15 @@
 //   z-index: 11;
 //
 //   padding-top: 155px;
+  @media #{$tablet-wide} {
+    padding-right: 20px;
+  }
+
   @media #{$wide} {
     display: none;
   }
+
+
 }
 
 .offcanvas-burger-side {
@@ -118,7 +124,7 @@
       float: left;
       width: 75px;
       height: 60px;
-      
+
 
       // outline: 2px dashed black;
       // outline-offset: -2px;
@@ -129,6 +135,13 @@
       transform: translateX(-50%);
       width: 42px;
 
+      @media #{$mobile} {
+        // display: none;
+        left: auto;
+        right: 20px;
+        transform: initial;
+      }
+
     }
     &.burger-callback {
       float: right;
@@ -136,6 +149,10 @@
       @include clearfix;
 
       cursor: pointer;
+
+      @media #{$mobile} {
+        display: none;
+      }
 
       &:hover {
         outline: 2px dashed black;

@@ -6,6 +6,11 @@
     .offcanvas-nav-side__top-row
       a.offcanvas-nav-side__close.js-nav-close(href="")
         .burger
+        .nav-icon-clone
+          span
+          span
+          span
+          span
       a.offcanvas-nav-side__logo(href="/")
         .logo
 
@@ -150,6 +155,10 @@
           a.link(href="#")
             +svg([{'class': 'icon-nav-search svg-icon', 'pathid': 'svg-search', 'filename':'offcanvas-right_search'}])
             .link__text Поиск
+
+        li.offcanvas-nav-side__menu__item.item-btm.item-callback(data-offcanvas-menu="10")
+          a.link(href="#")
+            .link__text Заказ звонка
           //- . . . . . . . as above
 
       //- sub-menus
@@ -158,7 +167,7 @@
 
         //- separate sub list
         li.offcanvas-nav-side__sub-list__title
-          a.offcanvas-nav-side__sub-list__title__link(href="#") Оконные системы
+          a.offcanvas-nav-side__sub-list__title__link.active(href="#") Оконные системы
         li.offcanvas-nav-side__sub-list__title
           a.offcanvas-nav-side__sub-list__title__link(href="#") Стеклопакет
         li.offcanvas-nav-side__sub-list__title

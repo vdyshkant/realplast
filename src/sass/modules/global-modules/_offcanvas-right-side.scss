@@ -19,6 +19,11 @@
   z-index: 10;
   display: none;
 
+  @media #{$mobile-tablet} {
+    background: #16191c;
+    opacity: .56;
+  }
+
   &.visible{
     display: block;
   }

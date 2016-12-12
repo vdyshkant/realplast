@@ -573,6 +573,7 @@ $( document ).ready(function() {
 
         if ((window.matchMedia("(max-width: 1159px)").matches)) {
           $('#nav-icon').removeClass('open');
+          $('.nav-icon-clone').removeClass('open');
 
           // Когда менюшка вся свернулась, необходимо убрать навешанные классы и события, чтоб при последующем вызове у нас:
               // hiding all submenus at the left
@@ -1469,6 +1470,7 @@ $(document).ready(function() {
 
       	$('#nav-icon').click(function(){
       		$(this).addClass('open');
+      		$('.nav-icon-clone').addClass('open');
           // $('[name="burger-sfield"]').focus();
           // ISSUE::http://stackoverflow.com/a/26754609
           // ISSUE::http://stackoverflow.com/questions/9596419/what-are-some-reasons-for-jquery-focus-not-working
@@ -1480,18 +1482,62 @@ $(document).ready(function() {
 
         // slideDown callback block
         $('#burger-callback').click(function(){
+          // close offcanvas nav panel
+            // making burger icon to default
+            $('#nav-icon').removeClass('open');
+            $('.nav-icon-clone').removeClass('open');
+            // hide nav panel::
+            $('.js-nav').removeClass('opened');
+                $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
+                $('.subm__burger_search').removeClass('expanded');
+                  // strip all classes for inside blocks
+                  // Когда менюшка вся свернулась, необходимо убрать навешанные классы и события, чтоб при последующем вызове у нас:
+                      // hiding all submenus at the left
+                      $('.offcanvas-nav-side__sub-menus').fadeOut(10);
+                      // disabling styles for the all pressed buttons
+                      for (var i = 0; i < 99; i++) {
+                        $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+                      }
+                      // eof ^^^^
+
           $('#burger-callback .svg-icon').toggleClass('opened');
           $('.js-right-side').addClass('opened').slideToggle(300);
-          $('.overlay__offcanvas').addClass('visible');
+          $('.overlay__offcanvas').toggleClass('visible');
         });
 
 
         $('.overlay__offcanvas').click(function(){
           // $('.burger').removeClass('open');
           // $('.js-nav').removeClass('opened');
+
+          // making burger icon to default
+          $('#nav-icon').removeClass('open');
+          $('.nav-icon-clone').removeClass('open');
+
+
           $('#burger-callback .svg-icon').removeClass('opened');
           $('.js-right-side').slideUp(300);
+          // hide nav panel::
+          $('.js-nav').removeClass('opened');
+              $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
+              $('.subm__burger_search').removeClass('expanded');
+          // hide overlay::
           $('.overlay__offcanvas').removeClass('visible');
+
+          // tablet
+          // сворачиваем всю менюшку влеаво:
+          $('.offcanvas-nav-side').removeClass('opened');
+          $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
+            $('.subm__burger_search').removeClass('expanded');
+
+          // Когда менюшка вся свернулась, необходимо убрать навешанные классы и события, чтоб при последующем вызове у нас:
+              // hiding all submenus at the left
+              $('.offcanvas-nav-side__sub-menus').fadeOut(10);
+              // disabling styles for the all pressed buttons
+              for (var i = 0; i < 99; i++) {
+                $('.offcanvas-nav-side__menu__item[data-offcanvas-menu="' + i + '"]').removeClass('opened');
+              }
+          // eof tablet
         });
 
 
@@ -1501,10 +1547,14 @@ $(document).ready(function() {
 
           // если открыта callback менюха - плавно её поднимаем:
           $('.js-right-side').slideUp(300);
+          $('#burger-callback .svg-icon').removeClass('opened');
+
+          // overlay appearing
+          $('.overlay__offcanvas').addClass('visible');
 
           // выезд менюхи
           $('.offcanvas-nav-side').addClass('opened');
-          $('.offcanvas-nav-side-wrapper').addClass('wide-opened');
+              $('.offcanvas-nav-side-wrapper').addClass('wide-opened');
               $('.subm__burger_search').addClass('expanded');
 
           // при выезде меню, активируем первый пункт меню:
@@ -1528,11 +1578,15 @@ $(document).ready(function() {
 
           // анимируем бургер на закрытый
           $('#nav-icon').removeClass('open');
+          $('.nav-icon-clone').removeClass('open');
+
+          // overlay appearing
+          $('.overlay__offcanvas').removeClass('visible');
 
           // сворачиваем всю менюшку влеаво:
           $('.offcanvas-nav-side').removeClass('opened');
           $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
-          $('.subm__burger_search').removeClass('expanded');
+            $('.subm__burger_search').removeClass('expanded');
 
           // Когда менюшка вся свернулась, необходимо убрать навешанные классы и события, чтоб при последующем вызове у нас:
               // hiding all submenus at the left
@@ -1544,6 +1598,7 @@ $(document).ready(function() {
 
 
         });
+
 
 /*
 
