@@ -279,22 +279,39 @@ $(document).ready(function() {
 
 // slider
 
-$( document ).ready(function() {
+// $( document ).ready(function() {
+$(window).load(function() {
 
 	if($('body').is('.page-index')){
 		$("ul#slider1").bxSlider({
+        // http://stackoverflow.com/a/20342392
+        // BxSlider displayes last slide as first slide | dublicating ids
+
 		    speed: 300,
 		    pager: true,
 		    nextText: '',
 		    prevText: '',
 				prevSelector: ('.slider-sales-controls__left'),
 				nextSelector: ('.slider-sales-controls__right'),
+
+        // looping
+        auto: true,
+        infiniteLoop: true,
+        pause: 5000
 		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
 		    //    changeRealThumb(realThumbSlider,newIndex);
 		    //
 		    //  }
 
 		});
+
+    // // get the children behind
+    // var $prependedChildren = getArraySample($children, 0, options.moveSlideQty, 'backward');
+    //
+    // // add each prepended child to the back of the original element
+    // $.each($prependedChildren, function(index) {
+    //     $parent.prepend($(this));
+    // });
 	}
 
 
@@ -322,8 +339,14 @@ $( document ).ready(function() {
 	if($('body').is('.page-index')){
 
 
-		$("#DateCountdown").TimeCircles();
+		$("#DateCountdown0").TimeCircles();
 		$("#DateCountdown1").TimeCircles();
+		$("#DateCountdown2").TimeCircles();
+		$("#DateCountdown3").TimeCircles();
+		$("#DateCountdown4").TimeCircles();
+		// $("#DateCountdown5").TimeCircles();
+
+
 		 $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } }});
 		 $("#PageOpenTimer").TimeCircles();
 
@@ -331,7 +354,7 @@ $( document ).ready(function() {
 				 var date = $("#date").val();
 				 var time = $("#time").val();
 				 var datetime = date + ' ' + time + ':00';
-				 $("#DateCountdown").data('date', datetime).TimeCircles().start();
+				 $("#DateCountdown1").data('date', datetime).TimeCircles().start();
 		 };
 		 $("#date").change(updateTime).keyup(updateTime);
 		 $("#time").change(updateTime).keyup(updateTime);
