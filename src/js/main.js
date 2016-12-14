@@ -354,7 +354,11 @@ $( document ).ready(function() {
 				 var date = $("#date").val();
 				 var time = $("#time").val();
 				 var datetime = date + ' ' + time + ':00';
+				 $("#DateCountdown0").data('date', datetime).TimeCircles().start();
 				 $("#DateCountdown1").data('date', datetime).TimeCircles().start();
+				 $("#DateCountdown2").data('date', datetime).TimeCircles().start();
+				 $("#DateCountdown3").data('date', datetime).TimeCircles().start();
+				 $("#DateCountdown4").data('date', datetime).TimeCircles().start();
 		 };
 		 $("#date").change(updateTime).keyup(updateTime);
 		 $("#time").change(updateTime).keyup(updateTime);

@@ -162,7 +162,7 @@
     @media #{$mobile} {
       // margin-top: -20px;
       // margin-top: 0;
-      background: url('../img/slider-sales_stock_bg-timer.png') no-repeat 0 -40px,
+      background: url('../img/slider-sales_stock_bg-timer.png') no-repeat -20px -40px,
                   url('../img/bg_white.jpg');
       position: relative;
       z-index: 1;
@@ -438,7 +438,11 @@
  *	It is used so that your own element will not need to be altered
  **/
 
-.page-index #DateCountdown, .page-index #DateCountdown1 {
+.page-index #DateCountdown0,
+.page-index #DateCountdown1,
+.page-index #DateCountdown2,
+.page-index #DateCountdown3,
+.page-index #DateCountdown4 {
   // position: absolute;
   // left: 0;
   // bottom: 0;
