@@ -154,6 +154,8 @@
 
     @media #{$mobile} {
       // width: 300px;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
     }
     // margin-right: 30px;
 
@@ -275,6 +277,8 @@
 
   @media #{$mobile} {
     // max-width: 260px;
+    // left: 50%;
+    // transform: translateX(-50%);
   }
 
   & .expand{
@@ -344,8 +348,8 @@
    clear:both;
 // mih и h обязательно должны бить прописаны, чтоб слайды как нужно ложились на площадке
    @media #{$tablet} {
-     min-height: 700px;
-     height: 700px;
+     min-height: 650px;
+     height: 650px;
    }
 
    @media #{$mobile} {
@@ -387,12 +391,23 @@
 
 // controls
 .page-index .feedbacks {
-  & .controls{
+  & .slider-controls{
     position: absolute;
-    top: 50%;
+    // top: 50%;
     transform: translateY(-50%);
     height: 60px;
     width: 100%;
+
+    transition: .3s ease-out;
+    z-index: 99;
+
+    @media #{$wide} {
+      display: none;
+    }
+
+    @media #{$tablet} {
+      top: 45%;
+    }
 
     @media #{$mobile} {
       // position: relative;
@@ -403,27 +418,49 @@
       //   width: 16px;
       //   height: 25px;
       // }
+      height: 25px;
+      bottom: 50px;
     }
   }
 }
 
 
 .page-index .feedbacks {
-  & .controls-prev{
-    left: 0px;
+  & .slider-controls__arrow {
     top: 0;
     position: absolute;
+    width: 46px;
+    height: 67px;
+    cursor: pointer;
 
+    @media #{$mobile} {
+      width: 16px;
+      height: 25px;
+    }
   }
 }
 
 
 .page-index .feedbacks {
-  & .controls-next{
-    right: 0px;
-    top: 0;
-    position: absolute;
+  & .slider-controls__arrow.left {
+    left: 0px;
+    background: url('../img/feedbacks__arr_left.png') no-repeat;
 
+    @media #{$mobile} {
+      background: url('../img/feedbacks__arr_left--mobile.png') no-repeat;
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-controls__arrow.right {
+    right: 0px;
+    background: url('../img/feedbacks__arr_right.png') no-repeat;
+
+    @media #{$mobile} {
+      background: url('../img/feedbacks__arr_right--mobile.png') no-repeat;
+    }
   }
 }
 
