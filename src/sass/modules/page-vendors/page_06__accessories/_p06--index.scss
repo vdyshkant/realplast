@@ -3,13 +3,14 @@
 
 
 // @import "000_proto.scss";
-@import "001_breadcrumbs.scss";
-@import "002_welcome.scss";
-// @import "003_choose-system.scss";
-// @import "004_about.scss";
+@import "001_breadcrumbs";
+@import "002_welcome";
+@import "003_types";
+@import "004_about";
 // @import "005_our-process.scss";
-@import "008_contact.scss";
-@import "009_prefooter.scss";
+@import "005_process.scss";
+@import "006_contact";
+@import "007_prefooter";
 
 
 // very global styles:

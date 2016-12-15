@@ -1,21 +1,27 @@
 .page-accessories .welcome {
-  background: url('../img/bg_welcome.png');
-  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
 
-  position: relative;
-  z-index: 1;
 }
 
 
 .page-accessories .welcome {
   & .shell {
+    background: url('../img/bg_welcome.png');
     margin: 0 auto;
     max-width: 1160px;
+    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
 
-    padding: 0 5px;
+    @media #{$wide} {
+      min-width: 1160px;
+    }
+
+    // padding: 0 5px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
+
+    @media #{$tablet} {
+      max-width: 768px;
+    }
 
     @media #{$mobile} {
       min-width: 320px;
@@ -35,8 +41,11 @@
   }
 
   & .welcome-wrapper {
-    position: relative;
-      min-height: 600px;
+      // min-height: 600px;
+    @include clearfix;
+    @media #{$mobile} {
+      padding-bottom: 50px;
+    }
   }
 
   & .PROTO-essence {
@@ -53,16 +62,47 @@
 
 
 .page-accessories .welcome-thumb {
-  width: 590px;
   height: 510px;
-  background: #fff url('../img/006_welcome-img.jpg') no-repeat left 45px top -50px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  // background-size: 100%;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  float: left;
+
+  @media #{$wide} {
+    width: 595px;
+  }
+
+  @media #{$tablet} {
+    width: 393px;
+    width: 51.171875%;
+    height: 336px;
+  }
+  @media #{$mobile} {
+    float: none;
+
+    height: 202px;
+    background: url('../img/bg_white.jpg');
+  }
+
 }
 
 
 .page-accessories .welcome-thumb__img {
+
+  background: #fff url('../img/004_welcome-img.jpg') no-repeat left 0 top 0;
+  height: 100%;
+
+  @media #{$tablet} {
+    background: #fff url('../img/004_welcome-img_tablet.jpg') no-repeat left 0px top 0px;
+  }
+
+  @media #{$mobile} {
+    background: #fff url('../img/004_welcome-img_mobile.jpg') no-repeat left -10px top 0px;
+    width: 320px;
+    margin: 0 auto;
+  }
 
 }
 
@@ -76,13 +116,31 @@
 
 .page-accessories .welcome-content {
   background: url('../img/bg_white.jpg');
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  width: 560px;
-  // if mih -- pls do not use padding-bottom parameter
-  min-height: 510px;
-  padding: 30px 20px 0 20px;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0px;
+
+  // min-height: 510px;
+
+  padding: 35px 20px 30px 20px;
+
+  // width: 565px;
+  width: 48.706896551724135%;
+  float: right;
+  margin-top: 90px;
+
+  @media #{$tablet} {
+    // width: 375px;
+    width: 48.828125%;
+    margin-top: 60px;
+  }
+  @media #{$mobile} {
+    width: 100%;
+    margin-top: 0;
+    float: none;
+    // padding-bottom: 20px;
+    padding: 30px 10px 20px 20px;
+  }
 }
 
 
@@ -91,6 +149,9 @@
   text-align: center;
   color: #444341;
   margin-bottom: 30px;
+  @media #{$mobile-tablet} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+  }
 }
 
 
@@ -98,6 +159,10 @@
   @include font(normal, 400, 18px, 23px, 'Roboto');
   color: #444341;
   margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 
