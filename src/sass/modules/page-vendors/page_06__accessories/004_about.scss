@@ -1,5 +1,14 @@
 .page-accessories .about {
   background: url('../img/bg_white-wwindows.jpg');
+
+  @media #{$wide} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+
 }
 
 

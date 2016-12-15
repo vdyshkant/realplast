@@ -1276,6 +1276,32 @@ $(document).ready(function() {
 
 
 
+// tabs for page-accessories::type module
+
+$(document).ready(function() {
+
+	if($('body').is('.page-accessories')){
+
+
+		$('.js-tabs li[data-id]').click(function() {
+				console.log($(this));
+				if ($(this).hasClass('active')) {
+						return;
+				}
+
+				$('.wide-related-content #' + $(this).attr('data-id')).fadeIn(0).siblings().fadeOut(0);
+				$(this).siblings().removeClass('active');
+				$(this).addClass('active');
+		});
+
+	}
+
+});
+
+// tabs for page-accessories::type module END
+
+
+
 // page-window-systems COLORS slider
 
 $( document ).ready(function() {
@@ -1549,11 +1575,70 @@ $(document).ready(function() {
 
 
 
+// page-accessories :: types module
+$(document).ready(function() {
+	if($('body').is('.page-accessories')){
+    if ((window.matchMedia("(max-width: 1359px)").matches)) {
+
+
+
+      /* ================================================
+      main item click
+      ================================================ */
+      if ($(".page-accessories .types").length) {
+        $('.types-menu__item.js-parent[data-id] .types-menu__link').click(function(e) {
+          e.stopPropagation();
+
+          var parentNode = $(this).closest('.js-parent');
+          var parentNodeSiblings = $(this).closest('.js-parent').siblings('.js-parent');
+          var contentNode = $(this).next('.chose-content__wrapper');
+          var anotherContentNodes = $(this).closest('.js-parent').siblings('.js-parent').find('.chose-content__wrapper');
+
+          if (parentNode.is('.active')) {
+            console.log('triggers "if"');
+
+            // removing classes and reseting positions before assigning active for recently clicked
+            contentNode.slideUp(200);
+            parentNode.removeClass('active');
+            // eof last comment^^^^
+
+          } else {
+            console.log('triggers "else"');
+
+            contentNode.slideDown(200);
+            parentNode.addClass('active');
+
+
+            anotherContentNodes.slideUp(200);
+            parentNodeSiblings.removeClass('active');
+          }
+
+
+        });
+      }
+      /* === eof li[data-pos].click == */
+
+      /* ================================================
+      stop propagation for child content elements
+      ================================================ */
+      $('.types-content .chose-content__wrapper').click(function(e) {
+        e.stopPropagation();
+      });
+      /* === eof stop propagation for child elements == */
+
+
+
+    } // eof matchMedia
+  } // eof body.is
+}); // eof ready
+
+
+
 
 
 // burger
 $(document).ready(function() {
-	if($('body').is('.page-index')){
+	// if($('body').is('.page-index')){
     if ((window.matchMedia("(max-width: 1159px)").matches)) {
 
       	$('#nav-icon').click(function(){
@@ -1703,6 +1788,6 @@ $(document).ready(function() {
         // eof slideDown callback block
 
     } // eof matchMedia
-  } // eof body.is
+  // } // eof body.is
 }); // eof ready
 // eof burger
