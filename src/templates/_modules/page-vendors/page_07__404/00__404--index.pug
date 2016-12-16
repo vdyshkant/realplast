@@ -2,7 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Услуги'
+  - var PageTitle = '404 - Такой страницы не существует'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
@@ -30,7 +30,7 @@ append 001_config
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-services')
+  - var updateBodyClass = bodyClasses.push('page-404')
 
   //- - var GoogleFonts = 'Poiret+One'
   //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
@@ -57,6 +57,8 @@ block content
     include ../../global-modules/001__header
     //- eof header
 
+    include ../../global-modules/003c__side-burger
+
 
     include ../../global-modules/003a__side-nav
 
@@ -74,23 +76,23 @@ block content
     main.main
 
 
-      include 01_breadcrumbs
-
-
-
-      include 02_welcome
-
-      include 03_choose-system
-
-      include 04_about
-
-
-
-      include 05_our-process
-
-      include 06_contact-us
-
-      include 07_pre-footer
+      //- include 01_breadcrumbs
+      //-
+      //-
+      //-
+      //- include 02_welcome
+      //-
+      //- include 03_types
+      //-
+      //- include 04_about
+      //-
+      //-
+      //-
+      //- include 05_process
+      //-
+      //- include 06_contact
+      //-
+      //- include 07_prefooter
 
 
       //- eof main
