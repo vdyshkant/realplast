@@ -1,11 +1,11 @@
 
 
-.page-accessories .contact {
+.page-404 .contact {
   background: url('../img/bg_tan.jpg');
 }
 
 
-.page-accessories .contact {
+.page-404 .contact {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -51,7 +51,7 @@
 
 
 
-.page-accessories .contact-title {
+.page-404 .contact-title {
   @include font(normal, 700, 36px, 34px, 'Roboto Condensed');
   color: #444341;
   text-align: center;
@@ -70,7 +70,7 @@
 }
 
 
-.page-accessories .contact__desc {
+.page-404 .contact__desc {
   @include font(normal, 400, 18px, 18px, 'Roboto');
   text-align: center;
   color: #444341;
@@ -92,14 +92,14 @@
 }
 
 
-.page-accessories .PROTO {
+.page-404 .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-accessories .contact__form {
+.page-404 .contact__form {
   margin: 0 auto;
 
   @media #{$wide} {
@@ -113,7 +113,7 @@
 }
 
 
-.page-accessories .contact__form__field {
+.page-404 .contact__form__field {
   display: block;
   background: #f3f3f3;
   height: 50px;
@@ -146,21 +146,21 @@
 }
 
 
-.page-accessories .contact__form__field--name {
+.page-404 .contact__form__field--name {
   @media #{$wide} {
     width: 260px;
   }
 }
 
 
-.page-accessories .contact__form__field--tel {
+.page-404 .contact__form__field--tel {
   @media #{$wide} {
     width: 360px;
   }
 }
 
 
-.page-accessories .contact__form__btn {
+.page-404 .contact__form__btn {
   @include font(normal, 400, 18px, 50px, 'Roboto');
   color: #f9f9f9;
   // text-transform: uppercase;
@@ -195,7 +195,7 @@
 }
 
 
-.page-accessories .PROTO {
+.page-404 .PROTO {
   & .CLASS{
 
   }
