@@ -134,6 +134,12 @@ img {
 
 .dev_contents__testServer,
 .dev_contents__localhost {
+  & h1 {
+    margin-bottom: 5px;
+  }
+  & h3 {
+    color: #595959;
+  }
   & a {
       text-decoration: none;
       transition: 1s ease-out;
