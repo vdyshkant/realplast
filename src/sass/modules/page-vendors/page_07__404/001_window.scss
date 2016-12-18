@@ -91,7 +91,7 @@
     }
 
     @media #{$mobile} {
-      height: 368px;
+      height: 367px;
     }
   }
 }
@@ -99,7 +99,7 @@
 
 .page-404 .window {
   & .window__window {
-    background: url('../img/window.png') no-repeat left -357px top 0px;
+    background: rgba(134, 4, 4, 0.5) url('../img/window.png') no-repeat left -357px top 0px;
     height: 737px;
 
     position: absolute;
@@ -118,11 +118,11 @@
     }
 
     @media #{$tablet} {
-      background: url('../img/window--tablet.png') no-repeat left -37px top -30px;
+      background: rgba(134, 4, 4, 0.5) url('../img/window--tablet.png') no-repeat left -37px top -30px;
     }
 
     @media #{$mobile} {
-      background: url('../img/window--mobile.png') no-repeat left -123px top -12px;
+      background: rgba(134, 4, 4, 0.5) url('../img/window--mobile.png') no-repeat left -117px top -11px;
     }
 
     // outline: 2px dashed yellowgreen;
@@ -158,7 +158,7 @@
       width: 193px;
       height: 143px;
       top: 27px;
-      right: 70px;
+      right: 65px;
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 43px;
@@ -249,7 +249,7 @@
 .page-404 .window {
   & #tree{
                                               // PARALLAX
-    background: url('../img/window-tree.png') no-repeat;
+    background: url('../img/window-tree--red.png') no-repeat;
     position: absolute;
     width: 359px;
     height: 600px;
@@ -259,20 +259,20 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    z-404: 2;
+    z-index: 2;
 
     @media #{$tablet} {
-      background: url('../img/window-tree--tablet.png') no-repeat;
+      background: url('../img/window-tree--red-tablet.png') no-repeat;
       width: 264px;
-      top: 310px;
-      right: 74px;
+      top: 295px;
+      right: 60px;
     }
 
     @media #{$mobile} {
-      background: url('../img/window-tree--mobile.png') no-repeat;
+      background: url('../img/window-tree--red-mobile.png') no-repeat;
       width: 165px;
-      top: 200px;
-      right: 90px;
+      top: 195px;
+      right: 82px;
     }
   }
 }
