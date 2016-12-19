@@ -21,7 +21,9 @@ var gulp         = require('gulp'),
     gulpif       = require('gulp-if'),
     gutil        = require('gulp-util'), // added 2016-10-04
     copy         = require('gulp-copy'), // added 2016-10-04
-    replace      = require('gulp-replace'); // added 2016-10-04
+    replace      = require('gulp-replace'), // added 2016-10-04
+    filter       = require('gulp-filter'), // added 2016-12-19
+    concat       = require('gulp-concat'); // added 2016-12-19
 
 var env = process.env.NODE_ENV || 'development'; // if we do not specify explicitly a value, then it defaults to the development
 var outputDir = 'builds/development';
@@ -61,10 +63,37 @@ gulp.task('pug', function() {
 });
 
 
+gulp.task('libs', function() {
+
+  const jsFilter = filter('src/js/**/*.js', {restore: true});
+  // const lessFilter = filter('**/*.less', {restore: true});
+
+  return gulp.src([
+    '!src/js/libs/*.js', // ignore this file
+    'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
+    'src/js/modules/logger.js' // e.g. /path/to/mymodule/mymodule/*.js'
+  ])     // выборка files from glob
+
+      .pipe(jsFilter)
+      .pipe(concat('main.js'))
+      .pipe(jsFilter.restore)
+      .pipe(gulp.dest('src/js/'));
+
+});
 
 
 gulp.task('js', function() {
-    return gulp.src('src/js/main.js')     // here we specify main js file as an entry point
+    // return gulp.src('src/js/modules/*.js')     // here we specify main js file as an entry point
+    return gulp.src([
+      '!src/js/libs/*.js', // ignore this file
+      'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
+      'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p08/01-slider-general.js' // e.g. /path/to/mymodule/mymodule/*.js'
+    ])     // выборка files from glob
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(outputDir + '/js'))
+
+
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'))
         // .pipe(jshint.reporter('fail'))
@@ -130,6 +159,13 @@ gulp.task('copyJsLibs', function() {
 //     .pipe(gulp.dest(outputDir + '/fonts'));
 // });
 
+
+// Чистим директорию назначения и делаем ребилд, чтобы удаленные из проекта файлы не остались
+// Энто костыль.
+// gulp.task('clean', function() {
+//   return gulp.src(['src/js/main.js'], {read: false})
+//     .pipe(clean());
+// });
 
 
 
