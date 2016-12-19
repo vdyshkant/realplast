@@ -88,7 +88,8 @@ gulp.task('js', function() {
       '!src/js/libs/*.js', // ignore this file
       'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
-      'src/js/modules/p08/01-slider-general.js' // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p08/slider-clock-timers.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))
         .pipe(gulp.dest(outputDir + '/js'))

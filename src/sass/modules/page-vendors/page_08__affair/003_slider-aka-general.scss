@@ -1,4 +1,4 @@
-.page-iaffair.slider-sales {
+.page-affair .slider-aka-general {
 
   box-shadow: 3px 3px 7px 0px rgba(68, 67, 65, 0.21);
   position: relative;
@@ -42,23 +42,23 @@
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales-wrapper{
+.page-affair .slider-aka-general {
+  & .slider-aka-general-wrapper{
     position: relative;
     display: block;
   }
 }
 
 
-.page-affair .slider-sales {
+.page-affair .slider-aka-general {
   & .CLASS{
     //
   }
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales__item__content{
+.page-affair .slider-aka-general {
+  & .slider-aka-general__item__content{
     background: url('../img/slider-sales_bg.png') no-repeat;
     background-size: cover;
 
@@ -71,8 +71,8 @@
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales__item{
+.page-affair .slider-aka-general {
+  & .slider-aka-general__item{
     display: block;
     position: relative;
     height: 630px;
@@ -101,8 +101,8 @@
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales__item__stock{
+.page-affair .slider-aka-general {
+  & .slider-aka-general__item__stock{
 
     position: absolute;
     top: 0;
@@ -123,8 +123,8 @@
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales__item__stock .stock__content {
+.page-affair .slider-aka-general {
+  & .slider-aka-general__item__stock .stock__content {
     background: url('../img/slider-sales_stock_bg.png') no-repeat;
     background-position: 0 -40px;
     height: 430px;
@@ -150,8 +150,8 @@
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales__item__stock .stock__timer {
+.page-affair .slider-aka-general {
+  & .slider-aka-general__item__stock .stock__timer {
     background: url('../img/slider-sales_stock_bg-timer.png') no-repeat;
     background-position: 0 -40px;
     height: 160px;
@@ -348,15 +348,15 @@
 }
 
 
-.page-affair .slider-sales {
+.page-affair .slider-aka-general {
   & .CLASS{
 
   }
 }
 
 
-.page-affair .slider-sales {
-  & .slider-sales__controls{
+.page-affair .slider-aka-general {
+  & .slider-aka-general__controls{
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -374,7 +374,7 @@
 // slider
 
 
-.page-affair .slider-sales {
+.page-affair .slider-aka-general {
   & .bx-pager {
     position: absolute;
     bottom: 30px;
@@ -389,14 +389,14 @@
 }
 
 
-.page-affair .slider-sales {
+.page-affair .slider-aka-general {
   & .bx-pager-item {
     transition: 300ms ease-in-out;
   }
 }
 
 
-.page-affair .slider-sales {
+.page-affair .slider-aka-general {
   & .bx-pager-link {
     font-size: 0;
     width: 20px;
@@ -520,7 +520,7 @@
 
 // slider controls
 
-.page-affair .slider-sales-controls {
+.page-affair .slider-aka-general-controls {
   // position: absolute;
   // top: 50%;
   @media #{$mobile} {
@@ -529,8 +529,8 @@
 }
 
 
-.page-affair .slider-sales-controls__left,
-.page-affair .slider-sales-controls__right {
+.page-affair .slider-aka-general-controls__left,
+.page-affair .slider-aka-general-controls__right {
   position: absolute;
   top: 50%;
   width: 50px;
@@ -555,7 +555,7 @@
 }
 
 
-.page-affair .slider-sales-controls__left {
+.page-affair .slider-aka-general-controls__left {
   border-radius: 0 4px 4px 0;
   left: 0;
 
@@ -578,13 +578,13 @@
 }
 
 
-.page-affair .slider-sales-controls__right {
+.page-affair .slider-aka-general-controls__right {
   border-radius: 4px 0 0 4px;
   right: 0;
 }
 
-.page-affair .slider-sales-controls .bx-next,
-.page-affair .slider-sales-controls .bx-prev {
+.page-affair .slider-aka-general-controls .bx-next,
+.page-affair .slider-aka-general-controls .bx-prev {
     position: absolute;
     z-index: 52;
     top: 0;

@@ -1,9 +1,11 @@
-.page-window-systems .about {
-  background: url('../img/bg_white-wwindows.jpg');
+.page-affair .actions-text-03 {
+  // background: url('../img/bg_white-wwindows.jpg');
+
+  position: relative;
 }
 
 
-.page-window-systems .about {
+.page-affair .actions-text-03 {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -27,7 +29,7 @@
   }
 
   & .container {
-    padding: 100px 0;
+    padding: 100px 0 30px;
     @media #{$mobile-tablet} {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -44,33 +46,45 @@
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-.page-window-systems .about-title {
-  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+.page-affair .actions-text-03-title-container {
   text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
+    width: 100%;
+    height: 1px;
+    background: #333;
+    z-index: -1;
+  }
+}
+
+
+.page-affair .actions-text-03-title {
+  @include font(normal, 700, 32px, 54px, 'Roboto Condensed');
   color: #444341;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+
+  background: url(../img/bg_white.jpg);
+  display: inline-block;
+  padding: 0 30px;
 
   @media #{$mobile-tablet} {
 
@@ -79,7 +93,7 @@
 }
 
 
-.page-window-systems .divider {
+.page-affair .divider {
   display: block;
   border: none;
   outline: none;
@@ -95,17 +109,16 @@
 }
 
 
-.page-window-systems .about-content__text {
-  width: 736px;
+.page-affair .actions-text-03-subtitle {
+  max-width: 733px;
   margin: 0 auto;
   @include font(normal, 400, 18px, 27px, 'Roboto');
 
-  color: #444341;
-  margin-bottom: 27px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  // color: #444341;
+  //
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   @media #{$mobile-tablet} {
     width: auto;
@@ -115,21 +128,21 @@
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
