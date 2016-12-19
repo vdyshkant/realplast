@@ -1,9 +1,9 @@
-.page-window-systems .about {
-  background: url('../img/bg_white-wwindows.jpg');
+.page-affair .actions-general-text {
+  // background: url('../img/bg_white-wwindows.jpg');
 }
 
 
-.page-window-systems .about {
+.page-affair .actions-general-text {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -27,7 +27,7 @@
   }
 
   & .container {
-    padding: 100px 0;
+    padding: 10px 0 50px;
     @media #{$mobile-tablet} {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -44,33 +44,33 @@
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .about-title {
+.page-affair .actions-general-text-title {
   @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
   text-align: center;
   color: #444341;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @media #{$mobile-tablet} {
 
@@ -79,7 +79,22 @@
 }
 
 
-.page-window-systems .divider {
+.page-affair .actions-general-text-subtitle {
+  display: block;
+  @include font(normal, 400, 18px, 18px, 'Roboto');
+  text-align: center;
+  color: #444341;
+  // text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @media #{$mobile-tablet} {
+
+    // @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
+  }
+}
+
+
+.page-affair .divider {
   display: block;
   border: none;
   outline: none;
@@ -89,13 +104,13 @@
   width: 236px;
   height: 1px;
   background-color: #333;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
 
 }
 
 
-.page-window-systems .about-content__text {
+.page-affair .actions-general-text-content__text {
   width: 736px;
   margin: 0 auto;
   @include font(normal, 400, 18px, 27px, 'Roboto');
@@ -115,21 +130,21 @@
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-affair .PROTO {
   & .CLASS{
 
   }

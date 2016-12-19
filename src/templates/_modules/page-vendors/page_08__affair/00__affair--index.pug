@@ -4,17 +4,14 @@ extends ../../../conf/002_docwrapper
 append 001_config
   - var PageTitle = 'Акции'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
-  //- - var jQuery = true
+  - var jQuery = true
   //- - var jQueryUI = true
   //- - var jQueryEasing = true
-      //- - var bxSlider = true
-  //- - var animateNumber = true
-  //- - var animateCss = true
-  //- - var wowJs = true
+  - var bxSlider = true
   //- - var mainJsSrc = 'js/main.min.js'
 
   //- smoothDivScroll
-  - var jQuery = true
+  //- - var jQuery = true
         //- - var jQueryUI = true
         //- - var jQueryMousewheel = true
         //- - var jQkinetic = true
@@ -28,7 +25,7 @@ append 001_config
         //- - var wowJs = true
 
   //- countdown circles
-  //- - var TimeCircles = true
+  - var TimeCircles = true
 
   - var updateBodyClass = bodyClasses.push('page-affair')
 
@@ -76,19 +73,22 @@ block content
     main.main
 
 
-      //- include 01_window
+      include 01_breadcrumbs
       //-
       //-
       //-
-      //- include 02_welcome
+      include 02_actions-general-text
+      //- //-
+      include 03_slider-aka-general
+      //- //-
+      //- include 04_actions-01-t
+      //- //-
       //-
-      //- include 03_types
-      //-
-      //- include 04_about
-      //-
-      //-
-      //-
-      //- include 05_process
+      //- include 05_slider-01
+      //- include 06_actions-02-t
+      //- include 07_slider-02
+      //- include 08_actions-03-t
+      //- include 09_slider-03
       //-
       include 10_contact
 
