@@ -1,9 +1,9 @@
-.page-window-systems .about {
-  background: url('../img/bg_white-wwindows.jpg');
+.page-article .article-essence {
+  // background: url('../img/bg_white-wwindows.jpg');
 }
 
 
-.page-window-systems .about {
+.page-article .article-essence {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -27,7 +27,7 @@
   }
 
   & .container {
-    padding: 100px 0;
+    padding: 5px 0 100px;
     @media #{$mobile-tablet} {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -44,29 +44,29 @@
 }
 
 
-.page-window-systems .PROTO {
+.page-article .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-article .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-article .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .about-title {
-  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+.page-article .article-essence-title {
+  @include font(normal, 700, 32px, 28px, 'Roboto');
   text-align: center;
   color: #444341;
   text-transform: uppercase;
@@ -79,7 +79,7 @@
 }
 
 
-.page-window-systems .divider {
+.page-article .divider {
   display: block;
   border: none;
   outline: none;
@@ -95,13 +95,26 @@
 }
 
 
-.page-window-systems .about-content__text {
-  width: 736px;
+.page-article .article-essence-content {
+  margin-bottom: 50px;
+}
+
+
+.page-article .article-essence-poster {
+  width: 1160px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+
+.page-article .article-essence-content__text {
+  display: block;
+  width: 926px;
   margin: 0 auto;
-  @include font(normal, 400, 18px, 27px, 'Roboto');
+  @include font(normal, 400, 18px, 28px, 'Roboto');
 
   color: #444341;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
@@ -115,21 +128,87 @@
 }
 
 
-.page-window-systems .PROTO {
+.page-article .article-essence-content__img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+.page-article .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-window-systems .PROTO {
-  & .CLASS{
+.page-article .article-essence-pager {
+  width: 926px;
+  height: 25px;
+  margin: 0 auto;
+  position: relative;
+  @include clearfix;
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444341;
+    opacity: .2;
   }
 }
 
 
-.page-window-systems .PROTO {
+.page-article .article-essence-pager {
+  & .pager-prev{
+    float: left;
+    padding-left: 20px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 8px;
+      height: 14px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAuElEQVQoU42RIQ7CQBREZ2iDICScBMEJWMIKTB1rKkiweCQ3wIMFhQBTCduWC3ASwioCCpZAsk1pSMu3/2Vm/nzixyilPGMuS8KGLO6FEL5f4wpECHL2BSil6sactwQDWE51kswzIAiCxv123QEYgJxonSze6h9ACNH0PUQAuyDGWqdrZ00pZYv2sbdAx8KO4vi4yeei7PdOANp8YnhI06gY+g+gyqIypPMsPdNBpUU5qLTqnFL2rBeBZFwVezQjRwAAAABJRU5ErkJggg==');
+    }
+  }
+}
+
+
+.page-article .article-essence-pager {
+  & .pager-next{
+    float: right;
+    padding-right: 20px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 8px;
+      height: 14px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAArklEQVQoU5XROw8BQRAH8P9QEdWK72MflNdQqGjplTqlXiu54prVbaNcn0Dhq6CQOyN7QjySvZhuJr9kXmS0PDMoE6I9tdYW+AoyRi3AvAQjy2888d7n74ZCYpSag3jFYCdEZ2itvT5RCUpk1AzMawC7RrM1cM5dQv0FHkiOwdgAvM8LJN770wcISOvuiEApAQemev8HBNSTMuEatgCO/4Noi+iQ0TWjh6o8ddWz7v1Gau8g7TTxAAAAAElFTkSuQmCC');
+    }
+  }
+}
+
+
+.page-article .article-essence-pager {
+  & .pager-date{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @include font(italic, 300, 14px, 14px, 'Roboto');
+    color: #444341;
+  }
+}
+
+
+.page-article .PROTO {
   & .CLASS{
 
   }
