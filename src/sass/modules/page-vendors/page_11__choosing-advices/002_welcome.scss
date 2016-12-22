@@ -1,4 +1,4 @@
-.page-fitments .welcome {
+.page-choosing-advices .welcome {
 
 
   // @media #{$mobile-tablet} {
@@ -7,7 +7,7 @@
 }
 
 
-.page-fitments .welcome {
+.page-choosing-advices .welcome {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -59,14 +59,14 @@
 }
 
 
-.page-fitments .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-fitments .welcome-thumb {
+.page-choosing-advices .welcome-thumb {
   height: 510px;
   float: left;
 
@@ -89,7 +89,7 @@
 }
 
 
-.page-fitments .welcome-thumb__img {
+.page-choosing-advices .welcome-thumb__img {
 
   background: #fff url('../img/003_welcome-img.jpg') no-repeat left 45px top -50px;
   height: 100%;
@@ -107,14 +107,14 @@
 }
 
 
-.page-fitments .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-fitments .welcome-content {
+.page-choosing-advices .welcome-content {
   background: url('../img/bg_white.jpg');
   // position: absolute;
   // bottom: 0;
@@ -144,7 +144,7 @@
 }
 
 
-.page-fitments .welcome-title {
+.page-choosing-advices .welcome-title {
   @include font(normal, 700, 32px, 25px, 'Roboto');
   text-align: center;
   color: #444341;
@@ -155,7 +155,7 @@
 }
 
 
-.page-fitments .welcome-text__item {
+.page-choosing-advices .welcome-text__item {
   @include font(normal, 400, 18px, 23px, 'Roboto');
   color: #444341;
   margin-bottom: 23px;
@@ -167,14 +167,14 @@
 
 
 
-.page-fitments .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-fitments .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
