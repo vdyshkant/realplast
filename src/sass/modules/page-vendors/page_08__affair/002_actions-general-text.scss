@@ -13,8 +13,18 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    min-width: 1160px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      padding: 0;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -81,11 +91,11 @@
 
 .page-affair .actions-general-text-subtitle {
   display: block;
-  @include font(normal, 400, 18px, 18px, 'Roboto');
+  @include font(normal, 400, 18px, 24px, 'Roboto');
   text-align: center;
   color: #444341;
   // text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   @media #{$mobile-tablet} {
 
@@ -94,7 +104,7 @@
 }
 
 
-.page-affair .divider {
+.page-affair .actions-general-text .divider {
   display: block;
   border: none;
   outline: none;

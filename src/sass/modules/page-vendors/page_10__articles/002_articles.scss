@@ -205,6 +205,7 @@
     @media #{$mobile} {
       min-height: 260px;
       width: auto;
+      margin-bottom: 15px;
     }
 
     // outline: 2px dashed violet;
@@ -299,7 +300,11 @@
 
 .page-articles .articles {
   & .articles__item-thumb__img{
-
+    display: block;
+    @media #{$mobile} {
+      width: 260px;
+      height: 260px;
+    }
   }
 }
 

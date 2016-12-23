@@ -49,7 +49,11 @@ section.articles
                 .articles__substrate
                   +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
                 a.articles__item-thumb(href="javascript:void(0)")
-                  img.articles__item-thumb__img(src='img/010_articles-02.png')
+                  //- img.articles__item-thumb__img(src='img/010_articles-02.png')
+                  picture.articles__item-thumb__img
+                    //- source(media='(min-width: 1160px)', srcset='img/013_balcon.png 1x')
+                    source(media='(min-width: 768px)', srcset='img/010_articles-02.png 1x')
+                    img.balcons-features-thumb__img(src='img/010_articles-02--mobile.png')
 
               .articles__item-right
                 a.articles__item-right__title(href="javascript:void(0)") Упрощённая технология для каждого
@@ -71,7 +75,11 @@ section.articles
                 .articles__substrate
                   +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
                 a.articles__item-thumb(href="javascript:void(0)")
-                  img.articles__item-thumb__img(src='img/010_articles-03.png')
+                  //- img.articles__item-thumb__img(src='img/010_articles-03.png')
+                  picture.articles__item-thumb__img
+                    //- source(media='(min-width: 1160px)', srcset='img/013_balcon.png 1x')
+                    source(media='(min-width: 768px)', srcset='img/010_articles-03.png 1x')
+                    img.balcons-features-thumb__img(src='img/010_articles-03--mobile.png')
 
               .articles__item-right
                 a.articles__item-right__title(href="javascript:void(0)") Новые веяния сквозь стекло
@@ -114,7 +122,11 @@ section.articles
                 .articles__substrate
                   +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
                 a.articles__item-thumb(href="javascript:void(0)")
-                  img.articles__item-thumb__img(src='img/010_articles-05.png')
+                  //- img.articles__item-thumb__img(src='img/010_articles-05.png')
+                  picture.articles__item-thumb__img
+                    //- source(media='(min-width: 1160px)', srcset='img/013_balcon.png 1x')
+                    source(media='(min-width: 768px)', srcset='img/010_articles-03.png 1x')
+                    img.balcons-features-thumb__img(src='img/010_articles-03--mobile.png')
 
               .articles__item-right
                 a.articles__item-right__title(href="javascript:void(0)") Пуленепробиваемое стекло
