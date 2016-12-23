@@ -82,6 +82,10 @@
     @media #{$tablet} {
       top: 80px;
     }
+
+    @media #{$mobile} {
+      content: none;
+    }
   }
 }
 
@@ -208,25 +212,32 @@
 }
 
 
+.page-choosing-advices .ternarius__item-desc {
+  @media #{$tablet} {
+    float: right;
+    width: 372px;
+  }
+  @media #{$mobile} {
+    padding: 0 10px;
+  }
+}
+
+
 .page-choosing-advices .ternarius__item-title {
   @include font(300, normal, 25px, 85px, 'Roboto');
   text-transform: uppercase;
   color: #fefefe;
   height: 85px;
-  text-align: center;
   margin-bottom: 25px;
+  text-align: center;
+
   @media #{$tablet} {
     width: 372px;
     margin-bottom: 15px;
   }
-}
 
-
-
-.page-choosing-advices .ternarius__item-desc {
-  @media #{$tablet} {
-    float: right;
-    width: 372px;
+  @media #{$mobile} {
+    text-align: left;
   }
 }
 
@@ -238,6 +249,10 @@
 
   @media #{$tablet} {
     padding-right: 0;
+  }
+
+  @media #{$mobile} {
+    padding: 0 0 35px;
   }
 }
 
