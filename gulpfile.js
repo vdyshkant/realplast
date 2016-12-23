@@ -54,6 +54,8 @@ gulp.task('pug', function() {
     'src/templates/pages/article.pug',
     'src/templates/pages/articles.pug',
     'src/templates/pages/choosingadvices.pug',
+    'src/templates/pages/contacts.pug',
+    'src/templates/pages/doors.pug',
     'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
