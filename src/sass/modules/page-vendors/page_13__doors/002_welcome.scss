@@ -91,16 +91,16 @@
 
 .page-choosing-advices .welcome-thumb__img {
 
-  background: #fff url('../img/011_welcome-img.jpg') no-repeat left 0px top 0px;
+  background: #fff url('../img/013_welcome-img.jpg') no-repeat left 0px top 0px;
   height: 100%;
 
   @media #{$tablet} {
 
-    background: #fff url('../img/003_welcome-img_tablet.jpg') no-repeat right 20px top 0px;
+    background: #fff url('../img/013_welcome-img_tablet.jpg') no-repeat right 20px top 0px;
   }
 
   @media #{$mobile} {
-    background: #fff url('../img/003_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
+    background: #fff url('../img/013_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
     width: 320px;
     margin: 0 auto;
   }
