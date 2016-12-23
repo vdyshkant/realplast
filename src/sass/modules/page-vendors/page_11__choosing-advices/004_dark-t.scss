@@ -1,29 +1,29 @@
-.page-glass-unit .differences {
+.page-choosing-advices .dark {
   background: url('../img/005_differences_bg.jpg');
+
+  position: relative;
 }
 
 
-.page-glass-unit .differences {
+.page-choosing-advices .dark {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    padding: 0 20px;
+    // padding: 0 20px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-
     @media #{$tablet} {
+      padding: 0 20px;
       min-width: 768px;
       max-width: 768px;
     }
 
     @media #{$mobile} {
-      min-width: 320px;
-      max-width: 320px;
-
       padding: 0 10px;
+      min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -36,221 +36,186 @@
   }
 
   & .container {
-    padding: 90px 0 100px;
-
-    @media #{$tablet} {
-      padding: 90px 0 100px;
-    }
-
-    @media #{$mobile} {
-      padding: 90px 0 50px;
+    padding: 85px 0 75px;
+    @media #{$mobile-tablet} {
+      padding-top: 55px;
+      padding-bottom: 65px;
     }
   }
 
-  & .differences-wrapper {
+  & .PROTO-wrapper {
     //
   }
 
-  & .differences-essence {
+  & .PROTO-essence {
     //
   }
 }
 
 
-.page-glass-unit .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-glass-unit .differences-title {
-    @include font(normal, 700, 36px, 34px, 'Roboto Condensed')
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-
-    margin-bottom: 25px;
-
-    @media #{$tablet} {
-      @include font(normal, 700, 22px, 54px, 'Roboto Condensed'); // 36/2 = 18
-      margin-bottom: 10px;
-    }
-
-    @media #{$mobile} {
-      @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
-      margin-bottom: 10px;
-    }
-}
-
-
-.page-glass-unit .differences-divider {
-  display: block;
-  width: 236px;
-  height: 1px;
-  background-color: #fff;
-
-  outline: none;
-  border: none;
-
-  margin: 0 auto 25px;
-}
-
-
-.page-glass-unit .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-glass-unit .differences-content {
-
-  @include font(normal, 400, 18px, 27px, 'Roboto');
-  color: #fff;
-
-
-  max-width: 740px;
-  margin: 0 auto;
-
-  @media #{$mobile} {
-    @include font(normal, 400, 15px, 21px, 'Roboto');
-  }
+.page-choosing-advices .dark-title-container {
+  text-align: center;
 }
 
 
-.page-glass-unit .PROTO {
-  & .CLASS{
+.page-choosing-advices .dark-title {
+  @include font(normal, 700, 36px, 64px, 'Roboto'); // 32/2==16~~ +/- 15
+  color: #ffffff;
+  // text-transform: uppercase;
+  margin-bottom: 15px;
 
-  }
-}
-
-
-.page-glass-unit .differences-content__text {
-  margin-bottom: 50px;
-}
-
-
-// TABLE
-.page-glass-unit .differences-table {
-  @media #{$tablet-wide} {
-    border-left: 1px solid white;
-  }
-}
-
-
-.page-glass-unit .differences-table__row {
-  display: flex;
-
-  @media #{$mobile} {
-    display: block;
-    @include clearfix;
-
-    margin-bottom: 30px;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-
-    &:last-child {
-      margin-bottom: 0;
-      // border-bottom: none;
-    }
-  }
-
-  &:last-child {
-    & > .differences-table__cell {
-      border-bottom: 1px solid white;
-
-      @media #{$mobile} {
-        border-bottom: none;
-      }
-    }
-  }
-}
-
-
-.page-glass-unit .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-.page-glass-unit .differences-table__cell {
-  border: 1px solid white;
-  border-bottom: none;
-  border-left: none;
-
-  width: 96px;
-
-  padding: 18px 20px;
-
+  // background: url('../img/bg_white.jpg');
+  display: inline-block;
+  padding: 0 30px;
   position: relative;
 
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto');
+  }
+
   @media #{$mobile} {
-    float: left;
-    width: 25%;
-    min-height: 50px;
-    padding: 14px 20px;
+    @include font(normal, 700, 22px, 32px, 'Roboto');
+    text-align: left;
+    padding: 0;
   }
 
-  &:not(:first-child) {
-    & .differences-table__text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  &::after,
+  &::before {
+
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background: #fff;
+    top: 32px;
+
+    @media #{$tablet} {
+      top: 27px;
     }
-  }
-}
-
-
-.page-glass-unit .differences-table__row > .differences-table__cell {
-  &:first-child {
-    width: 360px;
 
     @media #{$mobile} {
-      width: 100%;
-      text-align: center;
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+    // z-index: -1;
+
+  }
+}
+
+
+.page-choosing-advices .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-choosing-advices .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-choosing-advices .dark-container {
+  @include clearfix;
+}
+
+
+.page-choosing-advices .dark-content__item {
+  &--left,
+  &--right,
+  &--mid {
+    float: left;
+    @media #{$wide} {
+      margin-right: 20px;
+    }
+  }
+
+  &--left,
+  &--right {
+    width: 266px;
+  }
+
+
+  &--left {
+    @media #{$tablet} {
+      margin-right: 16px;
+    }
+    @media #{$mobile} {
+      margin-bottom: 30px;
+      width: 300px;
+      height: 280px;
+    }
+  }
+  &--right {
+    @media #{$mobile-tablet} {
+      display: none;
+    }
+  }
+  &--mid {
+    margin-right: 0;
+    @media #{$wide} {
+      width: 550px;
+    }
+    @media #{$tablet} {
+      width: 444px;
     }
   }
 }
 
 
-.page-glass-unit .differences-table__mobile-row {
-  display: none;
-  @include clearfix;
+.page-choosing-advices .dark__item-text {
+  @include font(normal, 400, 18px, 28px, 'Roboto');
+  color: #ffffff;
 
-  @media #{$mobile} {
-    display: block;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0px;
   }
 }
 
 
-.page-glass-unit .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-glass-unit .differences-content__row {
-  @include clearfix;
-}
-
-
-
-
-.page-glass-unit .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-
-
-
-.page-glass-unit .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
