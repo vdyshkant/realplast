@@ -259,7 +259,9 @@
   }
 
   &__img {
-    width: 280px;
+    @media #{$mobile} {
+      width: 280px;
+    }
   }
 }
 
