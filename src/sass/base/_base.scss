@@ -149,3 +149,12 @@ img {
       margin-bottom: 4px;
   }
 }
+
+
+.overcrumbs {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
