@@ -30,9 +30,11 @@
 
     @media #{$tablet} {
       max-width: 768px;
+      min-width: 768px;
     }
 
     @media #{$mobile} {
+      max-width: 320px;
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {

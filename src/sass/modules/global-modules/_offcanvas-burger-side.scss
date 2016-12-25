@@ -35,6 +35,10 @@
     display: none;
   }
 
+  @media #{$tablet} {
+    transition: none;
+  }
+
 
 }
 
