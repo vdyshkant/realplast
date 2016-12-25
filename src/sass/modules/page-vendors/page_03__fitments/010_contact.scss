@@ -8,15 +8,27 @@
 .page-fitments .contact {
   & .shell {
     margin: 0 auto;
-    max-width: 1160px;
-
     padding: 0 10px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    max-width: 1160px;
+    min-width: 1160px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      // padding: 0 20px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -29,14 +41,14 @@
   }
 
   & .container {
-    padding: 100px 0 55px;
+    padding: 90px 0 55px;
 
     @media #{$tablet} {
-      padding: 75px 0 65px;
+      padding: 65px 0 65px;
     }
 
     @media #{$mobile} {
-      padding: 70px 0 35px;
+      padding: 60px 0 35px;
     }
   }
 
@@ -52,35 +64,35 @@
 
 
 .page-fitments .contact-title {
-  @include font(normal, 700, 36px, 34px, 'Roboto Condensed');
+  @include font(normal, 700, 36px, 64px, 'Roboto Condensed'); // 64-28 = 36/2 = 20
   color: #444341;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 
   @media #{$tablet} {
-    @include font(normal, 700, 22px, 21px, 'Roboto Condensed');
-    margin-bottom: 25px;
+    @include font(normal, 700, 22px, 33px, 'Roboto Condensed'); // 17///33-17 = 16/2 = 8 = 10
+    margin-bottom: 15px;
   }
 
   @media #{$mobile} {
     @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
 
 .page-fitments .contact__desc {
-  @include font(normal, 400, 18px, 18px, 'Roboto');
+  @include font(normal, 400, 18px, 28px, 'Roboto'); // 28-11(12) === 16
   text-align: center;
   color: #444341;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @media #{$tablet} {
-    @include font(normal, 400, 18px, 27px, 'Roboto');
+    @include font(normal, 400, 18px, 27px, 'Roboto'); // 11 /// 27-11 / 2 = 8 = 10
     width: 576px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   @media #{$mobile} {
