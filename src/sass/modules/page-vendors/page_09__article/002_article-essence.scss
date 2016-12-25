@@ -211,8 +211,9 @@
   }
 
   @media #{$mobile} {
-    width: auto;
-    margin: 0 70px;
+    width: 300px;
+    // margin: 0 70px;
+    padding: 0 60px;
     padding-top: 45px;
     height: auto;
   }
@@ -227,7 +228,10 @@
     opacity: .2;
 
     @media #{$mobile} {
-      display: none;
+      // display: none;
+      bottom: -30px;
+      width: 300px;
+      left: 0;
     }
   }
 }
