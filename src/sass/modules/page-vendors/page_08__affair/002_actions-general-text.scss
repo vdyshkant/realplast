@@ -25,6 +25,8 @@
     @media #{$mobile} {
       min-width: 320px;
       max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -37,7 +39,7 @@
   }
 
   & .container {
-    padding: 10px 0 50px;
+    padding: 0px 0 50px;
     @media #{$mobile-tablet} {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -76,11 +78,11 @@
 
 
 .page-affair .actions-general-text-title {
-  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+  @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 18/2==9~~ +/- 10
   text-align: center;
   color: #444341;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 
   @media #{$mobile-tablet} {
 
@@ -91,7 +93,7 @@
 
 .page-affair .actions-general-text-subtitle {
   display: block;
-  @include font(normal, 400, 18px, 24px, 'Roboto');
+  @include font(normal, 400, 18px, 24px, 'Roboto'); //6/2==3==5
   text-align: center;
   color: #444341;
   // text-transform: uppercase;

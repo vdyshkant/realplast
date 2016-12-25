@@ -1,5 +1,6 @@
 .page-affair .breadcrumbs {
   // bg 1
+  margin-bottom: 60px;
   @media #{$mobile-tablet} {
     // margin-top: 60px;
   }
@@ -22,13 +23,13 @@
     @media #{$tablet} {
       min-width: 768px;
       max-width: 768px;
-
-      padding: 0;
     }
 
     @media #{$mobile} {
       min-width: 320px;
       max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -41,7 +42,7 @@
   }
 
   & .container {
-    padding: 20px 0 70px;
+    padding: 20px 0 10px;
 
     @media #{$tablet} {
       padding-bottom: 30px;

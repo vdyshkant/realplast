@@ -174,12 +174,13 @@
 }
 
 
-.page-affair .stock__content {
+.page-affair .slider-03 .stock__content {
   & .stock__title{
     @include font(normal, 700, 32px, 29px, 'Roboto');
     color: #fff4f4;
     text-align: center;
     margin-bottom: 15px;
+    text-transform: uppercase;
 
     & span {
       position: relative;
@@ -438,11 +439,11 @@
  *	It is used so that your own element will not need to be altered
  **/
 
-.page-affair #DateCountdown0,
-.page-affair #DateCountdown1,
-.page-affair #DateCountdown2,
-.page-affair #DateCountdown3,
-.page-affair #DateCountdown4 {
+ .page-affair .dateCountDown-03-1,
+ .page-affair .dateCountDown-03-2,
+ .page-affair .dateCountDown-03-3,
+ .page-affair .dateCountDown-03-4,
+ .page-affair .dateCountDown-03-5 {
   // position: absolute;
   // left: 0;
   // bottom: 0;
