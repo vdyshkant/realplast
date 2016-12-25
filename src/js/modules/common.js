@@ -1094,7 +1094,7 @@ $(document).ready(function() {
         // $(this).siblings().removeClass('active');
         $('.choose-content__wrapper').fadeOut(0);
 
-                                         console.log('hidden node: ' + $(this).attr('data-id'));
+                                        //  console.log('hidden node: ' + $(this).attr('data-id'));
          $('#' + $(this).attr('data-id')).fadeIn(0);
 
         // removing classes before assigning active for recently clicked
@@ -1135,7 +1135,7 @@ $(document).ready(function() {
 
 
           if ($(this).is('.active')) {
-            console.log('triggers "if"');
+            // console.log('triggers "if"');
             // removing classes before assigning active for recently clicked
             $('.choose-menu__item.transform').siblings().removeClass('active');
             $(this).find('.jsFaqItem').removeClass('active');
@@ -1154,7 +1154,7 @@ $(document).ready(function() {
               // eof ^
 
           } else {
-            console.log('triggers "else"');
+            // console.log('triggers "else"');
             // removing classes before assigning active for recently clicked
 
             // $('.choose-menu__item').siblings().removeClass('active');
@@ -1258,7 +1258,7 @@ $(document).ready(function() {
 
 
 		$('.js-tabs li[data-id]').click(function() {
-				console.log($(this));
+				// console.log($(this));
 				if ($(this).hasClass('active')) {
 						return;
 				}
@@ -1284,7 +1284,7 @@ $(document).ready(function() {
 
 
 		$('.js-tabs li[data-id]').click(function() {
-				console.log($(this));
+				// console.log($(this));
 				if ($(this).hasClass('active')) {
 						return;
 				}
@@ -1536,7 +1536,7 @@ $(document).ready(function() {
           var anotherContentNodes = $(this).closest('.js-parent').siblings('.js-parent').find('.chose-content__wrapper');
 
           if (parentNode.is('.active')) {
-            console.log('triggers "if"');
+            // console.log('triggers "if"');
 
             // removing classes and reseting positions before assigning active for recently clicked
             contentNode.slideUp(200);
@@ -1544,7 +1544,7 @@ $(document).ready(function() {
             // eof last comment^^^^
 
           } else {
-            console.log('triggers "else"');
+            // console.log('triggers "else"');
 
             contentNode.slideDown(200);
             parentNode.addClass('active');
@@ -1595,7 +1595,7 @@ $(document).ready(function() {
           var anotherContentNodes = $(this).closest('.js-parent').siblings('.js-parent').find('.chose-content__wrapper');
 
           if (parentNode.is('.active')) {
-            console.log('triggers "if"');
+            // console.log('triggers "if"');
 
             // removing classes and reseting positions before assigning active for recently clicked
             contentNode.slideUp(200);
@@ -1603,7 +1603,7 @@ $(document).ready(function() {
             // eof last comment^^^^
 
           } else {
-            console.log('triggers "else"');
+            // console.log('triggers "else"');
 
             contentNode.slideDown(200);
             parentNode.addClass('active');
@@ -1795,33 +1795,56 @@ $(document).ready(function() {
 
 
 // breadcrumbs '...'
-// if ($(window).width() < 768) {
-// 		(function($) {
-// 				// You pass-in jQuery and then alias it with the $-sign
-// 				// So your internal code doesn't change
-// 				var count = $('.breadcrumbs li').length;
-// 				if (count >= 3) {
-// 						$('.breadcrumbs li:nth-child(n+2):not(:last-child) a').html('...');
-// 				}
-// 				$('.breadcrumbs li:last-child a').addClass('overcrumbs');
-// 				// http://stackoverflow.com/questions/4291151/jquery-count-child-elements
-//
-// 				// counting width for whole vreadcrumbs
-// 				var parent = $('.breadcrumbs').width();
-// 				// var first = $('.breadcrumbs li:not(:last-child)').outerWidth(true);
-//
-// 				var w = 0;
-//
-// 				jQuery('.breadcrumbs li:last-child').each(function() {
-// 						jQuery(this).prevAll().each(function() {
-// 								w += $(this).outerWidth(true);
-// 								console.log(w);
-// 						});
-// 				});
-// 				var newWidthForLastEl = parent - w - 10;
-//
-// 				$('.breadcrumbs li:last-child').width(newWidthForLastEl);
-//
-// 		})(jQuery);
-// }
+
+
+(function($) {
+
+    var nativeInnerHtml = $('.breadcrumbs li:nth-child(n+2):not(:last-child) a').html();
+
+    window.addEventListener("resize", function() {
+      cutBreadcrumbs();
+
+      if ($(window).width() > 768) {
+
+        $('.breadcrumbs li:last-child a').removeClass('overcrumbs');
+        $('.breadcrumbs li:nth-child(n+2):not(:last-child) a').html(nativeInnerHtml);
+      }
+
+    });
+
+    cutBreadcrumbs();
+
+
+    function cutBreadcrumbs() {
+      if ($(window).width() < 768) {
+          // You pass-in jQuery and then alias it with the $-sign
+          // So your internal code doesn't change
+          var count = $('.breadcrumbs li').length;
+          if (count >= 3) {
+              $('.breadcrumbs li:nth-child(n+2):not(:last-child) a').html('...');
+          }
+          $('.breadcrumbs li:last-child a').addClass('overcrumbs');
+          // http://stackoverflow.com/questions/4291151/jquery-count-child-elements
+
+          // counting width for whole vreadcrumbs
+          var parent = $('.breadcrumbs .shell').width();
+              parent += 20; // px, eg shell paddings
+          // var first = $('.breadcrumbs li:not(:last-child)').outerWidth(true);
+
+          var w = 0;
+
+          jQuery('.breadcrumbs li:last-child').each(function() {
+              jQuery(this).prevAll().each(function() {
+                  w += $(this).outerWidth(true);
+                  // console.log(w);
+              });
+          });
+          var newWidthForLastEl = parent - w - 10;
+
+          $('.breadcrumbs li:last-child').width(newWidthForLastEl);
+      }
+    }
+
+})(jQuery);
+
 // EOF breadcrumbs '...'

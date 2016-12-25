@@ -7,6 +7,7 @@
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
+    min-width: 1160px;
 
     // padding: 0 20px;
 
@@ -20,6 +21,7 @@
 
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -38,7 +40,7 @@
       padding-bottom: 70px;
     }
     @media #{$mobile} {
-      padding-top: 40px;
+      // padding-top: 40px;
       // padding-sbottom: 70px;
     }
   }
@@ -75,18 +77,19 @@
 
 
 .page-article .article-essence-title {
-  @include font(normal, 700, 32px, 28px, 'Roboto');
+  @include font(normal, 700, 32px, 45px, 'Roboto'); // 24 -- 45-24 = 20 / 2 ====10
   text-align: center;
   color: #444341;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   @media #{$tablet} {
-    @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
+    @include font(normal, 700, 22px, 33px, 'Roboto Condensed');// 17 /// 33-17 = 16 / 2 = 8 === 10
+    margin-bottom: 20px;
   }
 
   @media #{$mobile} {
-    @include font(normal, 700, 22px, 34px, 'Roboto Condensed');
+    @include font(normal, 700, 22px, 33px, 'Roboto Condensed');//
   }
 }
 
@@ -103,15 +106,19 @@
   background-color: #333;
   margin-bottom: 30px;
 
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
+
 
 }
 
 
 .page-article .article-essence-content {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   @media #{$mobile} {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -119,7 +126,7 @@
 .page-article .article-essence-poster {
   width: 1160px;
   height: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   @media #{$tablet} {
     height: 331px;
@@ -167,7 +174,7 @@
 
 .page-article .article-essence-content__img {
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   @media #{$tablet-wide} {
     float: left;
@@ -207,6 +214,7 @@
     width: auto;
     margin: 0 70px;
     padding-top: 45px;
+    height: auto;
   }
 
   &::after {
