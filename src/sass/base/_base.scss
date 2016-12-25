@@ -101,11 +101,14 @@ img {
 
 .dev_contents {
   padding: 40px;
+  @include clearfix;
 }
 
 
 .dev_contents__testServer {
   margin-bottom: 100px;
+  float: left;
+  width: 50%;
 
   & h1,
   & a {
@@ -120,6 +123,10 @@ img {
 }
 
 .dev_contents__localhost {
+
+  float: right;
+  width: 50%;
+
   & h1,
   & a {
     color: #819F7F;
