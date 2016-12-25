@@ -23,7 +23,7 @@ $(window).load(function() {
    				nextSelector: ('.slider-aka-general-controls__right'),
 
            // looping
-           auto: true,
+          //  auto: true,
            infiniteLoop: true,
            pause: 5000
    		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){

@@ -32,7 +32,7 @@
   }
 
   & .container {
-    height: 629px;
+    height: 630px;
     position: relative;
 
     @media #{$mobile} {
@@ -60,11 +60,17 @@
 .page-affair .slider-02 {
   & .slider-02__item__content{
     background: url('../img/slider-sales-01_bg.png') no-repeat;
-    // background-size: cover;
+    background-size: cover;
 
-    height: 629px;
+    height: 630px;
+
+    @media #{$tablet} {
+      background-position: -90px 0px;
+    }
 
     @media #{$mobile} {
+      background: url('../img/slider-sales_bg.png') no-repeat;
+      background-size: cover;
       height: 180px;
     }
   }
@@ -75,7 +81,7 @@
   & .slider-02__item{
     display: block;
     position: relative;
-    height: 629px;
+    height: 630px;
 
     @media #{$mobile} {
       // height: 180px;
@@ -94,7 +100,7 @@
       background: rgba(255, 166, 0, 0.36);
     }
     &:nth-child(2) {
-      // background: url('../img/slider-02_bg.png') no-repeat;
+      // background: url('../img/slider-sales_bg.png') no-repeat;
       // background-size: cover;
     }
   }
@@ -126,11 +132,11 @@
 .page-affair .slider-02 {
   & .slider-02__item__stock .stock__content {
     background: url('../img/slider-sales_stock_bg.png') no-repeat;
-    background-position: 0 -40px;
-    height: 430px;
+    background-position: 0 -38px;
+    height: 445px;
     width: 370px;
 
-    padding: 35px 40px 20px;
+    padding: 40px 40px 20px;
 
     position: relative;
     z-index: 2;
@@ -138,7 +144,7 @@
     @media #{$mobile} {
       width: 320px;
       height: 400px;
-      padding-top: 20px;
+      padding-top: 10px;
       padding-right: 0;
       padding-left: 0;
       background-position: -20px -68px;
@@ -155,16 +161,23 @@
     background: url('../img/slider-sales_stock_bg-timer.png') no-repeat;
     background-position: 0 -40px;
     height: 160px;
-    width: 100%;
+    width: 360px;
 
-    padding-top: 55px;
+    padding-top: 50px;
+
+    position: relative;
+    top: -15px;
+    left: 3px;
 
     @media #{$mobile} {
+      width: 320px;
       // margin-top: -20px;
       // margin-top: 0;
-      background: url('../img/slider-sales_stock_bg-timer.png') no-repeat -20px -40px,
+      background: url('../img/slider-sales_stock_bg-timer.png') no-repeat -20px -22px,
                   url('../img/bg_white.jpg');
       position: relative;
+      padding-top: 65px;
+      height: 175px;
       z-index: 1;
     }
 
@@ -176,7 +189,7 @@
 
 .page-affair .slider-02 .stock__content {
   & .stock__title{
-    @include font(normal, 700, 32px, 29px, 'Roboto');
+    @include font(normal, 700, 32px, 44px, 'Roboto'); // 23 === 21 / 2 == 10
     color: #fff4f4;
     text-align: center;
     margin-bottom: 15px;
@@ -192,18 +205,22 @@
         background: #fff;
         left: 0;
         right: 0;
-        bottom: -1px;
+        bottom: -3px;
+
+        @media #{$tablet} {
+          display: none;
+        }
       }
     }
   }
 }
 
 
-.page-affair .stock__content {
+.page-affair .slider-02 .stock__content {
   & .stock__desc{
     width: 210px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @include font(normal, 700, 18px, 27px, 'Roboto');
     color: #fff4f4;
     text-align: center;
@@ -212,7 +229,7 @@
 
 
 // FORM
-.page-affair .stock__form {
+.page-affair .slider-02 .stock__form {
 
   display: block;
 
@@ -236,7 +253,7 @@
 }
 
 
-.page-affair .stock__content {
+.page-affair .slider-02 .stock__content {
   & .stock__btn__wrapper {
     min-height: 50px;
     position: relative;
@@ -245,7 +262,7 @@
 }
 
 
-.page-affair .stock__content {
+.page-affair .slider-02 .stock__content {
   & .stock__btn {
     width: 280px;
     height: 50px;
@@ -285,9 +302,10 @@
 }
 
 
-.page-affair .stock__content {
+.page-affair .slider-02 .stock__content {
   & .stock__more {
-    display: block;
+
+    display: none;
     @include font(italic, 300, 14px, 14px, 'Roboto');
     color: #f9f9f9;
     text-decoration: underline;
@@ -300,7 +318,7 @@
 }
 
 
-.page-affair .stock__timer {
+.page-affair .slider-02 .stock__timer {
   & .stock__timer-title{
     @include font(normal, 700, 18px, 17px, 'Roboto');
     color: #444341;
@@ -320,28 +338,28 @@
 // }
 
 
-.page-affair .stock__timer {
+.page-affair .slider-02 .stock__timer {
   & .stock__timer-num{
     @include font(normal, 700, 18px, 30px, 'Roboto');
   }
 }
 
 
-.page-affair .stock__timer {
+.page-affair .slider-02 .stock__timer {
   & .stock__timer-def{
     @include font(normal, 400, 12px, 30px, 'Roboto');
   }
 }
 
 
-.page-affair .stock__content {
+.page-affair .slider-02 .stock__content {
   & .97987987987987987987897987987989878{
 
   }
 }
 
 
-.page-affair .stock__timer {
+.page-affair .slider-02 .stock__timer {
   & .stock__timer-essence{
     display: flex;
     flex-direction: row;
@@ -439,11 +457,11 @@
  *	It is used so that your own element will not need to be altered
  **/
 
- .page-affair .dateCountDown-02-1,
- .page-affair .dateCountDown-02-2,
- .page-affair .dateCountDown-02-3,
- .page-affair .dateCountDown-02-4,
- .page-affair .dateCountDown-02-5 {
+ .page-affair .slider-02 .dateCountDown-02-1,
+ .page-affair .slider-02 .dateCountDown-02-2,
+ .page-affair .slider-02 .dateCountDown-02-3,
+ .page-affair .slider-02 .dateCountDown-02-4,
+ .page-affair .slider-02 .dateCountDown-02-5 {
   // position: absolute;
   // left: 0;
   // bottom: 0;
@@ -458,7 +476,7 @@
   // background-color: #E0E8EF;
 }
 
-.page-affair .time_circles {
+.page-affair .slider-02 .time_circles {
     position: relative;
     width: 100%;
     height: 100%;
@@ -468,7 +486,7 @@
  *	This is all the elements used to house all text used
  * in time circles
  **/
-.page-affair .time_circles > div {
+.page-affair .slider-02 .time_circles > div {
     position: absolute;
     text-align: center;
 }
@@ -476,7 +494,7 @@
 /**
  *	Titles (Days, Hours, etc)
  **/
-.page-affair .time_circles > div > h4 {
+.page-affair .slider-02 .time_circles > div > h4 {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -496,7 +514,7 @@
 /**
  *	Time numbers, ie: 12
  **/
-.page-affair .time_circles > div > span {
+.page-affair .slider-02 .time_circles > div > span {
     margin: 0;
     padding: 0;
     display: block;

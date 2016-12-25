@@ -1,8 +1,9 @@
 .page-affair .breadcrumbs {
   // bg 1
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   @media #{$mobile-tablet} {
     // margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 

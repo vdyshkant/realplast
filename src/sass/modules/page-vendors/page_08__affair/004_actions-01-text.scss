@@ -1,11 +1,11 @@
-.page-affair .actions-text-01 {
+.page-affair .actions-text {
   // background: url('../img/bg_white-wwindows.jpg');
 
   position: relative;
 }
 
 
-.page-affair .actions-text-01 {
+.page-affair .actions-text {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -42,9 +42,14 @@
 
   & .container {
     padding: 90px 0 30px;
-    @media #{$mobile-tablet} {
-      padding-top: 70px;
-      padding-bottom: 70px;
+
+    @media #{$tablet} {
+      padding-top: 65px;
+      padding-bottom: 35px;
+    }
+
+    @media #{$mobile} {
+
     }
   }
 
@@ -72,50 +77,93 @@
 }
 
 
-.page-affair .actions-text-01-title-container {
+.page-affair .actions-text-title-container {
   text-align: center;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 120px;
-    width: 100%;
-    height: 1px;
-    background: #333;
-    z-index: -1;
+  min-height: 54px;
 
-    @media #{$tablet} {
-      width: 728px;
-      top: 100px;
-      left: 20px;
-      right: auto;
-    }
-
-    @media #{$mobile} {
-      display: none;
-    }
+  @media #{$tablet} {
+    overflow: hidden;
+    margin: 0 20px;
   }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 120px;
+  //   width: 100%;
+  //   height: 1px;
+  //   background: #333;
+  //   z-index: -1;
+  //
+  //   @media #{$tablet} {
+  //     width: 728px;
+  //     top: 100px;
+  //     left: 20px;
+  //     right: auto;
+  //   }
+  //
+  //   @media #{$mobile} {
+  //     display: none;
+  //   }
+  // }
+
 }
 
 
-.page-affair .actions-text-01-title {
+.page-affair .actions-text-title {
+
   @include font(normal, 700, 32px, 54px, 'Roboto Condensed');
   color: #444341;
   // text-transform: uppercase;
   margin-bottom: 15px;
 
-  background: url(../img/bg_white.jpg);
+  // background: url(../img/bg_white.jpg);
   display: inline-block;
+  padding: 0 30px;
 
-  @media #{$wide} {
+  @media #{$tablet} {
 
-    padding: 0 30px;
+    padding: 0 40px;
   }
+
 
   @media #{$mobile-tablet} {
 
     @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+  }
+
+  position: relative;
+
+  &::after,
+  &::before {
+
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background: #333;
+    top: 50%;
+
+    @media #{$tablet} {
+      top: 50%;
+      margin-top: -1px;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+    // z-index: -1;
+
   }
 
 
@@ -138,7 +186,7 @@
 }
 
 
-.page-affair .actions-text-01-subtitle {
+.page-affair .actions-text-subtitle {
   max-width: 733px;
   margin: 0 auto;
   @include font(normal, 400, 18px, 27px, 'Roboto');
