@@ -2,6 +2,11 @@
 
 .page-choosing-advices .contact {
   background: url('../img/bg_tan.jpg');
+
+  @media #{$mobile-tablet} {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 

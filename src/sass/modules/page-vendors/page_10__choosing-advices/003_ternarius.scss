@@ -36,6 +36,9 @@
 
   & .container {
     padding: 100px 0 100px;
+    @media #{$tablet} {
+      overflow: hidden;
+    }
     @media #{$mobile-tablet} {
       padding-top: 70px;
       padding-bottom: 0;
@@ -68,25 +71,25 @@
 
 .page-choosing-advices .ternarius-title-container {
   text-align: center;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 130px;
-    width: 100%;
-    height: 1px;
-    background: #333;
-    z-index: -1;
-
-    @media #{$tablet} {
-      top: 80px;
-    }
-
-    @media #{$mobile} {
-      content: none;
-    }
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 130px;
+  //   width: 100%;
+  //   height: 1px;
+  //   background: #333;
+  //   z-index: -1;
+  //
+  //   @media #{$tablet} {
+  //     top: 80px;
+  //   }
+  //
+  //   @media #{$mobile} {
+  //     content: none;
+  //   }
+  // }
 }
 
 
@@ -96,13 +99,45 @@
   // text-transform: uppercase;
   margin-bottom: 60px;
 
-  background: url('../img/bg_white.jpg');
   display: inline-block;
   padding: 0 30px;
 
   @media #{$mobile-tablet} {
 
     @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
+  }
+
+  position: relative;
+
+  &::after,
+  &::before {
+
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background: #333;
+    top: 32px;
+
+    @media #{$tablet} {
+      top: 50%;
+      // margin-top: -1px;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+    // z-index: -1;
+
   }
 }
 

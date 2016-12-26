@@ -2,6 +2,11 @@
   background: url('../img/005_differences_bg.jpg');
 
   position: relative;
+
+  @media #{$mobile-tablet} {
+    box-shadow: 0px 4px 7px 0px rgba(26, 47, 60, 0.21);
+    z-index: 2;
+  }
 }
 
 
@@ -37,6 +42,10 @@
 
   & .container {
     padding: 85px 0 75px;
+
+    @media #{$tablet} {
+      overflow: hidden;
+    }
     @media #{$mobile-tablet} {
       padding-top: 55px;
       padding-bottom: 65px;
