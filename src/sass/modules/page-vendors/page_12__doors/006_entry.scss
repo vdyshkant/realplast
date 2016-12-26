@@ -1,11 +1,13 @@
-.page-entry .balcons {
+.page-doors .entry {
   background: url('../img/005_differences_bg.jpg');
 
   position: relative;
+
+  box-shadow: 0px 4px 7px 0px rgba(26, 47, 60, 0.21);
 }
 
 
-.page-entry .balcons {
+.page-doors .entry {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -42,6 +44,9 @@
       // padding-top: 55px;
       // padding-bottom: 65px;
     }
+    @media #{$mobile} {
+      padding-bottom: 80px;
+    }
   }
 
   & .PROTO-wrapper {
@@ -54,52 +59,53 @@
 }
 
 
-.page-entry .PROTO {
+.page-doors .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-entry .PROTO {
+.page-doors .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-entry .balcons-title-container {
+.page-doors .entry-title-container {
   text-align: center;
 }
 
 
-.page-entry .balcons-title {
+.page-doors .entry-title {
   @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 22/2==11~~ +/- 10
   color: #ffffff;
   text-transform: uppercase;
   // text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   // background: url('../img/bg_white.jpg');
   display: inline-block;
 
   @media #{$tablet} {
-    @include font(normal, 700, 22px, 54px, 'Roboto');
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
   }
 
   @media #{$mobile} {
-    @include font(normal, 700, 22px, 32px, 'Roboto');
-    text-align: left;
-    padding: 0;
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
   }
 
 }
 
-.page-entry .balcons-advices-title {
+.page-doors .entry-advices-title {
   text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+  }
 }
 
-.page-entry .balcons-advices-title-text {
+.page-doors .entry-advices-title-text {
   @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 22/2==11~~ +/- 10
   color: #ffffff;
   text-transform: uppercase;
@@ -116,9 +122,9 @@
   }
 
   @media #{$mobile} {
-    @include font(normal, 700, 22px, 32px, 'Roboto');
-    text-align: left;
+    @include font(normal, 700, 22px, 54px, 'Roboto');
     padding: 0;
+    text-transform: none;
   }
 
   &::after,
@@ -152,10 +158,17 @@
   }
 }
 
-.page-entry .balcons-advices-column-num {
+.page-doors .entry-advices-column-num {
+  top: 0;
+  left: 0;
+  @media #{$wide} {
+    top: 20px;
+    left: 20px;
+  }
+  @media #{$tablet} {
+    left: -5px;
+  }
   position: absolute;
-  top: 20px;
-  left: 20px;
   @include font(normal, 700, 150px, 54px, 'Roboto Condensed');
   color: #ffffff;
   text-transform: uppercase;
@@ -163,23 +176,37 @@
 }
 
 
-.page-entry .balcons-advices-column-title {
+.page-doors .entry-advices-column-title {
   @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
   color: #ffffff;
   margin-bottom: 15px;
   text-align: center;
 
   position: relative;
+
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    text-align: left;
+    padding-left: 35px;
+    margin-bottom: 0;
+  }
 }
 
 
-.page-entry .balcons-advices-column-text {
-  @include font(normal, 700, 18px, 28px, 'Roboto');
+.page-doors .entry-advices-column-text {
+  @include font(normal, 400, 18px, 28px, 'Roboto');
   color: #ffffff;
 }
 
 
-.page-entry .divider {
+.page-doors .divider {
   display: block;
   border: none;
   outline: none;
@@ -195,16 +222,22 @@
 }
 
 
-.page-entry .PROTO {
+.page-doors .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-entry .balcons-container {
+.page-doors .entry-container {
   @include clearfix;
   margin-bottom: 95px;
+  @media #{$tablet} {
+    margin-bottom: 50px;
+  }
+  @media #{$mobile} {
+    margin-bottom: 10px;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -213,20 +246,46 @@
 
 
 
-.page-entry .balcons-features-thumb {
+.page-doors .entry-features-thumb {
   float: left;
-  width: 455px;
   margin-right: 18px;
+  @media #{$wide} {
+    width: 455px;
+  }
+  @media #{$tablet} {
+    width: 267px;
+  }
+  @media #{$mobile} {
+    width: 280px;
+    float:none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  &__img {
+    @media #{$mobile} {
+      width: 280px;
+    }
+  }
 }
 
 
-.page-entry .balcons-features-list {
-  float: right;
-  width: 647px;
+.page-doors .entry-features-list {
+  @media #{$tablet-wide} {
+      float: right;
+      width: 647px;
+  }
+  @media #{$tablet} {
+    width: 443px;
+  }
+  @media #{$mobile} {
+
+  }
 }
 
 
-.page-entry .balcons-features-list-item {
+.page-doors .entry-features-list-item {
   @include font(normal, 400, 18px, 28px, 'Roboto');
   color: #ffffff;
     position: relative;
@@ -250,38 +309,50 @@
 }
 
 
-.page-entry .PROTO {
+.page-doors .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-entry .balcons-advices-columns {
-  @include clearfix;
+.page-doors .entry-advices-columns {
+  @media #{$wide} {
+    @include clearfix;
+  }
 }
 
 
-.page-entry .balcons-advices-column {
+.page-doors .entry-advices-column {
   float: left;
-  width: 360px;
-  padding: 0 20px;
-  margin-right: 20px;
   position: relative;
+  @media #{$wide} {
+    width: 360px;
+    padding: 0 20px;
+
+    margin-right: 20px;
+  }
+  @media #{$tablet} {
+    margin-bottom: 50px;
+  }
+  @media #{$mobile} {
+    margin-bottom: 75px;
+  }
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 
-.page-entry .PROTO {
+.page-doors .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-entry .PROTO {
+.page-doors .PROTO {
   & .CLASS{
 
   }

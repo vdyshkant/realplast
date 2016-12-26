@@ -98,6 +98,9 @@
 
 .page-doors .balcons-advices-title {
   text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+  }
 }
 
 .page-doors .balcons-advices-title-text {
@@ -196,7 +199,7 @@
 
 
 .page-doors .balcons-advices-column-text {
-  @include font(normal, 700, 18px, 28px, 'Roboto');
+  @include font(normal, 400, 18px, 28px, 'Roboto');
   color: #ffffff;
 }
 
