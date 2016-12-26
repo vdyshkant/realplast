@@ -69,6 +69,10 @@
   display: flex;
   position: relative;
 
+  @media #{$mobile-tablet} {
+    padding-left: 12px;
+  }
+
   &::before {
     content: '';
     position: absolute;

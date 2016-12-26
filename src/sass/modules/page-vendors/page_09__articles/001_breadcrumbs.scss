@@ -1,12 +1,18 @@
-.page-choosing-advices .breadcrumbs {
+.page-articles .breadcrumbs {
   // bg 1
-  @media #{$mobile-tablet} {
-    margin-top: 60px;
+  margin-bottom: 55px;
+  @media #{$tablet} {
+    // margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 60px;
   }
 }
 
 
-.page-choosing-advices .breadcrumbs {
+.page-articles .breadcrumbs {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -17,12 +23,18 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    min-width: 1160px;
+
     @media #{$tablet} {
+      min-width: 768px;
       max-width: 768px;
     }
 
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -35,7 +47,15 @@
   }
 
   & .container {
-    padding: 20px 0 70px;
+    padding: 20px 0 10px;
+
+    @media #{$tablet} {
+      // padding-bottom: 30px;
+    }
+
+    @media #{$mobile} {
+      // padding-bottom: 25px;
+    }
   }
 
   & .breadcrumbs-wrapper {
@@ -48,30 +68,34 @@
 }
 
 
-.page-choosing-advices .PROTO {
+.page-articles .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-choosing-advices .PROTO {
+.page-articles .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-choosing-advices .PROTO {
+.page-articles .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-choosing-advices .breadcrumbs-essence {
+.page-articles .breadcrumbs-essence {
   display: flex;
   position: relative;
+
+  @media #{$mobile-tablet} {
+    padding-left: 12px;
+  }
 
   &::before {
     content: '';
@@ -85,7 +109,7 @@
 }
 
 
-.page-choosing-advices .breadcrumbs__item {
+.page-articles .breadcrumbs__item {
   margin-right: 27px;
 
   position: relative;
@@ -108,7 +132,7 @@
 }
 
 
-.page-choosing-advices .breadcrumbs__link {
+.page-articles .breadcrumbs__link {
   display: block;
   @include font(normal, 400, 18px, 18px, 'Roboto');
   color: #444341;
@@ -119,7 +143,7 @@
 }
 
 
-.page-choosing-advices .PROTO {
+.page-articles .PROTO {
   & .CLASS{
 
   }

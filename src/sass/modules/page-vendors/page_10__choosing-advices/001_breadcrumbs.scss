@@ -1,14 +1,12 @@
-.page-affair .breadcrumbs {
+.page-choosing-advices .breadcrumbs {
   // bg 1
-  margin-bottom: 55px;
   @media #{$mobile-tablet} {
-    // margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 60px;
   }
 }
 
 
-.page-affair .breadcrumbs {
+.page-choosing-advices .breadcrumbs {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -19,18 +17,12 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    min-width: 1160px;
-
     @media #{$tablet} {
-      min-width: 768px;
       max-width: 768px;
     }
 
     @media #{$mobile} {
       min-width: 320px;
-      max-width: 320px;
-
-      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -43,15 +35,7 @@
   }
 
   & .container {
-    padding: 20px 0 10px;
-
-    @media #{$tablet} {
-      padding-bottom: 30px;
-    }
-
-    @media #{$mobile} {
-      padding-bottom: 25px;
-    }
+    padding: 20px 0 70px;
   }
 
   & .breadcrumbs-wrapper {
@@ -64,30 +48,34 @@
 }
 
 
-.page-affair .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-affair .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-affair .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-affair .breadcrumbs-essence {
+.page-choosing-advices .breadcrumbs-essence {
   display: flex;
   position: relative;
+
+  @media #{$mobile-tablet} {
+    padding-left: 12px;
+  }
 
   &::before {
     content: '';
@@ -101,7 +89,7 @@
 }
 
 
-.page-affair .breadcrumbs__item {
+.page-choosing-advices .breadcrumbs__item {
   margin-right: 27px;
 
   position: relative;
@@ -124,7 +112,7 @@
 }
 
 
-.page-affair .breadcrumbs__link {
+.page-choosing-advices .breadcrumbs__link {
   display: block;
   @include font(normal, 400, 18px, 18px, 'Roboto');
   color: #444341;
@@ -135,7 +123,7 @@
 }
 
 
-.page-affair .PROTO {
+.page-choosing-advices .PROTO {
   & .CLASS{
 
   }
