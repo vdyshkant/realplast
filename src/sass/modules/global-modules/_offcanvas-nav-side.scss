@@ -867,7 +867,7 @@
 
     &.active,
     &:hover {
-      @include font(normal, 500, 15px, 12px, 'Roboto');
+      @include font(normal, 600, 14px, 12px, 'Roboto');
       color: #444341;
 
       &::before {
