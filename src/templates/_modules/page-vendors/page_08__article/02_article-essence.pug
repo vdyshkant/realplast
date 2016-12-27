@@ -1,6 +1,6 @@
 // article-essence
 
-section.article-essence
+section.article-essence-top
   .shell
       .container
         .range
@@ -10,13 +10,20 @@ section.article-essence
             h2.article-essence-title Оконные системы из нанотрубок
             hr.divider
 
-            //- content
+//- content
+.article-essence-poster
+  //- picture.article-essence-features-thumb
+  //-   source(media='(min-width: 1160px)', srcset='img/008_poster.png 1x')
+  //-   source(media='(min-width: 768px)', srcset='img/008_poster--tablet.jpg 1x')
+  //-   img.article-essence-features-thumb__img(src='img/008_poster--mobile.jpg' width="100%" height="100%")
+
+section.article-essence-bottom
+  .shell
+      .container
+        .range
+          .article-essence-wrapper
             .article-essence-content
-              .article-essence-poster
-                picture.article-essence-features-thumb
-                  source(media='(min-width: 1160px)', srcset='img/008_poster.png 1x')
-                  source(media='(min-width: 768px)', srcset='img/008_poster--tablet.jpg 1x')
-                  img.article-essence-features-thumb__img(src='img/008_poster--mobile.jpg')
+
               .article-essence-content__text
                 p.article-essence-content__text-node
                   | Компания Real Plast предлагает услуги по установке современных пластиковых окон, качественных и надежных. Оконные ПВХ-системы защитят ваше жилье от морозов, сквозняков, чрезмерной влажности, пыли и уличного шума.

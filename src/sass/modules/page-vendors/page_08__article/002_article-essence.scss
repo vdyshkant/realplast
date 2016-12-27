@@ -3,7 +3,8 @@
 }
 
 
-.page-article .article-essence {
+.page-article .article-essence-top,
+.page-article .article-essence-bottom {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -34,10 +35,11 @@
   }
 
   & .container {
-    padding: 5px 0 100px;
+    // padding: 5px 0 100px;
+    padding-top: 5px;
     @media #{$tablet} {
       padding-top: 15px;
-      padding-bottom: 70px;
+      // padding-bottom: 70px;
     }
     @media #{$mobile} {
       // padding-top: 40px;
@@ -51,6 +53,12 @@
 
   & .PROTO-essence {
     //
+  }
+}
+
+.page-article .article-essence-bottom {
+  & .container {
+    padding-bottom: 100px;
   }
 }
 
@@ -124,9 +132,11 @@
 
 
 .page-article .article-essence-poster {
-  width: 1160px;
+  background: url('../img/008_poster.png') no-repeat center top;
+  background-size: 100%;
+  // width: 1160px;
   height: 500px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   @media #{$tablet} {
     height: 331px;
