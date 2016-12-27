@@ -16,7 +16,7 @@
   width: 100vw;
   height: 100vh;
   // background: hsla(116, 19%, 16%, 0.78);
-  z-index: 10;
+  z-index: 20;
   display: none;
 
   @media #{$mobile-tablet} {
@@ -55,8 +55,8 @@
 
     height: 432px;
 
-    outline: 2px dashed crimson;
-    outline-offset: -2px;
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
     transition: none;
   }
 
