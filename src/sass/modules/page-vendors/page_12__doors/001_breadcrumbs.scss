@@ -1,7 +1,13 @@
 .page-doors .breadcrumbs {
   // bg 1
-  @media #{$mobile-tablet} {
-    margin-top: 60px;
+  margin-bottom: 55px;
+  @media #{$tablet} {
+    // margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 60px;
   }
 }
 
@@ -17,12 +23,18 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    min-width: 1160px;
+
     @media #{$tablet} {
+      min-width: 768px;
       max-width: 768px;
     }
 
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -35,7 +47,15 @@
   }
 
   & .container {
-    padding: 20px 0 70px;
+    padding: 20px 0 10px;
+
+    @media #{$tablet} {
+      // padding-bottom: 30px;
+    }
+
+    @media #{$mobile} {
+      // padding-bottom: 25px;
+    }
   }
 
   & .breadcrumbs-wrapper {
