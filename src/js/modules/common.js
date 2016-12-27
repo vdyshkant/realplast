@@ -1848,3 +1848,22 @@ $(document).ready(function() {
 })(jQuery);
 
 // EOF breadcrumbs '...'
+
+
+// page-accessories :: types module
+$(document).ready(function() {
+	if($('body').is('.page-doors')){
+
+        /* smooth scrolling from nav menu */
+
+        	$("a.ternar-tootip-content__item[href^='#']").click(function(){
+        			$("html, body").animate({
+        					scrollTop: $( $.attr(this, "href") ).offset().top
+        			}, 500);
+        			return false;
+        	});
+
+        /* /smooth scrolling from nav menu */
+
+  }		// eof ('body').is
+}); // eof document READY
