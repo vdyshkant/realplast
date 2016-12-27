@@ -12,30 +12,30 @@
     margin: 0 auto;
 
     // box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
-    @media #{$wide} {
-      min-width: 1160px;
-      max-width: 1160px;
-    }
+    // @media #{$wide} {
+    //   min-width: 1160px;
+    //   max-width: 1160px;
+    // }
 
     // padding: 0 5px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
-      max-width: 768px;
-      min-width: 768px;
-    }
+    // @media #{$tablet} {
+    //   max-width: 768px;
+    //   min-width: 768px;
+    // }
 
 
-    @media #{$mobile} {
-      max-width: 320px;
-      min-width: 320px;
-      // а для внутряков обязательно заранее пропиши:
-      // & .wrap {
-      //   min-width: initial;
-      // }
-    }
+    // @media #{$mobile} {
+    //   max-width: 320px;
+    //   min-width: 320px;
+    //   // а для внутряков обязательно заранее пропиши:
+    //   // & .wrap {
+    //   //   min-width: initial;
+    //   // }
+    // }
   }
 
   & .inner {
@@ -111,7 +111,7 @@
 
 
 .page-contacts .PROTO {
-  & .CLASS{
+  & .CLASS {
 
   }
 }
@@ -126,6 +126,7 @@
     }
     & .offices-content-desc {
       background: url('../img/011_bg_row01.png');
+      background-position: -425px 0px;
       float: right;
       @media #{$tablet} {
         background-position: -425px 0px;
@@ -143,11 +144,12 @@
     & .offices-content-desc {
       float: left;
       background: url('../img/011_bg_row02.png');
+        background-position: top 0px right -50px;
       @media #{$tablet} {
-        background-position: -225px 0px;
+        background-position: top 0px right 225px;
       }
       @media #{$mobile} {
-        background-position: -425px 0px;
+        background-position: top 0px right 425px;
       }
     }
   }
@@ -158,9 +160,60 @@
   background: #d7d7d4;
 }
 
+
 .page-contacts .offices-content-item {
-  width: 580px;
+  width: 50%;
   height: 404px;
+  @include clearfix;
+
+  @media #{$tablet} {
+    width: 50%;
+
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+
+.page-contacts .offices-content-row {
+  &:nth-child(2n-1) {
+    & .offices-content-desc-container {
+      float: left;
+      @media #{$mobile} {
+        float: none;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    & .offices-content-desc-container {
+      float: right;
+      @media #{$mobile} {
+        float: none;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+.offices-content-desc-container {}
+
+
+.page-contacts .offices-content-desc-container {
+  width: 580px;
+
+
+  padding-top: 90px;
+  @media #{$mobile} {
+    padding-top: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   @media #{$tablet} {
     width: 384px;
@@ -190,12 +243,6 @@
 
 .page-contacts .offices-content-desc {
   text-align: center;
-  padding-top: 90px;
-  @media #{$mobile} {
-    padding-top: 65px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 

@@ -141,6 +141,7 @@
 .page-doors .ternar-tootip-content__item {
   float: left;
   width: 360px;
+  text-decoration: none;
 
   @media #{$wide} {
     margin-right: 20px;
@@ -252,8 +253,8 @@
     position: absolute;
     width: 0;
     height: 0;
-    margin-left: -0.5em;
-    bottom: -2em;
+    margin-left: -0.7em;
+    bottom: -1em;
     left: 50%;
     box-sizing: border-box;
 
@@ -261,7 +262,7 @@
     border-color: transparent transparent #fff #fff;
 
     transform-origin: 0 0;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateX(-50%);
 
     // box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.3);
     box-shadow: -4px 5px 10px rgba(68, 67, 65, 0.11);
