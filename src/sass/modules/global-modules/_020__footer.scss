@@ -1,6 +1,8 @@
 .footer {
   // bg 1
-  background: url('../img/footer_bg-pattern.jpg');
+  background: url('../img/footer_bg.jpg') no-repeat 50% 0%,
+              url('../img/footer_bg-pattern.jpg');
+  background-size: 100% auto;
   // background: #fff;
   color: #fff;
 }
@@ -35,8 +37,6 @@
     // padding: 0 20px;
     padding-top: 65px;
     padding-bottom: 75px;
-    background: url('../img/footer_bg.jpg') no-repeat 50% 0%;
-    background-size: cover;
 
     @media #{$mobile} {
       padding-bottom: 65px;
