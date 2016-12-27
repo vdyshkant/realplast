@@ -135,12 +135,15 @@
 .page-index .features {
   & .row__items{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-  	flex-wrap: wrap;
-    align-items: flex-start;
+    // display: flex;
+    // justify-content: space-between;
+  	// flex-wrap: wrap;
+    // align-items: flex-start;
+    display: block;
+    font-size: 0;
 
     margin-bottom: 000;
+    @include clearfix;
 
 
     // outline: 2px dashed crimson;
@@ -179,10 +182,13 @@
     // align-items: flex-start;
     //
     // margin-bottom: 000;
+    width: calc(100% - 20px);
+    float: left;
+    margin: 0 10px;
     display: none;
     background: url('../img/features-item-extra_bg.jpg');
-    margin: 0 auto;
-    width: 1140px;
+    // margin: 0 auto;
+    // width: 1140px;
     // height: 0;
     background-color: #578233;
                                                     // transition: 1s ease-in-out;
@@ -201,6 +207,7 @@
       @include font(normal, 400, 14px, 18px, 'Roboto');
       width: 320px;
       padding: 10px;
+      margin: 0;
     }
 
   }
@@ -218,6 +225,7 @@
 
 .page-index .features {
   & .features__item-container{
+    display: inline-block;
     background-image: none;
     margin-left: 10px;
     // width: 495px;
@@ -227,6 +235,10 @@
     transition: background-image 0.4s ease-in-out;
 
     padding-bottom: 10px;
+
+    &:nth-of-type(2) {
+      margin-left: 0;
+    }
 
     @media #{$tablet} {
       width: 373px;
@@ -239,6 +251,8 @@
       margin-right: 0;
       padding-bottom: 0;
     }
+
+
 
     // outline: 2px solid gold;
     // outline-offset: -2px;
@@ -407,9 +421,12 @@
 
 .page-index .features {
   & .vdivider{
+    display: inline-block;
+
     position: relative;
-    top: 30px;
+    top: -30px;
     margin: 0;
+    margin-right: 1px;
     width: 1px;
     height: 165px;
     opacity: 0.2;
