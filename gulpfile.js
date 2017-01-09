@@ -56,6 +56,17 @@ gulp.task('pug', function() {
     'src/templates/pages/choosingadvices.pug',
     'src/templates/pages/contacts.pug',
     'src/templates/pages/doors.pug',
+    
+    'src/templates/pages/efficiency.pug',
+    'src/templates/pages/faq.pug',
+    'src/templates/pages/feedback.pug',
+    'src/templates/pages/leadlight.pug',
+    'src/templates/pages/licenses.pug',
+    'src/templates/pages/loan.pug',
+    'src/templates/pages/specs.pug',
+    'src/templates/pages/terms.pug',
+    'src/templates/pages/video.pug',
+    'src/templates/pages/about.pug',
     'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
