@@ -56,7 +56,7 @@ gulp.task('pug', function() {
     'src/templates/pages/choosingadvices.pug',
     'src/templates/pages/contacts.pug',
     'src/templates/pages/doors.pug',
-    
+
     'src/templates/pages/efficiency.pug',
     'src/templates/pages/faq.pug',
     'src/templates/pages/feedback.pug',
@@ -103,6 +103,7 @@ gulp.task('js', function() {
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/slider-clock-timers.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p13/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))
