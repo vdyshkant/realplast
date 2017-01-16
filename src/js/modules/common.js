@@ -1660,6 +1660,21 @@ $(document).ready(function() {
             $('#nav-icon').removeClass('open');
             $('.nav-icon-clone').removeClass('open');
             // hide nav panel::
+
+            var overlayIsVisible = $('.overlay__offcanvas').is('.visible');
+            var jsNavIsOpened = $('.js-nav').is('.opened');
+
+
+  					if (!overlayIsVisible) {
+  						$('.overlay__offcanvas').addClass('visible');
+  					}
+
+            if (overlayIsVisible && jsNavIsOpened) {
+              // $('.overlay__offcanvas').addClass('visible');
+            }
+            if (overlayIsVisible && !jsNavIsOpened) {
+              $('.overlay__offcanvas').removeClass('visible');
+            }
             $('.js-nav').removeClass('opened');
                 $('.offcanvas-nav-side-wrapper').removeClass('wide-opened');
                 $('.subm__burger_search').removeClass('expanded');
@@ -1675,7 +1690,10 @@ $(document).ready(function() {
 
           $('#burger-callback .svg-icon').toggleClass('opened');
           $('.js-right-side').addClass('opened').slideToggle(300);
-          $('.overlay__offcanvas').addClass('visible');
+
+
+
+
         });
 
 
