@@ -101,6 +101,9 @@
   // text-transform: uppercase;
   margin-bottom: 17px;
 
+  max-width: 860px;
+  margin: 0 auto;
+
   @media #{$mobile-tablet} {
 
     // @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
@@ -120,7 +123,9 @@
   background-color: #333;
   // margin-bottom: 30px;
 
-
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 

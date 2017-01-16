@@ -1,11 +1,11 @@
 
 
-.page-doors .contact {
+.page-terms .contact {
   background: url('../img/bg_tan.jpg');
 }
 
 
-.page-doors .contact {
+.page-terms .contact {
   & .shell {
     margin: 0 auto;
     padding: 0 10px;
@@ -63,7 +63,7 @@
 
 
 
-.page-doors .contact-title {
+.page-terms .contact-title {
   @include font(normal, 700, 36px, 64px, 'Roboto Condensed'); // 64-28 = 36/2 = 20
   color: #444341;
   text-align: center;
@@ -82,7 +82,7 @@
 }
 
 
-.page-doors .contact__desc {
+.page-terms .contact__desc {
   @include font(normal, 400, 18px, 28px, 'Roboto'); // 28-11(12) === 16
   text-align: center;
   color: #444341;
@@ -104,14 +104,14 @@
 }
 
 
-.page-doors .PROTO {
+.page-terms .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .contact__form {
+.page-terms .contact__form {
   margin: 0 auto;
 
   @media #{$wide} {
@@ -125,7 +125,7 @@
 }
 
 
-.page-doors .contact__form__field {
+.page-terms .contact__form__field {
   display: block;
   background: #f3f3f3;
   height: 50px;
@@ -158,21 +158,21 @@
 }
 
 
-.page-doors .contact__form__field--name {
+.page-terms .contact__form__field--name {
   @media #{$wide} {
     width: 260px;
   }
 }
 
 
-.page-doors .contact__form__field--tel {
+.page-terms .contact__form__field--tel {
   @media #{$wide} {
     width: 360px;
   }
 }
 
 
-.page-doors .contact__form__btn {
+.page-terms .contact__form__btn {
   @include font(normal, 400, 18px, 50px, 'Roboto');
   color: #f9f9f9;
   // text-transform: uppercase;
@@ -207,7 +207,7 @@
 }
 
 
-.page-doors .PROTO {
+.page-terms .PROTO {
   & .CLASS{
 
   }

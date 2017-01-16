@@ -45,6 +45,10 @@
       padding-bottom: 50px;
 
     }
+
+    @media #{$mobile} {
+      padding-bottom: 5px;
+    }
   }
 
   & .PROTO-wrapper {
@@ -83,7 +87,7 @@
   text-align: center;
   color: #444341;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   // margin-bottom: 10px;
 
   @media #{$mobile-tablet} {
@@ -98,8 +102,15 @@
   @include font(normal, 400, 18px, 27px, 'Roboto'); //6/2==3==5
   text-align: center;
   color: #444341;
+  max-width: 860px;
+  margin: 0 auto;
   // text-transform: uppercase;
-  margin-bottom: 17px;
+  // margin-bottom: 17px;
+
+  @media #{$tablet} {
+    padding: 0 20px;
+  }
+
 
   @media #{$mobile-tablet} {
 
