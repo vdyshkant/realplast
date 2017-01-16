@@ -32,7 +32,6 @@
 
     @media #{$mobile} {
       min-width: 320px;
-      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
