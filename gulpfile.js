@@ -104,6 +104,7 @@ gulp.task('js', function() {
       'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/slider-clock-timers.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p13/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p20/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))
