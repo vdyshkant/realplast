@@ -1,4 +1,4 @@
-.page-doors .welcome {
+.page-leadlight .welcome {
 
 
   // @media #{$mobile-tablet} {
@@ -7,7 +7,7 @@
 }
 
 
-.page-doors .welcome {
+.page-leadlight .welcome {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -59,14 +59,14 @@
 }
 
 
-.page-doors .PROTO {
+.page-leadlight .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .welcome-thumb {
+.page-leadlight .welcome-thumb {
   height: 510px;
   float: left;
 
@@ -89,32 +89,34 @@
 }
 
 
-.page-doors .welcome-thumb__img {
+.page-leadlight .welcome-thumb__img {
 
-  background: #fff url('../img/013_welcome-img.jpg') no-repeat left 0px top 0px;
+  background: #fff url('../img/leadlight_welcome-img.jpg') no-repeat left 0px top 0px;
   height: 100%;
+  background-size: 595px 510px;
 
   @media #{$tablet} {
 
-    background: #fff url('../img/013_welcome-img_tablet.jpg') no-repeat right 20px top 0px;
+    background: #fff url('../img/leadlight_welcome-img_tablet.jpg') no-repeat right 0px top 0px;
+    background-size: 393px 336px;
   }
 
   @media #{$mobile} {
-    background: #fff url('../img/013_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
+    background: #fff url('../img/leadlight_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
     width: 320px;
     margin: 0 auto;
   }
 }
 
 
-.page-doors .PROTO {
+.page-leadlight .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .welcome-content {
+.page-leadlight .welcome-content {
   background: url('../img/bg_white.jpg');
   // position: absolute;
   // bottom: 0;
@@ -144,7 +146,7 @@
 }
 
 
-.page-doors .welcome-title {
+.page-leadlight .welcome-title {
   @include font(normal, 700, 32px, 25px, 'Roboto');
   text-align: center;
   color: #444341;
@@ -155,7 +157,7 @@
 }
 
 
-.page-doors .welcome-text__item {
+.page-leadlight .welcome-text__item {
   @include font(normal, 400, 19px, 27px, 'Roboto');
   color: #444341;
   margin-bottom: 30px;
@@ -167,14 +169,14 @@
 
 
 
-.page-doors .PROTO {
+.page-leadlight .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .PROTO {
+.page-leadlight .PROTO {
   & .CLASS{
 
   }

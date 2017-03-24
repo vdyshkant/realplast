@@ -1,30 +1,22 @@
-.page-doors .balcons {
-  background: url('../img/005_differences_bg.jpg');
-
-  position: relative;
+.page-leadlight .gallery {
+  // bg 1
+  background: #444341;
 }
 
 
-.page-doors .balcons {
+.page-leadlight .gallery {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    // padding: 0 20px;
+    padding: 0 20px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
-      padding: 0 20px;
-
-    @media #{$tablet} {
-      padding: 0 20px;
-      min-width: 768px;
-      max-width: 768px;
-    }
 
     @media #{$mobile} {
-      padding: 0 10px;
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -37,321 +29,322 @@
   }
 
   & .container {
-    padding: 90px 0 90px;
-    @media #{$mobile-tablet} {
-      // padding-top: 55px;
-      // padding-bottom: 65px;
-    }
-    @media #{$mobile} {
-      padding-bottom: 80px;
-    }
-  }
-
-  & .PROTO-wrapper {
-    //
-  }
-
-  & .PROTO-essence {
-    //
-  }
-}
-
-
-.page-doors .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-.page-doors .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-.page-doors .balcons-title-container {
-  text-align: center;
-}
-
-
-.page-doors .balcons-title {
-  @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 22/2==11~~ +/- 10
-  color: #ffffff;
-  text-transform: uppercase;
-  // text-transform: uppercase;
-  margin-bottom: 15px;
-
-  // background: url('../img/bg_white.jpg');
-  display: inline-block;
-
-  @media #{$tablet} {
-    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
-  }
-
-  @media #{$mobile} {
-    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
-  }
-
-}
-
-.page-doors .balcons-advices-title {
-  text-align: center;
-  @media #{$tablet} {
-    overflow: hidden;
-  }
-}
-
-.page-doors .balcons-advices-title-text {
-  @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 22/2==11~~ +/- 10
-  color: #ffffff;
-  text-transform: uppercase;
-  // text-transform: uppercase;
-  margin-bottom: 45px;
-
-  // background: url('../img/bg_white.jpg');
-  display: inline-block;
-  padding: 0 30px;
-  position: relative;
-
-  @media #{$tablet} {
-    @include font(normal, 700, 22px, 54px, 'Roboto');
-  }
-
-  @media #{$mobile} {
-    @include font(normal, 700, 22px, 54px, 'Roboto');
-    padding: 0;
-    text-transform: none;
-  }
-
-  &::after,
-  &::before {
-
-    content: "";
-    position: absolute;
-    width: 10000%;
-    height: 1px;
-    background: #fff;
-    top: 28px;
-
-    @media #{$tablet} {
-      top: 27px;
-    }
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     @media #{$mobile} {
-      content: none;
+      padding: 50px 0 65px;
     }
   }
 
-  &::after {
-    right: -10000%;
-
+  & .gallery-essence {
+    @media #{$wide} {
+      margin-bottom: 50px;
+    }
   }
-
-  &::before {
-    left: -10000%;
-    // z-index: -1;
-
-  }
-}
-
-.page-doors .balcons-advices-column-num {
-  top: 0;
-  left: 0;
-  @media #{$wide} {
-    top: 20px;
-    left: 20px;
-  }
-  @media #{$tablet} {
-    left: -5px;
-  }
-  position: absolute;
-  @include font(normal, 700, 150px, 54px, 'Roboto Condensed');
-  color: #ffffff;
-  text-transform: uppercase;
-  opacity: 0.15;
-}
-
-
-.page-doors .balcons-advices-column-title {
-  @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
-  color: #ffffff;
-  margin-bottom: 15px;
-  text-align: center;
-
-  position: relative;
-
-
-  @media #{$tablet} {
-    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
-    text-align: left;
-    padding-left: 25px;
-  }
-
-  @media #{$mobile} {
-    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
-    text-align: left;
-    padding-left: 35px;
-    margin-bottom: 0;
-  }
-}
-
-
-.page-doors .balcons-advices-column-text {
-  @include font(normal, 400, 18px, 28px, 'Roboto');
-  color: #ffffff;
-}
-
-
-.page-doors .divider {
-  display: block;
-  border: none;
-  outline: none;
-
-
-  margin: 0 auto;
-  width: 236px;
-  height: 1px;
-  background-color: #333;
-  margin-bottom: 30px;
-
 
 }
 
 
-.page-doors .PROTO {
+.page-leadlight .gallery {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .balcons-container {
-  @include clearfix;
-  margin-bottom: 95px;
-  @media #{$tablet} {
-    margin-bottom: 50px;
-  }
-  @media #{$mobile} {
-    margin-bottom: 10px;
-  }
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
+.page-leadlight .gallery {
+  & .row-1{
+    display: flex;
+    flex-direction: row;
 
-
-
-
-.page-doors .balcons-features-thumb {
-  float: left;
-  margin-right: 18px;
-  @media #{$wide} {
-    width: 455px;
-  }
-  @media #{$tablet} {
-    width: 267px;
-  }
-  @media #{$mobile} {
-    width: 280px;
-    float:none;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 35px;
-  }
-
-  &__img {
     @media #{$mobile} {
-      width: 280px;
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}
+
+.page-leadlight .gallery {
+  & .row-2{
+    @media #{$mobile} {
+      float: left;
     }
   }
 }
 
 
-.page-doors .balcons-features-list {
-  @media #{$tablet-wide} {
-      float: right;
-      width: 647px;
-  }
-  @media #{$tablet} {
-    width: 443px;
-  }
-  @media #{$mobile} {
+.page-leadlight .gallery {
+  & .row-1 .col {
+    margin-bottom: 20px;
 
+    @media #{$mobile} {
+      margin-bottom: 0;
+    }
   }
 }
 
 
-.page-doors .balcons-features-list-item {
-  @include font(normal, 400, 18px, 28px, 'Roboto');
-  color: #ffffff;
-    position: relative;
-    // text-indent: 30px;
-    margin-bottom: 10px;
-  padding-left: 30px;
+.page-leadlight .gallery {
+  & .row-1 .col-1{
+    width: 550px;
+    margin-right: 20px;
 
-  &:last-child {
-    margin-bottom: 0;
+    @media #{$mobile} {
+      width: 300px;
+    }
+
+    & .gallery__item {
+
+      height: 470px;
+
+      @media #{$mobile} {
+        height: 256px;
+      }
+    }
+  }
+}
+
+
+.page-leadlight .gallery {
+  & .row-1 .col-2{
+    width: 170px;
+    margin-right: 20px;
+
+    @media #{$mobile} {
+      width: 360px;
+      @include clearfix;
+
+      & .gallery__item {
+        width: 170px;
+        float: left;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.page-leadlight .gallery {
+  & .row-1 .col-3{
+    width: 360px;
+
+    @media #{$mobile} {
+      width: 740px;
+      @include clearfix;
+    }
+
+    & .gallery__item {
+      height: 225px;
+
+      @media #{$mobile} {
+        float: left;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.page-leadlight .gallery {
+  & .col-2 .gallery__item:first-child {
+    margin-bottom: 15px;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 16px;
-    top: 6px;
-    left: 0;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABVklEQVQ4T2NkwALYC7/lg4R/9nNNRJdmxFCf98uYjfHPcZD4r/8slgyT2M4iq0HVkPafn5v7840Go7kSIEUN55JffP3Kq8Ewi/EjTBOKBr7CD9usJC67bHMvYgUp8NrZ9/vYC909n/oFvDA0gNwtyPqp62pwFJsQ+yew/LuffAzaa5f9ev+brwzmH4gNUHcf8M5itRS7guKt4690GBy2TvsN8w8jA5K7S3SXYgs0hp7L0XD/MCK7m5HhP1YN/xkY4f5h5Cn6vMNG/IITyKOENBx5abCPkSHzvyA3BzgoxQg46dXXH7waEE/n/jJjZfp75KB3JlZP22+d/vv3P2Ybhslsp+DxwF74rViQ9VMbjmCt+tnP1QsyGyni/jPyFH3ZDvMPLOJA7v7Sx+PJwMAIDhHUpIHkH2jSALubYTrje6xJA9k/IDbM3bgTH1QG5B9o8ga7GxkAAApvsUxGCfPDAAAAAElFTkSuQmCC');
-}
+  & .col-3 .gallery__item:first-child{
+    margin-bottom: 20px;
+  }
 }
 
 
-.page-doors .PROTO {
+.page-leadlight .gallery {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .balcons-advices-columns {
-  @media #{$wide} {
+.page-leadlight .gallery {
+  & .row-2 .col-s {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.page-leadlight .gallery {
+  & .col-s .gallery__item {
+    width: 360px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// smooth div scroll:
+
+#gallery-smooth div.scrollableArea .gallery-essence
+{
+	position: relative;
+	display: block;
+	float: left;
+	// margin: 0;
+	// padding: 0;
+	/* If you don't want the images in the scroller to be selectable, try the following
+		block of code. It's just a nice feature that prevent the images from
+		accidentally becoming selected/inverted when the user interacts with the scroller. */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+  margin-right: 20px;
+
+}
+
+#gallery-smooth div.scrollableArea
+{
+	@include clearfix;
+}
+
+#gallery-smooth .gallery-essence {
+  @media #{$mobile} {
     @include clearfix;
   }
 }
 
 
-.page-doors .balcons-advices-column {
-  float: left;
-  position: relative;
-  @media #{$wide} {
-    width: 360px;
-    padding: 0 20px;
+// smooth div scroll end
 
-    margin-right: 20px;
-  }
-  @media #{$tablet} {
-    margin-bottom: 50px;
-  }
+
+// TITLE
+
+.page-leadlight .gallery-title {
+  @include font(normal, 700, 36px, 37px, 'Roboto Condensed');
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+
   @media #{$mobile} {
-    margin-bottom: 75px;
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    margin-bottom: 15px;
   }
-  &:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
+}
+
+.page-leadlight .gallery-divider {
+  display: block;
+  width: 236px;
+  height: 1px;
+  background-color: #fff;
+
+  outline: none;
+  border: none;
+
+  margin-bottom: 50px;
+
+  @media #{$mobile} {
+    margin-bottom: 30px;
+  }
+}
+
+// TITLE END
+
+
+
+// EXPAND
+.page-leadlight .gallery {
+  & .gallery__expand{
+    min-height: 50px;
+    transition: .3s ease-out;
+
+    display: flex;
+    flex-direction: row;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 }
 
 
-.page-doors .PROTO {
+.page-leadlight .gallery {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .PROTO {
-  & .CLASS{
+.page-leadlight .gallery {
+  & .gallery__expand-item {
+    // FLEX
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
+
+.page-leadlight .gallery {
+  & .gallery__expand-item.divider{
+
+    width: 33.92857142857143%;
+    border-bottom: 1px solid #fff;
+    &:first-child {
+      margin-right: 20px;
+    }
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+
+.page-leadlight .gallery {
+  & .gallery__expand__btn{
+    display: block;
+    @include font(normal, 400, 18px, 50px, 'Roboto');
+    color: white;
+
+    white-space: nowrap;
+    width: 320px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: .3s ease-out;
+    user-select: none;
+
+
+    position: relative;
+    top: 0;
+
+    &:hover {
+      background: #fff;
+      color: #444341;
+      // background: #3a8147;
+
+    }
+
+    &:active {
+      background: #fff;
+      color: #444341;
+      top: 1px;
+    }
   }
 }

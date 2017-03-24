@@ -1669,9 +1669,9 @@ $(document).ready(function() {
   						$('.overlay__offcanvas').addClass('visible');
   					}
 
-            if (overlayIsVisible && jsNavIsOpened) {
+            // if (overlayIsVisible && jsNavIsOpened) {
               // $('.overlay__offcanvas').addClass('visible');
-            }
+            // }
             if (overlayIsVisible && !jsNavIsOpened) {
               $('.overlay__offcanvas').removeClass('visible');
             }
