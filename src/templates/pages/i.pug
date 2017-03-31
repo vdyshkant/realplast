@@ -28,31 +28,36 @@ block content
       .dev_contents__testServer
         h1 i.html page -- test server CONTENTS:
         h3 {testServer} / %page%
-        ol
-          li: a(data-num='01' href=testServer + "") / index
-          li: a(data-num='02' href=testServer + "windsystems.html") / windsystems
-          li: a(data-num='03' href=testServer + "fitments.html") / fitments
-          li: a(data-num='04' href=testServer + "cottages.html") / cottages
-          li: a(data-num='05' href=testServer + "glassunit.html") / glassunit
-          li: a(data-num='06' href=testServer + "accessories.html") / accessories
-          li: a(data-num='07' href=testServer + "affair.html") / affair
-          li: a(data-num='08' href=testServer + "article.html") / article
-          li: a(data-num='09/18' href=testServer + "articles.html") / articles
-          li: a(data-num='10/13' href=testServer + "choosingadvices.html") / choosingadvices
+        ul
+          li: a(data-num='01' href=testServer + "") 1 / index
+          li: a(data-num='02' href=testServer + "windsystems.html") 2 / windsystems
+          li: a(data-num='03' href=testServer + "fitments.html") 3 / fitments
+          li: a(data-num='04.1' href=testServer + "cottages.html") 4.1/ cottages
+          li: a(data-num='05' href=testServer + "glassunit.html") 5 / glassunit
+          li: a(data-num='06' href=testServer + "accessories.html") 6 / accessories
+            li: a(data-num='07' href=testServer + "affair.html") 7 [e] / services?// услуги
+          li: a(data-num='08' href=testServer + "affair.html") / affair // акции
+          li: a(data-num='09' href=testServer + "about.html") 9 (ex22) / about // акции
+          li: a(data-num='10' href=testServer + "licenses.html") 10 (ex16) / licenses
+          li: a(data-num='10.1' href=testServer + "feedback.html") 10.1 (ex15) / feedback
           li: a(data-num='11' href=testServer + "contacts.html") / contacts
-          li: a(data-num='12/14' href=testServer + "doors.html") / doors
+          li: a(data-num='13' href=testServer + "choosingadvices.html") 13 (ex10) / choosingadvices
+          li: a(data-num='14' href=testServer + "doors.html") 14 (ex12)/ doors
+
+          li: a(data-num='15' href=testServer + "leadlight.html") 15 / 00000
+          li: a(data-num='16' href=testServer + "typicalwindows.html") 16 (ex21)/ typicalwindows
+
+          li: a(data-num='17' href=testServer + "loan.html") 17 / loan
+
+
           li: a(data-num='13/12' href=testServer + "efficiency.html") / efficiency
 
-          li: a(data-num='15' href=testServer + "feedback.html") / feedback
-          li: a(data-num='16' href=testServer + "licenses.html") / licenses
-          li: a(data-num='17//' href=testServer + "loan.html") / loan
-          li: a(data-num='18/20' href=testServer + "terms.html") / terms
+          li: a(data-num='18' href=testServer + "articles.html") 18 / articles
+          li: a(data-num='18.1' href=testServer + "article.html") 18.1 / article
           li: a(data-num='19//' href=testServer + "video.html") / video
+          li: a(data-num='20' href=testServer + "terms.html") 20 / terms
           li: a(data-num='20' href=testServer + "about.html") / about
           li: a(data-num='21' href=testServer + "00000.html") / 00000
-          li: a(data-num='21' href=testServer + "00000.html") / 00000
-          li: a(data-num='21' href=testServer + "00000.html") / 00000
-          li: a(data-num='21' href=testServer + "typicalwindows.html") / typicalwindows
 
 
           li: a(data-num='21' href=testServer + "additionaloptions.html") / additionaloptions
