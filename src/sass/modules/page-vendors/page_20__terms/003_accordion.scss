@@ -229,4 +229,8 @@
   @media #{$tablet} {
     max-width: 726px;
   }
+  @media #{$mobile} {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
