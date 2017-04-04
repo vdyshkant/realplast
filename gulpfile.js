@@ -110,7 +110,9 @@ gulp.task('js', function() {
       'src/js/modules/p16/leadlight_gallery.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p16/leadlight_carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p20/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
-      'src/js/modules/p10/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p10/paginator.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p10-1/textChange.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p10-1/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))
         .pipe(gulp.dest(outputDir + '/js'))
