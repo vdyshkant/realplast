@@ -43,19 +43,21 @@ gulp.task('pug', function() {
     // '!src/templates/partials/*.pug', // ignore this file
     // '!src/templates/conf/*.pug', // ignore this file
     // 'src/templates/**/*.pug'   // ignore all files
-    'src/templates/pages/index.pug',
-    'src/templates/pages/windsystems.pug',
-    'src/templates/pages/fitments.pug',
-    'src/templates/pages/cottages.pug',
-    'src/templates/pages/glassunit.pug',
-    'src/templates/pages/accessories.pug',
-    'src/templates/pages/404.pug',
-    'src/templates/pages/affair.pug',
-    'src/templates/pages/article.pug',
-    'src/templates/pages/articles.pug',
-    'src/templates/pages/choosingadvices.pug',
-    'src/templates/pages/contacts.pug',
-    'src/templates/pages/doors.pug',
+    'src/templates/pages/index.pug',          // 1
+    'src/templates/pages/windsystems.pug',    // 2
+    'src/templates/pages/fitments.pug',       // 3
+    'src/templates/pages/cottages.pug',       // 4
+    'src/templates/pages/glassunit.pug',      // 5
+    'src/templates/pages/accessories.pug',    // 6
+    'src/templates/pages/services.pug',    // 7
+
+    'src/templates/pages/404.pug',            //
+    'src/templates/pages/affair.pug',         //
+    'src/templates/pages/article.pug',        //
+    'src/templates/pages/articles.pug',       //
+    'src/templates/pages/choosingadvices.pug',// 1
+    'src/templates/pages/contacts.pug',       // 1
+    'src/templates/pages/doors.pug',          // 1
 
     'src/templates/pages/efficiency.pug',
     'src/templates/pages/faq.pug',
@@ -101,6 +103,7 @@ gulp.task('js', function() {
       '!src/js/libs/*.js', // ignore this file
       'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p07/003_types.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/slider-clock-timers.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p13/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'

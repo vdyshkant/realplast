@@ -10,44 +10,49 @@ section.types
           //- LEFT menu
           //- ---------------------------------------------
           .types-menu.types--wide-related
-            h2.types-menu__title Доступные аксессуары:
+            h2.types-menu__title Услуги:
             ul.types-menu__list
 
               //- item
               li.types-menu__item(data-id="prod-first")
                 a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Подоконники
+                  .types-menu__link__img-container
+                    .types-menu__link__img
+                  .types-menu__link__text Консультация
 
               //- item
               li.types-menu__item.active(data-id="prod-second")
                 a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Откосы
+                  .types-menu__link__img-container
+                    .types-menu__link__img
+                  .types-menu__link__text Замер
 
               //- item
               li.types-menu__item(data-id="prod-third")
                 a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Москитная сетка
+                  .types-menu__link__img-container
+                    .types-menu__link__img
+                  .types-menu__link__text Доставка
 
               //- item
               li.types-menu__item(data-id="prod-fourth")
                 a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Рассечка
+                  .types-menu__link__img-container
+                    .types-menu__link__img
+                  .types-menu__link__text Монтаж
 
               //- item
               li.types-menu__item(data-id="prod-fifth")
                 a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Отливы
+                  .types-menu__link__img-container
+                    .types-menu__link__img
+                  .types-menu__link__text Гарантийное обслуживание
 
               //- item
-              li.types-menu__item(data-id="prod-sixth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Средства по уходу за окнами
+              //- li.types-menu__item(data-id="prod-sixth")
+              //-   a.types-menu__link
+              //-     .types-menu__link__img
+              //-     .types-menu__link__text Средства по уходу за окнами
 
 
 
@@ -64,7 +69,8 @@ section.types
               //- item
               li.types-menu__item.js-parent(data-id="prod-first")
                 a.types-menu__link
-                  .types-menu__link__img
+                  .types-menu__link__img-container
+                    .types-menu__link__img
                   .types-menu__link__text Стандартный
                 .chose-content__wrapper#prod-first
                   include 03-1__right-cont-inner
@@ -72,7 +78,8 @@ section.types
               //- item
               li.types-menu__item.js-parent.active(data-id="prod-second")
                 a.types-menu__link
-                  .types-menu__link__img
+                  .types-menu__link__img-container
+                    .types-menu__link__img
                   .types-menu__link__text Энергосберегающий
                 .chose-content__wrapper.active#prod-second
                   include 03-1__right-cont-inner
@@ -80,7 +87,8 @@ section.types
               //- item
               li.types-menu__item.js-parent(data-id="prod-third")
                 a.types-menu__link
-                  .types-menu__link__img
+                  .types-menu__link__img-container
+                    .types-menu__link__img
                   .types-menu__link__text Мультифункциональный
                 .chose-content__wrapper#prod-third
                   include 03-1__right-cont-inner
@@ -88,7 +96,8 @@ section.types
               //- item
               li.types-menu__item.js-parent(data-id="prod-fourth")
                 a.types-menu__link
-                  .types-menu__link__img
+                  .types-menu__link__img-container
+                    .types-menu__link__img
                   .types-menu__link__text Шумозащитный
                 .chose-content__wrapper#prod-fourth
                   include 03-1__right-cont-inner
@@ -96,7 +105,8 @@ section.types
               //- item
               li.types-menu__item.js-parent(data-id="prod-fifth")
                 a.types-menu__link
-                  .types-menu__link__img
+                  .types-menu__link__img-container
+                    .types-menu__link__img
                   .types-menu__link__text Противоударный
                 .chose-content__wrapper#prod-fifth
                   include 03-1__right-cont-inner
@@ -104,7 +114,8 @@ section.types
               //- item
               li.types-menu__item.js-parent(data-id="prod-sixth")
                 a.types-menu__link
-                  .types-menu__link__img
+                  .types-menu__link__img-container
+                    .types-menu__link__img
                   .types-menu__link__text Тонированный
                 .chose-content__wrapper#prod-sixth
                   include 03-1__right-cont-inner
