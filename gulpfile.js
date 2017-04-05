@@ -64,7 +64,7 @@ gulp.task('pug', function() {
     'src/templates/pages/faq.pug',
     'src/templates/pages/feedback.pug',
     'src/templates/pages/leadlight.pug',
-    'src/templates/pages/licenses.pug',
+    'src/templates/pages/licenses.pug',   // 10
     'src/templates/pages/loan.pug',
     'src/templates/pages/specs.pug',
     'src/templates/pages/terms.pug',
@@ -112,6 +112,7 @@ gulp.task('js', function() {
       'src/js/modules/p16/leadlight_carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p20/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10/paginator.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p10-licenses/carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-1/textChange.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-1/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob

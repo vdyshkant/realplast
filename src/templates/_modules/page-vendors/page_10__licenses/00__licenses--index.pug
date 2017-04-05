@@ -2,7 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'TITLE_TITLE_TITLE_TITLE'
+  - var PageTitle = 'Лицензии и сертификаты'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
@@ -22,7 +22,7 @@ append 001_config
         //- - var jQsmoothDivScroll = true
   //- eof smoothDivScroll
 
-        //- - var waterwheelCarousel = true
+  - var waterwheelCarousel = true
   //- counter:
         //- - var animateNumber = true
         //- - var animateCss = true
@@ -78,24 +78,15 @@ block content
 
 
       include 01_breadcrumbs
+
+      //- include 02_certs
+      //- include 03_partners
+      //- include 04_office
+      include 05_feedback
+
+      include 06_contact
       //-
-      //-
-      //-
-      //- include 02_welcome
-      //-
-      //- include 03_ternar-tooltip
-      //-
-      //- include 04_balcons
-      //-
-      //- include 05_interior
-      //-
-      //- include 06_entry
-      //-
-      //- include 05_process
-      //-
-      //- include 07_contact
-      //-
-      //- include 08_prefooter
+      include 07_prefooter
 
 
       //- eof main
