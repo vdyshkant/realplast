@@ -59,6 +59,7 @@ gulp.task('pug', function() {
     'src/templates/pages/contacts.pug',       // 1
     'src/templates/pages/doors.pug',          // 1
 
+    'src/templates/pages/typicalwindows.pug',
     'src/templates/pages/efficiency.pug',
     'src/templates/pages/faq.pug',
     'src/templates/pages/feedback.pug',
