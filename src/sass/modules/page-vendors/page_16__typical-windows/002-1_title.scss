@@ -1,0 +1,60 @@
+
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items-title {
+
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items-title-text {
+    @include font(400, noramal, 32px, 48px, 'Roboto');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+
+
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items-subtitle {
+    @include font(400, noramal, 15px, 21px, 'Roboto');
+    color: #444341;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 45px;
+    max-width: 923px;
+    margin: 0 auto 30px;
+
+    & + .divider {
+      display: block;
+      border: none;
+      outline: none;
+      margin: 0 auto;
+      width: 236px;
+      height: 1px;
+      background-color: #333;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .CLASS{
+
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .CLASS{
+
+  }
+}

@@ -1,0 +1,215 @@
+.page-typical-windows .ternar-items {
+  // bg 1
+}
+
+
+.page-typical-windows .ternar-items {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+    min-width: 1160px;
+
+    // padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+      padding: 0 20px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      padding: 0 10px;
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 90px;
+  }
+
+  & .ternar-items-wrapper {
+    //
+  }
+
+  & .ternar-items-essence {
+    //
+  }
+}
+
+@import "002-1_title";
+@import "002-2_subtitle";
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items-content{
+    @include clearfix;
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items-content__item{
+    float: left;
+    width: 358px;
+    border: 1px solid black;
+    background: url('../img/016_bg.png');
+    text-decoration: none;
+
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    @media #{$wide} {
+      margin-right: 20px;
+    }
+
+    // @media #{$tablet} {
+    //   width: auto;
+    //   @include clearfix;
+    //   padding: 20px;
+    //
+    //   background-color: #fff;
+    //   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+    //   margin-bottom: 30px;
+    //
+    //   &:last-child {
+    //     margin-bottom: 0;
+    //   }
+    // }
+    //
+    // @media #{$mobile} {
+    //   width: 300px;
+    //   margin-bottom: 50px;
+    //   box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+    //   &:last-child {
+    //     margin-bottom: 0;
+    //   }
+    // }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items__item-thumb {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  & .ternar-items-content__item:nth-child(3) {
+    & .ternar-items__item-thumb {
+      margin-bottom: 49px;
+    }
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items__item-desc {
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items__item-price {
+    /* Style for "до 99 999" */
+    color: #444341;
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 54px;
+    font-size: 36px;
+    margin: 0 auto;
+
+    position: relative;
+    padding: 0 20px;
+
+    & > span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #444341;
+
+      line-height: 54px;
+    }
+
+
+
+    &::after,
+    &::before {
+
+      content: "";
+      position: absolute;
+      width: 10000%;
+      height: 1px;
+      background: #444341;
+      top: 28px;
+
+      @media #{$tablet} {
+        top: 27px;
+      }
+
+      @media #{$mobile} {
+        content: none;
+      }
+    }
+
+    &::after {
+      right: -10000%;
+
+    }
+
+    &::before {
+      left: -10000%;
+      // z-index: -1;
+
+    }
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .ternar-items__item-title {
+    /* Style for "Двухстворч" */
+    max-width: 220px;
+    margin: 0 auto;
+
+    color: #444341;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .CLASS{
+
+  }
+}
+
+
+.page-typical-windows .ternar-items {
+  & .CLASS{
+
+  }
+}
