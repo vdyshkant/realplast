@@ -13,7 +13,6 @@
   color: #444341;
   // text-transform: uppercase;
   margin-bottom: 50px;
-  display: inline-block;
   padding: 0 45px;
 
   // outline: 2px dashed crimson;
@@ -31,6 +30,7 @@
     margin-bottom: 25px;
   }
 
+  display: inline-block;
   position: relative;
 
   &::after,
