@@ -10,12 +10,11 @@
 
 .page-typical-windows .ternar-items {
   & .ternar-items-title-text {
-    @include font(400, noramal, 32px, 48px, 'Roboto');
+    @include font(700, normal, 32px, 48px, 'Roboto');
     color: #444341;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px;
-
 
   }
 }
@@ -23,7 +22,7 @@
 
 .page-typical-windows .ternar-items {
   & .ternar-items-subtitle {
-    @include font(400, noramal, 15px, 21px, 'Roboto');
+    @include font(400, normal, 15px, 21px, 'Roboto');
     color: #444341;
     text-align: center;
     overflow: hidden;
