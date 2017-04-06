@@ -1,0 +1,109 @@
+
+.page-about .features {
+  & .features-title{
+    margin-bottom: 15px;
+    @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media #{$mobile-tablet} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+      margin-bottom: 20px;
+    }
+
+    @media #{$tablet} {
+
+    }
+
+    @media #{$mobile} {
+
+    }
+
+    & + .divider {
+      display: block;
+      border: none;
+      outline: none;
+      margin: 0 auto;
+      width: 236px;
+      height: 1px;
+      background-color: #333;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+
+
+
+
+.page-about .features-subtitle {
+  text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+  }
+  margin-bottom: 15px;
+}
+
+
+.page-about .features-subtitle-text {
+  @include font(700, normal, 32px, 63px, 'Roboto');
+  color: #444341;
+  // text-transform: uppercase;
+  text-align: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+  position: relative;
+
+  &::after,
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background-color: #444341;
+    top: 50%;
+
+    @media #{$tablet} {
+      top: 50%;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+  }
+}
+
+
+.page-about .features-subtitle-desc-text {
+  @include font(400, normal, 18px, 27px, 'Roboto');
+  color: #444341;
+  margin: 0 auto;
+  width: 740px;
+}
+
+
+.page-about .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-about .PROTO {
+  & .CLASS{
+
+  }
+}

@@ -1,15 +1,16 @@
-.page-index .features {
-  background: url('../img/features-bg.png');
+.page-about .features {
+  // background: url('../img/features-bg.png');
+  background: url('../img/bg_white.jpg');
 
 
-  box-shadow: 3px 0px 7px 1px rgba(68, 67, 65, 0.21);
-  position: relative;
-  z-index: 3;
+  // box-shadow: 3px 0px 7px 1px rgba(68, 67, 65, 0.21);
+  // position: relative;
+  // z-index: 3;
 }
 
 
 
-.page-index .features {
+.page-about .features {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -42,7 +43,7 @@
   }
 
   & .container {
-    padding: 100px 0;
+    // padding: 100px 0;
 
     @media #{$mobile} {
       padding: 70px 0;
@@ -58,57 +59,12 @@
   }
 }
 
-
-.page-index .features {
-  & .features-title{
-    margin-bottom: 30px;
-    @include font(normal, 700, 36px, 39px, 'Roboto Condensed');
-    color: #444341;
-    text-transform: uppercase;
-    text-align: center;
-
-    @media #{$mobile-tablet} {
-      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
-      margin-bottom: 20px;
-    }
-
-    @media #{$tablet} {
-
-    }
-
-    @media #{$mobile} {
-
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 236px;
-      height: 1px;
-      bottom: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-}
+@import '002-1_title';
 
 
-.page-index .features .divider {
-    width: 236px;
-    height: 1px;
-    background-color: #333;
-    margin: 0 auto;
-    border: none;
-    outline: none;
-    display: block;
-
-    @media #{$mobile} {
-      margin-bottom: 20px;
-    }
-}
 
 
-.page-index .features {
+.page-about .features {
   & .features-content{
     display: flex;
     justify-content: space-between;
@@ -120,7 +76,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__item__row{
     margin-bottom: 20px;
 
@@ -132,7 +88,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .row__items{
     width: 100%;
     // display: flex;
@@ -157,7 +113,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .row__extra{
     // clear: both;
     // display: flex;
@@ -173,7 +129,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .extra__item{
     // clear: both;
     // display: flex;
@@ -223,7 +179,7 @@
 
 
 
-.page-index .features {
+.page-about .features {
   & .features__item-container{
     display: inline-block;
     background-image: none;
@@ -281,20 +237,21 @@
       }
       & .icon-element {
         transition: .3s ease-out;
+        fill: #FFD034;
       }
-      &:hover {
-        & .icon-element {
-          transition: .3s ease-out;
-          fill: #FFD034;
-        }
-      }
+      // &:hover {
+      //   & .icon-element {
+      //     transition: .3s ease-out;
+      //     fill: #FFD034;
+      //   }
+      // }
     }
 
   }
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__item{
     position: relative;
     width: 475px;
@@ -346,7 +303,7 @@
 
 
 // 1
-.page-index .features {
+.page-about .features {
   & .features__item-container:nth-of-type(1) {
 
     & .icon-features{
@@ -360,7 +317,7 @@
 
 
 // 2
-.page-index .features {
+.page-about .features {
   & .features__item-container:nth-of-type(2) {
 
     & .icon-features{
@@ -372,7 +329,7 @@
 
 
 // 3
-.page-index .features {
+.page-about .features {
   & .features__item-container:nth-of-type(3) {
 
     & .icon-features{
@@ -384,7 +341,7 @@
 
 
 // 4
-.page-index .features {
+.page-about .features {
   & .features__item-container:nth-of-type(4) {
 
     & .icon-features{
@@ -396,7 +353,7 @@
 
 
 // 5
-.page-index .features {
+.page-about .features {
   & .features__item-container:nth-of-type(5) {
 
     & .icon-features{
@@ -408,7 +365,7 @@
 
 
 // 6
-.page-index .features {
+.page-about .features {
   & .features__item-container:nth-of-type(6) {
 
     & .icon-features{
@@ -419,7 +376,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .vdivider{
     display: inline-block;
 
@@ -440,7 +397,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .divider--item{
     background-color: rgba(68, 67, 65, 0.2);
     width: 360px;
@@ -461,14 +418,14 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .CLASS{
 //
   }
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__item__foreground{
     @include clearfix;
     height: 100%;
@@ -477,7 +434,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__item__icon{
     width: 70px;
     height: 75px;
@@ -491,7 +448,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__item__title{
     height: 75px;
     width: 330px;
@@ -511,7 +468,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__item__title__text{
     @include font(normal, 300, 25px, 37px, 'Roboto');
     color: #444341;
@@ -536,14 +493,14 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .CLASS{
 
   }
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features__btn{
     position: absolute;
     right: 0;
@@ -575,7 +532,7 @@
 
 
 
-.page-index .features {
+.page-about .features {
   & .features__item-container.active{
     background-image: url('../img/features-item-extra_bg.jpg');
       transition: background-image 0.4s ease-in-out;
@@ -606,7 +563,7 @@
 
 
 
-.page-index .features {
+.page-about .features {
   & .extra__item {
                                       // transition: 1s ease-in-out;
     // height: 208px;
@@ -615,7 +572,7 @@
 }
 
 
-.page-index .features {
+.page-about .features {
   & .CLASS{
 
   }
@@ -625,14 +582,14 @@
 // Smoothy bg styles
 
 
-.page-index .features {
+.page-about .features {
   & .js-feature-item {
     position: relative;
   }
 }
 
 
-.page-index .features {
+.page-about .features {
   & .features-smoothy {
     position: absolute;
     left: 0;
@@ -681,7 +638,7 @@
 // Smoothy bg styles end
 
 
-.page-index .features {
+.page-about .features {
   & .CLASS{
 
   }

@@ -49,7 +49,7 @@ gulp.task('pug', function() {
     'src/templates/pages/cottages.pug',       // 4
     'src/templates/pages/glassunit.pug',      // 5
     'src/templates/pages/accessories.pug',    // 6
-    'src/templates/pages/services.pug',    // 7
+    'src/templates/pages/services.pug',       // 7
 
     'src/templates/pages/404.pug',            //
     'src/templates/pages/affair.pug',         //
@@ -59,17 +59,17 @@ gulp.task('pug', function() {
     'src/templates/pages/contacts.pug',       // 1
     'src/templates/pages/doors.pug',          // 1
 
-    'src/templates/pages/typicalwindows.pug',
+    'src/templates/pages/typicalwindows.pug', // 16
     'src/templates/pages/efficiency.pug',
     'src/templates/pages/faq.pug',
     'src/templates/pages/feedback.pug',
     'src/templates/pages/leadlight.pug',
-    'src/templates/pages/licenses.pug',   // 10
+    'src/templates/pages/licenses.pug',       // 10
     'src/templates/pages/loan.pug',
     'src/templates/pages/specs.pug',
     'src/templates/pages/terms.pug',
     'src/templates/pages/video.pug',
-    'src/templates/pages/about.pug',
+    'src/templates/pages/about.pug',          // 09
     'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
@@ -113,6 +113,7 @@ gulp.task('js', function() {
       'src/js/modules/p20/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10/paginator.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-licenses/carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p09/features-slideDown.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-1/textChange.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-1/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob

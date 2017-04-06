@@ -1,14 +1,14 @@
 
 
-.page-affair .contact {
+.page-about .contact {
   background: url('../img/bg_tan.jpg');
   @media #{$mobile} {
-    box-shadow: 0px -4px 7px 0px rgba(26, 47, 60, 0.21); 
+    box-shadow: 0px -4px 7px 0px rgba(26, 47, 60, 0.21);
   }
 }
 
 
-.page-affair .contact {
+.page-about .contact {
   & .shell {
     margin: 0 auto;
     padding: 0 10px;
@@ -66,7 +66,7 @@
 
 
 
-.page-affair .contact-title {
+.page-about .contact-title {
   @include font(normal, 700, 36px, 64px, 'Roboto Condensed'); // 64-28 = 36/2 = 20
   color: #444341;
   text-align: center;
@@ -85,7 +85,7 @@
 }
 
 
-.page-affair .contact__desc {
+.page-about .contact__desc {
   @include font(normal, 400, 18px, 28px, 'Roboto'); // 28-11(12) === 16
   text-align: center;
   color: #444341;
@@ -107,14 +107,14 @@
 }
 
 
-.page-affair .PROTO {
+.page-about .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-affair .contact__form {
+.page-about .contact__form {
   margin: 0 auto;
 
   @media #{$wide} {
@@ -128,7 +128,7 @@
 }
 
 
-.page-affair .contact__form__field {
+.page-about .contact__form__field {
   display: block;
   background: #f3f3f3;
   height: 50px;
@@ -161,21 +161,21 @@
 }
 
 
-.page-affair .contact__form__field--name {
+.page-about .contact__form__field--name {
   @media #{$wide} {
     width: 260px;
   }
 }
 
 
-.page-affair .contact__form__field--tel {
+.page-about .contact__form__field--tel {
   @media #{$wide} {
     width: 360px;
   }
 }
 
 
-.page-affair .contact__form__btn {
+.page-about .contact__form__btn {
   @include font(normal, 400, 18px, 50px, 'Roboto');
   color: #f9f9f9;
   // text-transform: uppercase;
@@ -210,7 +210,7 @@
 }
 
 
-.page-affair .PROTO {
+.page-about .PROTO {
   & .CLASS{
 
   }

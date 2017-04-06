@@ -1,4 +1,4 @@
-.page-doors .breadcrumbs {
+.page-about .breadcrumbs {
   // bg 1
   margin-bottom: 55px;
   @media #{$tablet} {
@@ -12,7 +12,7 @@
 }
 
 
-.page-doors .breadcrumbs {
+.page-about .breadcrumbs {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
@@ -68,28 +68,28 @@
 }
 
 
-.page-doors .PROTO {
+.page-about .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .PROTO {
+.page-about .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .PROTO {
+.page-about .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .breadcrumbs-essence {
+.page-about .breadcrumbs-essence {
   display: flex;
   position: relative;
 
@@ -109,7 +109,7 @@
 }
 
 
-.page-doors .breadcrumbs__item {
+.page-about .breadcrumbs__item {
   margin-right: 27px;
 
   position: relative;
@@ -132,7 +132,7 @@
 }
 
 
-.page-doors .breadcrumbs__link {
+.page-about .breadcrumbs__link {
   display: block;
   @include font(normal, 400, 18px, 18px, 'Roboto');
   color: #444341;
@@ -143,7 +143,7 @@
 }
 
 
-.page-doors .PROTO {
+.page-about .PROTO {
   & .CLASS{
 
   }
