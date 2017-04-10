@@ -44,6 +44,7 @@
 
   & .container {
     // padding: 100px 0;
+    padding-bottom: 90px;
 
     @media #{$mobile} {
       padding: 70px 0;
@@ -60,6 +61,7 @@
 }
 
 @import '002-1_title';
+@import '002-2_f-separator';
 
 
 

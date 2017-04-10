@@ -1,0 +1,57 @@
+
+.page-about .department .department-subtitle {
+  text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+  }
+  margin-bottom: 15px;
+}
+
+.page-about .department .department-subtitle-text {
+  @include font(700, normal, 32px, 63px, 'Roboto');
+  color: #444341;
+  // text-transform: uppercase;
+  text-align: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+  position: relative;
+
+  &::after,
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background-color: #444341;
+    top: 50%;
+
+    @media #{$tablet} {
+      top: 50%;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+  }
+}
+
+.page-about .department .department-subtitle-desc-text {
+  @include font(400, normal, 18px, 27px, 'Roboto');
+  color: #444341;
+  margin: 0 auto;
+  width: 740px;
+
+  margin-bottom: 45px;
+}

@@ -113,6 +113,7 @@ gulp.task('js', function() {
       'src/js/modules/p20/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10/paginator.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-licenses/carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p09/009_gallery.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p09/features-slideDown.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-1/textChange.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p10-1/paginator.js' // e.g. /path/to/mymodule/mymodule/*.js'

@@ -17,10 +17,10 @@ append 001_config
   //- smoothDivScroll
   - var jQuery = true
   //- - var masonry = true
-        //- - var jQueryUI = true
-        //- - var jQueryMousewheel = true
-        //- - var jQkinetic = true
-        //- - var jQsmoothDivScroll = true
+  - var jQueryUI = true
+  - var jQueryMousewheel = true
+  - var jQkinetic = true
+  - var jQsmoothDivScroll = true
   //- eof smoothDivScroll
 
         //- - var waterwheelCarousel = true
@@ -33,6 +33,8 @@ append 001_config
   //- - var TimeCircles = true
 
   - var updateBodyClass = bodyClasses.push('page-about')
+
+  - var jQueryFancybox = true
 
   //- - var GoogleFonts = 'Poiret+One'
   //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
@@ -90,9 +92,10 @@ block content
 
       include 06_department04
 
-      include 07_employees
+      .employees-outer
+        include 07_employees
 
-      include 08_gallery
+        include 08_gallery
 
       include 09_contact
 

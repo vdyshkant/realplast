@@ -1,34 +1,28 @@
 
+.page-about .employees-outer {
+  // bg 1
+  // background: #444341;
+  background: #444341 url(../img/005_differences_bg.jpg);
+}
 
-.page-doors .contact {
-  background: url('../img/bg_tan.jpg');
+.page-about .employees {
+  // bg 1
 }
 
 
-.page-doors .contact {
+.page-about .employees {
   & .shell {
     margin: 0 auto;
-    padding: 0 10px;
-
-    // outline: 2px dashed tan;
-    // outline-offset: -2px;
-
     max-width: 1160px;
-    min-width: 1160px;
 
-    // outline: 2px dashed tan;
+    padding-left: 20px;
+    padding-right: 20px;
+
     // outline-offset: -2px;
-
-    @media #{$tablet} {
-      min-width: 768px;
-      max-width: 768px;
-
-      // padding: 0 20px;
-    }
+    // outline: 2px dashed tan;
 
     @media #{$mobile} {
       min-width: 320px;
-      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -41,173 +35,210 @@
   }
 
   & .container {
-    padding: 90px 0 55px;
-
-    @media #{$tablet} {
-      padding: 65px 0 65px;
-    }
-
-    @media #{$mobile} {
-      padding: 60px 0 35px;
-    }
+    //
+    padding-top: 85px;
   }
 
-  & .PROTO-wrapper {
+  & .employees-wrapper {
     //
   }
 
-  & .PROTO-essence {
+  & .employees-essence {
     //
   }
 }
 
 
-
-.page-doors .contact-title {
-  @include font(normal, 700, 36px, 64px, 'Roboto Condensed'); // 64-28 = 36/2 = 20
-  color: #444341;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-
-  @media #{$tablet} {
-    @include font(normal, 700, 22px, 33px, 'Roboto Condensed'); // 17///33-17 = 16/2 = 8 = 10
-    margin-bottom: 15px;
-  }
-
-  @media #{$mobile} {
-    @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
-    margin-bottom: 5px;
-  }
-}
-
-
-.page-doors .contact__desc {
-  @include font(normal, 400, 18px, 28px, 'Roboto'); // 28-11(12) === 16
-  text-align: center;
-  color: #444341;
-  margin-bottom: 30px;
-
-  @media #{$tablet} {
-    @include font(normal, 400, 18px, 27px, 'Roboto'); // 11 /// 27-11 / 2 = 8 = 10
-    width: 576px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-
-  @media #{$mobile} {
-    @include font(normal, 400, 18px, 27px, 'Roboto');
-    width: auto;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-}
-
-
-.page-doors .PROTO {
+.page-about .employees {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .contact__form {
-  margin: 0 auto;
+.page-about .employees {
+  & .employees-subtitle{
+    text-align: center;
 
-  @media #{$wide} {
-    display: flex;
-    width: 920px;
-  }
-
-  & > * {
-    display: block;
+    // optional
+    margin-bottom: 20px;
   }
 }
 
 
-.page-doors .contact__form__field {
-  display: block;
-  background: #f3f3f3;
-  height: 50px;
+.page-about .employees {
+  & .employees-subtitle-text{
+    @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 32/2==16~~ +/- 15
+    color: #ffffff;
+    // text-transform: uppercase;
+    margin-bottom: 15px;
+
+    // background: url('../img/bg_white.jpg');
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+      text-align: left;
+      padding: 0;
+    }
+
+    &::after,
+    &::before {
+
+      content: "";
+      position: absolute;
+      width: 10000%;
+      height: 1px;
+      background: #fff;
+      top: 32px;
+
+      @media #{$tablet} {
+        content: none;
+
+      }
+
+      @media #{$mobile} {
+        content: none;
+      }
+    }
+
+    &::after {
+      right: -10000%;
+
+    }
+
+    &::before {
+      left: -10000%;
+      // z-index: -1;
+
+    }
+  }
+}
+
+
+.page-about .employees .process-content {
+  // @include clearfix;
+}
+
+
+.page-about .employees .process-content-row {
+  @include clearfix;
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// item
+.page-about .employees .process__item {
+  width: 265px;
+  float: left;
   margin-right: 20px;
-  @include font(normal, 300, 14px, 50px, 'Roboto');
-  color: #8e8e8e;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  &:nth-child(5n) {
+    clear: left;
+  }
+}
 
-  padding: 20px;
 
-  border: none;
-  outline: none;
-
-  @media #{$tablet} {
-    max-width: 540px;
-    min-width: 540px;
+.page-about .employees {
+  & .process__item__img{
+    display: block;
+    width: 170px;
+    height: 170px;
+    // background-size: 100%;
     margin: 0 auto;
-    margin-bottom: 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  @media #{$mobile} {
-    width: 100%;
-    margin-bottom: 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    margin-bottom: 15px;
+    position: relative;
   }
 }
 
 
-.page-doors .contact__form__field--name {
-  @media #{$wide} {
-    width: 260px;
+.page-about .employees {
+  & .CLASS{
+
   }
 }
 
 
-.page-doors .contact__form__field--tel {
-  @media #{$wide} {
-    width: 360px;
+.page-about .employees {
+  & .process__item__desc{
+    text-align: center;
   }
 }
 
 
-.page-doors .contact__form__btn {
-  @include font(normal, 400, 18px, 50px, 'Roboto');
-  color: #f9f9f9;
-  // text-transform: uppercase;
-  text-align: center;
-  width: 260px;
-  background: #42a455;
-
-  box-shadow: 3px 3px 7px 0px rgba(204, 56, 24, 0.21);
-  cursor: pointer;
-  transition: .3s ease-out;
-  position: relative;
-  top: 0;
-  user-select: none;
-
-  @media #{$tablet} {
-    margin: 0 auto;
-  }
-
-  @media #{$mobile} {
-    width: 100%;
-  }
-
-  &:hover {
-    background: #3a8147;
-    color: #f9f9f9;
-  }
-  &:active {
-    background: #3a8147;
-    color: #f9f9f9;
-    top: 1px;
+.page-about .employees {
+  & .process__item__name{
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+    color: #fefefe;
   }
 }
 
 
-.page-doors .PROTO {
+.page-about .employees {
+  & .process__item__position{
+    @include font(normal, 500, 15px, 21px, 'Roboto');
+    color: #ffffff;
+  }
+}
+
+
+.page-about .employees {
+  & .process__item__exp{
+    @include font(italic, 300, 14px, 21px, 'Roboto');
+    color: #ffffff;
+  }
+}
+
+
+
+
+.page-about .employees {
+  & .CLASS{
+
+  }
+}
+
+
+.page-about .employees {
+  & .CLASS{
+
+  }
+}
+
+
+.page-about .employees {
+  & .CLASS{
+
+  }
+}
+
+
+.page-about .employees {
+  & .CLASS{
+
+  }
+}
+
+
+.page-about .employees {
+  & .CLASS{
+
+  }
+}
+
+
+.page-about .employees {
   & .CLASS{
 
   }

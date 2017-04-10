@@ -1,7 +1,9 @@
 .page-about .gallery {
   // bg 1
-  background: #444341;
+  // background: #444341;
+  // background: #444341 url(../img/005_differences_bg.jpg);
 }
+
 
 
 .page-about .gallery {
@@ -39,7 +41,7 @@
 
   & .gallery-essence {
     @media #{$wide} {
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
     }
   }
 
@@ -260,91 +262,3 @@
 }
 
 // TITLE END
-
-
-
-// EXPAND
-.page-about .gallery {
-  & .gallery__expand{
-    min-height: 50px;
-    transition: .3s ease-out;
-
-    display: flex;
-    flex-direction: row;
-
-    @media #{$mobile} {
-      display: none;
-    }
-  }
-}
-
-
-.page-about .gallery {
-  & .CLASS{
-
-  }
-}
-
-
-.page-about .gallery {
-  & .gallery__expand-item {
-    // FLEX
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-
-.page-about .gallery {
-  & .gallery__expand-item.divider{
-
-    width: 33.92857142857143%;
-    border-bottom: 1px solid #fff;
-    &:first-child {
-      margin-right: 20px;
-    }
-    &:last-child {
-      margin-left: 20px;
-    }
-  }
-}
-
-
-.page-about .gallery {
-  & .gallery__expand__btn{
-    display: block;
-    @include font(normal, 400, 18px, 50px, 'Roboto');
-    color: white;
-
-    white-space: nowrap;
-    width: 320px;
-    height: 50px;
-    margin: 0 auto;
-    border: 1px solid #ffffff;
-    text-align: center;
-    text-decoration: none;
-
-    cursor: pointer;
-    transition: .3s ease-out;
-    user-select: none;
-
-
-    position: relative;
-    top: 0;
-
-    &:hover {
-      background: #fff;
-      color: #444341;
-      // background: #3a8147;
-
-    }
-
-    &:active {
-      background: #fff;
-      color: #444341;
-      top: 1px;
-    }
-  }
-}
