@@ -8,7 +8,7 @@
     text-align: center;
 
     @media #{$mobile-tablet} {
-      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+      @include font(normal, 700, 21px, 31px, 'Roboto Condensed');
       margin-bottom: 20px;
     }
 
@@ -91,7 +91,7 @@
   @include font(400, normal, 18px, 27px, 'Roboto');
   color: #444341;
   margin: 0 auto;
-  width: 740px;
+  max-width: 740px;
 }
 
 

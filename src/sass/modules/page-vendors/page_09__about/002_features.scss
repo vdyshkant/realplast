@@ -46,6 +46,10 @@
     // padding: 100px 0;
     padding-bottom: 90px;
 
+    @media #{$tablet} {
+      padding-bottom: 60px;
+    }
+
     @media #{$mobile} {
       padding: 70px 0;
     }

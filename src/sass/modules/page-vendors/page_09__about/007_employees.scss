@@ -134,18 +134,43 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media #{$tablet} {
+    text-align: center;
+    font-size: 0;
+    & > div {
+      font-size: initial;
+    }
+
+  }
 }
 
 // item
 .page-about .employees .process__item {
   width: 265px;
-  float: left;
   margin-right: 20px;
-  &:nth-child(4n) {
-    margin-right: 0;
+
+
+  @media #{$wide} {
+    float: left;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:nth-child(5n) {
+      clear: left;
+    }
   }
-  &:nth-child(5n) {
-    clear: left;
+
+  @media #{$tablet} {
+    display: inline-block;
+
+    margin-bottom: 50px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(3n) {
+      clear: left;
+    }
   }
 }
 
