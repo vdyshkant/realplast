@@ -10,4 +10,13 @@
   @media #{$tablet} {
     margin-bottom: 55px;
   }
+
+  @media #{$mobile} {
+    width: auto;
+    max-width: 300px;
+    background-size: cover;
+    background-size: 100%;
+
+    margin-bottom: 45px;
+  }
 }

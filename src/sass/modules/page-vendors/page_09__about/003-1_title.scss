@@ -18,6 +18,12 @@
   display: inline-block;
   position: relative;
 
+
+  @media #{$mobile-tablet} {
+    @include font(700, normal, 21px, 31px, 'Roboto');
+    margin-bottom: 20px;
+  }
+
   &::after,
   &::before {
 

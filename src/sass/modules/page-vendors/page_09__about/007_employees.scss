@@ -129,30 +129,36 @@
 
 .page-about .employees .process-content-row {
   @include clearfix;
-  margin-bottom: 45px;
+
+  @media #{$wide} {
+    margin-bottom: 45px;
+  }
+
+  @media #{$tablet} {
+    margin-bottom: 45px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media #{$tablet} {
+  @media #{$mobile-tablet} {
     text-align: center;
     font-size: 0;
     & > div {
       font-size: initial;
     }
-
   }
 }
 
 // item
 .page-about .employees .process__item {
   width: 265px;
-  margin-right: 20px;
 
 
   @media #{$wide} {
     float: left;
+    margin-right: 20px;
     &:nth-child(4n) {
       margin-right: 0;
     }
@@ -161,7 +167,12 @@
     }
   }
 
+
   @media #{$tablet} {
+    margin-right: 20px;
+  }
+
+  @media #{$mobile-tablet} {
     display: inline-block;
 
     margin-bottom: 50px;
@@ -172,6 +183,7 @@
       clear: left;
     }
   }
+
 }
 
 

@@ -29,6 +29,7 @@
 
     @media #{$mobile} {
       min-width: 320px;
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -81,10 +82,16 @@
       }
     }
 
+    @media #{$mobile} {
+
+      margin: 0 auto 20px;
+      float: none;
+    }
+
     &:last-child {
       margin-right: 0;
 
-      @media #{$tablet} {
+      @media #{$mobile-tablet} {
         display: none;
       }
     }
