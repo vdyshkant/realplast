@@ -24,7 +24,7 @@
     // background: url('../img/bg_welcome.png');
 
     @media #{$tablet} {
-      max-width: 768px;
+      min-width: 768px;
     }
 
 
@@ -43,6 +43,14 @@
 
   & .container {
     padding-bottom: 90px;
+
+    @media #{$tablet} {
+      padding-bottom: 65px;
+    }
+
+    @media #{$tablet} {
+      padding-bottom: 135px;
+    }
   }
 
 
@@ -72,16 +80,15 @@
     text-align: center;
 
     @media #{$mobile-tablet} {
-      @include font(normal, 700, 21px, 31px, 'Roboto Condensed');
-      margin-bottom: 20px;
+      @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
     }
 
     @media #{$tablet} {
-
+      margin-bottom: 20px;
     }
 
     @media #{$mobile} {
-
+      margin-bottom: 15px;
     }
 
     & + .divider {
@@ -111,9 +118,22 @@
 
 
 .page-video .video-slider-shell {
-    width: 740px;
-    height: 500px;
     margin: 0 auto;
+
+    @media #{$wide} {
+      width: 740px;
+      height: 500px;
+    }
+
+    @media #{$tablet} {
+      width: 576px;
+      height: 388px;
+    }
+
+    @media #{$mobile} {
+      width: 300px;
+      height: 200px;
+    }
 }
 
 
@@ -125,9 +145,16 @@
 .page-video .video-slider__clip-essence {
   width: 740px;
   height: 500px;
+
+  @media #{$tablet} {
+    width: 576px;
+    height: 388px;
+  }
+
+
   @media #{$mobile} {
-    // width: 300px;
-    // height: 96px;
+    width: 300px;
+    height: 200px;
   }
 }
 
@@ -170,11 +197,19 @@
 .page-video .video-slider-controls__left {
 
 
-  left: 140px;
+  background: url('../img/019_arr_left.svg') no-repeat;
 
   @media #{$wide} {
-    background: url('../img/019_arr_left.svg') no-repeat;
     // box-shadow: 3px 3px 7px 0 rgba(26, 47, 60, 0.21);
+    left: 140px;
+  }
+
+  @media #{$tablet} {
+    left: 20px;
+  }
+
+  @media #{$mobile} {
+    left: 10px;
   }
 
   & .bx-prev {
@@ -205,11 +240,19 @@
 
 .page-video .video-slider-controls__right {
 
-  right: 140px;
+  background: url('../img/019_arr_right.svg') no-repeat;
 
   @media #{$wide} {
-    background: url('../img/019_arr_right.svg') no-repeat;
     // box-shadow: 3px 3px 7px 0 rgba(26, 47, 60, 0.21);
+    right: 140px;
+  }
+
+  @media #{$tablet} {
+    right: 20px;
+  }
+
+  @media #{$mobile} {
+    right: 10px;
   }
 
   & .bx-next {

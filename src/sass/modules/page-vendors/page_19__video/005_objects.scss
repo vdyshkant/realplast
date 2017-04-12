@@ -40,8 +40,15 @@
   }
 
   & .container {
-    //
-    padding-bottom: 90px;
+    padding-bottom: 80px;
+
+    @media #{$tablet} {
+      padding-bottom: 65px;
+    }
+
+    @media #{$mobile} {
+      padding-bottom: 50px;
+    }
   }
 
   & .objects-wrapper {
@@ -54,11 +61,29 @@
 }
 
 
+@import "005-1_pagination";
+
+
 .page-video .objects {
   & .CLASS{
 
   }
 }
+
+
+.page-video .objects {
+  & .objects-content{
+    margin-bottom: 50px;
+
+
+    @media #{$tablet} {
+      max-width: 728px; // to zentralize videos on tablet
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+}
+
 
 
 .page-video .objects-subtitle {
@@ -81,7 +106,13 @@
   display: inline-block;
   position: relative;
 
-  margin-bottom: 40px;
+  @media #{$wide} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$mobile-tablet} {
+    @include font(700, normal, 21px, 31px, 'Roboto');
+  }
 
   &::after,
   &::before {
@@ -122,8 +153,14 @@
 
 .page-video .objects {
   & .objects__clip-essence{
-    width: 360px;
-    height: 198px;
+    width: 354px;
+    height: 195px;
+    display: block; // !! потому что появляется левые отступы
+
+    @media #{$mobile} {
+      width: 300px;
+      height: 165px;
+    }
   }
 }
 
@@ -136,11 +173,12 @@
 
 
 .page-video .objects {
-  & .objects-item{
+  & .objects-item {
     float: left;
+    margin-right: 20px;
+    box-shadow: 2px 2px 7px 0px rgba(40, 4, 27, 0.21);
 
     @media #{$wide} {
-      margin-right: 20px;
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -155,12 +193,33 @@
     }
 
     @media #{$tablet} {
-      max-width: 768px;
+      max-width: 354px;
 
-      padding: 0 20px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n + 1) {
+        clear: left;
+      }
+      &:nth-child(2n + 1) {
+        margin-bottom: 20px;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+
+      // padding: 0 20px;
+    }
+
+    @media #{$mobile} {
+      float: none;
+      max-width: 300px;
+      margin: 0 auto 20px;
     }
   }
 }
+
 
 
 .page-video .objects {
