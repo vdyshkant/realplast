@@ -11,6 +11,21 @@
     outline: 2px dashed tan;
     outline-offset: -2px;
 
+    @media #{$wide} {
+      min-width: 1160px;
+    }
+
+    // padding: 0 5px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      max-width: 768px;
+
+      padding: 0 20px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
