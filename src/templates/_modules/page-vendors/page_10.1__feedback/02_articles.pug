@@ -22,7 +22,10 @@ section.articles
               .articles__item-left
                 .articles__substrate
                   +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
-                  svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
+                  //- svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
+                .articles__substrate--smaller
+                  +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg--smaller', 'filename':'articles_thumb_bg--smaller'}])
+                  //- svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
 
                 a.articles__item-thumb(href="javascript:void(0)")
                   img.articles__item-thumb__img(src='img/010-1_feedback-01.png')
@@ -54,6 +57,10 @@ section.articles
               .articles__item-left
                 .articles__substrate
                   +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
+                .articles__substrate--smaller
+                  +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg--smaller', 'filename':'articles_thumb_bg--smaller'}])
+                  //- svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
+
                 a.articles__item-thumb(href="javascript:void(0)")
                   //- img.articles__item-thumb__img(src='img/010_articles-02.png')
                   picture.articles__item-thumb__img
@@ -84,6 +91,9 @@ section.articles
               .articles__item-left
                 .articles__substrate
                   +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
+                .articles__substrate--smaller
+                  +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg--smaller', 'filename':'articles_thumb_bg--smaller'}])
+
                 a.articles__item-thumb(href="javascript:void(0)")
                   //- img.articles__item-thumb__img(src='img/010_articles-03.png')
                   picture.articles__item-thumb__img
