@@ -204,7 +204,16 @@
   @media #{$tablet} {
     @include clearfix;
     min-height: 340px;
+
+    &:last-child {
+      min-height: 320px;
+    }
   }
+
+  // @media #{$mobile} {
+  //   @include clearfix;
+  //   min-height: 340px;
+  // }
 
   &::before {
     content: '';

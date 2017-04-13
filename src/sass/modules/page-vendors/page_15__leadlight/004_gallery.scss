@@ -29,8 +29,12 @@
   }
 
   & .container {
-    padding-top: 100px;
+    padding-top: 85px;
     padding-bottom: 100px;
+
+    @media #{$tablet} {
+      padding: 60px 0 70px;
+    }
 
     @media #{$mobile} {
       padding: 50px 0 65px;
@@ -39,7 +43,7 @@
 
   & .gallery-essence {
     @media #{$wide} {
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
     }
   }
 
@@ -51,6 +55,67 @@
 
   }
 }
+
+
+.page-leadlight .gallery-title {
+  text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+  }
+  margin-bottom: 25px;
+}
+
+
+.page-leadlight .gallery-title-text {
+  @include font(700, normal, 32px, 63px, 'Roboto');
+  color: #fff;
+  // text-transform: uppercase;
+  text-align: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+  position: relative;
+
+  @media #{$wide} {
+    margin-bottom: 30px;
+  }
+
+
+  @media #{$mobile-tablet} {
+    text-transform: uppercase;
+    @include font(700, normal, 21px, 31px, 'Roboto');
+  }
+
+  &::after,
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+
+    @media #{$tablet} {
+      top: 50%;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+  }
+}
+
 
 
 .page-leadlight .gallery {
@@ -230,18 +295,18 @@
 
 // TITLE
 
-.page-leadlight .gallery-title {
-  @include font(normal, 700, 36px, 37px, 'Roboto Condensed');
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-
-  @media #{$mobile} {
-    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
-    margin-bottom: 15px;
-  }
-}
+// .page-leadlight .gallery-title {
+//   @include font(normal, 700, 36px, 37px, 'Roboto Condensed');
+//   color: white;
+//   text-transform: uppercase;
+//   text-align: center;
+//   margin-bottom: 30px;
+//
+//   @media #{$mobile} {
+//     @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+//     margin-bottom: 15px;
+//   }
+// }
 
 .page-leadlight .gallery-divider {
   display: block;

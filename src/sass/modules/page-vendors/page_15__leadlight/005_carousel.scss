@@ -2,7 +2,7 @@
   // bg 1
   background: url('../img/feedbacks_bg.jpg');
   @media #{$wide} {
-    margin-top: -195px;
+    // margin-top: -195px;
   }
 }
 
@@ -38,8 +38,8 @@
   }
 
   & .container {
-    padding: 210px 0 100px;
-    min-height: 1020px;
+    padding: 90px 0 100px;
+    min-height: 850px;
 
     @media #{$tablet} {
       min-height: 810px;
@@ -68,33 +68,83 @@
 }
 
 
-.page-leadlight .carousel {
-  & .carousel-title{
+
+.page-leadlight .carousel-title {
+  text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  // margin-bottom: 15px;
+  & + .divider {
+    display: none;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    width: 236px;
+    height: 1px;
+    background-color: #333;
     margin-bottom: 35px;
-    @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
-    color: #444341;
-    text-transform: uppercase;
-    text-align: center;
 
     @media #{$tablet} {
-      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+      display: block;
     }
 
     @media #{$mobile} {
-      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+
     }
   }
 }
 
 
-.page-leadlight .carousel {
-  & .divider{
-    // margin-bottom: 35px;
+.page-leadlight .carousel-title-text {
+  @include font(700, normal, 36px, 54px, 'Roboto');
+  color: #444341;
+  // text-transform: uppercase;
+  text-align: center;
 
-    width: 236px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+  position: relative;
+
+  @media #{$wide} {
+    // margin-bottom: 30px;
+  }
+
+  @media #{$mobile-tablet} {
+    @include font(700, normal, 22px, 33px, 'Roboto');
+    text-transform: uppercase;
+  }
+
+  &::after,
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 10000%;
     height: 1px;
-    background-color: #333;
-    margin: 0 auto;
+    background-color: #444341;
+    top: 50%;
+
+    @media #{$tablet} {
+      top: 50%;
+      content: none;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
   }
 }
 
@@ -138,7 +188,7 @@
 .page-leadlight .carousel {
   & .slider-item__iframe{
     width: 360px;
-    // height: 245px;
+    height: 245px;
 
     @media #{$mobile} {
       width: 260px;
@@ -340,10 +390,10 @@
 
 // CAROUSEL
 
-#carousel {
+.page-leadlight .carousel #carousel {
   //  width:960px;
   //  border:1px solid #222;
-   min-height: 700px;
+   min-height: 600px;
    position:relative;
    clear:both;
 // mih и h обязательно должны бить прописаны, чтоб слайды как нужно ложились на площадке
@@ -353,7 +403,7 @@
    }
 
    @media #{$mobile} {
-     min-height: 700px;
+    min-height: 700px;
     height: 700px;
    }
 
@@ -402,7 +452,8 @@
     z-index: 99;
 
     @media #{$wide} {
-      display: none;
+      // display: none;
+      top: 43%;
     }
 
     @media #{$tablet} {
