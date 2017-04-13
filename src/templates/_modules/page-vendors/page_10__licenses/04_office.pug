@@ -1,65 +1,60 @@
-// balcons
-
-section.balcons#balcons
+// office
+section.office
   .shell
-      .container
-        .range
-          .balcons-wrapper
+    .container
+      .range
+        //- .office-wrapper
 
-            //- title
-            .balcons-title-container
-              h2.balcons-title Балконные двери
+          //- title
+          //- .office-title
+          //-   h2.office-title-text Наши контакты
+          //-   hr.divider
 
-            .balcons-content
-              .balcons-container(class='balcons-features')
-                picture.balcons-features-thumb
-                  source(media='(min-width: 1160px)', srcset='img/013_balcon.png 1x')
-                  source(media='(min-width: 768px)', srcset='img/013_balcon--tablet.png 1x')
-                  img.balcons-features-thumb__img(src='img/013_balcon--mobile.png')
-                ul.balcons-features-list
-                  li.balcons-features-list-item Такой подход гарантирует комфортный микроклимат в помещении круглогодично.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются
-                  li.balcons-features-list-item Стеклопакет с i-стеклом на сегодняшний день являются совершенным теплосберегающим решением.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются от стандартных металлопластиковых конструкций.
-                  li.balcons-features-list-item Такой подход гарантирует комфортный микроклимат в помещении круглогодично.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются
-                  li.balcons-features-list-item Стеклопакет с i-стеклом на сегодняшний день являются совершенным теплосберегающим решением.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются от стандартных металлопластиковых конструкций.
+        .office-content
 
+          .office-content-map
+            #map01
+            script.
+              var map01;
+              function initMap() {
 
-              .balcons-container(class='balcons-advices')
-                .balcons-advices-title
-                  h3.balcons-advices-title-text Советы по выбору
-                .balcons-advices-columns
+                map01 = new google.maps.Map(document.getElementById('map01'), {
+                  center: {lat: 43.228318, lng: 76.8192548},
+                  zoom: 11,
+                  scrollwheel:  false,
+                  styles: [{"featureType":"all","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#242f3e"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#746855"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#242f3e"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#242f3e"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#746855"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#242f3e"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#d59563"},{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"labels.icon","stylers":[{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#d59563"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#d59563"},{"visibility":"on"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#263c3f"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#6b9a76"},{"visibility":"on"}]},{"featureType":"poi.park","elementType":"labels.text.stroke","stylers":[{"hue":"#ff0000"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#38414e"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#212a37"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#9ca5b3"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#29a7df"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#1f2835"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#f3d19c"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#2f3948"}]},{"featureType":"transit.station","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#d59563"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#17263c"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#00537b"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#515c6d"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#17263c"}]}]
+                });
 
+                var image = 'img/map-marker.png'; // marker pic here
 
+                var marker01 = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.228318, 76.8192548),
+                    map: map01,
+                    icon: image,
+                    animation: google.maps.Animation.DROP, // initially типо красиво падает на карту
+                    //- title: 'Snazzy!'
+                });
 
-                  .balcons-advices-column
-                    .balcons-advices-column-num 1
-                    .balcons-advices-column-title Внешний вид
-                    .balcons-advices-column-text
-                      | Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где уравнение времени недоступно отражает случайный сарос. Зоркость наблюдателя дает астероидный секстант. Движение меняет близкий азимут. Все известные астероиды имеют прямое движение, при этом параметр дает космический терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Соединение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид жизненно притягивает центральный Ганимед.
+                google.maps.event.addListener(map01, 'idle', function () {
+                  marker01.setAnimation(google.maps.Animation.BOUNCE);
+                });
 
+              }
 
-
-                  .balcons-advices-column
-                    .balcons-advices-column-num 2
-                    .balcons-advices-column-title Внутренний вид
-                    .balcons-advices-column-text
-                      | Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где уравнение времени недоступно отражает случайный сарос. Зоркость наблюдателя дает астероидный секстант. Движение меняет близкий азимут. Все известные астероиды имеют прямое движение, при этом параметр дает космический терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Соединение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид жизненно притягивает центральный Ганимед.
-
-
-                  .balcons-advices-column
-                    .balcons-advices-column-num 3
-                    .balcons-advices-column-title Субъективный вид
-                    .balcons-advices-column-text
-                      | Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где уравнение времени недоступно отражает случайный сарос. Зоркость наблюдателя дает астероидный секстант. Движение меняет близкий азимут. Все известные астероиды имеют прямое движение, при этом параметр дает космический терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Соединение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид жизненно притягивает центральный Ганимед.
+          .office-content-desc
+            .office-content-desc-container
+              .office-content-item-title Наш офис
+              img.office-content-item-thumb(src="img/010_office-address.jpg")
+              .office-content-item-address
+                .office-content-item-address-title адрес
+                .office-content-item-address-text  г. Алматы, ул. Тимирязева 17, офис&nbsp;27
+              .office-content-item-phone
+                .office-content-item-phone-title телефон
+                .office-content-item-phone-text (727) 266-288-6,<br> (727) 266-288-7
 
 
 
 
 
 
-
-
-// balcons end
+// office end

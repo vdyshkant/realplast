@@ -1,15 +1,15 @@
-.page-index .PROTO {
+.page-licenses .office {
   // bg 1
 }
 
 
-.page-index .PROTO {
+.page-licenses .office {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -28,31 +28,163 @@
     //
   }
 
-  & .PROTO-wrapper {
+  & .office-wrapper {
     //
   }
 
-  & .PROTO-essence {
+  & .office-essence {
     //
   }
 }
 
 
-.page-index .PROTO {
+.page-licenses .office {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-licenses .office {
+  & .office-content{
+    height: 660px;
+    position: relative;
+    @media #{$mobile} {
+      height: 754px;
+      width: 320px;
+      margin: 0 auto;
+    }
+  }
+
+  & #map01 {
+    min-height: 660px; // add for mapp aappearance!!!!
+    @media #{$mobile} {
+      min-height: 320px;
+    }
+  }
+}
+
+
+.page-licenses .office {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-licenses .office {
+  & .office-content-desc{
+    position: absolute;
+    top: 125px;
+    right: 20px;
+    width: 450px;
+    min-height: 404px;
+    padding: 20px 40px 30px 40px;
+    background: #d6d7d4 url('../img/010_office-address-bg.png');
+    box-shadow: -3px 0px 5px 0px rgba(23, 26, 27, 0.11);
+
+    @media #{$tablet} {
+      top: 120px;
+
+    }
+
+    @media #{$mobile} {
+    padding: 30px 10px 35px 10px;
+      min-height: 434px;
+      bottom: 0;
+      top: auto;
+      right: auto;
+      width: auto;
+      min-width: 320px;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+  }
+}
+
+
+.page-licenses .office {
+  & .office-content-item-title{
+    @include font(normal, 700, 32px, 63px, 'Roboto');
+    color: #444341;
+    text-align: center;
+
+    @media #{$mobile} {
+      @include font(normal, 700, 21px, 31px, 'Roboto');
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+
+.page-licenses .office {
+  & .office-content-item-thumb{
+    /* Style for "nashi-rabo" */
+    display: block;
+    width: 372px;
+    height: 170px;
+    margin-bottom: 25px;
+
+    @media #{$mobile} {
+      width: 300px;
+      height: 170px;
+    }
+  }
+}
+
+
+.page-licenses .office {
+  & .office-content-item-address,
+  & .office-content-item-phone {
+    @include clearfix;
+  }
+}
+
+
+.page-licenses .office {
+  & .office-content-item-address-title,
+  & .office-content-item-phone-title {
+    @include font(normal, 700, 14px, 27px, 'Roboto');
+    color: #444341;
+
+    float: left;
+    width: 70px;
+
+    @media #{$mobile} {
+      @include font(normal, 700, 14px, 31px, 'Roboto');
+      width: 70px;
+    }
+  }
+}
+
+
+.page-licenses .office {
+  & .CLASS{
+
+  }
+}
+
+
+.page-licenses .office {
+  & .office-content-item-address-text,
+  & .office-content-item-phone-text {
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+    color: #444341;
+
+    float: right;
+    width: 300px;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 18px, 27px, 'Roboto');
+      width: 230px;
+    }
+  }
+}
+
+
+.page-licenses .office {
   & .CLASS{
 
   }

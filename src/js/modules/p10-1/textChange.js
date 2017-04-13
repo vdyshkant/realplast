@@ -1,4 +1,4 @@
-// footer-nav text change
+// text change
 
 $(document).ready(function() {
 	if($('body').is('.page-feedback')){
@@ -14,7 +14,6 @@ $(document).ready(function() {
             }
         // });
     })();
-
 
   } // eof body.is
 

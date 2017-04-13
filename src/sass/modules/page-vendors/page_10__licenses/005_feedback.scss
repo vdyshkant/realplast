@@ -2,7 +2,7 @@
   // bg 1
   background: url('../img/feedbacks_bg.jpg');
   @media #{$wide} {
-    margin-top: -195px;
+    // margin-top: -195px;
   }
 }
 
@@ -38,7 +38,7 @@
   }
 
   & .container {
-    padding: 210px 0 100px;
+    padding: 90px 0 100px;
     // min-height: 1020px;
 
     @media #{$tablet} {
@@ -71,8 +71,27 @@
 .page-licenses .feedbacks {
   & .feedbacks-title{
     text-align: center;
-    @media #{$tablet} {
+    @media #{$mobile-tablet} {
       overflow: hidden;
+      margin-bottom: 20px;
+    }
+    & + .divider {
+      display: none;
+      border: none;
+      outline: none;
+      margin: 0 auto;
+      width: 236px;
+      height: 1px;
+      background-color: #333;
+      margin-bottom: 35px;
+
+      @media #{$tablet} {
+        display: block;
+      }
+
+      @media #{$mobile} {
+        display: block;
+      }
     }
   }
 }
@@ -87,13 +106,11 @@
     text-align: center;
 
 
-    @media #{$tablet} {
+    @media #{$mobile-tablet} {
       @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+      text-transform: uppercase;
     }
 
-    @media #{$mobile} {
-      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
-    }
 
     padding: 0 40px;
     display: inline-block;
@@ -111,6 +128,7 @@
 
       @media #{$tablet} {
         top: 50%;
+        content: none;
       }
 
       @media #{$mobile} {
@@ -130,16 +148,7 @@
 }
 
 
-.page-licenses .feedbacks {
-  & .divider{
-    // margin-bottom: 35px;
 
-    width: 236px;
-    height: 1px;
-    background-color: #333;
-    margin: 0 auto;
-  }
-}
 
 
 .page-licenses .feedbacks {

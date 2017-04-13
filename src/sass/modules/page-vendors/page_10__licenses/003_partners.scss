@@ -13,8 +13,17 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    @media #{$tablet} {
+      max-width: 768px;
+      min-width: 768px;
+      padding: 0 20px;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -30,6 +39,12 @@
     //
     padding-bottom: 100px;
     padding-top: 90px;
+
+    @media #{$mobile-tablet} {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
   }
 
   & .partners-wrapper {
@@ -62,7 +77,26 @@
     float: left;
 
     width: 360px;
-    margin-right: 20px;
+
+    @media #{$wide} {
+      margin-right: 20px;
+    }
+    @media #{$mobile} {
+      width: auto;
+      float: none;
+    }
+
+    @media #{$tablet} {
+      &:nth-child(1) {
+        width: 246px;
+      }
+      &:nth-child(2) {
+        width: 248px;
+      }
+      &:nth-child(3) {
+        width: 232px;
+      }
+    }
 
     &:last-child {
       margin-right: 0;
@@ -78,23 +112,65 @@
           height: 91px;
           margin-bottom: 50px;
           float: left;
+
+          @media #{$tablet} {
+            width: 170px;
+            height: 59px;
+            margin-bottom: 30px;
+          }
+
+          @media #{$mobile} {
+            width: 170px;
+            height: 59px;
+            margin-bottom: 50px;
+          }
         }
         &:nth-child(2) {
           width: 262px;
           height: 62px;
           margin-bottom: 100px;
           float: right;
+
+          @media #{$tablet} {
+            width: 170px;
+            height: 40px;
+            margin-bottom: 65px;
+          }
+          @media #{$mobile} {
+            width: 170px;
+            height: 40px;
+            margin-bottom: 45px;
+          }
         }
         &:nth-child(3) {
           width: 259px;
           height: 118px;
           margin-bottom: 70px;
           float: left;
+          @media #{$tablet} {
+            width: 168px;
+            height: 77px;
+            margin-bottom: 45px;
+          }
+          @media #{$mobile} {
+            width: 168px;
+            height: 77px;
+            margin-bottom: 45px;
+          }
         }
         &:nth-child(4) {
           width: 260px;
           height: 119px;
           float: right;
+          @media #{$tablet} {
+            width: 169px;
+            height: 77px;
+          }
+          @media #{$mobile} {
+            width: 169px;
+            height: 77px;
+            margin-bottom: 50px;
+          }
         }
       }
     }
@@ -107,30 +183,84 @@
           height: 107px;
           margin-bottom: 70px;
           float: left;
+          @media #{$tablet} {
+            width: 169px;
+            height: 69px;
+            margin-bottom: 44px;
+          }
+          @media #{$mobile} {
+            width: 169px;
+            height: 69px;
+            margin-bottom: 50px;
+          }
         }
         &:nth-child(2) {
           width: 260px;
           height: 29px;
           margin-bottom: 50px;
-          margin-right: -95px;
           float: right;
+          @media #{$wide} {
+            margin-right: -95px;
+          }
+          @media #{$tablet} {
+            width: 169px;
+            height: 19px;
+            margin-bottom: 34px;
+            margin-right: -46px;
+          }
+          @media #{$mobile} {
+            width: 169px;
+            height: 19px;
+            margin-bottom: 50px;
+          }
         }
         &:nth-child(3) {
           width: 261px;
           height: 74px;
           margin-bottom: 70px;
           float: left;
+          @media #{$tablet} {
+            width: 170px;
+            height: 48px;
+            margin-bottom: 45px;
+          }
+          @media #{$mobile} {
+            width: 170px;
+            height: 48px;
+            margin-bottom: 50px;
+          }
         }
         &:nth-child(4) {
           width: 260px;
           height: 64px;
           margin-bottom: 100px;
           float: left;
+          @media #{$tablet} {
+            width: 168px;
+            height: 41px;
+            margin-bottom: 65px;
+          }
+          @media #{$mobile} {
+            width: 168px;
+            height: 41px;
+            margin-bottom: 50px;
+            float: right;
+          }
         }
         &:nth-child(5) {
           width: 260px;
           height: 51px;
           float: right;
+          @media #{$tablet} {
+            width: 169px;
+            height: 33px;
+          }
+          @media #{$mobile} {
+            width: 169px;
+            height: 33px;
+            margin-bottom: 50px;
+            float: left;
+          }
         }
       }
     }
@@ -143,23 +273,65 @@
           height: 79px;
           margin-bottom: 100px;
           float: left;
+          @media #{$tablet} {
+            width: 169px;
+            height: 51px;
+            margin-bottom: 65px;
+          }
+          @media #{$mobile} {
+            width: 169px;
+            height: 51px;
+            margin-bottom: 50px;
+            float: right;
+          }
         }
         &:nth-child(2) {
           width: 260px;
           height: 170px;
           margin-bottom: 60px;
           float: right;
+          @media #{$tablet} {
+            width: 169px;
+            height: 110px;
+            margin-bottom: 40px;
+          }
+          @media #{$mobile} {
+            width: 169px;
+            height: 110px;
+            margin-bottom: 50px;
+            float: left;
+          }
         }
         &:nth-child(3) {
           width: 262px;
           height: 68px;
           margin-bottom: 70px;
           float: left;
+          @media #{$tablet} {
+            width: 170px;
+            height: 44px;
+            margin-bottom: 45px;
+          }
+          @media #{$mobile} {
+            width: 170px;
+            height: 44px;
+            margin-bottom: 50px;
+            float: right;
+          }
         }
         &:nth-child(4) {
           width: 260px;
           height: 60px;
           float: right;
+          @media #{$tablet} {
+            width: 168px;
+            height: 39px;
+          }
+          @media #{$mobile} {
+            width: 168px;
+            height: 39px;
+            float: left;
+          }
         }
       }
     }

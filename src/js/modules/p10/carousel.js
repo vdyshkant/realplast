@@ -67,7 +67,7 @@ $(document).ready(function() {
 
       $('.feedbacks .slider-item').css('max-width', '300px');
 
-      var carousel = $("#carousel").waterwheelCarousel({
+      var carousel = $("#carousel-licenses").waterwheelCarousel({
   	    flankingItems: 0,
         sizeMultiplier: 1,
         movingToCenter: function($movingFromCenter) {

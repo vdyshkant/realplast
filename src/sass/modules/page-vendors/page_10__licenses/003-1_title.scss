@@ -20,10 +20,22 @@
     text-align: center;
 
 
-    padding-left: 40px;
-    padding-right: 40px;
     display: inline-block;
     position: relative;
+
+    @media #{$wide} {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media #{$tablet} {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media #{$mobile-tablet} {
+      @include font(700, normal, 21px, 31px, 'Roboto');
+    }
 
     &::after,
     &::before {
