@@ -15,6 +15,9 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px;
+    @media #{$mobile-tablet} {
+      @include font(normal, 700, 21px, 31px, 'Roboto');
+    }
 
   }
 }

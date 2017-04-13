@@ -60,7 +60,7 @@
 
 
 .page-typical-windows .ternar-items {
-  & .ternar-items-content__item{
+  & .ternar-items-content__item {
     float: left;
     width: 358px;
     border: 1px solid black;
@@ -72,6 +72,41 @@
 
     @media #{$wide} {
       margin-right: 20px;
+    }
+
+    @media #{$tablet} {
+      width: 354px;
+      margin-right: 20px;
+
+          padding-top: 40px;
+          padding-bottom: 15px;
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media #{$mobile} {
+      width: 300px;
+
+      padding-top: 40px;
+      padding-bottom: 15px;
+
+      
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     // @media #{$tablet} {
@@ -109,6 +144,10 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 55px;
+
+    @media #{$mobile} {
+      margin-bottom: 30px;
+    }
   }
 
   & .ternar-items-content__item:nth-child(3) {
