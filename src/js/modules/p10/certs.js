@@ -21,14 +21,16 @@ $(document).ready(function() {
 	if($('body').is('.page-licenses')){
 	  if ((window.matchMedia("(min-width: 1360px)").matches)) {
 			if($('section').is('.certification')){
-				var carousel = $("#certification-carousel").waterwheelCarousel({
+				var carousel = $("#certification-carousel").waterwheelCarouselExtended({
 					// flankingItems: 0,
-					movingToCenter: function($movingFromCenter) {
+					movingToCenter: function($newCenterItem) {
+            // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
 
+            $newCenterItem.innerWidth( 354 );
 
 						// $newCenterItem is a jQuery wrapped object describing the image that was clicked.
-						var height = $movingFromCenter.innerHeight();
-						var position = $movingFromCenter.position();
+						var height = $newCenterItem.innerHeight();
+						var position = $newCenterItem.position();
 								height = parseInt(height, 10);
 								position = parseInt(position.top, 10);
 						var num = height + position;
@@ -44,9 +46,23 @@ $(document).ready(function() {
 
 						// Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
 					},
-					sizeMultiplier: 0.43,
+					movedFromCenter: function($newCenterItem) {
+
+            // var carouselFromCenter = $newCenterItem.innerWidth( 110 );
+
+            var height = $newCenterItem.innerHeight();
+            var position = $newCenterItem.position();
+                height = parseInt(height, 10);
+                position = parseInt(position.top, 10);
+            var num = height + position;
+                num = position + (height / 2);
+            $newCenterItem.css( "top", "50%");
+
+					},
+					sizeMultiplier: 1,
 					autoPlay: 160000,
-					separation: 400
+          separationMultiplier: 1,
+					separation: 200
 					// flankingItems: 3,
 					// smallFeatureWidth: 1,
 					// smallFeatureOffset: 150,
@@ -97,7 +113,7 @@ $(document).ready(function() {
 	  if ((window.matchMedia("(min-width: 768px)").matches) && (window.matchMedia("(max-width: 1359px)").matches)) {
 
 			if($('section').is('.certification')){
-				var carousel = $("#certification-carousel").waterwheelCarousel({
+				var carousel = $("#certification-carousel").waterwheelCarouselExtended({
 					flankingItems: 0,
 					movingToCenter: function($movingFromCenter) {
 
@@ -176,7 +192,7 @@ $(document).ready(function() {
 
 
 
-				var carousel = $("#certification-carousel").waterwheelCarousel({
+				var carousel = $("#certification-carousel").waterwheelCarouselExtended({
 					flankingItems: 0,
 					autoPlay: 160000,
 					sizeMultiplier: 1,
