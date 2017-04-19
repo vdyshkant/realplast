@@ -1,115 +1,196 @@
-// types
-
-.types__top-row
-
-section.types
+// choose
+.choose__top-row
+section.choose
   .shell
     .container
       .range
-        .types-essence.js-tabs#menu_tabs
-          //- LEFT menu
-          //- ---------------------------------------------
-          .types-menu.types--wide-related
-            h2.types-menu__title Доступные аксессуары:
-            ul.types-menu__list
-
-              //- item
-              li.types-menu__item(data-id="prod-first")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Подоконники
-
-              //- item
-              li.types-menu__item.active(data-id="prod-second")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Откосы
-
-              //- item
-              li.types-menu__item(data-id="prod-third")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Москитная сетка
-
-              //- item
-              li.types-menu__item(data-id="prod-fourth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Рассечка
-
-              //- item
-              li.types-menu__item(data-id="prod-fifth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Отливы
-
-              //- item
-              li.types-menu__item(data-id="prod-sixth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Средства по уходу за окнами
+        .choose-essence
 
 
-
-
-
-          //- LEFT menu for TABLET
 
           //- LEFT menu
           //- ---------------------------------------------
-          .types-menu.types--tablet-related
-            h2.types-menu__title Виды стеклопакетов:
-            ul.types-menu__list
+          .choose-menu.desktop-menu
+            h2.choose-menu__title Дополнительные опции:
+            ul.choose-menu__list.js-tabs#menu_tabs
 
               //- item
-              li.types-menu__item.js-parent(data-id="prod-first")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Стандартный
-                .chose-content__wrapper#prod-first
-                  include 03-1__right-cont-inner
+              li.choose-menu__item(data-pos="m1_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Защита для детей
+                //- sub menu
+                ul.choose-menu__sublist
+                  li.choose-menu__subitem(data-id="m1_submenu_01")
+                    a.choose-menu__sublink Ручка <br>с ключом
+                  li.choose-menu__subitem(data-id="m1_submenu_02")
+                    a.choose-menu__sublink Замочек <br>на створке
 
               //- item
-              li.types-menu__item.js-parent.active(data-id="prod-second")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Энергосберегающий
-                .chose-content__wrapper.active#prod-second
-                  include 03-1__right-cont-inner
+              li.choose-menu__item(data-pos="m2_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Многоуровневый<br> проветриватель
 
-              //- item
-              li.types-menu__item.js-parent(data-id="prod-third")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Мультифункциональный
-                .chose-content__wrapper#prod-third
-                  include 03-1__right-cont-inner
 
-              //- item
-              li.types-menu__item.js-parent(data-id="prod-fourth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Шумозащитный
-                .chose-content__wrapper#prod-fourth
-                  include 03-1__right-cont-inner
 
-              //- item
-              li.types-menu__item.js-parent(data-id="prod-fifth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Противоударный
-                .chose-content__wrapper#prod-fifth
-                  include 03-1__right-cont-inner
 
-              //- item
-              li.types-menu__item.js-parent(data-id="prod-sixth")
-                a.types-menu__link
-                  .types-menu__link__img
-                  .types-menu__link__text Тонированный
-                .chose-content__wrapper#prod-sixth
-                  include 03-1__right-cont-inner
+                //- sub menu
+                //- ul.choose-menu__sublist
+                //-   li.choose-menu__subitem(data-id="prod-second")
+                //-     a.choose-menu__sublink Система Evolution (3&nbsp;камеры&nbsp;/&nbsp;60мм)
+                //-   li.choose-menu__subitem.active(data-id="prod-third")
+                //-     a.choose-menu__sublink Система Effectiv (5&nbsp;камер&nbsp;/&nbsp;70мм)
 
-          //- eof LEFT menu for TABLET
+
+              //- item 03
+              li.choose-menu__item(data-pos="m3_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Противовзломная<br> фурнитура
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 04
+              li.choose-menu__item(data-pos="m4_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Доводчик
+
+              //- item 05
+              li.choose-menu__item(data-pos="m5_submenu_01" data-sixs="true")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Многозапорный<br> замок
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 06
+              li.choose-menu__item(data-pos="m6_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Микролифт
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 07
+              li.choose-menu__item(data-pos="m7_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Блокиратор<br> ошибочного<br> действия
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 08
+              li.choose-menu__item(data-pos="m8_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Ограничитель<br> открывания
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 09
+              li.choose-menu__item(data-pos="m9_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Система вентиляции<br> AERCO
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 10
+              li.choose-menu__item(data-pos="m10_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Заполнение<br> стеклопакета<br> аргоном
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 11
+              li.choose-menu__item(data-pos="m11_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Тонировка
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 12
+              li.choose-menu__item(data-pos="m12_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Антивандальная<br> пленка
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 13
+              li.choose-menu__item(data-pos="m13_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Противопылевой<br> шнур
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+              //- item 14
+              li.choose-menu__item(data-pos="m14_submenu_01")
+                a.choose-menu__link
+                  .choose-menu__link__img
+                  .choose-menu__link__text Уплотнитель для<br> окон Шлегель
+                  //- sub menu
+                  //- ul.choose-menu__sublist
+                  //-   li.choose-menu__subitem
+                  //-     a.choose-menu__sublink
+
+
+          // eof desktop-menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -118,38 +199,403 @@ section.types
 
           //- RIGHT content
           //- ---------------------------------------------
-          .types-content.wide-related-content
-            .chose-content__wrapper#prod-first
-              p {tmp 001}
-              include 03-1__right-cont-inner
+          .choose-content.tablet-related-content
+
+            //- transform-title
+            .choose-transform__menu-title-wrapper
+              h2.choose-transform__menu-title Дополнительные опции:
+            //- transform-title END
 
 
-            .chose-content__wrapper.active#prod-second
-              p {tmp 002}
-              include 03-1__right-cont-inner
+            //- transform-item
+            //- item No 001
+            .choose-menu__item.transform.man-item-1(data-pos="m1_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Защита для детей
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                //- EXPAND ITEM:
+                li.jsFaqItem.choose-menu__subitem.transform.protected(data-id="m1_submenu_01")
+                  //- необходимо инкапсулировать ссылку, т.к. элементы должны быть все в потоке.
+                  a.t-link
+                    .choose-menu__sublink.transform Ручка с ключом
+
+                .js-item-content.choose-content__wrapper.transform#m1_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm1_submenu_01'
+                  include 03-1__right-cont-inner.pug
+                  //- ////EXPAND ITEM eof
 
 
-            .chose-content__wrapper#prod-third
-              p {tmp 003}
-              include 03-1__right-cont-inner
+                //- EXPAND ITEM:
+                //- parent:::
+                li.jsFaqItem.choose-menu__subitem.transform.protected(data-id="m1_submenu_02")
+                  //- onclick title:::
+                  a.t-link
+                    .choose-menu__sublink.transform Замочек на створке
+                  //- slide content:::
+                  //- transform-item EOF
+
+                .js-item-content.choose-content__wrapper.transform#m1_submenu_02
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm1_submenu_02'
+                  include 03-1__right-cont-inner.pug
+                  //- ////EXPAND ITEM eof
 
 
-            .chose-content__wrapper#prod-fourth
-              p {tmp 004}
-              include 03-1__right-cont-inner
+            //- transform (e.g .for tablet-like version)
+            //- item No 002
+            .choose-menu__item.transform.man-item-2(data-pos="m2_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Многоуровневый проветриватель
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m3_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m3_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m3_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm3_submenu_01'
+                  include 03-1__right-cont-inner.pug
 
 
-            .chose-content__wrapper#prod-fifth
-              p {tmp 005}
-              include 03-1__right-cont-inner
+
+            //- item No 003
+            .choose-menu__item.transform.man-item-3(data-pos="m3_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Противовзломная фурнитура
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m3_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m3_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m3_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm3_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+            //- item No 004
+            .choose-menu__item.transform.man-item-4(data-pos="m4_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Доводчик
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m4_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m4_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m4_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm4_submenu_01'
+                  include 03-1__right-cont-inner.pug
 
 
-            .chose-content__wrapper#prod-sixth
-              p {tmp 006}
-              include 03-1__right-cont-inner
+
+            //- item No 005
+            .choose-menu__item.transform.man-item-5(data-pos="m5_submenu_01" data-sixs-mob="true")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Многозапорный замок
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m5_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m5_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m5_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm5_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m5_submenu_02")
+                  a.t-link
+                    .choose-menu__sublink.transform m5_submenu_02
+                .js-item-content.choose-content__wrapper.transform#m5_submenu_02
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm5_submenu_02'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 006
+            .choose-menu__item.transform.man-item-6(data-pos="m6_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Микролифт
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m6_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m6_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m6_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm6_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m6_submenu_02")
+                  a.t-link
+                    .choose-menu__sublink.transform m6_submenu_02
+                .js-item-content.choose-content__wrapper.transform#m6_submenu_02
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm6_submenu_02'
+                  include 03-1__right-cont-inner.pug
+
+
+
+            //- item No 007
+            .choose-menu__item.transform.man-item-7(data-pos="m7_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Блокиратор ошибочного действия
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m7_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m7_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m6_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm7_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+
+
+            //- item No 008
+            .choose-menu__item.transform.man-item-8(data-pos="m8_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Ограничитель открывания
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m8_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m8_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m8_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm8_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 009
+            .choose-menu__item.transform.man-item-9(data-pos="m9_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Система вентиляции AERCO
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m9_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m9_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m9_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm9_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 010
+            .choose-menu__item.transform.man-item-10(data-pos="m10_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Заполнение стеклопакета аргоном
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m10_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m10_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m10_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm10_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 011
+            .choose-menu__item.transform.man-item-11(data-pos="m11_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Тонировка
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m11_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m11_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m11_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm11_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 012
+            .choose-menu__item.transform.man-item-12(data-pos="m12_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Антивандальная пленка
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m12_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m12_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m12_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm12_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 013
+            .choose-menu__item.transform.man-item-13(data-pos="m13_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Противопылевой шнур
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m13_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m13_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m13_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm13_submenu_01'
+                  include 03-1__right-cont-inner.pug
+
+
+            //- item No 014
+            .choose-menu__item.transform.man-item-14(data-pos="m14_submenu_01")
+              a.choose-menu__link.transform
+                .choose-menu__link__img.transform
+                .choose-menu__link__text.transform Уплотнитель для окон Шлегель
+              //- sub menu
+              ul.choose-menu__sublist.transform
+                li.jsFaqItem.choose-menu__subitem.transform(data-id="m14_submenu_01")
+                  //- a.t-link
+                  //-   .choose-menu__sublink.transform m14_submenu_01
+                .js-item-content.choose-content__wrapper.transform#m14_submenu_01
+                  .choose-content__ribbon(absolute)
+                    .choose-content__ribbon__text tab 'm14_submenu_01'
+                  include 03-1__right-cont-inner.pug
 
 
 
 
 
-// types end
+
+
+
+
+
+
+
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#m1_submenu_02
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'm1_submenu_02'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-bliz
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'bliz'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-delight
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'delight'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-euro3
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'euro3'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-euro5
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'euro5'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-sib
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'sib'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-brilliant
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'brilliant'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-geneo
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'geneo'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-intelio
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'intelio'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-galwin
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'galwin'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly#prod-quadro
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text tab 'quadro'
+              include 03-1__right-cont-inner.pug
+
+
+            //- RIGHT content
+            //- ---------------------------------------------
+            .choose-content__wrapper.jsWideOnly.active#prod-deceuninck
+              .choose-content__ribbon(absolute)
+                .choose-content__ribbon__text Защита для детей: Замочек на створке
+              include 03-1__right-cont-inner.pug
+
+
+
+
+
+
+
+            //- //- ORIGIN
+            //- .choose-content__wrapper.active#prod-third
+            //-
+            //-   .choose-content__ribbon(absolute)
+            //-     .choose-content__ribbon__text Artec Effective
+            //-
+            //-   include 03-1__right-cont-inner
+
+
+
+// choose end
