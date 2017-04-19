@@ -43,33 +43,34 @@ gulp.task('pug', function() {
     // '!src/templates/partials/*.pug', // ignore this file
     // '!src/templates/conf/*.pug', // ignore this file
     // 'src/templates/**/*.pug'   // ignore all files
-    'src/templates/pages/index.pug',          // 1
-    'src/templates/pages/windsystems.pug',    // 2
-    'src/templates/pages/fitments.pug',       // 3
-    'src/templates/pages/cottages.pug',       // 4
-    'src/templates/pages/glassunit.pug',      // 5
+    // 'src/templates/pages/index.pug',          // 1
+    // 'src/templates/pages/windsystems.pug',    // 2
+    // 'src/templates/pages/fitments.pug',       // 3
+    // 'src/templates/pages/cottages.pug',       // 4
+    // 'src/templates/pages/glassunit.pug',      // 5
     'src/templates/pages/accessories.pug',    // 6
-    'src/templates/pages/services.pug',       // 7
-
-    'src/templates/pages/404.pug',            //
-    'src/templates/pages/affair.pug',         //
-    'src/templates/pages/article.pug',        //
-    'src/templates/pages/articles.pug',       //
-    'src/templates/pages/choosingadvices.pug',// 1
-    'src/templates/pages/contacts.pug',       // 1
-    'src/templates/pages/doors.pug',          // 1
-
-    'src/templates/pages/typicalwindows.pug', // 16
-    'src/templates/pages/efficiency.pug',
-    'src/templates/pages/faq.pug',
-    'src/templates/pages/feedback.pug',
-    'src/templates/pages/leadlight.pug',
-    'src/templates/pages/licenses.pug',       // 10
-    'src/templates/pages/loan.pug',
-    'src/templates/pages/specs.pug',
-    'src/templates/pages/terms.pug',
-    'src/templates/pages/video.pug',
-    'src/templates/pages/about.pug',          // 09
+    // 'src/templates/pages/services.pug',       // 7
+    //
+    // 'src/templates/pages/404.pug',            //
+    // 'src/templates/pages/affair.pug',         //
+    // 'src/templates/pages/article.pug',        //
+    // 'src/templates/pages/articles.pug',       //
+    // 'src/templates/pages/choosingadvices.pug',// 1
+    // 'src/templates/pages/contacts.pug',       // 1
+    // 'src/templates/pages/doors.pug',          // 1
+    //
+    // 'src/templates/pages/typicalwindows.pug', // 16
+    // 'src/templates/pages/efficiency.pug',
+    // 'src/templates/pages/faq.pug',
+    // 'src/templates/pages/feedback.pug',
+    // 'src/templates/pages/leadlight.pug',
+    // 'src/templates/pages/licenses.pug',       // 10
+    // 'src/templates/pages/loan.pug',
+    // 'src/templates/pages/specs.pug',
+    'src/templates/pages/additionaloptions.pug',
+    // 'src/templates/pages/terms.pug',
+    // 'src/templates/pages/video.pug',
+    // 'src/templates/pages/about.pug',          // 09
     'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
