@@ -1,31 +1,45 @@
-.page-doors .ternar-tooltip {
-  background: url('../img/005_differences_bg.jpg');
 
-  position: relative;
+.page-loan .bank {
+  // bg 1
+
+
+
+  @media #{$wide} {
+    background: url('../img/017_bank-mid-bg.png') no-repeat center 30px;
+  }
+
+  @media #{$tablet} {
+    background: #fff;
+  }
 }
 
 
-.page-doors .ternar-tootip {
+.page-loan .bank {
   & .shell {
     margin: 0 auto;
     max-width: 1160px;
-    min-width: 1160px;
-
-    // padding: 0 20px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
-      padding: 0 20px;
+
+    @media #{$wide} {
+      min-width: 1160px;
+    }
+
+    // padding: 0 5px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$tablet} {
-      min-width: 768px;
       max-width: 768px;
+
+      padding: 0 20px;
     }
 
     @media #{$mobile} {
-      padding: 0 10px;
       min-width: 320px;
-      max-width: 320px;
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -38,265 +52,326 @@
   }
 
   & .container {
-    padding: 85px 0 90px;
+    //
+    padding-top: 90px;
+    padding-bottom: 100px;
+
     @media #{$tablet} {
-      padding-top: 65px;
-      padding-bottom: 70px;
-      // padding-top: 55px;
-      // padding-bottom: 65px;
-    }
-    @media #{$mobile} {
-      padding-top: 65px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 
-  & .PROTO-wrapper {
+  & .bank-wrapper {
     //
   }
 
-  & .PROTO-essence {
+  & .bank-essence {
     //
   }
 }
 
 
-.page-doors .PROTO {
+.page-loan .bank {
   & .CLASS{
 
   }
 }
 
 
-.page-doors .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-.page-doors .ternar-tootip-title {
-  text-align: center;
-  // overflow: hidden;
-}
-
-.page-doors .ternar-tootip-title-text {
-  @include font(normal, 700, 36px, 54px, 'Roboto'); // 22/2==11~~ +/- 10
-  color: #444341;
-  // text-transform: uppercase;
-  margin-bottom: 50px;
-  display: inline-block;
-  padding: 0 45px;
-  position: relative;
-
-  @media #{$tablet} {
-    @include font(normal, 700, 21px, 31px, 'Roboto');
-    padding: 0 40px;
-    margin-bottom: 30px;
-  }
-
-  @media #{$mobile} {
-    @include font(normal, 700, 21px, 31px, 'Roboto');
-    padding: 0;
-    text-transform: none;
-    margin-bottom: 25px;
-  }
-
-  &::after,
-  &::before {
-
-    content: "";
-    position: absolute;
-    width: 10000%;
-    height: 1px;
-    color: #444341;
-    top: 50%;
-
-    @media #{$tablet} {
-      top: 50%;
-    }
-
-    @media #{$mobile} {
-      content: none;
-    }
-  }
-
-  &::after {
-    right: -10000%;
-
-  }
-
-  &::before {
-    left: -10000%;
-  }
-}
-
-
-
-.page-doors .ternar-tootip-content {
-  @include clearfix;
-}
-
-
-
-.page-doors .ternar-tootip-content__item {
-  float: left;
-  width: 360px;
-  text-decoration: none;
-
-  @media #{$wide} {
-    margin-right: 20px;
-  }
-
-  @media #{$tablet} {
-    width: auto;
+.page-loan .bank {
+  & .bank-wrapper{
     @include clearfix;
-    padding: 20px;
-
-    background-color: #fff;
-    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  @media #{$mobile} {
-    width: 300px;
-    margin-bottom: 50px;
-    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &:last-child {
-    margin-right: 0;
+    overflow: hidden;
   }
 }
 
 
+.page-loan .bank {
+  & .bank-left,
+  & .bank-right {
 
-.page-doors .PROTO {
-  & .CLASS{
-
+    width: 550px;
+    @media #{$tablet} {
+      width: 354px;
+    }
+    @media #{$mobile} {
+      width: auto;
+    }
   }
 }
 
 
+.page-loan .bank {
+  & .bank-left{
 
-.page-doors .ternar-tootip__item-thumb {
-  display: block;
-  @media #{$tablet} {
-    width: 168px;
     float: left;
-    margin-right: 20px;
-  }
-  @media #{$mobile} {
-    // width: 300px;
-  }
-}
-
-
-
-.page-doors .ternar-tootip__item-title {
-  @include font(normal, 700, 32px, 48px, 'Roboto');
-  color: #444341;
-  @media #{$wide} {
-    margin-bottom: 30px;
-  }
-  @media #{$tablet} {
-    @include font(normal, 700, 21px, 31px, 'Roboto');
-    margin-top: -6px;
-  }
-  @media #{$mobile} {
-    @include font(normal, 700, 21px, 31px, 'Roboto');
-  }
-}
-
-
-
-.page-doors .ternar-tootip__item-text {
-  @include font(normal, 400, 18px, 27px, 'Roboto');
-  color: #444341;
-  @media #{$tablet} {
-    width: 335px;
-  }
-
-}
-
-
-
-.page-doors .PROTO {
-  & .CLASS{
-
-  }
-}
-
-
-
-.page-doors .ternar-tooltip-triangle {
-    position: relative;
-    // margin: 3em;
-    // padding: 1em;
-    box-sizing: border-box;
-    background: #fff;
-    // box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
 
     @media #{$wide} {
-      box-shadow: 4px 5px 10px rgba(68, 67, 65, 0.21);
+      padding-right: 95px;
+      margin-right: 20px;
     }
+    @media #{$tablet} {
+      margin-right: 18px;
+      margin-right: 20px;
+    }
+    @media #{$mobile} {
+      float: none;
+      margin-bottom: 40px;
+    }
+  }
 }
 
-.page-doors .ternar-tooltip-triangle::after{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin-left: -0.7em;
-    bottom: -1em;
-    left: 50%;
-    box-sizing: border-box;
 
-    border: 1em solid black;
-    border-color: transparent transparent #fff #fff;
+.page-loan .bank {
+  & .bank-right{
+    float: right;
+    @media #{$wide} {
+      padding-left: 95px;
+    }
+    @media #{$mobile} {
+      float: none;
+    }
+  }
+}
 
-    transform-origin: 0 0;
-    transform: rotate(-45deg) translateX(-50%);
 
-    // box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: -4px 5px 10px rgba(68, 67, 65, 0.11);
+.page-loan .bank {
+  & .CLASS{
+
+  }
+}
+
+
+.page-loan .bank {
+  & .CLASS{
+
+  }
+}
+
+
+
+
+
+
+
+
+.page-loan .bank {
+  & .bank-title{
+    text-align: center;
+    margin-bottom: 15px;
+    @media #{$mobile-tablet} {
+      // overflow: hidden;
+      margin-bottom: 20px;
+    }
+    // & + .divider {
+    //   display: none;
+    //   border: none;
+    //   outline: none;
+    //   margin: 0 auto;
+    //   width: 236px;
+    //   height: 1px;
+    //   background-color: #333;
+    //   margin-bottom: 35px;
+    //
+    //   @media #{$tablet} {
+    //     display: block;
+    //   }
+    //
+    //   @media #{$mobile} {
+    //     display: block;
+    //   }
+    // }
+  }
+}
+
+
+.page-loan .bank {
+  & .bank-title-text{
+    // margin-bottom: 35px;
+    @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
+    color: #444341;
+    // text-transform: uppercase;
+    text-align: center;
+
 
     @media #{$mobile-tablet} {
-      content: none;
+      @include font(normal, 700, 32px, 48px, 'Roboto Condensed');
+      text-transform: uppercase;
     }
+
+
+
+    display: inline-block;
+    position: relative;
+
+    &::after,
+    &::before {
+
+      content: '';
+      position: absolute;
+      width: 10000%;
+      height: 1px;
+      background-color: #444341;
+      top: 50%;
+
+      @media #{$tablet} {
+        top: 50%;
+        // content: none;
+      }
+
+      @media #{$mobile} {
+        content: none;
+      }
+    }
+
+    &::after {
+      right: -10000%;
+
+    }
+
+    &::before {
+      left: -10000%;
+    }
+
+    & > span {
+      overflow: hidden;
+      padding: 0 40px;
+    }
+  }
 }
 
 
+.page-loan .bank {
+  & .bank-left .bank-title-text::after{
+    // display: none;
+    width: 530px;
+    right: -525px;
 
-
-.page-doors .ternar-tootip__item-desc {
-
-  @media #{$wide} {
-    padding: 25px 15px 35px;
-    text-align: center;
+    @media #{$tablet} {
+      width: 225px;
+      right: -225px;
+    }
   }
+}
 
-  @media #{$tablet} {
-    width: 500px;
-    float: right;
-    text-align: left;
-  }
-
-  @media #{$mobile} {
-    padding: 20px;
-    padding-right: 10px;
+.page-loan .bank {
+  & .bank-right .bank-title-text::before{
+    display: none;
   }
 }
 
 
+.page-loan .bank {
+  & .CLASS{
 
-.page-doors .PROTO {
+  }
+}
+
+.page-loan .bank {
+  & .bank-left {
+    & .bank-logo {
+      width: 310px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    & .bank-logo-essence {
+      display: block;
+      margin: 0 auto;
+      width: 104px;
+      margin-bottom: 25px;
+
+    }
+    & .bank-logo-name {
+      @include font(normal, 400, 18px, 27px, "Roboto");
+      text-transform: uppercase;
+      text-align: center;
+
+      & > span {
+        &:first-child {
+          color: #009ade;
+        }
+        &:last-child {
+          color: #ec764b;
+        }
+      }
+    }
+  }
+}
+
+
+.page-loan .bank {
+  & .bank-right {
+    & .bank-logo {
+      @include clearfix;
+      width: 310px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      min-height: 153px;
+      position: relative;
+    }
+    & .bank-logo-essence {
+      float: left;
+      display: block;
+      width: 108px;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+    & .bank-logo-name {
+      float: right;
+      text-align: left;
+
+      position: relative;
+      width: 162px;
+      min-height: 153px;
+    }
+    & .bank-logo-name-text {
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include font(normal, 400, 18px, 27px, "Roboto");
+      color: #444341;
+      text-transform: uppercase;
+
+      & > span {
+        &:nth-child(1) {
+          color: #ac469a;
+        }
+        &:nth-child(2) {
+          color: #abd04b;
+        }
+        &:nth-child(3) {
+          color: #ee5559;
+        }
+      }
+    }
+  }
+}
+
+
+.page-loan .bank {
+  & .bank-desc-text{
+    @include font(normal, 400, 18px, 27px, "Roboto");
+    color: #444341;
+  }
+}
+
+
+.page-loan .bank {
+  & .CLASS{
+
+  }
+}
+
+
+.page-loan .bank {
   & .CLASS{
 
   }
