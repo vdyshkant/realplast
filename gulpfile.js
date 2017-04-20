@@ -48,7 +48,7 @@ gulp.task('pug', function() {
     // 'src/templates/pages/fitments.pug',       // 3
     // 'src/templates/pages/cottages.pug',       // 4
     // 'src/templates/pages/glassunit.pug',      // 5
-    'src/templates/pages/accessories.pug',    // 6
+    // 'src/templates/pages/accessories.pug',    // 6
     // 'src/templates/pages/services.pug',       // 7
     //
     // 'src/templates/pages/404.pug',            //
@@ -66,9 +66,9 @@ gulp.task('pug', function() {
     // 'src/templates/pages/leadlight.pug',
     // 'src/templates/pages/licenses.pug',       // 10
     'src/templates/pages/loan.pug',              // 17
-    'src/templates/pages/calc.pug',              // 17
+    // 'src/templates/pages/calc.pug',              // 17
     // 'src/templates/pages/specs.pug',
-    'src/templates/pages/additionaloptions.pug',
+    // 'src/templates/pages/additionaloptions.pug',
     // 'src/templates/pages/terms.pug',
     // 'src/templates/pages/video.pug',
     // 'src/templates/pages/about.pug',          // 09
