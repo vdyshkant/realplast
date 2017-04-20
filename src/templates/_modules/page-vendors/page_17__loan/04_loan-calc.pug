@@ -1,65 +1,82 @@
-// balcons
+// loan-calc
 
-section.balcons#balcons
+section.loan-calc#loan-calc
   .shell
       .container
         .range
-          .balcons-wrapper
+          .loan-calc-wrapper
 
             //- title
-            .balcons-title-container
-              h2.balcons-title Балконные двери
+            .loan-calc-title
+              h2.loan-calc-title-text Расчет рассрочки
+            .loan-calc-subtitle Даже если у вас нет достающей суммы, Вы можете купить окна в рассрочку!
+            .divider
+            //- eof ^^^ title
 
-            .balcons-content
-              .balcons-container(class='balcons-features')
-                picture.balcons-features-thumb
-                  source(media='(min-width: 1160px)', srcset='img/013_balcon.png 1x')
-                  source(media='(min-width: 768px)', srcset='img/013_balcon--tablet.png 1x')
-                  img.balcons-features-thumb__img(src='img/013_balcon--mobile.png')
-                ul.balcons-features-list
-                  li.balcons-features-list-item Такой подход гарантирует комфортный микроклимат в помещении круглогодично.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются
-                  li.balcons-features-list-item Стеклопакет с i-стеклом на сегодняшний день являются совершенным теплосберегающим решением.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются от стандартных металлопластиковых конструкций.
-                  li.balcons-features-list-item Такой подход гарантирует комфортный микроклимат в помещении круглогодично.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются
-                  li.balcons-features-list-item Стеклопакет с i-стеклом на сегодняшний день являются совершенным теплосберегающим решением.
-                  li.balcons-features-list-item Визуально такие окна ничем не отличаются от стандартных металлопластиковых конструкций.
+            .loan-calc-content
+
+              //- 01 LEFT
+              .left
+
+                //- title (default)
+                .left-title
+                  h2.left-title-text
+                    span Банк 1
+                //- .divider
 
 
-              .balcons-container(class='balcons-advices')
-                .balcons-advices-title
-                  h3.balcons-advices-title-text Советы по выбору
-                .balcons-advices-columns
+                //- content
+                .left-content
+                  .left-top-container
+                    .left-logo
+                      img.left-logo-essence(src="img/017_loan-calc-logo-left.png")
+                      .left-logo-name <span>Имя</span> <span>банка 1</span>
+
+                    .left-desc
+                      p.left-desc-price Мне нужно <span>120 000</span> тг, на срок <span>10</span> месяцев
+
+                    .range-filter
+                      //- рассчет суммы:
+                      .summ-controls
+                        //- Шкала
+                        .scale
+                          .bar(style="width: 70px;")
+                        //- Ползунок
+                        .toggle
 
 
+                      .time-controls
 
-                  .balcons-advices-column
-                    .balcons-advices-column-num 1
-                    .balcons-advices-column-title Внешний вид
-                    .balcons-advices-column-text
-                      | Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где уравнение времени недоступно отражает случайный сарос. Зоркость наблюдателя дает астероидный секстант. Движение меняет близкий азимут. Все известные астероиды имеют прямое движение, при этом параметр дает космический терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Соединение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид жизненно притягивает центральный Ганимед.
+                    .left-result.result
+                      .left-result-title.result-title Ежемесячный платёж
+                      .left-result-price.result-price 12 000 тенге
 
+              //- 02 RIGHT
+              .right
 
-
-                  .balcons-advices-column
-                    .balcons-advices-column-num 2
-                    .balcons-advices-column-title Внутренний вид
-                    .balcons-advices-column-text
-                      | Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где уравнение времени недоступно отражает случайный сарос. Зоркость наблюдателя дает астероидный секстант. Движение меняет близкий азимут. Все известные астероиды имеют прямое движение, при этом параметр дает космический терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Соединение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид жизненно притягивает центральный Ганимед.
-
-
-                  .balcons-advices-column
-                    .balcons-advices-column-num 3
-                    .balcons-advices-column-title Субъективный вид
-                    .balcons-advices-column-text
-                      | Расстояния планет от Солнца возрастают приблизительно в геометрической прогрессии (правило Тициуса — Боде): г = 0,4 + 0,3 · 2n (а.е.), где уравнение времени недоступно отражает случайный сарос. Зоркость наблюдателя дает астероидный секстант. Движение меняет близкий азимут. Все известные астероиды имеют прямое движение, при этом параметр дает космический терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Соединение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид жизненно притягивает центральный Ганимед.
+                //- title (default)
+                .right-title
+                  h2.right-title-text
+                    span Банк 2
+                //- .divider
 
 
+                //- content
+                .right-content
+                  .right-top-container
+                    .right-logo
+                      img.right-logo-essence(src="img/017_loan-calc-logo-right.png")
+                      .right-logo-name
+                        .right-logo-name-text <span>И</span>мя <span>б</span>анка <span>2</span>
+
+                    .right-desc
+                      p.right-desc-price Мне нужно <span>120 000</span> тг, на срок <span>10</span> месяцев
+
+                    .right-desc_
+
+                  .right-result.result
+                    .right-result-title.result-title Ежемесячный платёж
+                    .right-result-price.result-price 12 000 тенге
 
 
-
-
-
-
-// balcons end
+// loan-calc end
