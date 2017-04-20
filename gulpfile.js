@@ -65,14 +65,14 @@ gulp.task('pug', function() {
     // 'src/templates/pages/feedback.pug',
     // 'src/templates/pages/leadlight.pug',
     // 'src/templates/pages/licenses.pug',       // 10
-    'src/templates/pages/loan.pug',              // 17
-    // 'src/templates/pages/calc.pug',              // 17
+    // 'src/templates/pages/loan.pug',              // 17
+    'src/templates/pages/calc.pug',              // 22
     // 'src/templates/pages/specs.pug',
     // 'src/templates/pages/additionaloptions.pug',
     // 'src/templates/pages/terms.pug',
     // 'src/templates/pages/video.pug',
     // 'src/templates/pages/about.pug',          // 09
-    'src/templates/pages/i.pug'
+    // 'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
         .on('error', errorLog)

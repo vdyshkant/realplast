@@ -1,0 +1,8 @@
+.page-calc .calc .title {
+  @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
+  color: #444341;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
