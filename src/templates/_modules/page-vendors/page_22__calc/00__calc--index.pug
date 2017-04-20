@@ -2,8 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  //- - var PageTitle = 'TITLE_TITLE_TITLE_TITLE'
-  - var PageTitle = 'Рассрочка'
+  - var PageTitle = 'Калькулятор'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
@@ -16,7 +15,6 @@ append 001_config
 
   //- smoothDivScroll
   - var jQuery = true
-  //- - var masonry = true
         //- - var jQueryUI = true
         //- - var jQueryMousewheel = true
         //- - var jQkinetic = true
@@ -32,7 +30,7 @@ append 001_config
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-loan')
+  - var updateBodyClass = bodyClasses.push('page-calc')
 
   //- - var GoogleFonts = 'Poiret+One'
   //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
@@ -61,7 +59,6 @@ block content
 
     include ../../global-modules/003c__side-burger
 
-
     include ../../global-modules/003a__side-nav
 
 
@@ -79,24 +76,22 @@ block content
 
 
       include 01_breadcrumbs
-      //-
-      //-
-      //-
-      include 02_welcome
-      //-
-      //- include 03_ternar-tooltip
-      //-
-      //- include 04_balcons
-      //-
-      include 05_process
-      //-
-      //- include 06_entry
-      //-
-      //- include 05_process
-      //-
-      include 07_contact
-      //-
-      include 08_prefooter
+
+
+
+      include 02_calc
+
+      include 03_contact
+
+      //- include 04_about
+
+
+
+      include 04_prefooter
+
+      //- include 06_contact
+
+      //- include 07_prefooter
 
 
       //- eof main

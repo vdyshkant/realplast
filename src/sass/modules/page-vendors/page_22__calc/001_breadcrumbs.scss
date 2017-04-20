@@ -1,29 +1,24 @@
-.page-loan .breadcrumbs {
+.page-calc .breadcrumbs {
   // bg 1
-  margin-bottom: 55px;
-  @media #{$tablet} {
-    // margin-top: 60px;
-    margin-bottom: 50px;
-  }
-
-  @media #{$mobile} {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 50px;
 }
 
 
-.page-loan .breadcrumbs {
+.page-calc .breadcrumbs {
   & .shell {
     margin: 0 auto;
-    max-width: 1160px;
-
-
-    padding: 0 20px;
 
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
+    max-width: 1160px;
     min-width: 1160px;
+    padding: 0 20px;
+
+
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$tablet} {
       min-width: 768px;
@@ -33,7 +28,6 @@
     @media #{$mobile} {
       min-width: 320px;
       max-width: 320px;
-
       padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
@@ -48,14 +42,6 @@
 
   & .container {
     padding: 20px 0 10px;
-
-    @media #{$tablet} {
-      // padding-bottom: 30px;
-    }
-
-    @media #{$mobile} {
-      // padding-bottom: 25px;
-    }
   }
 
   & .breadcrumbs-wrapper {
@@ -68,28 +54,28 @@
 }
 
 
-.page-loan .PROTO {
+.page-calc .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-loan .PROTO {
+.page-calc .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-loan .PROTO {
+.page-calc .PROTO {
   & .CLASS{
 
   }
 }
 
 
-.page-loan .breadcrumbs-essence {
+.page-calc .breadcrumbs-essence {
   display: flex;
   position: relative;
 
@@ -109,7 +95,7 @@
 }
 
 
-.page-loan .breadcrumbs__item {
+.page-calc .breadcrumbs__item {
   margin-right: 27px;
 
   position: relative;
@@ -132,18 +118,14 @@
 }
 
 
-.page-loan .breadcrumbs__link {
-  display: block;
-  @include font(normal, 400, 18px, 18px, 'Roboto');
+.page-calc .breadcrumbs__link {
+  @include font(normal, 400, 18px, 14px, 'Roboto');
   color: #444341;
   text-decoration: none;
-  @media #{$mobile} {
-    @include font(normal, 400, 18px, 16px, 'Roboto');
-  }
 }
 
 
-.page-loan .PROTO {
+.page-calc .PROTO {
   & .CLASS{
 
   }
