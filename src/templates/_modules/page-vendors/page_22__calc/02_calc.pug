@@ -5,10 +5,10 @@ section.calc
       .range
 
 
-        .title Калькулятор окна для нашего менеджера
+        .calc-title Калькулятор окна для нашего менеджера
 
 
-        .calc
+        .calc-content
           .units-top-row
 
             //- 01
@@ -97,12 +97,96 @@ section.calc
               .unit-submit-btn Отправить
 
           .units-content
+            .units-content-container
+              .units-content-inner
+                //- LEFT
+                .left
+                  img.thumb(src="img/022_i8_content-01.png")
+                  .desc
+                    .desc-inner
+                      .desc-title Однокамерный
+
+                      .desc-content
+                        .desc-subtitle Ширина стеклопакета:
+                        form.interrogation-unit-form
+                          .interrogation-unit-form__items
+                            ul
+                              li
+                                label.unit-form-radio
+                                  input(type='radio', name='tree')
+                                  span.radio-indicator
+                                  .label-text 24 мм
+                              li
+                                label.unit-form-radio
+                                  input(type='radio', name='tree')
+                                  span.radio-indicator
+                                  .label-text 32 мм
+                //- RIGHT
+                .right
+                  img.thumb(src="img/022_i8_content-02.png")
+                  .desc
+                    .desc-inner
+                      .desc-title Двухкамерный
+
+                      .desc-content
+                        .desc-subtitle Ширина стеклопакета:
+                        form.interrogation-unit-form
+                          .interrogation-unit-form__items
+                            ul
+                              li
+                                label.unit-form-radio
+                                  input(type='radio', name='tree')
+                                  span.radio-indicator
+                                  .label-text 32 мм
+                              li
+                                label.unit-form-radio
+                                  input(type='radio', name='tree')
+                                  span.radio-indicator
+                                  .label-text 36 мм
+
+
+              .units-content-btm
+                .units-content-btm__divider
+                a.units-content-btn Выбрать Cтеклопакет
+
+
 
           .choosed-parameters
+            //- LEFT column
+            .parameters
+              .parameters-inner
+                .title Выбранные параметры
+                .subtitle Настройте окно выбрав необходимую конфигурацию ниже.
+                .parameters-items
+                  ul.parameters-items__container
+                    li.parameters__item
+                      .item-title Профиль
+                      .item-desc Двухкамерный, Rehau, суперутеплённый
+                    li.parameters__item
+                      .item-title Стеклопакет
+                      .item-desc Однокамерный 32мм, напыление аргон
+                    li.parameters__item
+                      .item-title доп. Стеклопакет
+                      .item-desc Двухкамерный, Rehau с напылением
+                    li.parameters__item
+                      .item-title доп. Стеклопакет
+                      .item-desc Двухкамерный, Rehau с напылением
 
-          .your-window
 
 
+            //- RIGHT column
+            .window
+              .window-inner
+                .title Ваш тип окна, и его размеры
+                //- .subtitle
+                .items-container
+                  .item-essence
+                    .item-image
+                      .item-image-essence
+                      .item-image-toggle
+
+                    .item-height
+                    .item-width
 
 
 

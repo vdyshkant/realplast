@@ -7,8 +7,9 @@
   }
 }
 
-.page-calc .calc {
-  & .item-title{
+.page-calc {
+  & .unit-type__item .item-title,
+  & .unit-conf__item .item-title {
     @include font(italic, 300, 14px, 20px, 'Roboto');
     color: #444341;
     min-height: 40px;
@@ -20,7 +21,8 @@
     transition: 0.5s ease-out;
   }
 
-  & .item-title-text {
+  & .unit-type__item .item-title-text,
+  & .unit-conf__item .item-title-text {
     width: 85px;
     position: absolute;
     left: 50%;
