@@ -121,47 +121,49 @@ $(document).ready(function() {
 // wide ver
 $(document).ready(function() {
 	if($('body').is('.page-index')){
-	  if ((window.matchMedia("(min-width: 1360px)").matches)) {
+		if($('section').is('.feedbacks')){
+		  if ((window.matchMedia("(min-width: 1360px)").matches)) {
 
-      var carousel = $("#carousel").waterwheelCarousel({
-  	    // flankingItems: 3,
-  	    // smallFeatureWidth: 1,
-  	    // smallFeatureOffset: 150,
-  	    // startingFeature: 3
-  	    // movingToCenter: function ($item) {
-  	    //   $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-  	    // },
-  	    // movedToCenter: function ($item) {
-  	    //   $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-  	    // },
-  	    // movingFromCenter: function ($item) {
-  	    //   $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-  	    // },
-  	    // movedFromCenter: function ($item) {
-  	    //   $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-  	    // },
-  	    // clickedCenter: function ($item) {
-  	    //   $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-  	    // }
-  	  });
+	      var carousel = $("#carousel").waterwheelCarousel({
+	  	    // flankingItems: 3,
+	  	    // smallFeatureWidth: 1,
+	  	    // smallFeatureOffset: 150,
+	  	    // startingFeature: 3
+	  	    // movingToCenter: function ($item) {
+	  	    //   $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+	  	    // },
+	  	    // movedToCenter: function ($item) {
+	  	    //   $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+	  	    // },
+	  	    // movingFromCenter: function ($item) {
+	  	    //   $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+	  	    // },
+	  	    // movedFromCenter: function ($item) {
+	  	    //   $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+	  	    // },
+	  	    // clickedCenter: function ($item) {
+	  	    //   $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+	  	    // }
+	  	  });
 
-  	  $('#prev').bind('click', function () {
-  	    carousel.prev();
-  	    return false;
-  	  });
+	  	  $('#prev').bind('click', function () {
+	  	    carousel.prev();
+	  	    return false;
+	  	  });
 
-  	  $('#next').bind('click', function () {
-  	    carousel.next();
-  	    return false;
-  	  });
+	  	  $('#next').bind('click', function () {
+	  	    carousel.next();
+	  	    return false;
+	  	  });
 
-  	  // $('#reload').bind('click', function () {
-  	  //   newOptions = eval("(" + $('#newoptions').val() + ")");
-  	  //   carousel.reload(newOptions);
-  	  //   return false;
-  	  // });
+	  	  // $('#reload').bind('click', function () {
+	  	  //   newOptions = eval("(" + $('#newoptions').val() + ")");
+	  	  //   carousel.reload(newOptions);
+	  	  //   return false;
+	  	  // });
 
-    } // eof matchMedia
+	    } // eof matchMedia
+  	}		// eof ('section').is
   }		// eof ('body').is
 }); // eof document READY
 
