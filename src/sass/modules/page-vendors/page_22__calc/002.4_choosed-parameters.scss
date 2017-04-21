@@ -24,7 +24,7 @@
 
 .page-calc {
   & .choosed-parameters .parameters,
-  & .choosed-parameters .window {
+  & .choosed-parameters .parameters-window {
     width: 550px;
     min-height: 395px;
     border: 1px solid #444341;
@@ -33,7 +33,7 @@
     padding: 5px 30px;
   }
 
-  & .title {
+  & .choosed-parameters .title {
     @include font(normal, 700, 32px, 44px, 'Roboto');
     color: #444341;
     margin-bottom: 4px;
@@ -42,7 +42,7 @@
 }
 
 .page-calc .calc {
-  & .choosed-parameters .window{
+  & .choosed-parameters .parameters-window{
     float: right;
   }
 }

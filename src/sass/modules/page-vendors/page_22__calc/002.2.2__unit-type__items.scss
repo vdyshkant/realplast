@@ -58,7 +58,7 @@
 }
 
 .page-calc .calc {
-  & .item-logo-substrate {
+  & .item-logo-substrate:nth-child(2) {
     overflow: visible;
     -webkit-filter: drop-shadow(3px 3px 7px rgba(26, 47, 60, 0.21));
     filter: drop-shadow(3px 3px 7px rgba(26, 47, 60, 0.21));
@@ -71,6 +71,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  & .item-logo-substrate:first-child{
+    z-index: 1;
+  }
+  & .item-logo-pattern {
+    z-index: 2;
   }
 }
 
