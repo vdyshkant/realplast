@@ -7,15 +7,15 @@ section.constructor
 
         //- title
         h2.constructor-title скомпонуйте своё будущее окно
-        .betrezen
+        .kazldur
           //- ITEM PROTO
 
           //- nav
           .step-nav
             .shell-wide
               //- step
-              .step.first.opened
-                .radial-progress(data-index='0')
+              .step.first
+                .radial-progress(data-index='0').opened
                   .circle
                     .mask.full
                       .fill
@@ -25,17 +25,19 @@ section.constructor
                     .shadow
                   .inset
                     .inner-circle
+                .div
                 p Настройка комплектации
+
               //- step
               .step.second
                 .num 1
-                .line
+                .line-mustache
                   .progress
                     .lines
                       .lines-item
                       .lines-item
                       .lines-item
-                .radial-progress(data-index='1')
+                .radial-progress(data-index='1').inactive
                   .circle
                     .mask.full
                       .fill
@@ -45,17 +47,18 @@ section.constructor
                     .shadow
                   .inset
                     .inner-circle
-                p Настройка комплектации
+                .div
+                p Выбор типа окна
               //- step
               .step.third
                 .num 2
-                .line
+                .line-mustache
                   .progress
                     .lines
                       .lines-item
                       .lines-item
                       .lines-item
-                .radial-progress(data-index='2')
+                .radial-progress(data-index='2').inactive
                   .circle
                     .mask.full
                       .fill
@@ -65,10 +68,11 @@ section.constructor
                     .shadow
                   .inset
                     .inner-circle
-                p Настройка комплектации
+                .div
+                p Отправка на просчёт
               .num-arr
                 .arr
-                .line
+                .line-mustache
                   .progress
                     .lines
                       .lines-item
@@ -76,49 +80,49 @@ section.constructor
                       .lines-item
           //- copy holder
 
-          //- eof ITEM PROTO
-        .kazldur
-          .step-nav
-            .step.first
-              .radial-progress.active(data-index='0')
-                .circle
-                  .mask.full
-                    .fill
-                  .mask.half
-                    .fill
-                    .fill.fix
-                  .shadow
-                .inset
-                  .inner-circle
-              p 1
-            .step
-              .line
-                .progress
-              .radial-progress(data-index='1')
-                .circle
-                  .mask.full
-                    .fill
-                  .mask.half
-                    .fill
-                    .fill.fix
-                  .shadow
-                .inset
-                  .inner-circle
-              p 2
-            .step
-              .line
-                .progress
-              .radial-progress(data-index='2')
-                .circle
-                  .mask.full
-                    .fill
-                  .mask.half
-                    .fill
-                    .fill.fix
-                  .shadow
-                .inset
-                  .inner-circle
-              p 3
+            //-   //- eof ITEM PROTO
+            //- .kazldur
+            //-   .step-nav
+            //-     .step.first
+            //-       .radial-progress.active(data-index='0')
+            //-         .circle
+            //-           .mask.full
+            //-             .fill
+            //-           .mask.half
+            //-             .fill
+            //-             .fill.fix
+            //-           .shadow
+            //-         .inset
+            //-           .inner-circle
+            //-       p 1
+            //-     .step
+            //-       .line
+            //-         .progress
+            //-       .radial-progress(data-index='1')
+            //-         .circle
+            //-           .mask.full
+            //-             .fill
+            //-           .mask.half
+            //-             .fill
+            //-             .fill.fix
+            //-           .shadow
+            //-         .inset
+            //-           .inner-circle
+            //-       p 2
+            //-     .step
+            //-       .line
+            //-         .progress
+            //-       .radial-progress(data-index='2')
+            //-         .circle
+            //-           .mask.full
+            //-             .fill
+            //-           .mask.half
+            //-             .fill
+            //-             .fill.fix
+            //-           .shadow
+            //-         .inset
+            //-           .inner-circle
+            //-       p 3
 
 
 

@@ -1921,31 +1921,39 @@ $(document).ready(function() {
 (function($) {
  if($('body').is('.page-index')){
 
-  //  animate 1st MUSTACHE
-   $( ".step.second, .step.third, .num-arr" ).mouseover(function() {
-    $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).stop(true).animate({
-      width: '25px'
-    }, 500, function() {
-      // Animation complete.
-    });
-    $(this).find( ".lines-item:eq(1)" ).stop(true).animate({
-      width: '50px'
-    }, 500, function() {
-      // Animation complete.
-    });
-  });
-   $( ".step.second, .step.third, .num-arr" ).mouseout(function() {
-    $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).stop(true).animate({
-      width: '10px'
-    }, 500, function() {
-      // Animation complete.
-    });
-    $(this).find( ".lines-item:eq(1)" ).stop(true).animate({
-      width: '20px'
-    }, 500, function() {
-      // Animation complete.
-    });
-  });
+   if($('.step.second .radial-progress').hasClass('.inactive')) {
+
+
+     //  animate 1st MUSTACHE
+      $( ".step.second, .step.third, .num-arr" ).mouseover(function() {
+       $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).stop(true).animate({
+         width: '25px'
+       }, 500, function() {
+         // Animation complete.
+       });
+       $(this).find( ".lines-item:eq(1)" ).stop(true).animate({
+         width: '50px'
+       }, 500, function() {
+         // Animation complete.
+       });
+     });
+      $( ".step.second, .step.third, .num-arr" ).mouseout(function() {
+       $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).stop(true).animate({
+         width: '10px'
+       }, 500, function() {
+         // Animation complete.
+       });
+       $(this).find( ".lines-item:eq(1)" ).stop(true).animate({
+         width: '20px'
+       }, 500, function() {
+         // Animation complete.
+       });
+     });
+
+
+   } // eof if
+
+
 
 
 
@@ -1965,11 +1973,11 @@ $(document).ready(function() {
 		var circleMask = circle.find('.mask.full');
 		var circleFillMix = circle.find('.fill.fix');
 
-		mainTl.to(line, 0.15, {width: "100%"})
-			.to(circle, 0.3, {rotation: "-="+fill_rotation}, "fillCircle-"+i+"")
-			.to([circleFill, circleMask], 0.3, {rotation: fill_rotation}, "fillCircle-"+i+"")
-			.to(circleFillMix, 0.3, {rotation: fix_rotation}, "fillCircle-"+i+"")
-			.set(circleFillMix, {rotation: fix_rotation}, "stopPoint-"+i+"");
+		// mainTl.to(line, 0.15, {width: "100%"})
+		// 	.to(circle, 0, {rotation: "-="+fill_rotation}, "fillCircle-"+i+"")
+		// 	.to([circleFill, circleMask], 0, {rotation: fill_rotation}, "fillCircle-"+i+"")
+		// 	.to(circleFillMix, 0.3, {rotation: fix_rotation}, "fillCircle-"+i+"")
+		// 	.set(circleFillMix, {rotation: fix_rotation}, "stopPoint-"+i+"");
 	});
 
 	$('.step .radial-progress').click(function(){
@@ -1980,6 +1988,7 @@ $(document).ready(function() {
 		animateToDefault();
 
 		$('.active').removeClass('active');
+		$('.opened').removeClass('opened');
 
 		var index = parseInt($(this).attr('data-index'));
 		mainTl.tweenTo("stopPoint-"+(index-1)+"", {onComplete: animateToActive, onCompleteParams:[$(this)]});
@@ -1989,6 +1998,19 @@ $(document).ready(function() {
 		var index = parseInt(el.attr('data-index')) + 1;
 		$('.copy-holder').find(".step-"+index+"").addClass('active');
 		el.addClass('active');
+		// $('.radial-progress[data-intex=' + index + ']').parents( '.step' ).addClass('opened');
+    el.addClass('opened');
+    el.removeClass('inactive');
+    var them = el.siblings( ".line-mustache" );
+    them.find('.lines-item').each(function(){
+     $(this).animate({
+       width: '130px'
+     }, 500, function() {
+       // Animation complete.
+     });
+    });
+    // el.find('p').css("background", '#0072bb');
+    el.siblings('.num').fadeOut(300);
 
 		var innerCircle = el.find('.inner-circle');
 		var inset = el.find('.inset');
@@ -1998,9 +2020,9 @@ $(document).ready(function() {
 		var number = el.next('p');
 		var stepsCopy = $('.copy-holder div.active');
 
-		TweenLite.set(number, {color: "rgb(250,250,250)", fontSize: 46})
+		TweenLite.set(number, {color: "rgb(250,250,250)"})
 		TweenLite.to(innerCircle, 0.15, {scale: 0});
-		TweenLite.to(el, 0.3, {scale: 1.3, zIndex: 10, ease: Back.easeOut});
+		TweenLite.to(el, 0.3, {scale: 1, zIndex: 10, ease: Back.easeOut});
 		TweenLite.fromTo(stepsCopy, 0.7, {autoAlpha: 0}, {autoAlpha: 1});
 	}
 
@@ -2011,8 +2033,10 @@ $(document).ready(function() {
 		var number = $('.radial-progress.active').next('p');
 		var stepsCopy = $('.copy-holder div');
 
+		$('.opened').removeClass('opened');
+
 		TweenLite.to(innerCircle, 0.15, {scale: 1})
-		TweenLite.set(number, {color: "rgb(119,119,119)", fontSize: 30});
+		TweenLite.set(number, {color: "rgb(68, 67, 65)"});
 		TweenLite.to(mainCircle, 0.3, {scale: 1, zIndex: 1, ease: Bounce.easeOut});
 		TweenLite.to(stepsCopy, 0.7, {autoAlpha: 0});
 	}
