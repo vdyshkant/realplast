@@ -36,13 +36,14 @@ section.loan-calc#loan-calc
                       p.left-desc-price Мне нужно <span>120 000</span> тг, на срок <span>10</span> месяцев
 
                     .range-filter
-                      //- рассчет суммы:
-                      .summ-controls
-                        //- Шкала
-                        .scale
-                          .bar(style="width: 70px;")
-                        //- Ползунок
-                        .toggle
+                      .range-filter__left
+                        .range-filter__left-title сумма
+                        #flat-slider-vertical-1
+                      .range-filter__right
+                        .range-filter__right-title срок
+                        #flat-slider-vertical-2
+
+
 
 
                       .time-controls
@@ -72,7 +73,13 @@ section.loan-calc#loan-calc
                     .right-desc
                       p.right-desc-price Мне нужно <span>120 000</span> тг, на срок <span>10</span> месяцев
 
-                    .right-desc_
+                    .range-filter
+                      .range-filter__left
+                        .range-filter__left-title сумма
+                        #flat-slider-vertical-3
+                      .range-filter__right
+                        .range-filter__right-title срок
+                        #flat-slider-vertical-4
 
                   .right-result.result
                     .right-result-title.result-title Ежемесячный платёж

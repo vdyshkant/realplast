@@ -43,7 +43,7 @@ gulp.task('pug', function() {
     // '!src/templates/partials/*.pug', // ignore this file
     // '!src/templates/conf/*.pug', // ignore this file
     // 'src/templates/**/*.pug'   // ignore all files
-    'src/templates/pages/index.pug',          // 1
+    // 'src/templates/pages/index.pug',          // 1
     // 'src/templates/pages/windsystems.pug',    // 2
     // 'src/templates/pages/fitments.pug',       // 3
     // 'src/templates/pages/cottages.pug',       // 4
@@ -65,7 +65,7 @@ gulp.task('pug', function() {
     // 'src/templates/pages/feedback.pug',
     // 'src/templates/pages/leadlight.pug',
     // 'src/templates/pages/licenses.pug',       // 10
-    // 'src/templates/pages/loan.pug',              // 17
+    'src/templates/pages/loan.pug',              // 17
     // 'src/templates/pages/calc.pug',              // 22
     // 'src/templates/pages/specs.pug',
     // 'src/templates/pages/additionaloptions.pug',
@@ -113,6 +113,7 @@ gulp.task('js', function() {
       'src/js/modules/p13/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p16/leadlight_gallery.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p16/leadlight_carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p17/range-filter.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p19/paginator.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p19/02-slider.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p20/003_accordion.js', // e.g. /path/to/mymodule/mymodule/*.js'
