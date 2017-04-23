@@ -65,7 +65,7 @@ gulp.task('pug', function() {
     // 'src/templates/pages/feedback.pug',
     // 'src/templates/pages/leadlight.pug',
     'src/templates/pages/licenses.pug',       // 10
-    // 'src/templates/pages/loan.pug',              // 17
+    'src/templates/pages/loan.pug',              // 17
     // 'src/templates/pages/calc.pug',              // 22
     // 'src/templates/pages/specs.pug',
     // 'src/templates/pages/additionaloptions.pug',

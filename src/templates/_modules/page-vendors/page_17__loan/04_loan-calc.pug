@@ -33,7 +33,7 @@ section.loan-calc#loan-calc
                       .left-logo-name <span>Имя</span> <span>банка 1</span>
 
                     .left-desc
-                      p.left-desc-price Мне нужно <span>120 000</span> тг, на срок <span>10</span> месяцев
+                      p.left-desc-price Мне нужно <span id="firstBankMoneyIsNeeded">120 000</span> тг, на срок <span id="firstBankTermIsNeeded">10</span> месяцев
 
                     .range-filter
                       .range-filter__left
@@ -50,7 +50,7 @@ section.loan-calc#loan-calc
 
                     .left-result.result
                       .left-result-title.result-title Ежемесячный платёж
-                      .left-result-price.result-price 12 000 тенге
+                      #firstBankResult.left-result-price.result-price <span>12 000</span> тенге
 
               //- 02 RIGHT
               .right
@@ -71,7 +71,7 @@ section.loan-calc#loan-calc
                         .right-logo-name-text <span>И</span>мя <span>б</span>анка <span>2</span>
 
                     .right-desc
-                      p.right-desc-price Мне нужно <span>120 000</span> тг, на срок <span>10</span> месяцев
+                      p.right-desc-price Мне нужно <span id="secondBankMoneyIsNeeded">120 000</span> тг, на срок <span id="secondBankTermIsNeeded">10</span> месяцев
 
                     .range-filter
                       .range-filter__left
@@ -83,7 +83,7 @@ section.loan-calc#loan-calc
 
                   .right-result.result
                     .right-result-title.result-title Ежемесячный платёж
-                    .right-result-price.result-price 12 000 тенге
+                    #secondBankResult.right-result-price.result-price <span>12 000</span> тенге
 
 
 // loan-calc end
