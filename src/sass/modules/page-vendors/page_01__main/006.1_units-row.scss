@@ -1,0 +1,248 @@
+
+
+.page-index .constructor {
+  & .constructor__units-row{
+    margin-bottom: 35px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  & .units-row__list{
+    @include clearfix;
+    margin-right: 20px;
+  }
+}
+
+.page-index .constructor {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .constructor {
+  & .units-item__title {
+    @include font(italic, 300, 14px, 20px, 'Roboto');
+    color: #444341;
+    min-height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    position: relative;
+
+    transition: 0.5s ease-out;
+  }
+  & .units-item__title-text {
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+// thumb
+.page-index .constructor {
+  & .units-item__logo {
+    width: 75px;
+    height: 75px;
+
+    transition: .4s ease-out;
+    transform: scale(1);
+
+    position: relative;
+    &::after {
+        transition: .3s ease-out;
+        transition-delay: 200ms;
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80%;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 10px solid #0072bb;
+        clear: both;
+    }
+  }
+
+  & .units-item__logo-substrate,
+  & .units-item__logo-pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  & .units-item__logo-substrate {
+    z-index: 1;
+  }
+  & .units-item__logo-substrate--shadowed {
+    overflow: visible;
+    -webkit-filter: drop-shadow(3px 3px 7px rgba(26, 47, 60, 0.21));
+    filter: drop-shadow(3px 3px 7px rgba(26, 47, 60, 0.21));
+  }
+  & .units-item__logo-pattern {
+    z-index: 2;
+  }
+}
+
+
+
+.page-index .constructor {
+  & .CLASS{
+
+  }
+}
+
+// eof ^^^ thumb
+
+
+.page-index .constructor {
+  & .units-row__item{
+    width: 75px;
+    float: left;
+    margin-right: 20px;
+    transition: .4s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      & .units-item__title {
+        @include font(normal, 700, 14px, 20px, 'Roboto');
+        margin-top: -10px;
+      }
+      & .units-item__logo {
+        transform: scale(1.2);
+
+        &::after{
+          top: 99%;
+        }
+      }
+    }
+
+    // finished
+    &.finished {
+
+    }
+    // eof ^^^ finished
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      & .units-item__logo-pattern {
+        width: 42px;
+        height: 48px;
+      }
+    }
+    &:nth-child(2) {
+      & .units-item__logo-pattern {
+        width: 51px;
+        height: 48px;
+      }
+    }
+    &:nth-child(3) {
+      & .units-item__logo-pattern {
+        width: 46px;
+        height: 48px;
+      }
+    }
+    &:nth-child(4) {
+      & .units-item__logo-pattern {
+        width: 44px;
+        height: 48px;
+      }
+    }
+    &:nth-child(5) {
+      & .units-item__logo-pattern {
+        width: 45px;
+        height: 48px;
+      }
+    }
+    &:nth-child(6) {
+      & .units-item__logo-pattern {
+        width: 48px;
+        height: 34px;
+      }
+    }
+    &:nth-child(7) {
+      & .units-item__logo-pattern {
+        width: 48px;
+        height: 36px;
+      }
+    }
+    &:nth-child(8) {
+      & .units-item__logo-pattern {
+        width: 39px;
+        height: 48px;
+      }
+    }
+    &:nth-child(9) {
+      & .units-item__logo-pattern {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &:nth-child(10) {
+      & .units-item__logo-pattern {
+        width: 48px;
+        height: 44px;
+      }
+    }
+  }
+}
+
+.page-index .constructor {
+  & .config__btn-ahead {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    background-color: #42a455;
+    box-shadow: 2.6px 3.1px 7px rgba(26, 47, 60, 0.21);
+    @include font(normal, 400, 18px, 40px, 'Roboto');
+    color: white;
+    cursor: pointer;
+
+    position: relative;
+    top: 25px;
+  }
+}
+
+
+
+.page-index .constructor {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .constructor {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .constructor {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-index .constructor {
+  & .CLASS{
+
+  }
+}

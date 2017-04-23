@@ -106,6 +106,7 @@ gulp.task('js', function() {
       '!src/js/libs/*.js', // ignore this file
       'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p01/03_checker-slider.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p07/003_types.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/slider-clock-timers.js', // e.g. /path/to/mymodule/mymodule/*.js'

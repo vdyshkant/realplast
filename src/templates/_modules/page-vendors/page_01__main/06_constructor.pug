@@ -53,111 +53,191 @@ section.constructor
                 p его изолирующие характеристики и внешний вид. Нужно выбирать окна, изготовленные только из качественного сертифицированного профиля, который отвечает всем необходимым стандартам и ГОСТам. В то же время, нет смысла «гоняться» за каким-то конкретным «самым лучшим» профилем. Принципиальной разницы между продукцией ведущих мировых производителей нет.
               .constructor__info-colors
                 .info-colors__title Доступные цвета
+
+                //- slider module:
                 .info-colors__checker
-                  .info-colors__checker__item
-                  .info-colors__checker__item
-                  .info-colors__checker__item
-                  .info-colors__checker__item
+                  .info-colors__checker-container
+                    //- slider essence:
+                    ul.checker-slider#checker-slider
+                      li.checker-slider__item
+                        .checker-slider__item-essence
+                      li.checker-slider__item
+                      li.checker-slider__item.user-selected
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+                      li.checker-slider__item
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+
+                      li.checker-slider__item
+                      li.checker-slider__item
+                    //- slider controls:
+                    .checker-slider-controls
+                      .checker-slider-controls__left
+                      .checker-slider-controls__right
+
                 .info-colors__description
                   .info-colors__description__stable Выбрано:&nbsp;
                   .info-colors__description__name Темный дуб
 
 
+          .constructor__units-row
+            .units-row__list
+              //-unit 01
+              .units-row__item.finished
+                .units-item__title
+                  .units-item__title-text Профиль
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-01.svg")
+              //-unit 02
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Стеклопакет
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-02.svg")
+              //-unit 03
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text доп. Стеклопакет
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-03.svg")
+              //-unit 04
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Фурнитура
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-04.svg")
+              //-unit 05
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text доп. Фурнитура
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-05.svg")
+              //-unit 06
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Откосы
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-06.svg")
+              //-unit 07
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Подоконник
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-07.svg")
+              //-unit 08
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Москитная сетка
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-08.svg")
+              //-unit 09
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Рассечка
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-09.svg")
+              //-unit 10
+              .units-row__item
+                .units-item__title
+                  .units-item__title-text Аксессуары
+                .units-item__logo
+                  img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+                  img.units-item__logo-pattern(src="img/001_patt-10.svg")
+            //- eof ^^^ .units-row__list
+            a.config__btn-ahead Далее
 
-          //- config
-          .constructor__config
-            .constructor__config__tabs
-              .config__item-container
-                //- 1
-                .config__item
-                  .config__item-title Профиль
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img01'}])
-                //- 2
-                .config__item(class="active")
-                  .config__item-title Стеклопакет
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img02'}])
-                //- 3
-                .config__item
-                  .config__item-title доп. Стеклопакет
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img03'}])
-                //- 4
-                .config__item
-                  .config__item-title Фурнитура
-                  .config__item-img
-                    +svg([{'class': 'icon-img svg-icon', 'pathid': 'svg-config-img', 'filename':'config__item-img-bg'}])
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img04'}])
-                //- 5
-                .config__item
-                  .config__item-title доп. Фурнитура
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img05'}])
-                //- 6
-                .config__item
-                  .config__item-title Откосы
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img06'}])
-                //- 7
-                .config__item
-                  .config__item-title Подоконник
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img07'}])
-                //- 8
-                .config__item
-                  .config__item-title Москитная сетка
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img08'}])
-                //- 9
-                .config__item
-                  .config__item-title Рассечка
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img09'}])
-                //- 10
-                .config__item
-                  .config__item-title Аксессуары
-                  .config__item-img
-                    .config__item-icon
-                      +svg([{'class': 'icon-config svg-icon', 'pathid': 'svg-config-item', 'filename':'constructor-tab_img10'}])
-              a.config__btn-ahead Далее
 
-            .constructor__config__tab-content
+          //- tabs-content
+          .constructor__units-tab-content
+
               //- 1
               .tab-content__item
-                .item-content
-                  .item-content-left
-                    .col
-                      .item-content-left__img
-                        img(src="img/constructor-tab-cont-item-02-1.png")
-                    .col
-                      .item-content-left__title Однокамерный
-                      p.item-content-left__text Ширина стеклопакета:
-                        label 24 мм
-                          input(type="checkbox")
-                        label 32 мм
-                          input(type="checkbox")
-                  .item-content-right
-                    .col
-                      .item-content-left__img
-                        img(src="img/constructor-tab-cont-item-02-2.png")
-                    .col
-                      .item-content-left__title Двухкамерный
-                      p.item-content-left__text Ширина стеклопакета:
-                        label 32 мм
-                          input(type="checkbox")
-                        label 36 мм
-                          input(type="checkbox")
-                a.item-content-btn Выбрать Cтеклопакет
+                .units-content
+                  .units-content-container
+                    .units-content-inner
+                      //- LEFT
+                      .left
+                        img.thumb(src="img/022_i8_content-01.png")
+                        .desc
+                          .desc-inner
+                            .desc-title Однокамерный
+
+                            .desc-content
+                              .desc-subtitle Ширина стеклопакета:
+                              form.interrogation-unit-form
+                                .interrogation-unit-form__items
+                                  ul
+                                    li
+                                      label.unit-form-radio
+                                        input(type='radio', name='tree')
+                                        span.radio-indicator
+                                        .label-text 24 мм
+                                    li
+                                      label.unit-form-radio
+                                        input(type='radio', name='tree' checked)
+                                        span.radio-indicator
+                                        .label-text 32 мм
+                      //- RIGHT
+                      .right
+                        img.thumb(src="img/022_i8_content-02.png")
+                        .desc
+                          .desc-inner
+                            .desc-title Двухкамерный
+
+                            .desc-content
+                              .desc-subtitle Ширина стеклопакета:
+                              form.interrogation-unit-form
+                                .interrogation-unit-form__items
+                                  ul
+                                    li
+                                      label.unit-form-radio
+                                        input(type='radio', name='tree')
+                                        span.radio-indicator
+                                        .label-text 32 мм
+                                    li
+                                      label.unit-form-radio
+                                        input(type='radio', name='tree')
+                                        span.radio-indicator
+                                        .label-text 36 мм
+
+
+                    .units-content-btm
+                      .units-content-btm__divider
+                      a.units-content-btn Выбрать Cтеклопакет
 
               //- 2
               .tab-content__item
