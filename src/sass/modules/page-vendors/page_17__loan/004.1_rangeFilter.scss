@@ -1,9 +1,5 @@
 .page-loan .loan-calc .range-filter {
-  width: 550px;
   min-height: 50px;
-  margin-right: 30px;
-
-  padding: 0 40px;
 
   margin: 0 auto;
 
@@ -12,34 +8,74 @@
 
   @include clearfix;
   margin-bottom: 40px;
+
+  @media #{$wide} {
+    margin-right: 30px;
+    padding: 0 40px;
+    width: 550px;
+  }
+  @media #{$tablet} {
+    padding: 0 50px;
+
+  }
+  @media #{$mobile} {
+
+  }
 }
 
 
 .page-loan .loan-calc .range-filter__left,
 .page-loan .loan-calc .range-filter__right {
-  width: 225px;
+
+  @media #{$wide} {
+    width: 225px;
+  }
+  @media #{$tablet} {
+    width: 118px;
+  }
+  @media #{$mobile} {
+    width: 140px;
+  }
 
 }
 
 .page-loan .loan-calc .range-filter__left {
-  width: 225px;
-  margin-right: 20px;
   float: left;
+  @media #{$wide} {
+    margin-right: 20px;
+  }
+  @media #{$tablet} {
+    margin-right: 18px;
+  }
+  @media #{$mobile} {
+    margin-right: 20px;
+    padding-left: 65px;
 
+  }
 }
 
 .page-loan .loan-calc .range-filter__right {
-  width: 225px;
   float: right;
-  padding-left: 80px;
+  @media #{$wide} {
+    padding-left: 80px;
+
+  }
+  @media #{$tablet} {
+    padding-left: 60px;
+  }
+  @media #{$mobile} {
+    padding-left: 55px;
+  }
 }
 
 .page-loan .loan-calc .range-filter__left-title,
 .page-loan .loan-calc .range-filter__right-title {
   @include font(normal, 700, 18px, 27px, 'Roboto');
   color: #444341;
-  padding-left: 15px;
   margin-bottom: 5px;
+  @media #{$wide} {
+    padding-left: 15px;
+  }
 }
 
 .ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after,
@@ -51,7 +87,7 @@
 .ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after,
 .ui-slider-vertical.ui-slider-float .ui-slider-tip:after {
   margin-bottom: -10px;
-  right: -16px;
+  right: -15px;
 }
 
 .ui-slider-vertical.ui-slider-float .ui-slider-handle.ui-state-hover .ui-slider-tip {
@@ -181,6 +217,10 @@ $bg: #434d5a;
 
   @include font(normal, 400, 18px, 18px, 'Roboto');
   color: #444341;
+
+  @media #{$mobile-tablet} {
+    display: none;
+  }
 }
 
 .ui-slider-pips:not(.ui-slider-disabled) .ui-slider-pip:hover .ui-slider-label {

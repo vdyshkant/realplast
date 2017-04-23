@@ -29,6 +29,7 @@
 
     @media #{$mobile} {
       min-width: 320px;
+      padding: 0 10px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -41,7 +42,17 @@
   }
 
   & .container {
-    padding: 100px 0 100px 0;
+    @media #{$wide} {
+      padding: 100px 0 100px 0;
+    }
+    @media #{$tablet} {
+      padding: 65px 0 65px 0;
+    }
+    @media #{$mobile} {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
   }
 
   & .loan-calc-wrapper {
@@ -99,7 +110,7 @@
 
 
     @media #{$mobile-tablet} {
-      @include font(normal, 700, 32px, 48px, 'Roboto Condensed');
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
       text-transform: uppercase;
     }
 
@@ -123,6 +134,10 @@
       // @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
     }
 
+    @media #{$mobile} {
+      margin-bottom: 30px;
+    }
+
     & + .divider {
       // display: none;
       border: none;
@@ -135,10 +150,12 @@
 
       @media #{$tablet} {
         display: block;
+
       }
 
       @media #{$mobile} {
         display: block;
+        margin-bottom: 30px;
       }
     }
   }
@@ -164,7 +181,7 @@
       width: 354px;
     }
     @media #{$mobile} {
-      width: auto;
+      width: 300px;
     }
   }
 }
@@ -181,11 +198,11 @@
     }
     @media #{$tablet} {
       margin-right: 18px;
-      margin-right: 20px;
+      // margin-right: 20px;
     }
     @media #{$mobile} {
-      float: none;
-      margin-bottom: 40px;
+      float: none !important;
+      margin: 0 auto 40px;
     }
   }
 }
@@ -198,7 +215,8 @@
       // padding-left: 95px;
     }
     @media #{$mobile} {
-      float: none;
+      float: none !important;
+      margin: 0 auto;
     }
   }
 }
@@ -210,6 +228,10 @@
       width: 310px;
       margin: 0 auto;
       margin-bottom: 15px;
+
+      @media #{$mobile} {
+        width: auto;
+      }
     }
     & .left-logo-essence {
       display: block;
@@ -337,8 +359,12 @@
 }
 
 
-.page-loan .loan-calc .left-desc-price {
-
+.page-loan .loan-calc .left-desc-price,
+.page-loan .loan-calc .right-desc-price {
+  @media #{$mobile-tablet} {
+    max-width: 235px;
+    margin: 0 auto;
+  }
 }
 
 

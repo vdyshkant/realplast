@@ -119,6 +119,12 @@
       float: none;
       margin-bottom: 40px;
     }
+
+    & .bank-desc-text {
+      @media #{$wide} {
+        padding-left: 20px;
+      }
+    }
   }
 }
 
@@ -131,6 +137,12 @@
     }
     @media #{$mobile} {
       float: none;
+    }
+
+    & .bank-desc-text {
+      @media #{$wide} {
+        padding-left: 20px;
+      }
     }
   }
 }
