@@ -2,7 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Калькулятор'
+  - var PageTitle = 'TEMP TESTS'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
@@ -30,7 +30,7 @@ append 001_config
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-calc')
+  - var updateBodyClass = bodyClasses.push('page-www')
 
   //- - var GoogleFonts = 'Poiret+One'
   //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
@@ -54,15 +54,15 @@ block content
           ========================================================
 
     //- header
-    include ../../global-modules/001__header
+    //- include ../../global-modules/001__header
     //- eof header
 
-    include ../../global-modules/003c__side-burger
+    //- include ../../global-modules/003c__side-burger
 
-    include ../../global-modules/003a__side-nav
+    //- include ../../global-modules/003a__side-nav
 
 
-    include ../../global-modules/003b__side-right
+    //- include ../../global-modules/003b__side-right
 
 
 
@@ -75,13 +75,23 @@ block content
     main.main
 
 
-      include 01_breadcrumbs
+      //- include 01_breadcrumbs
 
-      include 02_calc
 
-      include 03_contact
 
-      include 04_prefooter
+      include 02_welcome
+
+      //- include 03_types
+      //-
+      //- //- include 04_about
+      //-
+      //-
+      //-
+      //- include 05_process
+      //-
+      //- include 06_contact
+      //-
+      //- include 07_prefooter
 
 
       //- eof main
@@ -95,7 +105,7 @@ block content
 
     //- footer
 
-    include ../../global-modules/002__footer
+    //- include ../../global-modules/002__footer
 
 
 

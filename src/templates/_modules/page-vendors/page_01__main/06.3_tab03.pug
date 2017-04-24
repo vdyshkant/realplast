@@ -15,11 +15,14 @@
         .info-right-content
           //- Content:
           .info-right-ok
+            neko.btn-container
+              neko#button
           form.info-right-user-data
             .info-right-user-data__title Для отправки на просчет, пожалуйста, укажите ваши контактные данные
             input.info-right-user-data__name(type="text" placeholder="Имя")
             input.info-right-user-data__phone(type="text" placeholder="Телефон")
-            button.info-right-user-data__btn(type="submit") Отправить
+            .info-right-user-data__btn.btn-container
+              #button
 
 
   //- tabs-content

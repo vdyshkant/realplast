@@ -66,12 +66,13 @@ gulp.task('pug', function() {
     // 'src/templates/pages/leadlight.pug',
     // 'src/templates/pages/licenses.pug',       // 10
     // 'src/templates/pages/loan.pug',              // 17
-    // 'src/templates/pages/calc.pug',              // 22
+    'src/templates/pages/calc.pug',              // 22
     // 'src/templates/pages/specs.pug',
     // 'src/templates/pages/additionaloptions.pug',
     // 'src/templates/pages/terms.pug',
     // 'src/templates/pages/video.pug',
     // 'src/templates/pages/about.pug',          // 09
+    'src/templates/pages/www.pug',          // 09
     // 'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
@@ -107,6 +108,7 @@ gulp.task('js', function() {
       'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p01/03_checker-slider.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p01/0b_btn-animation.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p07/003_types.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/slider-clock-timers.js', // e.g. /path/to/mymodule/mymodule/*.js'
