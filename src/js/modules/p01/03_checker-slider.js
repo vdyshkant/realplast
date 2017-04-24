@@ -16,7 +16,7 @@ $(window).load(function() {
         moveSlides: 1,
 
 		    speed: 300,
-		    pager: true,
+		    pager: false,
 		    nextText: '',
 		    prevText: '',
 				prevSelector: ('.checker-slider-controls__left'),

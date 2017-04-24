@@ -1,0 +1,163 @@
+//- info
+.units-content-02
+  .info
+    .info-left
+      img.info-left__thumb(src="img/001_units-content-02__thumb.png")
+      .info-left-text__container
+        .info-left-text__title Молодцы!
+        .info-left-text__subtitle
+          span Вы успешно настроили комплектацию
+          span Осталось выбрать тип окна
+        a.info-left-text__back(href="javascript:void(0)") Вернуться к конфигурации
+    .info-right
+      .info-right-window
+        .info-right-title Ваш тип окна, и его размеры
+        .info-right-content
+          //- items Content:
+          .items-container
+            .item-essence
+              form.info-right-form(action='#', method='get')
+
+                .item-image
+                  img.item-image-essence(src="img/022_item-image-essence.png")
+
+                  label(for='addwin')
+                  span.input-wrapper
+                    a.info-right-form-minus(href='#') Less
+                    input#addwin.people-number(type='text', pattern='[0-9]*', value='1', min='0')
+                    a.info-right-form-plus(href='#') More
+
+                .item-height
+                  .item-height-text Высота окна
+                .item-width
+                  .item-width-text Ширина окна
+
+
+
+  .tabs-row
+    .units-row__list
+      //-unit 01
+      .units-row__item.finished
+        .units-item__title
+          .units-item__title-text Одностворчатое
+        .units-item__logo
+          img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+          img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+          img.units-item__logo-pattern(src="img/001_tab2_patt-01.svg")
+      //-unit 02
+      .units-row__item.hovered
+        .units-item__title
+          .units-item__title-text Двустворчатое
+        .units-item__logo
+          img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+          img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+          img.units-item__logo-pattern(src="img/001_tab2_patt-02.svg")
+      //-unit 03
+      .units-row__item
+        .units-item__title
+          .units-item__title-text Трехстворчатое
+        .units-item__logo
+          img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+          img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+          img.units-item__logo-pattern(src="img/001_tab2_patt-03.svg")
+      //-unit 04
+      .units-row__item
+        .units-item__title
+          .units-item__title-text Четырёхстворчатое
+        .units-item__logo
+          img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+          img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+          img.units-item__logo-pattern(src="img/001_tab2_patt-04.svg")
+      //-unit 05
+      .units-row__item
+        .units-item__title
+          .units-item__title-text Балконный блок
+        .units-item__logo
+          img.units-item__logo-substrate(src="img/001-icon-substrate.svg")
+          img.units-item__logo-substrate--shadowed(src="img/001-icon-substrate.svg")
+          img.units-item__logo-pattern(src="img/001_tab2_patt-05.svg")
+
+    //- eof ^^^ .units-row__list
+    a.config__btn-ahead Далее
+
+
+  //- tabs-content
+  .constructor__units-tab-content
+
+      //- 1
+      .tab-content__item
+        .units-content
+          .units-content-container
+            .units-content-inner
+
+              .units-content-list
+                .units-content-list__item
+                  .units-content-list__item-thumb
+                  .units-content-list__item-check
+                    label.unit-form-checkbox
+                      input(type='checkbox', name='tree')
+                      span.checkbox-indicator
+                      .label-text Глухое
+
+                .units-content-list__item
+                  .units-content-list__item-thumb
+                  .units-content-list__item-check
+                    label.unit-form-checkbox
+                      input(type='checkbox', name='tree')
+                      span.checkbox-indicator
+                      .label-text С простым<br> открыванием
+                .units-content-list__item
+                  .units-content-list__item-thumb
+                  .units-content-list__item-check
+                    label.unit-form-checkbox
+                      input(type='checkbox', name='tree')
+                      span.checkbox-indicator
+                      .label-text Со сложным<br> открыванием
+                .units-content-list__item
+                  .units-content-list__item-thumb
+                  .units-content-list__item-check
+                    label.unit-form-checkbox
+                      input(type='checkbox', name='tree')
+                      span.checkbox-indicator
+                      .label-text С простым и сложным<br> открыванием
+
+
+
+            .units-content-btm
+              .units-content-btm__divider
+              a.units-content-btn Выбрать Тип окна
+
+      //- 2
+      .tab-content__item
+
+
+      //- 3
+      .tab-content__item
+
+
+      //- 4
+      .tab-content__item
+
+
+      //- 5
+      .tab-content__item
+
+
+      //- 6
+      .tab-content__item
+
+
+      //- 7
+      .tab-content__item
+
+
+      //- 8
+      .tab-content__item
+
+
+      //- 9
+      .tab-content__item
+
+
+      //- 10
+      .tab-content__item

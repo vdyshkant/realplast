@@ -1,6 +1,6 @@
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .constructor__units-row{
     margin-bottom: 35px;
     padding: 0 20px;
@@ -15,7 +15,7 @@
   }
 }
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .CLASS{
 
   }
@@ -23,7 +23,7 @@
 
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .units-item__title {
     @include font(italic, 300, 14px, 20px, 'Roboto');
     color: #444341;
@@ -45,7 +45,7 @@
 }
 
 // thumb
-.page-index .constructor {
+.page-index .units-content-01 {
   & .units-item__logo {
     width: 75px;
     height: 75px;
@@ -93,7 +93,7 @@
 
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .CLASS{
 
   }
@@ -102,7 +102,7 @@
 // eof ^^^ thumb
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .units-row__item{
     width: 75px;
     float: left;
@@ -110,6 +110,9 @@
     transition: .4s ease-out;
     cursor: pointer;
 
+
+
+    &.hovered,
     &:hover {
       & .units-item__title {
         @include font(normal, 700, 14px, 20px, 'Roboto');
@@ -197,7 +200,7 @@
   }
 }
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .config__btn-ahead {
     display: block;
     text-align: center;
@@ -217,7 +220,7 @@
 
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .CLASS{
 
   }
@@ -225,7 +228,7 @@
 
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .CLASS{
 
   }
@@ -233,7 +236,7 @@
 
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .CLASS{
 
   }
@@ -241,7 +244,7 @@
 
 
 
-.page-index .constructor {
+.page-index .units-content-01 {
   & .CLASS{
 
   }
