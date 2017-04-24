@@ -42,6 +42,7 @@
   width: 40px;
   border-color: #bdbdbd;
   background: transparent;
+  background: white;
   border-width:3px;
   border-radius: 40px;
   font-size:0;
@@ -63,9 +64,9 @@
   // background: #42a455;
   background: white;
   &:after {
-    // font-family:'FontAwesome';
-    // content:"\f00c";
-    content:"nice";
+    font-family:'FontAwesome';
+    content:"\f00c";
+    // content:"nice";
   }
 }
 

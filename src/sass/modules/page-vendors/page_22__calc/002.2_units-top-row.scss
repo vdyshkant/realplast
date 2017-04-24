@@ -35,19 +35,19 @@
     width: 170px;
     position: relative;
 
-    & .unit-submit-btn {
+    & .animatedSubmitButton {
 
       width: 170px;
       height: 40px;
-      box-shadow: 3px 3px 7px rgba(26, 47, 60, 0.21);
-      background-color: #42a455;
       cursor: pointer;
-      text-align: center;
-      color: #fff;
-
       position: absolute;
       top: 110px;
-      @include font(normal, 400, 18px, 40px, 'Roboto');
+      // box-shadow: 3px 3px 7px rgba(26, 47, 60, 0.21);
+      // background-color: #42a455;
+      // text-align: center;
+      // color: #fff;
+
+      // @include font(normal, 400, 18px, 40px, 'Roboto');
     }
 
     &::before {
