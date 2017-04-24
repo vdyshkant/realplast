@@ -170,22 +170,17 @@
     & .info-right-user-data__phone {
       float: right;
     }
-    & .info-right-user-data__btn {
-      // clear: both;
-      // margin: 0 auto;
+    & .animatedSubmitButton {
+      clear: both;
+      margin: 0 auto;
 
-      // display: block;
-      // text-align: center;
-      // text-decoration: none;
-      // width: 170px;
-      // height: 40px;
-      // background-color: #42a455;
-      // @include font(normal, 400, 18px, 40px, 'Roboto');
-      // color: white;
-      // cursor: pointer;
+      display: block;
+      width: 170px;
+      height: 40px;
+      cursor: pointer;
 
-      // position: relative;
-      // top: 25px;
+      position: relative;
+      top: 25px;
     }
   }
 }

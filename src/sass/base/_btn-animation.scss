@@ -1,6 +1,6 @@
 
 
-& .ADD_CLASS_WHATEVER_YOU_WANT_TO_POSITION_IT .animatedSubmitButton{
+.ADD_CLASS_WHATEVER_YOU_WANT_TO_POSITION_IT .animatedSubmitButton{
   // position: relative;
   // width: 200px;
   // height: 100px;
@@ -9,7 +9,7 @@
 }
 
 
-& .animatedSubmitButton__essence {
+.animatedSubmitButton__essence {
   display: inline-block;
   outline:none;
   height: 40px;
@@ -28,7 +28,7 @@
     content:"Отправить";
   }
 }
-& .animatedSubmitButton__container {
+.animatedSubmitButton__container {
   width: 170px;
   height: 40px;
   position: absolute;
@@ -38,7 +38,7 @@
   margin-top: -19px; // 40/2
   text-align: center;
 }
-& .animatedSubmitButton--onclick {
+.animatedSubmitButton--onclick {
   width: 40px;
   border-color: #bdbdbd;
   background: transparent;
