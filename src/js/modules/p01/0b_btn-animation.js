@@ -17,19 +17,19 @@ $(function() {
 
 
 
-  $( "#button3" ).click(function() {
-    $( "#button3" ).addClass( "eba", 250, validate);
+  $( "#animatedSubmitButton" ).click(function() {
+    $( "#animatedSubmitButton" ).addClass( "animatedSubmitButton--onclick", 250, validate);
   });
 
   function validate() {
     setTimeout(function() {
-      $( "#button3" ).removeClass( "eba" );
-      $( "#button3" ).addClass( "validate-it", 450, callback );
+      $( "#animatedSubmitButton" ).removeClass( "animatedSubmitButton--onclick" );
+      $( "#animatedSubmitButton" ).addClass( "animatedSubmitButton--validate", 450, callback );
     }, 2250 );
   }
   function callback() {
     setTimeout(function() {
-      $( "#button3" ).removeClass( "validate-it" );
+      $( "#animatedSubmitButton" ).removeClass( "animatedSubmitButton--validate" );
     }, 1250 );
   }
 

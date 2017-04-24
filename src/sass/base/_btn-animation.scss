@@ -1,74 +1,76 @@
-$green: #1ECD97;
-$gray: #bbbbbb;
-* {
-  font-family: 'Roboto', sans-serif;
+
+
+& .ADD_CLASS_WHATEVER_YOU_WANT_TO_POSITION_IT .animatedSubmitButton{
+  // position: relative;
+  // width: 200px;
+  // height: 100px;
+  // outline: 2px dashed dodgerblue;
+  // outline-offset: -2px;
 }
-.btn-container {
-  position: absolute;
-  top:50%;
-  left:50%;
-  margin-left: -65px;
-  margin-top: -20px;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-}
-#button2 {
+
+
+& .animatedSubmitButton__essence {
+  display: inline-block;
   outline:none;
   height: 40px;
-  text-align: center;
-  width: 130px;
-  border-radius:40px;
-  background: #fff;
-  border: 2px solid $green;
-  color:$green;
-  letter-spacing:1px;
+  width: 170px;
+  background: #42a455;
+  border: 2px solid #42a455;
+  color:#fff;
   text-shadow:0;
-  font:{
-    size:12px;
-    weight:bold;
-  }
+  box-shadow: 2.6px 3.1px 7px rgba(26, 47, 60, 0.21);
+  @include font(normal, 400, 18px, 36px, 'Roboto');
   cursor: pointer;
   transition: all 0.25s ease;
-  &:hover {
-    color:white;
-    background: $green;
-  }
-  &:active {
-    //letter-spacing: 2px;
-    letter-spacing: 2px ;
-  }
-  &:after {
-    content:"SUBMIT";
+
+  // border: 2px solid crimson;
+  &::after {
+    content:"Отправить";
   }
 }
-.onclic {
+& .animatedSubmitButton__container {
+  width: 170px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -85px;// 170/2
+  margin-top: -19px; // 40/2
+  text-align: center;
+}
+& .animatedSubmitButton--onclick {
   width: 40px;
-  border-color:$gray;
+  border-color: #bdbdbd;
+  background: transparent;
   border-width:3px;
+  border-radius: 40px;
   font-size:0;
-  border-left-color:$green;
-  animation: rotating 2s 0.25s linear infinite;
+  border-left-color:#42a455;
+  animation: rotatingASB 2s 0.25s linear infinite;
+  box-shadow: none;
 
   &:after {
     content:"";
   }
   &:hover {
-    color:$green;
+    color:#42a455;
     background: white;
   }
 }
-.validate {
-  font-size:13px;
-  color: white;
-  background: $green;
+.animatedSubmitButton--validate {
+  @include font(normal, 400, 18px, 36px, 'Roboto');
+  color: #42a455;
+  // background: #42a455;
+  background: white;
   &:after {
-    font-family:'FontAwesome';
-    content:"\f00c";
+    // font-family:'FontAwesome';
+    // content:"\f00c";
+    content:"nice";
   }
 }
 
-@keyframes rotating {
+
+@keyframes rotatingASB {
   from {
     transform: rotate(0deg);
   }
