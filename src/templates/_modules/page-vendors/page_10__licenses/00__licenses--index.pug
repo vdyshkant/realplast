@@ -14,8 +14,8 @@ append 001_config
   //- - var mainJsSrc = 'js/main.min.js'
 
   //- smoothDivScroll
-  - var jQuery = true
-  - var googleMaps = true
+  - var jQuery1_9 = true
+  //- - var googleMaps = true
   //- - var masonry = true
         //- - var jQueryUI = true
         //- - var jQueryMousewheel = true
@@ -23,7 +23,9 @@ append 001_config
         //- - var jQsmoothDivScroll = true
   //- eof smoothDivScroll
 
-  - var waterwheelCarousel = true
+  //- - var waterwheelCarousel = true
+  - var pLicenses_waterwheelCarousel = true
+
   //- counter:
         //- - var animateNumber = true
         //- - var animateCss = true
@@ -78,16 +80,16 @@ block content
     main.main
 
 
-      //- include 01_breadcrumbs
+      include 01_breadcrumbs
 
       include 02_certs
       include 03_partners
-      //- include 04_office
-      //- include 05_feedback
+      include 04_office
+      include 05_feedback
 
-      //- include 06_contact
+      include 06_contact
 
-      //- include 07_prefooter
+      include 07_prefooter
 
 
       //- eof main

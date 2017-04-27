@@ -289,12 +289,16 @@
 
 
 .page-licenses .certification {
+
+  & .slider-item:not(.carousel-center) {
+    // width: 110px;
+  }
   & .slider-item{
     // min-width: 255px;
     width: 476px; // necessary parametr
     // max-height: 260px;
     user-select: none;
-    width: 110px;
+
     // height: 152px;
 
     @media #{$mobile} {
@@ -315,7 +319,7 @@
 
     // ACTIVE
     &.carousel-center {
-      width: 354px;
+      // width: 354px;
 
       @media #{$tablet} {
         width: 476px;
