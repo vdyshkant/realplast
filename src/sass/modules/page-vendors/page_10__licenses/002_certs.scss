@@ -8,8 +8,8 @@
     margin: 0 auto;
     max-width: 1160px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$mobile} {
       min-width: 320px;
@@ -168,16 +168,16 @@
   & .certification-sub-title{
     max-width: 730px;
     margin: 0 auto;
-    @include font(normal, 400, 18px, 27px, 'NotoSans');
+    @include font(normal, 400, 18px, 27px, 'Roboto');
     color: #444341;
   }
 }
 
 
 .page-licenses .certification-title-text {
-  @include font(normal, 600, 36px, 54px, 'NotoSans');
+  @include font(normal, 600, 32px, 63px, 'Roboto');
   color: #444341;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   margin-bottom: 25px;
   letter-spacing: 1.5px;
 
@@ -185,12 +185,12 @@
   padding: 0 40px;
   position: relative;
   @media #{$tablet} {
-    @include font(normal, 400, 22px, 54px, 'NotoSans');
+    @include font(normal, 400, 22px, 54px, 'Roboto');
     margin-bottom: 15px;
   }
 
   @media #{$mobile} {
-    @include font(normal, 500, 20px, 32px, 'NotoSans');
+    @include font(normal, 500, 20px, 32px, 'Roboto');
     // margin-bottom: 20px;
     letter-spacing: normal;
 
@@ -224,6 +224,52 @@
   &::before {
     left: -10000%;
     // z-index: -1;
+  }
+}
+
+
+.page-licenses .certification {
+  & .certification-main-title {
+
+    @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media #{$wide} {
+      margin-bottom: 15px;
+    }
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+      margin-bottom: 20px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed');
+      margin-bottom: 20px;
+    }
+
+    & + hr.divider {
+      display: block;
+      border: none;
+      outline: none;
+
+
+      margin: 0 auto;
+      width: 236px;
+      height: 1px;
+      background-color: #333;
+      margin-bottom: 40px;
+
+      @media #{$tablet} {
+        margin-bottom: 50px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 
@@ -562,11 +608,8 @@
 
   &::before {
     height: 67px;
-    background: rgb(4,107,160); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(4,107,160,1) 0%, rgba(94,63,240,1) 44%, rgba(94,63,240,1) 56%, rgba(4,107,160,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(4,107,160,1) 0%,rgba(94,63,240,1) 44%,rgba(94,63,240,1) 56%,rgba(4,107,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(4,107,160,1) 0%,rgba(94,63,240,1) 44%,rgba(94,63,240,1) 56%,rgba(4,107,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#046ba0', endColorstr='#046ba0',GradientType=0 ); /* IE6-9 */
+    background: url('../img/010_certs_line--green.jpg');
+    box-shadow: 3px 3px 7px 0 rgba(26, 47, 60, 0.11);
     @media #{$mobile} {
       height: 52px;
     }

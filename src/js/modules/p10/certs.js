@@ -267,3 +267,20 @@ $(document).ready(function() {
 
 
 // CAROUSEL end
+
+
+(function($) {
+ if($('body').is('.page-licenses')){
+	 $("[data-fancybox]").fancybox({
+	 	// Options will go here
+
+    // Prevent fancybox from causing page to to jump to the top
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+	 });
+ }
+})(jQuery); // eof autoFunction
+/* eof ^^^ */
