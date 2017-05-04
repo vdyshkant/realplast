@@ -5,33 +5,43 @@
 $(window).load(function() {
 
 	if($('body').is('.page-index')){
-		$("ul#checker-slider").bxSlider({
-        // http://stackoverflow.com/a/20342392
-        // BxSlider displayes last slide as first slide | dublicating ids
 
-        minSlides: 2,
-        maxSlides: 8,
-        slideWidth: 40,
-        slideMargin: 20,
-        moveSlides: 1,
+    setTimeout(function(){
 
-		    speed: 300,
-		    pager: false,
-		    nextText: '',
-		    prevText: '',
-				prevSelector: ('.checker-slider-controls__left'),
-				nextSelector: ('.checker-slider-controls__right'),
+        var checkerSlider;
 
-        // looping
-        auto: true,
-        infiniteLoop: true,
-        pause: 5000
-		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
-		    //    changeRealThumb(realThumbSlider,newIndex);
-		    //
-		    //  }
+        checkerSlider = $("ul#checker-slider").bxSlider({
+          // http://stackoverflow.com/a/20342392
+          // BxSlider displayes last slide as first slide | dublicating ids
 
-		});
+          minSlides: 2,
+          maxSlides: 8,
+          slideWidth: 40,
+          slideMargin: 20,
+          moveSlides: 1,
+
+  		    speed: 300,
+  		    pager: false,
+  		    nextText: '',
+  		    prevText: '',
+  				prevSelector: ('.checker-slider-controls__left'),
+  				nextSelector: ('.checker-slider-controls__right'),
+
+          // looping
+          auto: true,
+          infiniteLoop: true,
+          pause: 5000
+  		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+  		    //    changeRealThumb(realThumbSlider,newIndex);
+  		    //
+  		    //  }
+
+  		});
+      $('.menu .item.tab:first').click(function() { // button that sets the DIV visible
+          checkerSlider.reloadSlider(); // Reloads the slideshow (bxSlider API function)
+      });
+    }, 5);
+
 
     // // get the children behind
     // var $prependedChildren = getArraySample($children, 0, options.moveSlideQty, 'backward');

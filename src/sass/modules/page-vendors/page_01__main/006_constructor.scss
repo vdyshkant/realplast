@@ -23,6 +23,7 @@
 @import '006.11_units-content-01';
 @import '006.12_units-content-02';
 @import '006.13_units-content-03';
+@import '006.14_segmentTabs';
 @import '006.3_checker-slider';
 @import '006.4_step-nav';
 @import '006.5_kazldur';
@@ -111,9 +112,9 @@
 .page-index .constructor {
   & .constructor__info-right{
     width: 550px;
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #000;
+    // background: #fff;
+    // padding: 20px;
+    // border: 1px solid #000;
   }
 }
 

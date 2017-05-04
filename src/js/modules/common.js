@@ -2099,3 +2099,145 @@ $(document).ready(function() {
  }
 })(jQuery); // eof autoFunction
 /* eof ^^^ */
+
+
+
+
+
+// slider
+
+// $( document ).ready(function() {
+$(window).load(function() {
+
+	if($('body').is('.page-index')){
+
+    var numberTabs = 1;
+    setTimeout(function(){
+      $('#tabs .menu .tab').tab({});
+      appendTab('tabs', 'Окно 1', '<div class="constructor__info-img"><img src="img/001_tab1_cont-img.png"/></div> <div class="constructor__info-title">Профиль</div> <div class="constructor__info-text"> <p>Основной элемент в конструкции металлопластикового окна – детали из профиля ПВХ (поливинилхлорида), из которых собирается окно. От качества пластикового профиля зависят надежность и срок службы окна</p> <p>его изолирующие характеристики и внешний вид. Нужно выбирать окна, изготовленные только из качественного сертифицированного профиля, который отвечает всем необходимым стандартам и ГОСТам. В то же время, нет смысла «гоняться» за каким-то конкретным «самым лучшим» профилем. Принципиальной разницы между продукцией ведущих мировых производителей нет.</p> </div> <div class="constructor__info-colors"> <div class="info-colors__title">Доступные цвета</div> <div class="info-colors__checker"> <div class="info-colors__checker-container"> <ul id="checker-slider" class="checker-slider"> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> </ul> <div class="checker-slider-controls"> <div class="checker-slider-controls__left"></div> <div class="checker-slider-controls__right"></div> </div> </div> </div> <div class="info-colors__description"> <div class="info-colors__description__stable">Выбрано:&nbsp;</div> <div class="info-colors__description__name">Темный дуб</div> </div> </div>');
+      // appendTab('tabs', 'Окно 2', 'Custom content <u>Cool</u>');
+
+    }, 5);
+
+
+    function closeLoad(e) {
+      $("#" + 'loader-' + e).removeClass('active');
+    }
+
+    $(document).on('click', '#tAdd', function() {
+      appendTab('tabs');
+      tabEssence.handleClasses();
+    });
+
+    $(document).on('click', '.btnx', function(e) {
+      deleteTab('tabs', e.target.id.replace('btnx-', ''));
+    });
+
+    function appendTab(tab, nombre, contenido, url) {
+      var t = $("#" + tab + " .tabsName");
+      var tt = $("#" + tab);
+      //var tl = t.find('.item').length;
+      var n = (!!nombre ? nombre : ("tab " + (numberTabs).toString()));
+      var kl = (!!nombre ? nombre : ("Окно " + (numberTabs).toString()));
+      var tn = (!!nombre ? nombre.replace(/\s/g, '') : ("tab" + (numberTabs).toString()));
+      contenido = !!contenido ? contenido : 'Content ' + tn;
+      numberTabs++;
+      if (!$("#tab-" + tn).length) {
+        contenido = (!!url ? ('<iframe src="' + url + '" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border:none;" onload="closeLoad(\'' + tn + '\')"></iframe><div class="ui active dimmer" id="loader-' + tn + '"><div class="ui large text loader">Cargando ...</div></div>') : contenido);
+
+        t.find('#tAdd').remove();
+        t.append('<a class="item tab" data-tab="' + tn + '" id="tab-' + tn + '">' + kl + ' <i class="close icon btnx" id="btnx-' + tn + '"></i></a>')
+          .append('<a class="item tabx" id="tAdd"><i class="add square icon"></i></a>');
+
+        tt.append('<div class="ui tab tabc segment" data-tab="' + tn + '" id="tab-c-' + tn + '">' + contenido + ' </div>')
+        $('#tabs .menu .tab').tab({});
+      }
+      $("#tab-" + tn).click();
+    }
+
+    function deleteTab(tab, nombre) {
+        var n = nombre;
+        var tt = $("#" + tab + " .tabsName");
+        var tl = tt.find('.item').length;
+        var t = $("#tab-" + n);
+        var tc = $("#tab-c-" + n);
+        if (!!n) {
+          $('.small.modal').modal({
+            closable: false,
+            onDeny: function() {
+              //alert('No!');
+              //return false;
+            },
+            onApprove: function() {
+              t.remove();
+              tc.remove();
+              if (tl > 0) {
+                var tb = $("#" + tab + " div a.tab")[tl - 4];
+                console.log(tb)
+                $(tb.click());
+                var u ="#"+tb.id;
+                console.log(u);
+                location.href=u;
+              }
+              $('#tabs .menu .tab').tab({});
+            }
+          }).modal('show');
+        }
+      }
+      //--------------------------------------
+    var person = {
+      name: "Василий"
+    };
+
+    var tabEssence = {
+      commonItems: function(){
+        var result = document.querySelectorAll('.item.tab');
+        return result;
+      },
+      itemsLength: function(){
+        var result = this.commonItems();
+        return result.length;
+      },
+      activeItemWidth: function(){
+        var result = document.querySelector('.active.item').offsetWidth;
+        return result
+      },
+      widthForNonActiveTabs: function(){
+        var calc = 550 - this.activeItemWidth() - 40;
+        var result = calc / this.itemsLength();
+        return result;
+      },
+      setNonActiveTabsWidth: function(){
+        var elem = document.querySelectorAll('.item.tab:not(.active)');
+        var width = 0;
+        if (elem.length >= 4){
+          for (i = 0; i < elem.length; ++i) {
+            elem[i].style.width = this.widthForNonActiveTabs() + 'px';
+            if (elem.length >= 10){
+              elem[i].style.padding = 0;
+            }
+          }
+        }
+      },
+      handleClasses: function(){
+          console.log('eta');
+          var elements = document.querySelectorAll('.item.tab');
+          for (var i = 0; i < elements.length; ++i) {
+            elements[i].classList.remove('overtabed');
+          }
+          var nonActiveElements = document.querySelectorAll('.item.tab:not(.active)');
+          for (var i = 0; i < nonActiveElements.length; ++i) {
+            nonActiveElements[i].classList.add('overtabed');
+          }
+          this.setNonActiveTabsWidth();
+      }
+    };
+
+
+
+
+	}
+
+}); // eof .ready
+
+// slider end
