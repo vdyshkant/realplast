@@ -1955,7 +1955,7 @@ $(document).ready(function() {
 
      //  animate 1st MUSTACHE
       $( ".step.second, .step.third, .num-arr" ).mouseover(function() {
-       $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).stop(true).animate({
+       $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).animate({
          width: '25px'
        }, 500, function() {
          // Animation complete.
@@ -1967,7 +1967,7 @@ $(document).ready(function() {
        });
      });
       $( ".step.second, .step.third, .num-arr" ).mouseout(function() {
-       $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).stop(true).animate({
+       $(this).find( ".lines-item:eq(0), .lines-item:eq(2)" ).animate({
          width: '10px'
        }, 500, function() {
          // Animation complete.
@@ -1982,7 +1982,10 @@ $(document).ready(function() {
 
    } // eof if
 
+		$('.step.first').click(function() {
+			$('.tabs-region .item.tab:last').trigger( "click" );
 
+		});
 
 
 
@@ -2110,6 +2113,8 @@ $(document).ready(function() {
 $(window).load(function() {
 
 	if($('body').is('.page-index')){
+
+    
 
     var numberTabs = 1;
     setTimeout(function(){

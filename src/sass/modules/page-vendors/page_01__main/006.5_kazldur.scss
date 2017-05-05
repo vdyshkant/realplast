@@ -209,15 +209,15 @@ $qcolor: #FAB900;
   // transform: rotate(-90deg);
   cursor: pointer;
 
-  &::before {
-    content: 'radial block';
-    white-space: nowrap;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    height: 20px;
-    width: 50px;
-  }
+  // &::before {
+  //   content: 'radial_block';
+  //   white-space: nowrap;
+  //   position: absolute;
+  //   top: -20px;
+  //   left: 0;
+  //   height: 20px;
+  //   width: 50px;
+  // }
 }
 
 .kazldur .step-nav .lines-item {
@@ -289,7 +289,8 @@ $qcolor: #FAB900;
   background-color: transparent;
 }
 .kazldur .step-nav .step .radial-progress .inset {
-  height: 265px;
+  // height: 265px;
+  height: 0;
   width: 50px;
   z-index: 1;
   min-height: 50px;
@@ -298,6 +299,7 @@ $qcolor: #FAB900;
   // margin-top: 5px;
   background-color: transparent;
   // border-radius: 50%;
+      // background: hsla(203, 100%, 37%, 0.2);
 }
 .kazldur .step-nav .step .radial-progress .inset .inner-circle {
   position: absolute;

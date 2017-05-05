@@ -110,6 +110,7 @@ gulp.task('js', function() {
       'src/js/modules/p01/03_checker-slider.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p01/0b_btn-animation.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p01/04_segmentTabs.js',  // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p01/05_segmentTab-2.js',  // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p07/003_types.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/01-slider-general.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p08/slider-clock-timers.js', // e.g. /path/to/mymodule/mymodule/*.js'

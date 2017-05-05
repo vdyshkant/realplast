@@ -1,22 +1,22 @@
-.units-content-01 a.tab{position:relative;}
-.units-content-01 .btnx{color:#ccc;top:10px;right:1px;position:absolute;}
-.units-content-01 .btnx:hover{color:#f00;transition: all 0.8s ease;}
-.units-content-01 .tabc{position:relative!important;}
-.units-content-01 .segment{min-height:480px;}
+.units-content-02 a.tab{position:relative;}
+.units-content-02 .btnx{color:#ccc;top:10px;right:1px;position:absolute;}
+.units-content-02 .btnx:hover{color:#f00;transition: all 0.8s ease;}
+.units-content-02 .tabc{position:relative!important;}
+.units-content-02 .segment{min-height:480px;}
 /*.menu.tabsName{overflow: overlay;
   height: 35px;}*/
 
-.units-content-01 .close.icon.btnx {
+.units-content-02 .close.icon.btnx {
   display: none;
 }
 
-.units-content-01 .ui.segment.tabs-region .overtabed {
+.units-content-02 .ui.segment.tabs-region .overtabed {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.units-content-01 .ui.segment.tabs-region {
+.units-content-02 .ui.segment.tabs-region {
   padding: 0;
   width: 549px;
   background: none;
@@ -29,6 +29,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #000;
+  margin: 0;
 
   & .menu {
     background: none;
@@ -74,7 +75,7 @@
   }
 }
 
-.units-content-01 .ui.segment.tabs-region {
+.units-content-02 .ui.segment.tabs-region {
   & .item.tabx {
     padding: 0;
     padding-left: 8px;
@@ -98,7 +99,7 @@
     // background-color: #cecece;
     border: none;
     border-radius: 0;
-    margin-top: 0;
+    margin: 0;
     padding: 20px;
     box-shadow: none;
     border-right: 1px solid black;
