@@ -170,49 +170,51 @@ $(document).ready(function() {
 // tablet ver
 $(document).ready(function() {
 	if($('body').is('.page-index')){
-	  if ((window.matchMedia("(min-width: 768px)").matches) && (window.matchMedia("(max-width: 1359px)").matches)) {
-      var carousel = $("#carousel").waterwheelCarousel({
-  	    flankingItems: 0,
-        movingToCenter: function($movingFromCenter) {
+    if($('section').is('.feedbacks')){
+  	  if ((window.matchMedia("(min-width: 768px)").matches) && (window.matchMedia("(max-width: 1359px)").matches)) {
+        var carousel = $("#carousel").waterwheelCarousel({
+    	    flankingItems: 0,
+          movingToCenter: function($movingFromCenter) {
 
 
-          // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
-          var height = $movingFromCenter.innerHeight();
-          var position = $movingFromCenter.position();
-              height = parseInt(height, 10);
-              position = parseInt(position.top, 10);
-          var num = height + position;
-              num = position + (height / 2 - 140);
+            // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
+            var height = $movingFromCenter.innerHeight();
+            var position = $movingFromCenter.position();
+                height = parseInt(height, 10);
+                position = parseInt(position.top, 10);
+            var num = height + position;
+                num = position + (height / 2 - 140);
 
-          // console.log($movingFromCenter + ' item height: ' + height);
-          // console.log($movingFromCenter + ' item position.top: ' + position);
-          // console.log('sum: ' + num);
-          // setTimeout(function(){
-          $( ".slider-controls" ).css( "top", num);
-          // });
+            // console.log($movingFromCenter + ' item height: ' + height);
+            // console.log($movingFromCenter + ' item position.top: ' + position);
+            // console.log('sum: ' + num);
+            // setTimeout(function(){
+            $( ".slider-controls" ).css( "top", num);
+            // });
 
-          // Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
-        },
-        // horizon: 10,
-        // horizonOffset: -50,
-        // horizonOffsetMultiplier: .7
-  	    // smallFeatureWidth: 1,
-  	    // smallFeatureOffset: 150,
-  	    // startingFeature: 3
+            // Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
+          },
+          // horizon: 10,
+          // horizonOffset: -50,
+          // horizonOffsetMultiplier: .7
+    	    // smallFeatureWidth: 1,
+    	    // smallFeatureOffset: 150,
+    	    // startingFeature: 3
 
-  	  });
+    	  });
 
-  	  $('#prev').bind('click', function () {
-  	    carousel.prev();
-  	    return false;
-  	  });
+    	  $('#prev').bind('click', function () {
+    	    carousel.prev();
+    	    return false;
+    	  });
 
-  	  $('#next').bind('click', function () {
-  	    carousel.next();
-  	    return false;
-  	  });
+    	  $('#next').bind('click', function () {
+    	    carousel.next();
+    	    return false;
+    	  });
 
-    } // eof matchMedia
+      } // eof matchMedia
+    }		// eof section
   }		// eof ('body').is
 }); // eof document READY
 
@@ -2114,15 +2116,63 @@ $(window).load(function() {
 
 	if($('body').is('.page-index')){
 
-    
+    function Rozenrot(selector){
+      this.container = $(selector);
 
-    var numberTabs = 1;
-    setTimeout(function(){
-      $('#tabs .menu .tab').tab({});
-      appendTab('tabs', 'Окно 1', '<div class="constructor__info-img"><img src="img/001_tab1_cont-img.png"/></div> <div class="constructor__info-title">Профиль</div> <div class="constructor__info-text"> <p>Основной элемент в конструкции металлопластикового окна – детали из профиля ПВХ (поливинилхлорида), из которых собирается окно. От качества пластикового профиля зависят надежность и срок службы окна</p> <p>его изолирующие характеристики и внешний вид. Нужно выбирать окна, изготовленные только из качественного сертифицированного профиля, который отвечает всем необходимым стандартам и ГОСТам. В то же время, нет смысла «гоняться» за каким-то конкретным «самым лучшим» профилем. Принципиальной разницы между продукцией ведущих мировых производителей нет.</p> </div> <div class="constructor__info-colors"> <div class="info-colors__title">Доступные цвета</div> <div class="info-colors__checker"> <div class="info-colors__checker-container"> <ul id="checker-slider" class="checker-slider"> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> </ul> <div class="checker-slider-controls"> <div class="checker-slider-controls__left"></div> <div class="checker-slider-controls__right"></div> </div> </div> </div> <div class="info-colors__description"> <div class="info-colors__description__stable">Выбрано:&nbsp;</div> <div class="info-colors__description__name">Темный дуб</div> </div> </div>');
-      // appendTab('tabs', 'Окно 2', 'Custom content <u>Cool</u>');
+    };
+    Rozenrot.prototype.numberTabs = 1;
 
-    }, 5);
+		Rozenrot.prototype.initiateTabs = function(){
+			var self = this;
+
+			self.numberTabs = 1;
+			setTimeout(function(){
+
+				self.container.find('#tabs .menu .tab').tab({});
+				self.appendTab('tabs', 'Окно 1', '<div class="constructor__info-img"><img src="img/001_tab1_cont-img.png"/></div> <div class="constructor__info-title">Профиль</div> <div class="constructor__info-text"> <p>Основной элемент в конструкции металлопластикового окна – детали из профиля ПВХ (поливинилхлорида), из которых собирается окно. От качества пластикового профиля зависят надежность и срок службы окна</p> <p>его изолирующие характеристики и внешний вид. Нужно выбирать окна, изготовленные только из качественного сертифицированного профиля, который отвечает всем необходимым стандартам и ГОСТам. В то же время, нет смысла «гоняться» за каким-то конкретным «самым лучшим» профилем. Принципиальной разницы между продукцией ведущих мировых производителей нет.</p> </div> <div class="constructor__info-colors"> <div class="info-colors__title">Доступные цвета</div> <div class="info-colors__checker"> <div class="info-colors__checker-container"> <ul id="checker-slider" class="checker-slider"> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> <li class="checker-slider__item"> <div class="checker-slider__item-essence"></div> </li> </ul> <div class="checker-slider-controls"> <div class="checker-slider-controls__left"></div> <div class="checker-slider-controls__right"></div> </div> </div> </div> <div class="info-colors__description"> <div class="info-colors__description__stable">Выбрано:&nbsp;</div> <div class="info-colors__description__name">Темный дуб</div> </div> </div>');
+				// appendTab('tabs', 'Окно 2', 'Custom content <u>Cool</u>');
+
+			}, 5);
+		};
+
+		Rozenrot.prototype.appendTab = function( tab, nombre, contenido, url ){
+				var t = this.container.find("#" + tab + " .tabsName");
+				var tt = this.container.find("#" + tab);
+				//var tl = t.find('.item').length;
+				var n = (!!nombre ? nombre : ("tab " + (this.numberTabs).toString()));
+				var kl = (!!nombre ? nombre : ("Окно " + (this.numberTabs).toString()));
+				var tn = (!!nombre ? nombre.replace(/\s/g, '') : ("tab" + (this.numberTabs).toString()));
+				contenido = !!contenido ? contenido : 'Content ' + tn;
+				this.numberTabs++;
+				if (!this.container.find("#tab-" + tn).length) {
+					contenido = (!!url ? ('<iframe src="' + url + '" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border:none;" onload="closeLoad(\'' + tn + '\')"></iframe><div class="ui active dimmer" id="loader-' + tn + '"><div class="ui large text loader">Cargando ...</div></div>') : contenido);
+
+					t.find('.js_tAdd').remove();
+					t.append('<a class="item tab" data-tab="' + tn + '" id="tab-' + tn + '">' + kl + ' <i class="close icon btnx" id="btnx-' + tn + '"></i></a>')
+						.append('<a class="item tabx js_tAdd" id="tAdd"><i class="add square icon"></i></a>');
+
+					tt.append('<div class="ui tab tabc segment" data-tab="' + tn + '" id="tab-c-' + tn + '">' + contenido + ' </div>')
+					this.container.find('.js_tabs .menu .tab').tab({});
+				}
+				this.container.find("#tab-" + tn).click();
+		}
+
+
+
+
+    console.log($('#tabsApp1').length + "_asd");
+    var rozenrot1 = new Rozenrot('#tabsApp1');
+    var rozenrot2 = new Rozenrot('#tabsApp2');
+    console.log(rozenrot1);
+    rozenrot1.initiateTabs();
+    console.log(rozenrot1);
+    rozenrot2.initiateTabs();
+
+
+
+    //- ================================
+
+
 
 
     function closeLoad(e) {
@@ -2130,7 +2180,7 @@ $(window).load(function() {
     }
 
     $(document).on('click', '#tAdd', function() {
-      appendTab('tabs');
+      rozenrot1.appendTab('tabs');
       tabEssence.handleClasses();
     });
 
@@ -2138,27 +2188,7 @@ $(window).load(function() {
       deleteTab('tabs', e.target.id.replace('btnx-', ''));
     });
 
-    function appendTab(tab, nombre, contenido, url) {
-      var t = $("#" + tab + " .tabsName");
-      var tt = $("#" + tab);
-      //var tl = t.find('.item').length;
-      var n = (!!nombre ? nombre : ("tab " + (numberTabs).toString()));
-      var kl = (!!nombre ? nombre : ("Окно " + (numberTabs).toString()));
-      var tn = (!!nombre ? nombre.replace(/\s/g, '') : ("tab" + (numberTabs).toString()));
-      contenido = !!contenido ? contenido : 'Content ' + tn;
-      numberTabs++;
-      if (!$("#tab-" + tn).length) {
-        contenido = (!!url ? ('<iframe src="' + url + '" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border:none;" onload="closeLoad(\'' + tn + '\')"></iframe><div class="ui active dimmer" id="loader-' + tn + '"><div class="ui large text loader">Cargando ...</div></div>') : contenido);
 
-        t.find('#tAdd').remove();
-        t.append('<a class="item tab" data-tab="' + tn + '" id="tab-' + tn + '">' + kl + ' <i class="close icon btnx" id="btnx-' + tn + '"></i></a>')
-          .append('<a class="item tabx" id="tAdd"><i class="add square icon"></i></a>');
-
-        tt.append('<div class="ui tab tabc segment" data-tab="' + tn + '" id="tab-c-' + tn + '">' + contenido + ' </div>')
-        $('#tabs .menu .tab').tab({});
-      }
-      $("#tab-" + tn).click();
-    }
 
     function deleteTab(tab, nombre) {
         var n = nombre;

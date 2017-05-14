@@ -1,0 +1,122 @@
+// $quad-height: 50px;
+// $quad-width: 380px;
+// $qcolor: #FAB900;
+
+.wasteland .step-nav {
+    height: 50px;
+    position: relative;
+    width: 1160px;
+    margin: 0 auto 50px;
+    border-bottom: 1px solid #0072bb;
+}
+
+.page-index .wasteland .step-nav .shell-wide {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.wasteland .step-nav .step {
+  float: left;
+  width: $quad-width;
+  height: $quad-height;
+  position: relative;
+
+  &.first {
+    width: 265px;
+    & .line-mustache {
+      display: none;
+    }
+    & p {
+      background: #0072bb;
+    }
+  }
+
+  &:hover {
+    & p {
+      // background: hsla(203, 100%, 37%, 0.1);
+    }
+  }
+
+}
+
+.wasteland .step-nav .num-arr {
+  width: 115px;
+  position: relative;
+  float: right;
+
+  & .arr{
+    width: 64px;
+    height: 50px;
+    background: url('../img/constructor_num-arr.png') center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+
+  & .line-mustache {
+    top: 0;
+  }
+}
+
+.wasteland .step-nav .step p {
+  display: block;
+  @include font(normal, 400, 18px, 48px, 'Roboto');
+  color: #444341;
+  text-align: center;
+  text-decoration: none;
+  // background: #0072bb;
+
+  user-select: none;
+
+  position: absolute;
+  right: 0;
+  width: 265px;
+
+  transition: .6s ease-out;
+
+
+  cursor: pointer;
+  border: 1px solid #0072bb;
+  border-bottom: transparent;
+
+  white-space: nowrap;
+}
+
+.wasteland .step-nav .num {
+  position: absolute;
+  left: 0;
+  width: 115px;
+  @include font(normal, 700, 30px, 50px, 'Roboto');
+  color: #444341;
+  text-transform: uppercase;
+  // text-align: center;
+  text-align: center;
+}
+
+.wasteland .step-nav .num-arr {
+  width: 115px;
+  position: relative;
+  float: right;
+
+  & .arr{
+    width: 64px;
+    height: 50px;
+    background: url('../img/constructor_num-arr.png') center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+
+  & .line-mustache {
+    top: 0;
+  }
+}
+
+
+.wasteland .step-nav .step.first {
+  width: 265px;
+}
