@@ -27,7 +27,7 @@ $qcolor: #FAB900;
   &.first {
     width: 265px;
     & .line-mustache {
-      display: none;
+      // display: none;
     }
     & p {
       background: #0072bb;
@@ -105,6 +105,7 @@ $qcolor: #FAB900;
   position: absolute;
   // top: 50%;
   left: 0;
+  // right: -115px;
 
 
   // background: hsla(200, 8%, 85%, 0.44);
@@ -291,7 +292,8 @@ $qcolor: #FAB900;
 .kazldur .step-nav .step .radial-progress .inset {
   // height: 265px;
   height: 0;
-  width: 50px;
+  // width: 50px;
+  width: 100%;
   z-index: 1;
   min-height: 50px;
   position: absolute;
