@@ -16,6 +16,13 @@
     // background-size: auto 100%;
     // z-index: 5000;
   }
+
+  @media #{$tablet} {
+    display: none;
+  }
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 
